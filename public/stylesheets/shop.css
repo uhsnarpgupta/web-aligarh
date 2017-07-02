@@ -27,6 +27,11 @@
     float: left;
 }
 
+
+.moreinfo{
+    color: white;
+}
+
 .linktext{
     position: absolute;
     bottom: 0;
