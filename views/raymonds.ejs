@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>std.CSS Template</title>
+    <link rel='stylesheet' href='/stylesheets/raymonds.css'/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheets/std.css">
+    <link rel="stylesheet" href="/stylesheets/fonts/fontsLato.css">
+    <link rel="stylesheet" href="/stylesheets/fontsAwesome.css">
+    <!--<link rel="stylesheet" href="https://www.stdschools.com/stdcss/4/w3.css">-->
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Lato", sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="std-top">
+    <div class="std-bar" id="myNavbar">
+        <a class="std-bar-item std-button std-hover-black std-hide-medium std-hide-large std-right" href="javascript:void(0);"
+           onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="std-bar-item std-button">HOME</a>
+        <a href="#about" class="std-bar-item std-button std-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+        <a href="#portfolio" class="std-bar-item std-button std-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+        <a href="#contact" class="std-bar-item std-button std-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+        <a href="#" class="std-bar-item std-button std-hide-small std-right std-hover-red">
+            <i class="fa fa-search"></i>
+        </a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="std-bar-block std-white std-hide std-hide-large std-hide-medium">
+        <a href="#about" class="std-bar-item std-button" onclick="toggleFunction()">ABOUT</a>
+        <a href="#portfolio" class="std-bar-item std-button" onclick="toggleFunction()">PORTFOLIO</a>
+        <a href="#contact" class="std-bar-item std-button" onclick="toggleFunction()">CONTACT</a>
+        <a href="#" class="std-bar-item std-button">SEARCH</a>
+    </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 std-display-container std-opacity-min" id="home">
+    <div class="std-display-middle" style="white-space:nowrap;">
+        <span class="std-center std-padding-large std-black std-xlarge std-wide std-animate-opacity">MY <span
+                    class="std-hide-small">WEBSITE</span> LOGO</span>
+    </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="std-content std-container std-padding-64" id="about">
+    <h3 class="std-center">ABOUT ME</h3>
+    <p class="std-center"><em>I love photography</em></p>
+    <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+        non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat.</p>
+    <div class="std-row">
+        <div class="std-col m6 std-center std-padding-large">
+            <p><b><i class="fa fa-user std-margin-right"></i>My Name</b></p><br>
+            <img src="/stdimages/avatar_hat.jpg" class="std-round std-image std-opacity std-hover-opacity-off"
+                 alt="Photo of Me" width="500" height="333">
+        </div>
+
+        <!-- Hide this text on small devices -->
+        <div class="std-col m6 std-hide-small std-padding-large">
+            <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+    <p class="std-large std-center std-padding-16">Im really good at:</p>
+    <p class="std-wide"><i class="fa fa-camera"></i>Photography</p>
+    <div class="std-light-grey">
+        <div class="std-container std-padding-small std-dark-grey std-center" style="width:90%">90%</div>
+    </div>
+    <p class="std-wide"><i class="fa fa-laptop"></i>Web Design</p>
+    <div class="std-light-grey">
+        <div class="std-container std-padding-small std-dark-grey std-center" style="width:85%">85%</div>
+    </div>
+    <p class="std-wide"><i class="fa fa-photo"></i>Photoshop</p>
+    <div class="std-light-grey">
+        <div class="std-container std-padding-small std-dark-grey std-center" style="width:75%">75%</div>
+    </div>
+</div>
+
+<div class="std-row std-center std-dark-grey std-padding-16">
+    <div class="std-quarter std-section">
+        <span class="std-xlarge">14+</span><br>
+        Partners
+    </div>
+    <div class="std-quarter std-section">
+        <span class="std-xlarge">55+</span><br>
+        Projects Done
+    </div>
+    <div class="std-quarter std-section">
+        <span class="std-xlarge">89+</span><br>
+        Happy Clients
+    </div>
+    <div class="std-quarter std-section">
+        <span class="std-xlarge">150+</span><br>
+        Meetings
+    </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 std-display-container std-opacity-min">
+    <div class="std-display-middle">
+        <span class="std-xxlarge std-text-white std-wide">PORTFOLIO</span>
+    </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="std-content std-container std-padding-64" id="portfolio">
+    <h3 class="std-center">MY WORK</h3>
+    <p class="std-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them
+            bigger</em></p><br>
+
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="std-row-padding std-center">
+        <div class="std-col m3">
+            <img src="/stdimages/p1.jpg" style="width:100%" onclick="onClick(this)" class="std-hover-opacity"
+                 alt="The mist over the mountains">
+        </div>
+
+        <div class="std-col m3">
+            <img src="/stdimages/p2.jpg" style="width:100%" onclick="onClick(this)" class="std-hover-opacity"
+                 alt="Coffee beans">
+        </div>
+
+        <div class="std-col m3">
+            <img src="/stdimages/p3.jpg" style="width:100%" onclick="onClick(this)" class="std-hover-opacity"
+                 alt="Bear closeup">
+        </div>
+
+        <div class="std-col m3">
+            <img src="/stdimages/p4.jpg" style="width:100%" onclick="onClick(this)" class="std-hover-opacity"
+                 alt="Quiet ocean">
+        </div>
+    </div>
+
+    <div class="std-row-padding std-center std-section">
+        <div class="std-col m3">
+            <img src="/stdimages/p5.jpg" style="width:100%" onclick="onClick(this)" class="std-hover-opacity"
+                 alt="The mist">
+        </div>
+
+        <div class="std-col m3">
+            <img src="/stdimages/p6.jpg" style="width:100%" onclick="onClick(this)" class="std-hover-opacity"
+                 alt="My beloved typewriter">
+        </div>
+
+        <div class="std-col m3">
+            <img src="/stdimages/p7.jpg" style="width:100%" onclick="onClick(this)" class="std-hover-opacity"
+                 alt="Empty ghost train">
+        </div>
+
+        <div class="std-col m3">
+            <img src="/stdimages/p8.jpg" style="width:100%" onclick="onClick(this)" class="std-hover-opacity"
+                 alt="Sailing">
+        </div>
+        <button class="std-button std-padding-large std-light-grey" style="margin-top:64px">LOAD MORE</button>
+    </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="std-modal std-black" onclick="this.style.display='none'">
+    <span class="std-button std-large std-black std-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="std-modal-content std-animate-zoom std-center std-transparent std-padding-64">
+        <img id="img01" class="std-image">
+        <p id="caption" class="std-opacity std-large"></p>
+    </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 std-display-container std-opacity-min">
+    <div class="std-display-middle">
+        <span class="std-xxlarge std-text-white std-wide">CONTACT</span>
+    </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="std-content std-container std-padding-64" id="contact">
+    <h3 class="std-center">WHERE I WORK</h3>
+    <p class="std-center"><em>I'd love your feedback!</em></p>
+
+    <div class="std-row std-padding-32 std-section">
+        <div class="std-col m4 std-container">
+            <!-- Add Google Maps -->
+            <div id="googleMap" class="std-round-large std-greyscale" style="width:100%;height:400px;"></div>
+        </div>
+        <div class="std-col m8 std-panel">
+            <div class="std-large std-margin-bottom">
+                <i class="fa fa-map-marker fa-fw std-hover-text-black std-xlarge std-margin-right"></i> Chicago, US<br>
+                <i class="fa fa-phone fa-fw std-hover-text-black std-xlarge std-margin-right"></i> Phone: +00 151515<br>
+                <i class="fa fa-envelope fa-fw std-hover-text-black std-xlarge std-margin-right"></i> Email:
+                mail@mail.com<br>
+            </div>
+            <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+            <form action="/action_page.php" target="_blank">
+                <div class="std-row-padding" style="margin:0 -16px 8px -16px">
+                    <div class="std-half">
+                        <input class="std-input std-border" type="text" placeholder="Name" required name="Name">
+                    </div>
+                    <div class="std-half">
+                        <input class="std-input std-border" type="text" placeholder="Email" required name="Email">
+                    </div>
+                </div>
+                <input class="std-input std-border" type="text" placeholder="Message" required name="Message">
+                <button class="std-button std-black std-right std-section" type="submit">
+                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="std-center std-black std-padding-64 std-opacity std-hover-opacity-off">
+    <a href="#home" class="std-button std-light-grey"><i class="fa fa-arrow-up std-margin-right"></i>To the top</a>
+    <div class="std-xlarge std-section">
+        <i class="fa fa-facebook-official std-hover-opacity"></i>
+        <i class="fa fa-instagram std-hover-opacity"></i>
+        <i class="fa fa-snapchat std-hover-opacity"></i>
+        <i class="fa fa-pinterest-p std-hover-opacity"></i>
+        <i class="fa fa-twitter std-hover-opacity"></i>
+        <i class="fa fa-linkedin std-hover-opacity"></i>
+    </div>
+    <p>Powered by <a href="https://www.stdschools.com/stdcss/default.asp" title="std.CSS" target="_blank"
+                     class="std-hover-text-green">std.css</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+    function myMap() {
+        myCenter = new google.maps.LatLng(41.878114, -87.629798);
+        var mapOptions = {
+            center: myCenter,
+            zoom: 12, scrollwheel: false, draggable: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: myCenter,
+        });
+        marker.setMap(map);
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function () {
+        myFunction()
+    };
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "std-bar" + " std-card-2" + " std-animate-top" + " std-white";
+        } else {
+            navbar.className = navbar.className.replace(" std-card-2 std-animate-top std-white", "");
+        }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("std-show") == -1) {
+            x.className += " std-show";
+        } else {
+            x.className = x.className.replace(" std-show", "");
+        }
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.stdschools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
