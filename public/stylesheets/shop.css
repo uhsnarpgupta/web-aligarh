@@ -1,0 +1,138 @@
+.aligarhbackground{
+    background-image: url("../images/shopping-background.jpg");
+    background-repeat: no-repeat;
+    border: solid;
+    width: auto;
+    height: 300px;
+}
+.space{
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.parent {
+    margin-bottom: 15px;
+    padding: 10px;
+    color: #0A416B;
+    clear:both;
+}
+.commonbackground{
+    position: relative;
+    background-repeat: no-repeat;
+    border: solid;
+    border-color: #eeaa00;
+    width: 350px;
+    height: 200px;
+    float: left;
+}
+
+.linktext{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    padding: 0px;
+    line-height: 10px;
+    padding-left: 10px;
+}
+
+a:hover {
+    background-color: #eeaa00;
+}
+
+a{
+    color:white;
+    font-family: Calibri;
+    font-size: 12px;
+    text-align: start;
+    bottom: 0px;
+    border: solid;
+    border-color: #eeaa00;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.footer {
+    height: 50px; /* the footer's total height */
+}
+
+.footer-content {
+    background-color: #f3e5f5;
+    border: 1px solid #ab47bc;
+    height: 32px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
+    padding: 8px;
+}
+
+.footerlink{
+    border: solid;
+    color: white;
+}
+
+.leftcol{
+    float: left;
+    border: solid;
+    position: relative;
+    height: 1500px;
+}
+
+.rightcol{
+    float: right;
+    border: solid;
+    position: relative;
+}
+
+/* Div table specifcs* Starts*/
+
+
+.divTable
+{
+    display:  table;
+    width:auto;
+    background-color:#eee;
+    border:1px solid  #666666;
+    border-spacing:5px;/*cellspacing:poor IE support for  this*/
+    /* border-collapse:separate;*/
+}
+
+.divRow
+{
+    display:table-row;
+    width:auto;
+}
+
+.divCell
+{
+    float:left;/*fix for  buggy browsers*/
+    display:table-column;
+    width:200px;
+    background-color:#ccc;
+}
+
+.left, .three{
+    display:table-cell;
+    width:100px;
+
+}
+.three{
+    position: relative;
+    border-color: #eeaa00;
+    border: solid;
+}
+.four{
+    display:table-cell;
+    width:300px;
+    border-color: #eeaa00;
+    border: solid;
+}
+.left > div{
+    height:300px;
+}
+.left .two{
+
+}
+
+/* Div table specifcs Ends*/

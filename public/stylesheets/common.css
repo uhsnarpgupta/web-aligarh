@@ -1,0 +1,100 @@
+.card-deck .card-container > .card {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+}
+.card-deck .card {
+    color: #1f1f21;
+    background-color: #f5f5f5;
+}
+*::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.card-deck .card-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-bottom: 40px solid #f5f5f5;
+    border-left: 40px solid transparent;
+    width: 0px;
+    z-index: 1;
+}
+.card-deck .card-container::before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 123%;
+}
+.card-deck .card-container {
+    position: relative;
+    top: 300px;
+    opacity: 0;
+}
+.card-deck .card-container {
+    background: transparent;
+    margin-bottom: 20px;
+}
+.card-deck .card-container {
+    position: relative;
+}
+.card-container, .card-container .card-image {
+    position: relative;
+    display: block;
+}
+.card-link {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0;
+    z-index: 4;
+}
+.card-deck .card-image::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgb(0, 0, 0)));
+    background-image: -moz-linear-gradient(rgba(0,0,0,0),#000000);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
+.card-deck .card-body {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    padding: 5px;
+}
+.card-deck .card-editorial .card-title {
+    position: absolute;
+    left: 0px;
+    margin: 0;
+    top: 15px;
+}
+.card-category {
+    font-size: 12px;
+    color: #f5f5f5;
+}
+
+.shop-background{
+    background-image: url(../images/shop/blackberry.jpg);
+    height: 200px; width: 200px; border: 1px solid black;
+    background-repeat: no-repeat;
+}
