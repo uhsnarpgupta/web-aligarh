@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-// var mongo = require('mongodb');
+var mongo = require('mongodb');
 
 var index = require('./routes/index');
 var restaurant = require('./routes/restaurant');
@@ -13,7 +13,7 @@ var shopping = require('./routes/shopping');
 var hotel = require('./routes/hotel');
 var aboutus = require('./routes/about');
 var event = require('./routes/event');
-// var admin = require('./routes/admin');
+var admin = require('./routes/admin');
 var swadeshi = require('./routes/shopping/swadeshi');
 var sheeshMahal = require('./routes/shopping/sheeshmahal');
 var raymonds = require('./routes/shopping/raymonds');
@@ -42,7 +42,7 @@ app.use('/shop',shopping);
 app.use('/hotel',hotel);
 app.use('/about',aboutus);
 app.use('/event',event);
-// app.use('/admin',admin);
+app.use('/admin',admin);
 
 //Shopping Routes
 app.use('/swadeshi',swadeshi);
@@ -52,8 +52,8 @@ app.use('/adidas',adidas);
 
 
 //Admin Routes
-// app.use('/insert',admin);
-// app.use('/get-data',admin);
+app.use('/insert',admin);
+app.use('/get-data',admin);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

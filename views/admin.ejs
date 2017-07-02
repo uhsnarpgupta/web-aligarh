@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%=title%></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body bgcolor="White" height="100%">
+<table height="100%" width="100%" border=0>
+    <tr width="100%">
+        <td width="100%" height="100%">
+            <table width="100%" height="100%"  background="/images/aligarhCity.gif" border=0>
+                <tr width="100%" height="100%">
+                    <td width="100%" height="100%">
+                        <% include template/header.ejs%>
+                        <h1 align="center"><img src="/images/aligarh.png"  height="450" width="1000"></h1>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr width="100%">
+        <td width="100%">
+            <div>
+            <form action="/admin/insert" method="post" name="shopinsert">
+                <table width="30%" border="1">
+                    <tr>
+                        <td>
+                            <label for="shop_name">Shop Name:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" id="shop_name" name="shop_name" placeholder="Enter your shop name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="shop_address">Shop Address</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" id="shop_address" name="shop_address" placeholder="Enter your shop address" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="shop_city">Shop City</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" id="shop_city" name="shop_city" placeholder="Enter your shop city" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="shop_zip">Shop Zip</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" id="shop_zip" name="shop_zip" placeholder="Enter your shop zip" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="shop_email">Shop Email</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" id="shop_email" name="shop_email" placeholder="Enter your shop email" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="shop_phone">Shop Phone</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" id="shop_phone" name="shop_phone" placeholder="Enter your shop phone" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Submit"/>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table border="1">
+                <tr>
+                    <td>
+                        <a href="/admin/get-data"> Load Data</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                      <%
+                        item.forEach(function (item) { %>
+                        <li>
+                            <%=item.shop_name%> <br>
+                            <%=item.shop_address%> <br>
+                            <%=item.shop_zip%>
+                        </li>
+                       <% })
+                           item.length = 0;
+                        %>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
