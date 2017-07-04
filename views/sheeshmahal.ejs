@@ -1,79 +1,514 @@
 <!DOCTYPE html>
-<html xmlns:http="http://www.w3.org/1999/xhtml">
+<html>
+<title>std.CSS Template</title>
 <head>
-    <title><%=title%></title>
-    <link rel='stylesheet' href='/stylesheets/shop.css' />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheets/std.css">
+    <link rel="stylesheet" href="/stylesheets/fonts/fontsOswald.css">
+    <link rel="stylesheet" href="/stylesheets/fonts/fontsOpenSans.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--<link rel="stylesheet" href="/stylesheets/fonts/fontsAwesome.css">-->
+
+    <!--<link rel="stylesheet" href="https://www.stdschools.com/stdcss/4/std.css">-->
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">-->
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <style>
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Oswald"
+        }
+
+        body {
+            font-family: "Open Sans"
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        .std-left, .std-right, .std-badge {
+            cursor: pointer
+        }
+
+        .std-badge {
+            height: 13px;
+            width: 13px;
+            padding: 0
+        }
+    </style>
 </head>
-<body bgcolor="White" height="100%">
-<div class="aligarhbackground">
-    <% include template/header.ejs%>
-    <h1>&nbsp;Sheesh Mahal</h1>
+<body class="std-light-grey">
+
+<div>
+    <% include template/navigationBar.ejs %>
+</div>
 </div>
 
-<div class=" parent">
-    <div class="commonbackground space">
-        <div class="linktext">
-            <h6>
-                <a  href="/shop/sheeshmahal" style="font-family: Calibri;color: black">
-                <Span>
-                    <i> icon</i>
-                </Span>
-                    <span>
-                        Visit Website
-                    </span>
+<!-- std-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="std-content" style="max-width:1600px">
+
+    <!-- Image header -->
+    <div class="std-content std-display-container" style="max-width:100%">
+        <header class="std-display-container std-wide" id="home">
+            <div class="std-display-left std-padding-large">
+                <!--<h1 class="std-jumbo std-text-white std-hide-small">Adidas</h1>
+                <h1 class="std-text-white"><b>STORE OUTLET</b></h1>-->
+                <!--<h6>-->
+                <!--<button class="std-button std-white std-padding-large std-large std-opacity std-hover-opacity-off"-->
+                <!--onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE-->
+                <!--</button>-->
+                <!--</h6>-->
+            </div>
+
+            <div class="jumbotron mySlides" style="background-image: url('../images/shop/Sheesh-Mahal.jpg'); ">
+                <div class="page-title" style="width: 450px;">
+                    <h1 class="padding-multiline"><span>Sheesh Mahal Plaza</span></h1>
+                </div>
+            </div>
+            <div class="jumbotron mySlides" style="background-image: url('../images/shop/shoppingbackground.jpg');">
+                <div class="page-title" style="width: 450px;">
+                    <h1 class="padding-multiline"><span>Sheesh Mahal Plaza</span></h1>
+                </div>
+            </div>
+            <div class="jumbotron mySlides" style="background-image: url('../images/shop/Sheesh-Mahal.jpg');">
+                <div class="page-title" style="width: 450px;">
+                    <h1 class="padding-multiline"><span>Sheesh Mahal Plaza</span></h1>
+                </div>
+            </div>
+
+        </header>
+        <div class="std-center std-container std-section std-large std-text-white std-display-bottommiddle"
+             style="width:100%">
+            <span class="std-badge demo std-border std-transparent std-hover-white"
+                  onclick="currentDiv(1)"></span>
+            <span class="std-badge demo std-border std-transparent std-hover-white"
+                  onclick="currentDiv(2)"></span>
+            <span class="std-badge demo std-border std-transparent std-hover-white"
+                  onclick="currentDiv(3)"></span>
+        </div>
+    </div>
+
+    <!-- Grid -->
+    <div class="std-row std-padding std-border">
+
+        <!-- About/Information menu -->
+        <div class="std-col l4">
+            <!-- About Card -->
+            <div class="std-margin">
+                <div style="background-color:white;" class="std-hover-grey">
+                    <a href="#">
+                    <span><img src="/images/leaf.png" alt="Image" class="std-left"
+                               style="width:30px"></span>
+                        <span><h4>Visit Website</h4></span>
                     </a>
-            </h6>
-            <h6>
-                <a  href="/shop/sheeshmahal" style="font-family: Calibri;color: black">
-                <Span>
-                    <i> icon </i>
-                </Span>
-                    <span>
-                        Facebook link
-                    </span>
-                </a>
-            </h6>
-            <h6>
-                <a  href="/shop/sheeshmahal" style="font-family: Calibri;color: black">
-                <Span>
-                    <i> icon </i>
-                </Span>
-                    <span>
-                        Twitter Link
-                    </span>
+                </div>
+                <div style="background-color: white" class="std-hover-grey">
+                    <a href="#" style="">
+                    <span><img src="/images/Facebook_logo.png" alt="Image" class="std-left"
+                               style="width:30px"></span>
+                        <span><h4>Facebook</h4></span>
+                    </a>
+                </div>
+                <div style="background-color: white" class="std-hover-grey">
+                    <a href="#subs">
+                    <span><img src="/images/Twitter_bird_logo.png" alt="Image" class="std-left"
+                               style="width:30px"></span>
+                        <span><h4>Twitter</h4></span>
+                    </a>
+                </div>
+                <div style="background-color: white" class="std-hover-grey">
+                    <a href="#photo-section">
+                    <span><img src="/images/leaf.png" alt="Image" class="std-left"
+                               style="width:30px"></span>
+                        <span><h4>View Photos</h4></span></a>
+                </div>
 
-                </a>
-            </h6>
+            </div>
+            <hr>
+
+            <div class="std-margin">
+                    <span style="line-height: 30px">
+                        <h3 style="display: block">Sheesh Mahal Plaza</h3><h4>Center Point<br>Aligarh - 202001 <br> Contact us @ 1234567890
+                            <br> Email us: support@adidas.com </h4>
+
+                    </span>
+            </div>
+            <hr>
+
+            <!-- Posts -->
+            <div class="std-white std-margin">
+                <div class="std-container std-padding std-black">
+                    <h4>Popular Deals</h4>
+                </div>
+                <ul class="std-ul std-hoverable std-white">
+                    <li class="std-padding-16">
+                        <img src="/images/shopping.jpg" alt="Image" class="std-left std-margin-right"
+                             style="width:50px">
+                        <span class="std-large">Lehenga</span>
+                        <br>
+                        <span>BOGO @ 50%</span>
+                    </li>
+                    <li class="std-padding-16">
+                        <img src="/images/shopping.jpg" alt="Image" class="std-left std-margin-right"
+                             style="width:50px">
+                        <span class="std-large">Sarees</span>
+                        <br>
+                        <span>10% Off on Sarees</span>
+                    </li>
+                    <li class="std-padding-16">
+                        <img src="/images/shopping.jpg" alt="Image" class="std-left std-margin-right"
+                             style="width:50px">
+                        <span class="std-large">Suits</span>
+                        <br>
+                        <span>50% OFF</span>
+                    </li>
+                    <li class="std-padding-16">
+                        <img src="/images/shopping.jpg" alt="Image" class="std-left std-margin-right std-sepia"
+                             style="width:50px">
+                        <span class="std-large">Banarasi Sarees</span>
+                        <br>
+                        <span>25% OFF</span>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+
+            <!-- Advertising -->
+            <div class="std-white std-margin">
+                <div class="std-container std-padding std-black">
+                    <h4>Video add on Sheesh Mahal</h4>
+                </div>
+                <div class="std-container std-white">
+                    <div class="std-container std-display-container std-light-grey std-section"
+                         style="height:200px">
+                        <span class="std-display-middle">Your AD Here</span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Photos -->
+            <div id="photo-section" class="std-white std-margin">
+                <div class="std-container std-padding std-black">
+                    <h4>Photos</h4>
+                </div>
+                <div class="std-row-padding std-white">
+                    <% include template/gallery.ejs%>
+                    <!--<div class="std-col s6">
+                        <p><img src="/images/shop/shop1.jpg" alt="Jeans" style="width:100%"></p>
+                        <p><img src="/images/shop/shop2.jpg" alt="Jeans" style="width:100%"></p>
+                    </div>
+                    <div class="std-col s6">
+                        <p><img src="/images/shop/shop3.jpg" alt="Men in Hats" style="width:100%"
+                                class="std-grayscale"></p>
+                        <p><img src="/images/shop/shop4.jpg" alt="Jeans" style="width:100%"></p>
+                    </div>-->
+                </div>
+            </div>
+            <hr>
+
+            <!-- Follow Me -->
+            <!--<div class="std-white std-margin">
+                <div class="std-container std-padding std-black">
+                    <h4>Follow Me</h4>
+                </div>
+                <div class="std-container std-xlarge std-padding">
+                    <i class="fa fa-facebook-official std-hover-opacity"></i>
+                    <i class="fa fa-instagram std-hover-opacity"></i>
+                    <i class="fa fa-snapchat std-hover-opacity"></i>
+                    <i class="fa fa-pinterest-p std-hover-opacity"></i>
+                    <i class="fa fa-twitter std-hover-opacity"></i>
+                    <i class="fa fa-linkedin std-hover-opacity"></i>
+                </div>
+            </div>-->
+            <hr>
+
+            <!-- Subscribe -->
+            <!--<div id="subs" class="std-white std-margin">
+                <div class="std-container std-padding std-black">
+                    <h4>Subscribe</h4>
+                </div>
+                <div class="std-container std-white">
+                    <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+                    <p><input class="std-input std-border" type="text" placeholder="Enter e-mail"
+                              style="width:100%">
+                    </p>
+                    <p>
+                        <button type="button"
+                                onclick="document.getElementById('subscribe').style.display='block'"
+                                class="std-button std-block std-red">Subscribe
+                        </button>
+                    </p>
+                </div>
+            </div>-->
+
+            <!-- END About/Intro Menu -->
+        </div>
+        <!-- Blog entries -->
+        <div class="std-col l8 s12">
+
+            <div class="std-white std-margin">
+                <!-- Blog entry -->
+
+
+                <div class="std-container std-white std-margin std-padding-large">
+                    <div class="std-center">
+                        <h3>Sheesh Mahal Plaza</h3>
+                        <h5>Our Journey, <span class="std-opacity">Article Dated: July 2, 2017</span></h5>
+                    </div>
+
+                    <div class="std-justify">
+                        <img src="../images/shop/adidas2.jpg" alt="Adidas" style="width:100%" class="std-padding-16">
+                        <p><strong>We are Expending !</strong> Sheesh Mahal is expending into multiple areas in Aligarh.</p>
+                        <p>We have branches at Center point, railway road and opening at other places soon.</p>
+                        <!-- <p class="std-left">
+                             <button class="std-button std-white std-border" onclick="likeFunction(this)"><b><i
+                                             class="fa fa-thumbs-up"></i> Like</b></button>
+                         </p>
+                         <p class="std-right">
+                             <button class="std-button std-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies
+                                      </b>
+                                 <span class="std-tag std-white">1</span></button>
+                         </p>
+                         <p class="std-clear"></p>-->
+                        <!--<div class="std-row std-margin-bottom" id="demo1" style="display:none">
+                            <hr>
+                            <div class="std-col l2 m3">
+                                <img src="../images/Facebook_logo.png" style="width:90px;">
+                            </div>
+                            <div class="std-col l10 m9">
+                                <h4>George <span class="std-opacity std-medium">May 3, 2015, 6:32 PM</span></h4>
+                                <p>Great blog post! Following</p>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+                <hr>
+
+                <!-- END BLOG ENTRIES -->
+
+                <div class="std-container std-padding std-black">
+                    <h4>Features</h4>
+                </div>
+                <table class="features-wrapper std-table std-striped std-bordered std-border std-hoverable std-white">
+                    <tr class="feature clearfix">
+                        <td class="feature-category">
+                            Established From
+                        </td>
+                        <td class="feature-name">1990<br>
+
+                        </td>
+                    </tr>
+                    <tr class="feature clearfix">
+                        <td class="feature-category">
+                            Shopping
+                        </td>
+                        <td class="feature-name">Clothing &amp; Accessory Stores<br>Bridal &amp; Formalwear<br>Children
+                            &amp; Infants<br>Eyewear<br>Fur<br>Handbags<br>Hats<br>Jewelry &amp; Watches<br>Lingerie<br>Maternity<br>Men's
+                            Apparel<br>Shoes<br>Women's Apparel<br>Cosmetics/Beauty/Fragrance Shops<br>Department Stores<br>
+
+                        </td>
+                    </tr>
+                    <tr class="feature clearfix">
+                        <td class="feature-category">
+                            Accessibility
+                        </td>
+                        <td class="feature-name">Wheelchair Accessible<br></td>
+                    </tr>
+
+                    <tr class="feature clearfix">
+                        <td class="feature-category">
+                            Internet
+                        </td>
+                        <td class="feature-name">WiFi Available<br></td>
+                    </tr>
+
+                    <tr class="feature clearfix">
+                        <td class="feature-category">
+                            Miscellaneous
+                        </td>
+                        <td class="feature-name">Kid Friendly<br></td>
+                    </tr>
+
+                    <tr class="feature clearfix">
+                        <td class="feature-category">
+                            Payment Types
+                        </td>
+                        <td class="feature-name">Credit Cards Accepted<br></td>
+                    </tr>
+
+                    <tr class="feature clearfix">
+                        <td class="feature-category">
+                            Services
+                        </td>
+                        <td class="feature-name">Multilingual Staff<br>
+
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <!-- Google Maps Starts-->
+            <div class="std-white std-margin">
+                <div class="std-container std-padding std-black">
+                    <h4>Store Location</h4>
+                </div>
+                <div id="googleMap" style="width:100%;height:400px;"></div>
+            </div>
+
+            <!-- Google Maps Ends-->
+
+        </div>
+
+
+        <!-- END GRID -->
+    </div>
+
+    <!-- END std-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="std-modal std-animate-opacity">
+    <div class="std-modal-content" style="padding:32px">
+        <div class="std-container std-white">
+            <i onclick="document.getElementById('subscribe').style.display='none'"
+               class="fa fa-remove std-transparent std-button std-xlarge std-right"></i>
+            <h2 class="std-wide">SUBSCRIBE</h2>
+            <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+            <p><input class="std-input std-border" type="text" placeholder="Enter e-mail"></p>
+            <button type="button" class="std-button std-block std-padding-large std-red std-margin-bottom"
+                    onclick="document.getElementById('subscribe').style.display='none'">Subscribe
+            </button>
         </div>
     </div>
 </div>
-<div class=" parent">
-    <div class="commonbackground space">
-        <div class="linktext">
-            <h6>
-                <label
-                <Span>
-                    Address:
-                </Span>
-                    <span style="display: block">
-                        Center Point, Aligarh
-                    </span>
-                <span style="display: block">
-                        Railway Road, Aligarh
-                    </span>
-                </label>
-            </h6>
-        </div>
 
-    </div>
-</div>
+<!-- Footer -->
+<!--<footer class="std-container std-dark-grey" style="padding:32px">-->
+<!--<a href="#" class="std-button std-black std-padding-large std-margin-bottom"><i-->
+<!--class="fa fa-arrow-up std-margin-right"></i>To the top</a>-->
+<!--<p>Powered by <a href="https://www.stdschools.com/stdcss/default.asp" target="_blank">std.css</a></p>-->
+<!--</footer>-->
 
-<div class="w3-container parent">
-    <h2>With a Container</h2>
-    <p>The w3-container class is one of the most important of the w3.CSS classes. It can provide correct margins, padding, alignments, and more to your HTML elements.</p>
-</div>
-<div class="parent">
-    <% include template/footer.ejs%>
-</div>
+<script>
+    // Toggle between hiding and showing blog replies/comments
+    document.getElementById("myBtn").click();
+    function myFunction(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("std-show") == -1) {
+            x.className += " std-show";
+        } else {
+            x.className = x.className.replace(" std-show", "");
+        }
+    }
+
+    function likeFunction(x) {
+        x.style.fontWeight = "bold";
+        x.innerHTML = "✓ Liked";
+    }
+</script>
+<!-- Add Google Maps -->
+<script>
+    function myMap() {
+        myCenter = new google.maps.LatLng(27.8912996,78.07800440000005);
+        var mapOptions = {
+            center: myCenter,
+            zoom: 12, scrollwheel: false, draggable: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: myCenter,
+        });
+        marker.setMap(map);
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6Pviy7a1tfYcpRZySfCt9qhbVvVbUIJQ&callback=myMap"></script>
+
+<!-- Add Slide Show -->
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function currentDiv(n) {
+        showDivs(slideIndex = n);
+    }
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("std-image");
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        }
+        ;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
+</script>
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+        showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" std-white", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " std-white";
+    }
+</script>
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {
+            slideIndex = 1
+        }
+        x[slideIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+</script>
+
 </body>
 </html>
