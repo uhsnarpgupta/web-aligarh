@@ -1,0 +1,44 @@
+.indexAligarhbackground{
+    background-image: url("../images/aligarhCity.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: solid;
+    width: auto;
+    height: 500px;
+}
+
+.indexAligarhSignature{
+    width: 1000px;
+    height: 450px;
+    padding: 45px;
+    margin-left: 170px;
+}
+
+.indexAttractionbackground{
+     background-repeat: no-repeat;
+     background-size: cover;
+     border: solid;
+     width: 1465px;
+     height: 450px;
+     margin-left: 0px;
+ }
+
+.indexEducationbackground{
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid;
+    width: 1465px;
+    height: 450px;
+    margin-left: 0px;
+}
+
+.background-top-text{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    padding: 0px;
+    line-height: 10px;
+    padding-left: 10px;
+}
+
