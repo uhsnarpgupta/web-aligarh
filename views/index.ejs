@@ -1,119 +1,341 @@
 <!DOCTYPE html>
-<html>
+
+<!DOCTYPE html>
+<html xmlns:http="http://www.w3.org/1999/xhtml">
 <head>
-  <title><%= title %></title>
-  <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/index.css'/>
+    <link rel='stylesheet' href='/stylesheets/shop.css'/>
+    <link rel="stylesheet" href="/stylesheets/std.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 <body bgcolor="White" height="100%">
-<table height="100%" width="100%" border=1>
-  <tr width="100%">
-    <td width="100%" height="100%">
-      <table width="100%" height="100%"  background="/images/aligarhCity.gif" border=1>
-        <tr width="100%" height="100%">
-          <td width="100%" height="100%">
-              <% include template/header.ejs%>
-            <h1 align="center"><img src="/images/aligarh.png"  height="450" width="1000"></h1>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-  <tr width="100%" height="10%">
-    <td align="center">
-      <table width="100%" height="100%"  border=1>
-        <tr width="100%" height="100%">
-          <td height="100%" colspan="3">
-            <a href="/restaurant">
-              <img src="/images/restaurant-background.jpg" border=3 height="100%" width="100%"></img>
-            </a>
-          </td>
-        </tr>
-        <tr width="100%" height="100%" >
-          <td width="33%" height="200">
-            Placeholders
-          </td>
-          <td width="33%" height="200">
-            Placeholders
-          </td>
-          <td width="33%" height="200">
-            Placeholders
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-  <tr width="100%" height="10%">
-    <td>
-      <table width="100%" height="100%" border=1>
-        <tr width="100%" height="100%">
-          <td height="100%" colspan="3">
-            <a href="/shop">
-              <img src="/images/shopping-background.jpg" border=3 height="100%" width="100%"></img>
-            </a>
-          </td>
-        </tr>
-        <tr width="100%" height="100%" >
-          <td width="33%" height="200">
-            Placeholders
-          </td>
-          <td width="33%" height="200">
-            Placeholders
-          </td>
-          <td width="33%" height="200">
-            Placeholders
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-  <tr width="100%" height="10%">
-    <td>
-      <table width="100%" height="100%" border=1>
-        <tr width="100%" height="100%">
-          <td height="100%" colspan="3">
-            <a href="/hotel">
-              <img src="/images/hotels.jpg" border=3 height="100%" width="100%"></img>
-            </a>
-          </td>
-        </tr>
-        <tr width="100%" height="100%" >
-          <td width="33%" height="200">
-            Placeholders
-          </td>
-          <td width="33%" height="200">
-            Placeholders
-          </td>
-          <td width="33%" height="200">
-            Placeholders
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-  <tr width="100%" height="10%">
-    <td>
-      <table width="100%" height="100%" border=1>
-        <tr width="100%" height="100%">
-          <td height="100%" colspan="3">
-            <a href="/event">
-              <img src="/images/Events.png" border=3 height="100%" width="100%"></img>
-            </a>
-          </td>
-        </tr>
-        <tr width="100%" height="100%" >
-          <td width="33%" height="200">
-            Placeholders
-          </td>
-          <td width="33%" height="200">
-            Placeholders
-          </td>
-          <td width="33%" height="200">
-            Placeholders
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
+
+<div>
+    <% include template/navigationBar.ejs %>
+</div>
+<div class="indexAligarhbackground">
+    <h1 align="center"><span><img align="center" class="indexAligarhSignature" src="/images/aligarh.png"></span></h1>
+</div>
+
+<div class="parent">
+    <a href="/restaurant" style="background-color:transparent;border-color: transparent;">
+        <div class="indexAttractionbackground"
+             style="background-image: url('../images/mangalayatan.jpg');height: 450px">
+            <div class="linktext"
+                 style="background-color: black;height:50px;width: 250px;padding-left: 10px;margin-left: 10px; ">
+                <h2>
+				<span style="color: white;font-family: cursive;text-align: start;bottom: 10px; display: block;margin-bottom: 10px;">
+					ATTRACTION
+				</span>
+                </h2>
+            </div>
+        </div>
+    </a>
+</div>
+
+<div class="parent">
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+        <span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+            Shopping
+        </span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+                Sheesh Mahal
+        </span>
+                <a class="moreinfo" href="/sheeshmahal">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Swadeshi
+				</span>
+                <a class="moreinfo" href="/swadeshi">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Raymonds
+				</span>
+                <a class="moreinfo" href="/raymonds">More Info</a>
+            </h6>
+        </div>
+    </div>
+</div>
+<div class="parent" style="border: solid;">
+    <a href="/restaurant" style="background-color:transparent;border-color: transparent;">
+        <img src="/images/restaurant-background.jpg" height="100%" width="100%">
+    </a>
+</div>
+<div class="parent">
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Adidas
+				</span>
+                <a class="moreinfo" href="/adidas">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Blackberry
+				</span>
+                <a class="moreinfo" href="#">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Levis
+				</span>
+                <a class="moreinfo" href="#">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+</div>
+<div class="parent" style="border: solid;">
+    <a href="/shop  " style="background-color:transparent;border-color: transparent;">
+        <img src="/images/shopping-background.jpg" height="100%" width="100%">
+    </a>
+</div>
+<div class="parent">
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Adidas
+				</span>
+                <a class="moreinfo" href="#">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Blackberry
+				</span>
+                <a class="moreinfo" href="#">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Levis
+				</span>
+                <a class="moreinfo" href="#">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+</div>
+<div class="parent" style="border: solid;">
+    <a href="/hotel" style="background-color:transparent;border-color: transparent;">
+        <img src="/images/hotels.jpg" height="100%" width="100%">
+    </a>
+</div>
+<div class="parent">
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Adidas
+				</span>
+                <a class="moreinfo" href="#">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Blackberry
+				</span>
+                <a class="moreinfo" href="#">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Levis
+				</span>
+                <a class="moreinfo" href="#">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+</div>
+<div class="parent" style="border: solid;">
+    <a href="/event" style="background-color:transparent;border-color: transparent;">
+        <img src="/images/Events.png" height="100%" width="100%">
+    </a>
+</div>
+<div class="parent">
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Adidas
+				</span>
+                <a class="moreinfo" href="#">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Blackberry
+				</span>
+                <a class="moreinfo" href="#">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Levis
+				</span>
+                <a class="moreinfo" href="#">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+</div>
+<div class="parent">
+    <a href="#" style="background-color:transparent;border-color: transparent;">
+        <div class="indexEducationbackground"
+             style="background-image: url('../images/education-background.jpg');height: 450px">
+            <div class="background-top-text"
+                 style="background-color: White;height:50px;width: 250px;padding-left: 10px;margin-left: 10px; ">
+                <h2>
+				<span style="color: black;font-family: cursive;text-align: start;bottom: 10px; display: block;margin-bottom: 10px;">
+					<b>Education</b>
+				</span>
+                </h2>
+            </div>
+        </div>
+    </a>
+</div>
+<div class="parent">
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Adidas
+				</span>
+                <a class="moreinfo" href="#">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Blackberry
+				</span>
+                <a class="moreinfo" href="#">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Levis
+				</span>
+                <a class="moreinfo" href="#">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+</div>
+<div class="parent">
+    <% include template/footer.ejs %>
+</div>
 </body>
 </html>
