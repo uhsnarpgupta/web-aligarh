@@ -1,7 +1,7 @@
 .indexAligarhbackground{
     background-image: url("../images/aligarhCity.gif");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     border: solid;
     width: auto;
     height: 500px;
