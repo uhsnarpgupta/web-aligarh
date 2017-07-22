@@ -5,6 +5,16 @@
     width: auto;
     height: 300px;
 }
+
+.restaurantbackground{
+    background-image: url("../images/restaurant-page.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid;
+    width: auto;
+    height: 300px;
+}
+
 .space{
     padding-top: 10px;
     margin-top: 10px;

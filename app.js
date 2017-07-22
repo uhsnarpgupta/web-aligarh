@@ -19,6 +19,7 @@ var sheeshMahal = require('./routes/shopping/sheeshmahal');
 var raymonds = require('./routes/shopping/raymonds');
 var adidas = require('./routes/shopping/adidas');
 var attraction = require('./routes/attraction');
+var kss = require('./routes/restaurant/kss');
 
 
 
@@ -51,6 +52,10 @@ app.use('/swadeshi',swadeshi);
 app.use('/sheeshmahal',sheeshMahal);
 app.use('/raymonds',raymonds);
 app.use('/adidas',adidas);
+
+
+//restaurant routes
+app.use('/kss',kss);
 
 
 //attraction route

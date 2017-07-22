@@ -1,114 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:http="http://www.w3.org/1999/xhtml">
 <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel='stylesheet' href='/stylesheets/shop.css'/>
     <link rel="stylesheet" href="/stylesheets/std.css">
-    <link rel='stylesheet' href='/stylesheets/starrating.css'/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
-<body class="std-light-grey">
+<body bgcolor="White" height="100%">
+
 <div>
     <% include template/navigationBar.ejs %>
 </div>
-<table height="100%" width="100%" border=0>
-    <tr width="100%">
-        <td width="100%" height="100%">
-            <table width="100%" height="100%" background="/images/restaurant-page.gif" border=0>
-                <tr width="100%" height="100%">
-                    <td width="100%" height="100%">
-                        <% include template/header.ejs %>
-                        <h1 align="left" class="common-header" height="450">Restaurant</h1>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-    <tr width="100%" height="10%">
-        <td align="center">
-            <table width="100%" height="100%" border=1>
-                <tr width="100%" height="100%">
-                    <td height="100%" colspan="3" class="label">
-                        CenterPoint
-                    </td>
-                </tr>
-                <tr width="100%" height="100%">
-                    <td width="33%" height="200">
-                        <div id="placeholder1" class="rating" align="center">
-                            <h2 class="label" align="center"> Kwality Restaurant </h2>
-                            <input type="radio" id="star5" name="rating" value="5"/><label for="star5" title="Rocks!">5
-                                stars</label>
-                            <input type="radio" id="star4" name="rating" value="4"/><label for="star4"
-                                                                                           title="Pretty good">4
-                                stars</label>
-                            <input type="radio" id="star3" name="rating" value="3"/><label for="star3" title="Meh">3
-                                stars</label>
-                            <input type="radio" id="star2" name="rating" value="2"/><label for="star2"
-                                                                                           title="Kinda bad">2
-                                stars</label>
-                            <input type="radio" id="star1" name="rating" value="1"/><label for="star1"
-                                                                                           title="Sucks big time">1
-                                star</label>
-                        </div>
-                    </td>
-                    <td width="33%" height="200">
-                        Placeholders
-                    </td>
-                    <td width="33%" height="200">
-                        Placeholders
-                    </td>
-                </tr>
-                <tr width="100%" height="100%">
-                    <td height="100%" colspan="3" class="label">
-                        Railway Road
-                    </td>
-                </tr>
-                <tr width="100%" height="100%">
-                    <td width="33%" height="200">
-                        Placeholders
-                    </td>
-                    <td width="33%" height="200">
-                        Placeholders
-                    </td>
-                    <td width="33%" height="200">
-                        Placeholders
-                    </td>
-                </tr>
-                <tr width="100%" height="100%">
-                    <td height="100%" colspan="3" class="label">
-                        Amirnisha
-                    </td>
-                </tr>
-                <tr width="100%" height="100%">
-                    <td width="33%" height="200">
-                        Placeholders
-                    </td>
-                    <td width="33%" height="200">
-                        Placeholders
-                    </td>
-                    <td width="33%" height="200">
-                        Placeholders
-                    </td>
-                </tr>
-                <tr width="100%" height="100%">
-                    <td height="100%" colspan="3" class="label">
-                        Ramghat Road
-                    </td>
-                </tr>
-                <tr width="100%" height="100%">
-                    <td width="33%" height="200">
-                        Placeholders
-                    </td>
-                    <td width="33%" height="200">
-                        Placeholders
-                    </td>
-                    <td width="33%" height="200">
-                        Placeholders
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
+<div class="restaurantbackground">
+    <% include template/header.ejs %>
+    <h1>&nbsp;Restaurant</h1>
+</div>
+
+<div class="parent">
+    <div class="commonbackground space" style="background-image: url('../images/restaurant/kwalitysnakeshoppe.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Restaurant
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Kwality Snack Shoppe
+				</span>
+                <a class="moreinfo" href="/kss">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Swadeshi
+				</span>
+                <a class="moreinfo" href="/swadeshi">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Raymonds
+				</span>
+                <a class="moreinfo" href="/raymonds">More Info</a>
+            </h6>
+        </div>
+    </div>
+</div>
+<div class="parent">
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Adidas
+				</span>
+                <a class="moreinfo" href="/adidas">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Blackberry
+				</span>
+                <a class="moreinfo" href="#">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Levis
+				</span>
+                <a class="moreinfo" href="#">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+</div>
+<div class="parent">
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Adidas
+				</span>
+                <a class="moreinfo" href="#">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Blackberry
+				</span>
+                <a class="moreinfo" href="#">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+    <div class="commonbackground space" style="background-image: url('../images/shop/shop1.jpg');">
+        <div class="linktext">
+            <h6>
+				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+					Shopping
+				</span>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+					Levis
+				</span>
+                <a class="moreinfo" href="#">More Info</a>
+            </h6>
+        </div>
+
+    </div>
+</div>
+<div class="parent">
+    <% include template/footer.ejs %>
+</div>
 </body>
 </html>
