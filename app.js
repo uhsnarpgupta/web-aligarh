@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-// var mongo = require('mongodb');
+//var mongo = require('mongodb');
 
 var index = require('./routes/index');
 var restaurant = require('./routes/restaurant');
@@ -19,10 +19,9 @@ var sheeshMahal = require('./routes/shopping/sheeshmahal');
 var raymonds = require('./routes/shopping/raymonds');
 var adidas = require('./routes/shopping/adidas');
 var attraction = require('./routes/attraction');
-var kss1 = require('./routes/erwre/kssw');
-var kss2 = require('./routes/restaurant/kssr');
-
-
+var kss = require('./routes/restaurant/kss');
+var honour = require('./routes/honour');
+var pod=require('./routes/pod');
 
 
 var app = express();
