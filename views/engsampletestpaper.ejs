@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<title><%= title %></title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheets/std.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="std-light-grey">
+
+<div>
+    <% include template/navigationBar.ejs %>
+</div>
+
+<!-- std-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="std-content" style="max-width:1600px">
+
+    <!-- Image header -->
+    <div class="std-content std-display-container" style="max-width:100%">
+        <header class="std-display-container std-wide" id="home">
+            <div class="std-display-left std-padding-large">
+                <!--<h1 class="std-jumbo std-text-white std-hide-small">Adidas</h1>
+                <h1 class="std-text-white"><b>STORE OUTLET</b></h1>-->
+                <!--<h6>-->
+                <!--<button class="std-button std-white std-padding-large std-large std-opacity std-hover-opacity-off"-->
+                <!--onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE-->
+                <!--</button>-->
+                <!--</h6>-->
+            </div>
+
+            <div class="jumbotron mySlides"
+                 style="background-image: url('../images/comingsoon/coming-soon-1.gif');background-size: contain;background-color: black; ">
+                <div class="page-title" style="width: 570px;">
+                    <h1 class="padding-multiline"><span>Engineer Sample Test Paper</span></h1>
+                </div>
+            </div>
+            <div class="jumbotron mySlides"
+                 style="background-image: url('../images/comingsoon/coming-soon-1.gif');background-size: contain;background-color: black;">
+                <div class="page-title" style="width: 570px;">
+                    <h1 class="padding-multiline"><span>Engineer Sample Test Paper</span></h1>
+                </div>
+            </div>
+            <div class="jumbotron mySlides"
+                 style="background-image: url('../images/comingsoon/coming-soon-1.gif');background-size: contain; background-color: black;">
+                <div class="page-title" style="width: 570px;">
+                    <h1 class="padding-multiline"><span>Engineer Sample Test Paper</span></h1>
+                </div>
+            </div>
+
+        </header>
+        <div class="std-center std-container std-section std-large std-text-white std-display-bottommiddle"
+             style="width:100%">
+            <span class="std-badge demo std-border std-transparent std-hover-white"
+                  onclick="currentDiv(1)"></span>
+            <span class="std-badge demo std-border std-transparent std-hover-white"
+                  onclick="currentDiv(2)"></span>
+            <span class="std-badge demo std-border std-transparent std-hover-white"
+                  onclick="currentDiv(3)"></span>
+        </div>
+    </div>
+
+    <!--Grid -->
+    <div class="std-row std-padding std-border">
+        <div class="std-col l8 s12">
+
+            <div class="std-white std-margin">
+                <!--Blog entry-->
+
+
+                <div class="std-container std-white std-margin std-padding-large">
+                    <div class="std-center">
+                        <h3>xyz coaching Institute, Aligarh</h3>
+                        <h5>Instructions, <span class="std-opacity">Test paper Dated: July 2, 2017</span></h5>
+                    </div>
+
+                    <div class="std-justify">
+                        <img src="../images/shop/adidas2.jpg" alt="Adidas" style="width:100%" class="std-padding-16">
+                        <p>This is an Objective Type Paper. Prepared for preparing the Engineering test exam.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <!--END BLOG ENTRIES-->
+
+                <div class="std-container std-padding std-black">
+                    <h4>Test Begins</h4>
+                </div>
+                <div id="finalscore" name="finalscore">
+                    <h4 style="text-align: right;color: #990000;">Final Score is: <%= score %>/2 <%= percentage %>%</h4>
+                </div>
+                <form method="post" action="/engtestpaper/getresult">
+                    <table class="features-wrapper std-table std-striped std-bordered std-border std-hoverable std-white">
+                        <tr class="feature clearfix">
+                            <td class="feature-category">
+                                What is the capital of India ?
+                            </td>
+                            <td class="feature-name">
+                                <% if (question1value == 'a'){ %>
+                                <input type="radio" name="question1" id="a1" value="a" checked>Delhi</input>
+                                <% }else{ %>
+                                <input type="radio" name="question1" id="a1" value="a">Delhi</input>
+                                <% } %>
+                                <% if (question1value == 'b'){ %>
+                                <input type="radio" name="question1" id="a2" value="b" checked>Mumbai </input>
+                                <% }else{ %>
+                                <input type="radio" name="question1" id="a2" value="b">Mumbai </input>
+                                <% } %>
+                                <% if (question1value == 'c'){ %>
+                                <input type="radio" name="question1" id="a3" value="c" checked>Aligarh</input>
+                                <% }else{ %>
+                                <input type="radio" name="question1" id="a3" value="c">Aligarh</input>
+                                <% } %>
+                                <% if (question1value == 'd'){ %>
+                                <input type="radio" name="question1" id="a4" value="d" checked>Bengaluru</input>
+                                <% }else{ %>
+                                <input type="radio" name="question1" id="a4" value="d">Bengaluru</input>
+                                <% } %>
+
+                            </td>
+                        </tr>
+                        <tr class="feature clearfix">
+                            <td class="feature-category">
+                                What is the capital of United States ?
+                            </td>
+                            <td class="feature-name">
+                                <% if (question2value == 'a'){ %>
+                                <input type="radio" name="question2" id="b1" value="a" checked>New York</input>
+                                <% }else{ %>
+                                <input type="radio" name="question2" id="b1" value="a">New York</input>
+                                <% } %>
+                                <% if (question2value == 'b'){ %>
+                                <input type="radio" name="question2" id="b2" value="b" checked>Stamford</input>
+                                <% }else{ %>
+                                <input type="radio" name="question2" id="b2" value="b">Stamford</input>
+                                <% } %>
+                                <% if (question2value == 'c'){ %>
+                                <input type="radio" name="question2" id="b3" value="c" checked>Washington DC</input>
+                                <% }else{ %>
+                                <input type="radio" name="question2" id="b3" value="c">Washington DC</input>
+                                <% } %>
+                                <% if (question2value == 'd'){ %>
+                                <input type="radio" name="question2" id="b4" value="d" checked>New Heaven</input>
+                                <% }else{ %>
+                                <input type="radio" name="question2" id="b4" value="d">New Heaven</input>
+                                <% } %>
+
+                            </td>
+                        </tr>
+                        <tr class="feature clearfix">
+                            <td class="feature-category">
+                                <input type="submit"/>
+                            </td>
+
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <!--- END GRID -->
+    </div>
+    <!--END std-content-->
+</div>
+
+<!--Subscribe Modal-->
+<!--<div id="subscribe" class="std-modal std-animate-opacity">
+    <div class="std-modal-content" style="padding:32px">
+        <div class="std-container std-white">
+            <i onclick="document.getElementById('subscribe').style.display='none'"
+               class="fa fa-remove std-transparent std-button std-xlarge std-right"></i>
+            <h2 class="std-wide">SUBSCRIBE</h2>
+            <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+            <p><input class="std-input std-border" type="text" placeholder="Enter e-mail"></p>
+            <button type="button" class="std-button std-block std-padding-large std-red std-margin-bottom"
+                    onclick="document.getElementById('subscribe').style.display='none'">Subscribe
+            </button>
+        </div>
+    </div>
+</div>-->
+
+<!-- Footer -->
+<!--<footer class="std-container std-dark-grey" style="padding:32px">-->
+<!--<a href="#" class="std-button std-black std-padding-large std-margin-bottom"><i-->
+<!--class="fa fa-arrow-up std-margin-right"></i>To the top</a>-->
+<!--<p>Powered by <a href="https://www.stdschools.com/stdcss/default.asp" target="_blank">std.css</a></p>-->
+<!--</footer>-->
+
+<script>
+    // Toggle between hiding and showing blog replies/comments
+    document.getElementById("myBtn").click();
+
+    function myFunction(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("std-show") == -1) {
+            x.className += " std-show";
+        } else {
+            x.className = x.className.replace(" std-show", "");
+        }
+    }
+
+    function likeFunction(x) {
+        x.style.fontWeight = "bold";
+        x.innerHTML = "✓ Liked";
+    }
+</script>
+<!-- Add Slide Show -->
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function currentDiv(n) {
+        showDivs(slideIndex = n);
+    }
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("std-image");
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        }
+        ;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
+</script>
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+        showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" std-white", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " std-white";
+    }
+</script>
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {
+            slideIndex = 1
+        }
+        x[slideIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+</script>
+
+</body>
+</html>

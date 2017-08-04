@@ -20,6 +20,8 @@ var raymonds = require('./routes/shopping/raymonds');
 var adidas = require('./routes/shopping/adidas');
 var attraction = require('./routes/attraction');
 var kss = require('./routes/restaurant/kss');
+var neet = require('./routes/education/neetsampletest');
+var engtest = require('./routes/education/engtestpaper');
 
 
 
@@ -45,7 +47,11 @@ app.use('/hotel',hotel);
 app.use('/about',aboutus);
 app.use('/event',event);
 app.use('/admin',admin);
-app.use('/attraction',attraction);
+
+//Education Route
+app.use('/neet', neet);
+app.use('/engtestpaper', engtest);
+app.use('/getresult', engtest);
 
 //Shopping Routes
 app.use('/swadeshi',swadeshi);
@@ -59,7 +65,7 @@ app.use('/kss',kss);
 
 
 //attraction route
-
+app.use('/attraction', attraction);
 
 //Admin Routes
 app.use('/insert',admin);
