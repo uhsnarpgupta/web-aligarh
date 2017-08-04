@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-//var mongo = require('mongodb');
+var mongo = require('mongodb');
 
 var index = require('./routes/index');
 var restaurant = require('./routes/restaurant');
@@ -22,6 +22,10 @@ var attraction = require('./routes/attraction');
 var kss = require('./routes/restaurant/kss');
 var honour = require('./routes/honour');
 var pod=require('./routes/pod');
+var neet = require('./routes/education/neetsampletest');
+var engtest = require('./routes/education/engtestpaper');
+
+
 
 var app = express();
 
@@ -45,7 +49,11 @@ app.use('/hotel',hotel);
 app.use('/about',aboutus);
 app.use('/event',event);
 app.use('/admin',admin);
-app.use('/attraction',attraction);
+
+//Education Route
+app.use('/neet', neet);
+app.use('/engtestpaper', engtest);
+app.use('/getresult', engtest);
 
 //Shopping Routes
 app.use('/swadeshi',swadeshi);
@@ -59,6 +67,7 @@ app.use('/kss',kss);
 
 
 //attraction route
+app.use('/attraction', attraction);
 
 //pod routes
 app.use('/pod',pod);
@@ -66,6 +75,7 @@ app.use('/pod',pod);
 
 //honour routes
 app.use('/honour',honour);
+
 
 //Admin Routes
 app.use('/insert',admin);
