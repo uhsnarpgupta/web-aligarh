@@ -20,6 +20,8 @@ var raymonds = require('./routes/shopping/raymonds');
 var adidas = require('./routes/shopping/adidas');
 var attraction = require('./routes/attraction');
 var kss = require('./routes/restaurant/kss');
+var honour = require('./routes/honour');
+var pod=require('./routes/pod');
 var neet = require('./routes/education/neetsampletest');
 var engtest = require('./routes/education/engtestpaper');
 
@@ -66,6 +68,14 @@ app.use('/kss',kss);
 
 //attraction route
 app.use('/attraction', attraction);
+
+//pod routes
+app.use('/pod',pod);
+
+
+//honour routes
+app.use('/honour',honour);
+
 
 //Admin Routes
 app.use('/insert',admin);
