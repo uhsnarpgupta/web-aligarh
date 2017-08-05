@@ -9,19 +9,6 @@
     <link rel="stylesheet" href="/stylesheets/std.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-    <script type="javascript">
-        n =  new Date();
-        alert(n);
-        y = n.getFullYear();
-        m = n.getMonth() + 1;
-        d = n.getDate();
-        document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
-
-        var today = new Date();
-        document.getElementById('time').innerHTML=today;
-    </script>
-
 </head>
 <body bgcolor="White" height="100%">
 
@@ -49,16 +36,16 @@
 </div>
 
 <div class="parent">
-    <div class="commonbackground space " style="background-image: url('../images/comingsoon/coming-soon-7.gif'); background-size: contain; background-color: black;">
+    <div class="commonbackground space" style="background-image: url('../images/picture_of_the_day/picoftheday.gif'); background-size: cover; background-color: black; "  title="Photography Enthusiast !! Share the Best in you.">
         <div class="linktext">
             <h6>
-        <span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
+        <span style="color: black;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
                 Attraction
         </span>
-                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
+                <span style="color: black;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
                 Picture(s) of the day
         </span>
-                <a class="moreinfo" style="color: white;" href="/pod">More Info</a>
+                <a class="moreinfo" style="color: black;" href="/pod">More Info</a>
             </h6>
         </div>
 
@@ -215,10 +202,10 @@
 				<span style="color: white;font-family: Calibri;text-align: start;bottom: 10px; display: block;margin-bottom: 10px">
 					<!--Shopping-->
 				</span>
-                <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
-					<p id='time'>date</p>
+                <span style="color: white;font-family: Calibri; font-size: 18px;text-align:center;bottom: 15px; display: block;margin-bottom: 20px;">
+					<p id='time'><%=datetime%></p>
 				</span>
-                <a class="moreinfo" href="#">More Info</a>
+                <a class="moreinfo" href="/todayinhistory">More Info</a>
             </h6>
         </div>
 
@@ -253,7 +240,7 @@
                 <span style="color: white;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
 					Just for Fun
 				</span>
-                <a class="moreinfo" href="#">More Info</a>
+                <a class="moreinfo" href="/justforfun">More Info</a>
             </h6>
         </div>
 
@@ -310,7 +297,7 @@
 					Education
 				</span>
                 <span style="color: #eeaa00;font-family: Calibri; font-size: 18px;text-align: start;bottom: 15px; display: block;margin-bottom: 20px;">
-					Medical Sample Test Paper
+					NEET Sample Test Paper
 				</span>
                 <a class="moreinfo" href="/neet">More Info</a>
             </h6>
