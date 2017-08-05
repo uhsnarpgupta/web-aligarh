@@ -24,6 +24,7 @@ var honour = require('./routes/honour');
 var pod=require('./routes/pod');
 var neet = require('./routes/education/neetsampletest');
 var engtest = require('./routes/education/engtestpaper');
+var justforfun = require('./routes/entertainment/justforfun');
 
 
 
@@ -52,6 +53,7 @@ app.use('/admin',admin);
 
 //Education Route
 app.use('/neet', neet);
+app.use('/getneetresult',neet);
 app.use('/engtestpaper', engtest);
 app.use('/getresult', engtest);
 
@@ -61,6 +63,9 @@ app.use('/sheeshmahal',sheeshMahal);
 app.use('/raymonds',raymonds);
 app.use('/adidas',adidas);
 
+
+//entertainment routes
+app.use('/justforfun',justforfun);
 
 //restaurant routes
 app.use('/kss',kss);
