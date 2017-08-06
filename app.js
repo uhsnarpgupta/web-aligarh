@@ -28,6 +28,7 @@ var justforfun = require('./routes/entertainment/justforfun');
 var doyouknow = require('./routes/doyouknow');
 var podUpdated=require('./routes/podUpdated');
 
+var todayinhistory=require('./routes/todayinhistory');
 
 
 
@@ -65,6 +66,9 @@ app.use('/swadeshi',swadeshi);
 app.use('/sheeshmahal',sheeshMahal);
 app.use('/raymonds',raymonds);
 app.use('/adidas',adidas);
+
+//today in history
+app.use('/todayinhistory',todayinhistory);
 
 //do you know
 app.use('/didyouknow',doyouknow);
