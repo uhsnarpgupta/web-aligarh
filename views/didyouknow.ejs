@@ -13,20 +13,32 @@
 <div>
     <% include template/navigationBar.ejs %>
 </div>
-<div class="restaurantbackground">
+<div style="background-image:url('../images/doyouknow/doyouknow.gif'); background-size: cover;border: solid;height: 650px;background-repeat: no-repeat; width: 100%; ">
     <% include template/header.ejs %>
-    <h1>&nbsp;Did You know</h1>
+    <!--<h1>&nbsp;Did You know</h1>-->
 </div>
-
-<div>
-    <div>
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdidyouknowblog%2F%3Ffref%3Dmentions&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
-                width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                allowTransparency="true"></iframe>
+<div class="parent">
+    <div class="space" style="float: left;">
+        <div>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdidyouknowblog%2F%3Ffref%3Dmentions&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+                    width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowTransparency="true"></iframe>
+        </div>
+    </div>
+    <div class="space" style="float: left;" >
+        <div>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpg%2FRipleysBelieveItorNot%2Fposts%2F%3Fref%3Dpage_internal&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+                    width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowTransparency="true"></iframe>
+        </div>
     </div>
 </div>
 <div class="parent">
-    <% include template/footer.ejs %>
+    <footer>
+        <div>
+            <% include template/footer.ejs %>
+        </div>
+    </footer>
 </div>
 </body>
 </html>
