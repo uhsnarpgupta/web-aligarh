@@ -1,0 +1,261 @@
+@charset "UTF-8";
+@import url(/public/stylesheets/fonts/font-awesome.min.css);
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200");
+
+/*
+	Visualize by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+
+/* Reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    -webkit-text-size-adjust: none;
+}
+
+/* Box Model */
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Grid */
+
+.row {
+    border-bottom: solid 1px transparent;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.row > * {
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.row:after, .row:before {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.row.uniform > * > :first-child {
+    margin-top: 0;
+}
+
+.row.uniform > * > :last-child {
+    margin-bottom: 0;
+}
+
+ul.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.icons li {
+    display: inline-block;
+    padding: 0 1em 0 0;
+}
+
+ul.icons li:last-child {
+    padding-right: 0;
+}
+
+/* Thumbnails */
+
+.thumbnails {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    position: relative;
+    margin: 0 0 2em -2em;
+}
+
+.thumbnails a {
+    -moz-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    border-bottom: none;
+    display: block;
+    width: 100%;
+    margin: 0 0 2em 0;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.075);
+    cursor: pointer;
+    outline: 0;
+    overflow: hidden;
+}
+
+.thumbnails a img {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.thumbnails a h3 {
+    margin: 1em;
+}
+
+.thumbnails a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 #FF6382;
+}
+
+.thumbnails > div {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: calc(100% / 3);
+    padding-left: 2em;
+}
+
+.thumbnails > div > :last-child {
+    margin-bottom: 0;
+}
+
+/* Wrapper */
+
+#wrapper {
+    max-width: 68em;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2em;
+    opacity: 1;
+    filter: none;
+    -moz-transition: opacity 1s ease, -moz-filter 1s ease;
+    -webkit-transition: opacity 1s ease, -webkit-filter 1s ease;
+    -ms-transition: opacity 1s ease, -ms-filter 1s ease;
+    transition: opacity 1s ease, filter 1s ease;
+}
+
+body.is-loading #wrapper {
+    opacity: 0;
+    -moz-filter: blur(1px);
+    -webkit-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+}
+
+body.is-covered #wrapper {
+    -moz-filter: blur(3px);
+    -webkit-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+.icon > .label {
+    display: none;
+}
+
+.icon.style2 {
+    -moz-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    border-radius: 100%;
+    display: inline-block;
+    padding: 0.5em;
+    border: solid 1px rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+.icon.style2:before {
+    display: block;
+    width: 1.25em;
+    height: 1.25em;
+    line-height: 1.25em;
+    font-size: 1.35em;
+}
+
+.icon.style2:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.icon.style2 {
+    -moz-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    border-radius: 100%;
+    display: inline-block;
+    padding: 0.5em;
+    border: solid 1px rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+.icon.style2:before {
+    display: block;
+    width: 1.25em;
+    height: 1.25em;
+    line-height: 1.25em;
+    font-size: 1.35em;
+}
+
+.icon.style2:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
