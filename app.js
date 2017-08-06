@@ -26,6 +26,7 @@ var neet = require('./routes/education/neetsampletest');
 var engtest = require('./routes/education/engtestpaper');
 var justforfun = require('./routes/entertainment/justforfun');
 var doyouknow = require('./routes/doyouknow');
+var todayinhistory=require('./routes/todayinhistory');
 
 
 
@@ -63,6 +64,9 @@ app.use('/swadeshi',swadeshi);
 app.use('/sheeshmahal',sheeshMahal);
 app.use('/raymonds',raymonds);
 app.use('/adidas',adidas);
+
+//today in history
+app.use('/todayinhistory',todayinhistory);
 
 //do you know
 app.use('/didyouknow',doyouknow);
