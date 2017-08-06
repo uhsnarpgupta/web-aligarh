@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:http="http://www.w3.org/1999/xhtml">
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/shop.css'/>
+    <link rel="stylesheet" href="/stylesheets/std.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body bgcolor="White" height="100%">
+
+<div>
+    <% include template/navigationBar.ejs %>
+</div>
+<div class="restaurantbackground">
+    <% include template/header.ejs %>
+    <h1>&nbsp;Did You know</h1>
+</div>
+
+<div>
+    <div>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdidyouknowblog%2F%3Ffref%3Dmentions&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+                width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowTransparency="true"></iframe>
+    </div>
+</div>
+<div class="parent">
+    <% include template/footer.ejs %>
+</div>
+</body>
+</html>
