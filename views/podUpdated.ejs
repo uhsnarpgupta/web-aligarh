@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<title>Aligarh City</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheets/std.css">
+    <link rel="stylesheet" href="/stylesheets/templateU.css"/>
+
+</head>
+<body class="std-light-grey">
+
+<div>
+    <% include template/navigationBar.ejs %>
+</div>
+
+<!-- std-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="std-content" style="max-width:1600px">
+
+    <!-- Image header -->
+    <div class="std-content std-display-container" style="max-width:100%; background-image: url("")" >
+<!--
+        <header class="std-display-container std-wide" id="home">
+            <div class="std-display-left std-padding-large">
+                &lt;!&ndash;<h1 class="std-jumbo std-text-white std-hide-small">Adidas</h1>
+                <h1 class="std-text-white"><b>STORE OUTLET</b></h1>&ndash;&gt;
+                &lt;!&ndash;<h6>&ndash;&gt;
+                &lt;!&ndash;<button class="std-button std-white std-padding-large std-large std-opacity std-hover-opacity-off"&ndash;&gt;
+                &lt;!&ndash;onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE&ndash;&gt;
+                &lt;!&ndash;</button>&ndash;&gt;
+                &lt;!&ndash;</h6>&ndash;&gt;
+            </div>
+
+            <div class="jumbotron mySlides"
+                 style="background-image: url('../images/restaurant/kwalitysnakeshoppe.jpg');background-size: cover;background-color: black; ">
+                <div class="page-title" style="width: 500px;">
+                    <h1 class="padding-multiline"><span>Kwality Snack Shoppe</span></h1>
+                </div>
+            </div>
+            <div class="jumbotron mySlides"
+                 style="background-image: url('../images/restaurant/kwalitysnakeshoppe.jpg');background-size: cover;background-color: black;">
+                <div class="page-title" style="width: 500px;">
+                    <h1 class="padding-multiline"><span>Kwality Snack Shoppe</span></h1>
+                </div>
+            </div>
+            <div class="jumbotron mySlides"
+                 style="background-image: url('../images/restaurant/kwalitysnakeshoppe.jpg');background-size: cover; background-color: black;">
+                <div class="page-title" style="width: 500px;">
+                    <h1 class="padding-multiline"><span>Kwality Snack Shoppe</span></h1>
+                </div>
+            </div>
+
+        </header>
+-->
+        <div class="std-center std-container std-section std-large std-text-white std-display-bottommiddle"
+             style="width:100%">
+            <span class="std-badge demo std-border std-transparent std-hover-white"
+                  onclick="currentDiv(1)"></span>
+            <span class="std-badge demo std-border std-transparent std-hover-white"
+                  onclick="currentDiv(2)"></span>
+            <span class="std-badge demo std-border std-transparent std-hover-white"
+                  onclick="currentDiv(3)"></span>
+        </div>
+    </div>
+
+<div class="std-container std-padding std-black" style="margin-top: 30px">
+    <h4>Picture(s) of the Day</h4>
+</div>
+    <!-- Grid -->
+    <div id="wrapper" style="padding-top: 10px">
+        <div class="std-row std-padding std-border">
+        <!-- Main -->
+        <section id="main">
+
+            <!-- Thumbnails -->
+            <section class="thumbnails demo-gallery" id="demo-test-gallery" data-pswp-uid="1">
+                <div>
+                    <a href="images/fulls/01.jpg" data-author="Samuel Rohl"
+                       data-med-size="1024x683" data-med="images/thumbs/01.jpg"
+                       data-size="1600x1068">
+                        <img src="images/thumbs/01.jpg" alt=""/>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+
+                    </a>
+                    <a href="images/fulls/02.jpg">
+                        <img src="images/thumbs/02.jpg" alt=""/>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                    </a>
+                </div>
+                <div>
+                    <a href="images/fulls/03.jpg">
+                        <img src="images/thumbs/03.jpg" alt=""/>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                    </a>
+                    <a href="images/fulls/04.jpg">
+                        <img src="images/thumbs/04.jpg" alt=""/>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                    </a>
+                    <a href="images/fulls/05.jpg">
+                        <img src="images/thumbs/05.jpg" alt=""/>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                    </a>
+                </div>
+                <div>
+                    <a href="images/fulls/06.jpg">
+                        <img src="images/thumbs/06.jpg" alt=""/>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                    </a>
+                    <a href="images/fulls/07.jpg">
+                        <img src="images/thumbs/07.jpg" alt=""/>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                    </a>
+                </div>
+            </section>
+
+        </section>
+
+        <!-- END std-content -->
+    </div>
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="/routes/jquery.min.js"></script>
+<script src="/routes/jquery.poptrox.min.js"></script>
+<script src="/routes/skel.min.js"></script>
+<script src="/routes/main.js"></script>
+</body>
+
+</html>

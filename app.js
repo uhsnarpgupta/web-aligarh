@@ -26,6 +26,8 @@ var neet = require('./routes/education/neetsampletest');
 var engtest = require('./routes/education/engtestpaper');
 var justforfun = require('./routes/entertainment/justforfun');
 var doyouknow = require('./routes/doyouknow');
+var podUpdated=require('./routes/podUpdated');
+
 var todayinhistory=require('./routes/todayinhistory');
 
 
@@ -83,6 +85,9 @@ app.use('/attraction', attraction);
 
 //pod routes
 app.use('/pod',pod);
+
+//pod Updated routes
+app.use('/podUpdated',podUpdated);
 
 
 //honour routes
