@@ -1,10 +1,12 @@
 .indexAligarhbackground{
-    background-image: url("../images/aligarhCity.gif");
+    /*background-image: url("../images/aligarhCity.gif");*/
+    background-image: url("../images/aligarh-final-2.gif");
     background-repeat: no-repeat;
     background-size: cover;
     border: solid;
     width: auto;
-    height: 500px;
+    height: 850px;
+    background-color: black;
 }
 
 .indexAligarhSignature{
