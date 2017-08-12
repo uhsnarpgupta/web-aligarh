@@ -29,6 +29,7 @@ var doyouknow = require('./routes/doyouknow');
 var podUpdated=require('./routes/podUpdated');
 
 var todayinhistory=require('./routes/todayinhistory');
+var restaurantdeals = require('./routes/restaurantdeals');
 
 
 
@@ -92,6 +93,9 @@ app.use('/podUpdated',podUpdated);
 
 //honour routes
 app.use('/honour',honour);
+
+//Restaurant routes
+app.use('/restaurantdeals',restaurantdeals);
 
 
 //Admin Routes
