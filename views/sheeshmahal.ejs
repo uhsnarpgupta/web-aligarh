@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>std.CSS Template</title>
+<title><%=title%></title>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,7 +44,14 @@
 <div>
     <% include template/navigationBar.ejs %>
 </div>
-</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- std-content defines a container for fixed size centered content,
 and is wrapped around the whole page content, except for the footer in this example -->
@@ -98,6 +105,14 @@ and is wrapped around the whole page content, except for the footer in this exam
         <div class="std-col l4">
             <!-- About Card -->
             <div class="std-margin">
+                <div style="background-color:white;" class="std-hover-grey">
+                    <a href="#">
+                        <h4>
+                            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FSHEESHMAHALSAREEPLAZA%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                        </h4>
+                        </span>
+                    </a>
+                </div>
                 <div style="background-color:white;" class="std-hover-grey">
                     <a href="#">
                     <span><img src="/images/leaf.png" alt="Image" class="std-left"
@@ -208,21 +223,16 @@ and is wrapped around the whole page content, except for the footer in this exam
                 </div>
             </div>
             <hr>
-
-            <!-- Follow Me -->
-            <!--<div class="std-white std-margin">
+            <!-- Feed Back -->
+            <div class="std-white std-margin">
                 <div class="std-container std-padding std-black">
-                    <h4>Follow Me</h4>
+                    <h4>Tell us, How are we doing ?</h4>
                 </div>
-                <div class="std-container std-xlarge std-padding">
-                    <i class="fa fa-facebook-official std-hover-opacity"></i>
-                    <i class="fa fa-instagram std-hover-opacity"></i>
-                    <i class="fa fa-snapchat std-hover-opacity"></i>
-                    <i class="fa fa-pinterest-p std-hover-opacity"></i>
-                    <i class="fa fa-twitter std-hover-opacity"></i>
-                    <i class="fa fa-linkedin std-hover-opacity"></i>
+                <div style="overflow-y:scroll;overflow-x: scroll; max-height: 200px;">
+                    <div class="fb-comments" data-href="https://www.facebook.com/pg/SHEESHMAHALSAREEPLAZA/reviews/?ref=page_internal" data-numposts="5">
+                    </div>
                 </div>
-            </div>-->
+            </div>
             <hr>
 
             <!-- Subscribe -->
