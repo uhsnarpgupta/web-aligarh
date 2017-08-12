@@ -24,6 +24,33 @@
      margin-left: 0px;
  }
 
+.indexrestaurantbackground{
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid;
+    width: 1465px;
+    height: 450px;
+    margin-left: 0px;
+}
+
+.indexshoppingbackground{
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid;
+    width: 1465px;
+    height: 450px;
+    margin-left: 0px;
+}
+
+.indexhotelbackground{
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid;
+    width: 1465px;
+    height: 450px;
+    margin-left: 0px;
+}
+
 .indexEducationbackground{
     background-repeat: no-repeat;
     background-size: cover;
