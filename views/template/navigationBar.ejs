@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
-<!-- Navigation bar with social media icons -->
-<div class="std-top" style="background-color: lightgray">
-    <div class="std-bar" id="myNavbar">
-        <a class="std-bar-item std-button std-hover-black std-hide-medium std-hide-large std-right" href="javascript:void(0);"
-           onclick="toggleFunction()" title="Toggle Navigation Menu">
-            <i class="fa fa-bars"></i>
-        </a>
-        <a href="/" class="std-bar-item std-button">HOME</a>
-        <a href="/about" class="std-bar-item std-button std-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-        <a href="#contact" class="std-bar-item std-button std-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    </div>
-
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="std-bar-block std-white std-hide std-hide-large std-hide-medium">
-        <a href="#about" class="std-bar-item std-button" onclick="toggleFunction()">ABOUT</a>
-        <a href="#portfolio" class="std-bar-item std-button" onclick="toggleFunction()">PORTFOLIO</a>
-        <a href="#contact" class="std-bar-item std-button" onclick="toggleFunction()">CONTACT</a>
-    </div>
+<head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/navBar.css" />
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+    <a href="/">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="/about">About</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
+
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</body>
 </html>
