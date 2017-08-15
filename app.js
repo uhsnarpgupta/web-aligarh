@@ -32,6 +32,8 @@ var todayinhistory=require('./routes/todayinhistory');
 var restaurantdeals = require('./routes/restaurantdeals');
 var shoppingdeals = require('./routes/shoppingdeals');
 var hoteldeals = require('./routes/hoteldeals');
+var study = require('./routes/study');
+
 
 var app = express();
 
@@ -98,6 +100,9 @@ app.use('/honour',honour);
 app.use('/restaurantdeals',restaurantdeals);
 app.use('/shoppingdeals',shoppingdeals);
 app.use('/hoteldeals',hoteldeals);
+
+//Education routes
+app.use('/study',study);
 
 //Admin Routes
 app.use('/insert',admin);

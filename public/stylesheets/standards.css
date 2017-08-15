@@ -1,0 +1,273 @@
+/*Standard CSS*/
+
+
+/*Handling typography: Default font sizes
+-----------------------------------------------------------------------------*/
+
+h1 {font-size: 2.2em;}
+
+h2 {font-size: 2.0em;}
+
+h3 {font-size: 1.8em;}
+
+h4 {font-size: 1.6em;}
+
+h5 {font-size: 1.4em;}
+
+p {font-size: 1.2em;}
+
+/* Remove padding and margin */
+.removeAll{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Classes for floating and clearing
+-----------------------------------------------------------------------------*/
+.clear {clear:both;}
+
+.right {float: right;}
+
+.left {float: left;}
+
+/* Tables
+-----------------------------------------------------------------------------*/
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: left;
+    font-weight: normal;
+}
+
+.center{
+    margin: 0 auto; // top, bottom - and left, right values, respectively.
+}
+
+
+/* Text Transformation
+-----------------------------------------------------------------------------*/
+
+.lowerCase{
+    text-transform: lowercase;
+}
+
+.upperCase{
+    text-transform: uppercase;
+}
+
+/*IMAGES*/
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*VIDEOS*/
+video {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Body Content
+-----------------------------------------------------------------------------*/
+body {
+    font: 62.5%/1.5  "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
+    background-image: url(/images/events12.jpg) repeat;  /*change to background in order to work*/
+    background-size: cover;
+    color: #000000;
+    text-align:center;
+}
+
+#wrapper {
+    width:980px;
+    text-align:left;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #FFFFFF;
+}
+
+
+/* Box Sizing Content
+-----------------------------------------------------------------------------*/
+
+*{
+    box-sizing: border-box;
+}
+
+[class*="std-col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+
+/* For mobile phones: */
+[class*="std-col-"] {
+    width: 100%;
+}
+
+
+/* Rows
+-----------------------------------------------------------------------------*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+/*    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;*/
+    /*
+    background-image: url("/images/educationBanner2.jpg");
+    */
+}
+
+.headerImage{
+    height: 70em;
+    background-size: contain;
+    background: no-repeat;
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color :#33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+li:hover {
+    background-color: #0099cc;
+}
+
+.aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#footer{
+    position:relative;
+    bottom:0;
+}
+
+
+/* MEDIA QUERIES
+-----------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .std-col-t-1 {width: 8.33%;}
+    .std-col-t-2 {width: 16.66%;}
+    .std-col-t-3 {width: 25%;}
+    .std-col-t-4 {width: 33.33%;}
+    .std-col-t-5 {width: 41.66%;}
+    .std-col-t-6 {width: 50%;}
+    .std-col-t-7 {width: 58.33%;}
+    .std-col-t-8 {width: 66.66%;}
+    .std-col-t-9 {width: 75%;}
+    .std-col-t-10 {width: 83.33%;}
+    .std-col-t-11 {width: 91.66%;}
+    .std-col-t-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+
+    /*12 Column Section*/
+    .std-col-12{
+        width: 100%;
+        float: left;
+    }
+
+    /*11 Column Section*/
+    .std-col-11{
+        width: 91.666666%;
+        float: left;
+    }
+
+    /*10 Column Section*/
+    .std-col-10{
+        width: 83.333333%;
+        float: left;
+    }
+
+    /*9 Column Section*/
+    .std-col-9{
+        width: 75%;
+        float: left;
+    }
+
+    /*8 Column Section*/
+    .std-col-8{
+        width: 66.666666%;
+        float: left;
+    }
+
+    /*7 Column Section*/
+    .std-col-7{
+        width: 58.333333%;
+        float: left;
+    }
+
+    /*6 Column Section*/
+    .std-col-6{
+        width: 50%;
+        float: left;
+    }
+
+    /*4 Column Section*/
+    .std-col-5{
+        width: 41.666666%;
+        float: left;
+    }
+
+    /*4 Column Section*/
+    .std-col-4{
+        width: 33.3333333%;
+        float: left;
+    }
+
+    /*3 Column Section*/
+    .std-col-3{
+        width: 25%;
+        float: left;
+    }
+
+    /*2 Column Section*/
+    .std-col-2{
+        width: 16.6666666%;
+        float: left;
+    }
+
+    .std-col-1 {
+        width: 8.33333333%;
+        float:left;
+    }
+
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        background-color: lightblue;
+    }
+}
