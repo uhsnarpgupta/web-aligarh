@@ -30,8 +30,8 @@ var podUpdated=require('./routes/podUpdated');
 
 var todayinhistory=require('./routes/todayinhistory');
 var restaurantdeals = require('./routes/restaurantdeals');
-
-
+var shoppingdeals = require('./routes/shoppingdeals');
+var hoteldeals = require('./routes/hoteldeals');
 
 var app = express();
 
@@ -96,7 +96,8 @@ app.use('/honour',honour);
 
 //Restaurant routes
 app.use('/restaurantdeals',restaurantdeals);
-
+app.use('/shoppingdeals',shoppingdeals);
+app.use('/hoteldeals',hoteldeals);
 
 //Admin Routes
 app.use('/insert',admin);
