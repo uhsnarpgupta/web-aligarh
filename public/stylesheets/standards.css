@@ -89,7 +89,7 @@ video {
 -----------------------------------------------------------------------------*/
 body {
     font: 62.5%/1.5  "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
-    background-image: url(/images/events12.jpg) repeat;  /*change to background in order to work*/
+    /*background-image: url(/images/events12.jpg) repeat;  !*change to background in order to work*!*/
     background-size: cover;
     color: #000000;
     text-align:center;
@@ -101,6 +101,50 @@ body {
     margin-left:auto;
     margin-right:auto;
     background-color: #FFFFFF;
+}
+
+
+/* The hero image */
+.hero-image {
+    /* The image used */
+    background-image: url('../images/educationBanner3.jpg');
+
+    /* Set a specific height */
+    height: 100%;
+    padding: 20%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    font-family: "Distro Heavy", Helvetica, Arial, sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: white;
+    background-color: #000000;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #555;
+    color: white;
 }
 
 
