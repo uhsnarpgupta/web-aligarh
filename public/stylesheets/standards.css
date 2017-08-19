@@ -16,11 +16,24 @@ h5 {font-size: 1.4em;}
 
 p {font-size: 1.2em;}
 
+/*Wide Letter Spacing*/
+.std-wide{
+   letter-spacing: 4px;
+}
+
 /* Remove padding and margin */
 .removeAll{
     margin: 0;
     padding: 0;
     border: 0;
+}
+
+.white{
+    color: white;
+}
+
+.child-white > * {
+    background-color: white;
 }
 
 /*Classes for floating and clearing
@@ -98,15 +111,20 @@ body {
     box-sizing: border-box;
 }
 
-[class*="std-col-"] {
+.std-section-fullWidth{
+    width: 100%;
     float: left;
-    padding: 15px;
-    border: 1px solid red;
+    margin: 0 auto;
 }
 
 /* For mobile phones: */
+
 [class*="std-col-"] {
+    float: left;
+    padding: 10px !important;
+    /*border: 1px solid red;*/
     width: 100%;
+    overflow: hidden;
 }
 
 
@@ -122,18 +140,13 @@ html {
     font-family: "Lucida Sans", sans-serif;
 }
 
-.header {
-/*    background-color: #9933cc;
-    color: #ffffff;
-    padding: 15px;*/
-    /*
-    background-image: url("/images/educationBanner2.jpg");
-    */
+.std-top-row{
+    padding-top: 14.2%;
 }
 
 .headerImage{
-    height: 70em;
-    background-size: contain;
+    height: 30rem;
+    background-size: cover;
     background: no-repeat;
     max-width: 100%;
 }
@@ -170,7 +183,25 @@ li:hover {
     bottom:0;
 }
 
+.std-display-middle{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
 
+.std-curved-box{
+    border-radius: 70px;
+}
+
+.std-min-opacity{
+    opacity: 0.75;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------*/
 /* MEDIA QUERIES
 -----------------------------------------------------------------------------*/
 
@@ -188,12 +219,33 @@ li:hover {
     .std-col-t-10 {width: 83.33%;}
     .std-col-t-11 {width: 91.66%;}
     .std-col-t-12 {width: 100%;}
+    .std-top-row{
+        padding-top: 6.9%;
+    }
+    /* For mobile phones: */
+
+    [class*="std-col-"] {
+        float: left;
+        /*padding: 10px !important;*/
+        /*border: 1px solid red;*/
+    }
 }
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
 
+    .std-section-bleed{
+        width: 100%;
+    }
+
     /*12 Column Section*/
+
+    .std-section-fullWidth{
+        width: 94%;
+        float: left;
+        margin: 0 3%;
+    }
+
     .std-col-12{
         width: 100%;
         float: left;
@@ -264,6 +316,15 @@ li:hover {
         float:left;
     }
 
+    .headerImage{
+        /*height: 70em;*/
+        min-height: 40rem;
+        /*background-size: contain;*/
+    }
+    .std-top-row{
+        padding-top: 3.2%;
+        float: none;
+    }
 }
 
 @media only screen and (orientation: landscape) {
