@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Education Section</title>
+        <link rel="stylesheet" href="/stylesheets/standards.css">
+        <link rel="stylesheet" href="/stylesheets/education.css">
+        <link rel="stylesheet" href="/stylesheets/modal.css">
+
+</head>
+    <body>
+        <div class="std-header">
+            <% include template/navigationBar.ejs %>
+        </div>
+        <!--End Header-->
+
+        <div class="std-top-row clear">
+
+            <div>
+                <!--<h1>Chania</h1>-->
+                <img class = "headerImage" src="/images/educationBanner2.jpg">
+                <div class="std-col-2 std-col-t-2 std-display-middle white clear">
+                    <span class="std-min-opacity" style="background-color: black"><h1>PG</h1></span>
+                    <span><h1>Hello!</h1></span>
+                </div>
+            </div>
+            <!--1st row ends-->
+
+            <div class="std-section-fullWidth">
+
+                <div class="std-col-3 std-col-t-3">
+                    <ul>
+                        <li>The Flight</li>
+                        <li>The City</li>
+                        <li>The Island</li>
+                        <li>The Food</li>
+                    </ul>
+                    <picture>
+                        <source srcset="/images/avatar.jpg" media="(max-width: 1024px)">
+                        <source srcset="/images/blackberry.jpg">
+                        <img src="/images/blackberry.jpg" alt="Image">
+                    </picture>
+                </div>
+
+                <div class="std-col-9 std-col-t-9">
+                        <div class="std-col-12" style="background-color: black; color: white">
+                            <h3>Colleges in Aligarh</h3>
+                        </div>
+                        <div class="std-col-3 std-col-t-4 child-white">
+                            <div data-content="Check-Out!">
+                                <!--<img src="/images/events2.jpg" alt="" height="150%"/>-->
+                                <iframe width="100%" height="145rem"
+                                        src="https://www.youtube.com/embed/XGSy3_Czz8k">
+                                </iframe>
+                            </div>
+                            <div class="one-fourth-caption">
+                                <h3>Collge 1</h3>
+                                <p>We broadcasts your event in a way that is both technically elegant and very cost effective.</p>
+                                <button class="caption-link" id="myBtn"><a href="javascript:handleOpenClose('O1');">Event1</a></button>
+                            </div>
+                        </div>
+                        <div class="std-col-3 std-col-t-4 child-white">
+                            <div data-content="Upcoming Events!" style="width: 100%; height: auto">
+                                <img src="/images/events3.jpg"/>
+                            </div>
+                            <div class="one-fourth-caption">
+                                <h3 style="color: #1f1f21">College-2</h3>
+                                <p>We broadcasts your event in a way that is both technically elegant and very cost effective.</p>
+                                <div class="caption-link"><a href="javascript:handleOpenClose('O2');">Event2</a></div>
+                            </div>
+                        </div>
+                        <div class="std-col-3 std-col-t-4 child-white">
+                            <div data-content="Wowsome!" class="image">
+                                <img src="/images/events4.jpg"/>
+                            </div>
+                            <div class="one-fourth-caption">
+                                <h3 style="color: #1f1f21">College-3</h3>
+                                <p>We broadcasts your event in a way that is both technically elegant and very cost effective.</p>
+                                <div class="caption-link"><a href="javascript:handleOpenClose('O3');">Event3</a></div>
+                            </div>
+                        </div>
+                        <div class="std-col-3 std-col-t-4 child-white">
+                            <div data-content="Traditional!" class="image">
+                                <img src="/images/events5.jpg"/>
+                            </div>
+                            <div class="one-fourth-caption">
+                                <h3 style="color: #1f1f21">College-4</h3>
+                                <p>We broadcasts your event in a way that is both technically elegant and very cost effective.</p>
+                                <div class="caption-link"><a href="javascript:handleOpenClose('O4');">Event4</a></div>
+                            </div>
+                        </div>
+                    <div class="std-col-12" style="background-color: black; color: white">
+                        <h3>Schools in Aligarh</h3>
+                    </div>
+                    <div class="std-col-3 std-col-t-4 child-white">
+                        <div data-content="Check-Out!">
+                            <!--<img src="/images/events2.jpg" alt="" height="150%"/>-->
+                            <iframe width="100%" height="145rem"
+                                    src="https://www.youtube.com/embed/XGSy3_Czz8k">
+                            </iframe>
+                        </div>
+                        <div class="one-fourth-caption">
+                            <h3>Collge 1</h3>
+                            <p>We broadcasts your event in a way that is both technically elegant and very cost effective.</p>
+                            <button class="caption-link" id="myBtn1"><a href="javascript:handleOpenClose('O1');">Event1</a></button>
+                        </div>
+                    </div>
+                    <div class="std-col-3 std-col-t-4 child-white">
+                        <div data-content="Upcoming Events!" style="width: 100%; height: auto">
+                            <img src="/images/events3.jpg"/>
+                        </div>
+                        <div class="one-fourth-caption">
+                            <h3 style="color: #1f1f21">College-2</h3>
+                            <p>We broadcasts your event in a way that is both technically elegant and very cost effective.</p>
+                            <div class="caption-link"><a href="javascript:handleOpenClose('O2');">Event2</a></div>
+                        </div>
+                    </div>
+                    <div class="std-col-3 std-col-t-4 child-white">
+                        <div data-content="Wowsome!" class="image">
+                            <img src="/images/events4.jpg"/>
+                        </div>
+                        <div class="one-fourth-caption">
+                            <h3 style="color: #1f1f21">College-3</h3>
+                            <p>We broadcasts your event in a way that is both technically elegant and very cost effective.</p>
+                            <div class="caption-link"><a href="javascript:handleOpenClose('O3');">Event3</a></div>
+                        </div>
+                    </div>
+                    <div class="std-col-3 std-col-t-4 child-white">
+                        <div data-content="Traditional!" class="image">
+                            <img src="/images/events5.jpg"/>
+                        </div>
+                        <div class="one-fourth-caption">
+                            <h3 style="color: #1f1f21">College-4</h3>
+                            <p>We broadcasts your event in a way that is both technically elegant and very cost effective.</p>
+                            <div class="caption-link"><a href="javascript:handleOpenClose('O4');">Event4</a></div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!--2nd row ends-->
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="std-modal">
+
+            <!-- Modal content -->
+                <!--<p>Some text in the Modal..</p>-->
+                    <div class="std-section-fullWidth std-modal-content">
+                        <div class="std-close std-top-row" style="float: right; padding: 0 1%; background-color: white">&times;</div>
+                            <div class="std-col-12" style="float: left">
+                                <div class="std-col-3 std-col-t-3">
+                                    <ul>
+                                        <li>The Flight</li>
+                                        <li>The City</li>
+                                        <li>The Island</li>
+                                        <li>The Food</li>
+                                    </ul>
+                                    <picture>
+                                        <source srcset="/images/avatar.jpg" media="(max-width: 1024px)">
+                                        <source srcset="/images/blackberry.jpg">
+                                        <img src="/images/blackberry.jpg" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="std-col-6 std-col-t-9">
+                                    <h1>The School</h1>
+                                    <h3>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</h3>
+                                    <h4>Resize the browser window to see how the content respond to the resizing.</h4>
+                                </div>
+                                <div class="std-col-3 std-col-t-12">
+                                    <div class="aside">
+                                        <h2>Address</h2>
+                                        <p>ABC School, 101-Street, PQR Road, Aligarh </p>
+                                        <h2>Contact</h2>
+                                        <p>+1-132323423, +91-23423434324</p>
+                                        <h2>How?</h2>
+                                        <p>You can reach Chania airport from all over Europe.</p>
+                                        <video width="400" controls autoplay loop poster="/public/images/comingsoon/coming-soon-1.gif" muted>
+                                            <!--<source src="https://www.youtube.com/watch?v=fyaI4-5849w" type="video/mp4">-->
+                                            <source src="/images/movie.mp4" type="video/mp4"<!-- media="(max-width: 480px)"-->>
+                                            Your browser does not support HTML5 video.
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+        </div>
+
+
+        <div class="std-section-bleed">
+            <% include template/footer.ejs %>
+        </div>
+        <!--Footer End-->
+
+    </body>
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    var btn1 = document.getElementById("myBtn1");
+
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("std-close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    btn1.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</html>
