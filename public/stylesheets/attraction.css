@@ -1,0 +1,22 @@
+/* The hero image */
+.attraction-head-image {
+    /* The image used */
+    background-image: url('../images/shop/tourism2.jpg');
+
+    /* Set a specific height */
+    height: 100%;
+    padding: 20%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.attraction-hero-text {
+    float: left;
+    text-align: left;
+    font-family: "Distro Heavy", Helvetica, Arial, sans-serif;
+    color: white;
+}

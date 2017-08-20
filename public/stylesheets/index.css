@@ -19,10 +19,11 @@
 .indexAttractionbackground{
      background-repeat: no-repeat;
      background-size: cover;
-     border: solid;
-     width: 1465px;
-     height: 450px;
-     margin-left: 0px;
+    background-position-y: 100%;
+    border: solid;
+    width: 100%;
+    height: 450px;
+    margin-left: 0px;
  }
 
 .indexrestaurantbackground{
