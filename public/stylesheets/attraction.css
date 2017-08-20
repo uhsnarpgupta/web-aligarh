@@ -15,8 +15,29 @@
 }
 
 .attraction-hero-text {
-    float: left;
+    position: absolute;
     text-align: left;
-    font-family: "Distro Heavy", Helvetica, Arial, sans-serif;
+    font-family: "Distro Light";
     color: white;
+    font-size: 10px;
+    left: 1%;
+    top:0%;
+}
+
+/*TABLET*/
+@media only screen and (min-width: 375px) {
+    .attraction-hero-text{
+        position: absolute;
+        top:5%;
+        left: 1%;
+    }
+}
+
+/*DESKTOP*/
+@media only screen and (min-width: 768px) {
+    .attraction-hero-text{
+        font-size: 30px;
+        top: 6%;
+        left: 2%;
+    }
 }
