@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <link rel="stylesheet" href="/stylesheets/standards.css">
+</head>
+<style type="text/css">
+    div.std-col-12{
+        background-color: #3a3a3a;
+    }
+    div.std-col-4{
+        width: 100%;
+        float: left;
+    }
+    a{
+        color: white;
+    }
+
+    @media only screen and (min-width: 376px) {
+        /* For tablet: */
+        div.std-col-4{
+            width: 33.3333%;
+        }
+    }
+
+    @media only screen and (min-width: 769px) {
+        /* For desktop: */
+        div.std-col-4{
+            width: 33.3333%;
+        }
+    }
+</style>
 <body>
-<footer class="footer">
-    <div class="footer-content" style="background-color: black;height: 60px; width: 100%;padding-top: 20px; padding-bottom: 20px">
-        <a style="color: white;border: none; float: left; margin-right: 50px; margin-left: 20px" href="#" title="About Us" >About Us</a>
-        <a style="color: white;border: none; float: left; margin-right: 50px" href="#" title="pp" >Private Policy</a>
-        <a style="color: white;border: none; float: left; margin-right: 50px" href="#" title="Advertise" >Advertise</a>
+    <div class="std-col-12">
+        <div class=std-col-4>
+            <a href="#" title="About Us" >About Us</a>
+        </div>
+        <div class=std-col-4>
+            <a href="#" title="pp" >Private Policy</a>
+        </div>
+        <div class=std-col-4>
+         <a href="#" title="Advertise" >Advertise</a>
+        </div>
     </div>
-</footer>
 </body>
 </html>
