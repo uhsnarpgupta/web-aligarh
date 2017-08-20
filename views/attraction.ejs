@@ -1,274 +1,75 @@
 <!DOCTYPE html>
 <html>
-<title>Attraction</title>
+
 <head>
+    <title>Attraction</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/stylesheets/std.css">
-    <link rel="stylesheet" href="/stylesheets/fonts/fontsOswald.css">
-    <link rel="stylesheet" href="/stylesheets/fonts/fontsOpenSans.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/standards.css">
+    <link rel="stylesheet" href="/stylesheets/attraction.css">
 
-    <!--<link rel="stylesheet" href="/stylesheets/fonts/fontsAwesome.css">-->
-
-    <!--<link rel="stylesheet" href="https://www.stdschools.com/stdcss/4/std.css">-->
-    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">-->
-    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">-->
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-    <style>
-        h1, h2, h3, h4, h5, h6 {
-            font-family: "Oswald"
-        }
-
-        body {
-            font-family: "Open Sans"
-        }
-
-        .mySlides {
-            display: none
-        }
-
-        .std-left, .std-right, .std-badge {
-            cursor: pointer
-        }
-
-        .std-badge {
-            height: 13px;
-            width: 13px;
-            padding: 0
-        }
-    </style>
 </head>
-<body class="std-light-grey">
 
-<div>
+<body>
+
+<div class="std-header">
     <% include template/navigationBar.ejs %>
 </div>
 
 
-<!-- std-content defines a container for fixed size centered content,
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="std-content" style="max-width:1600px">
-
-    <!-- Image header -->
-    <div class="std-content std-display-container" style="max-width:100%">
-        <header class="std-display-container std-wide" id="home">
-            <div class="std-display-left std-padding-large">
-                <!--<h1 class="std-jumbo std-text-white std-hide-small">Adidas</h1>
-                <h1 class="std-text-white"><b>STORE OUTLET</b></h1>-->
-                <!--<h6>-->
-                <!--<button class="std-button std-white std-padding-large std-large std-opacity std-hover-opacity-off"-->
-                <!--onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE-->
-                <!--</button>-->
-                <!--</h6>-->
+<div class="std-top-row clear">
+    <!--First row Starts-->
+    <div class="std-section-bleed">
+        <div class="attraction-head-image">
+            <div class="attraction-hero-text">
+                <h1 class="std-wide" style="font-size: 50px">Attraction</h1>
+                <!--<h2 style="font-family: 'Microsoft Sans Serif'; margin-top:-10%">And I'm a Photographer</h2>-->
+                <!--<button style="min-width: 100px"><p style="font-family: 'American Typewriter'; font-size: 15px">Fact</p></button>-->
             </div>
-
-            <div class="jumbotron mySlides" style="background-image: url('../images/Aligarh-Jama-Masjid.jpg');background-size: cover;background-color: black;">
-                <div class="page-title">
-                    <h1 class="padding-multiline"><span>Attractions</span></h1>
-                </div>
-            </div>
-            <div class="jumbotron mySlides" style="background-image: url('../images/mangalayatan.jpg');background-size: cover;background-color: black; ">
-                <div class="page-title">
-                    <h1 class="padding-multiline"><span>Attractions</span></h1>
-                </div>
-            </div>
-            <div class="jumbotron mySlides" style="background-image: url('../images/shop/adidas1.jpg')">
-                <div class="page-title">
-                    <h1 class="padding-multiline"><span>Attractions</span></h1>
-                </div>
-            </div>
-
-        </header>
-        <div class="std-center std-container std-section std-large std-text-white std-display-bottommiddle"
-             style="width:100%">
-            <span class="std-badge demo std-border std-transparent std-hover-white"
-                  onclick="currentDiv(1)"></span>
-            <span class="std-badge demo std-border std-transparent std-hover-white"
-                  onclick="currentDiv(2)"></span>
-            <span class="std-badge demo std-border std-transparent std-hover-white"
-                  onclick="currentDiv(3)"></span>
         </div>
     </div>
-  <!--Image Header Ends-->
-
-    <div id="photo-section" class="std-white std-margin">
-        <div class="std-container std-padding std-black">
-            <h4>Jama Masjid</h4>
+    <!--First row Ends-->
+    <div class="std-section-fullWidth" style="border: solid">
+        <div class="std-col-12 removeAll" style="background-color: black; color: white">
+            <h3>Jama Masjid</h3>
         </div>
-        <div class="std-row-padding std-white">
-            <% include template/attractiongallery.ejs%>
-            <!--<div class="std-col s6">
-                <p><img src="/images/shop/shop1.jpg" alt="Jeans" style="width:100%"></p>
-                <p><img src="/images/shop/shop2.jpg" alt="Jeans" style="width:100%"></p>
-            </div>
-            <div class="std-col s6">
-                <p><img src="/images/shop/shop3.jpg" alt="Men in Hats" style="width:100%"
-                        class="std-grayscale"></p>
-                <p><img src="/images/shop/shop4.jpg" alt="Jeans" style="width:100%"></p>
-            </div>-->
+        <div class="std-col-12 std-col-t-12">
+            <% include template/attractiongallery.ejs %>
         </div>
-    </div>
-    <div id="photo-section" class="std-white std-margin">
-        <div class="std-container std-padding std-black">
-            <h4>Mangalayatan</h4>
+        <!--Second Row ends-->
+        <div class="std-col-12 removeAll" style="background-color: black; color: white">
+            <h3>Manglayatan</h3>
         </div>
-        <div class="std-row-padding std-white">
+        <div class="std-col-12 std-col-t-12">
             <% include template/attractionMangalayatan.ejs %>
-            <!--<div class="std-col s6">
-                <p><img src="/images/shop/shop1.jpg" alt="Jeans" style="width:100%"></p>
-                <p><img src="/images/shop/shop2.jpg" alt="Jeans" style="width:100%"></p>
+        </div>
+    </div>
+    <!-- Subscribe Modal -->
+    <div id="subscribe" class="std-modal std-animate-opacity">
+        <div class="std-modal-content" style="padding:32px">
+            <div class="std-container std-white">
+                <i onclick="document.getElementById('subscribe').style.display='none'"
+                   class="fa fa-remove std-transparent std-button std-xlarge std-right"></i>
+                <h2 class="std-wide">Share Pics</h2>
+                <p>Send some good pictures and we will show case on our site at:</p>
+                <p>attraction@beyondlimits.com<!--<input class="std-input std-border" type="text" placeholder="Enter e-mail">--></p>
+                <!--<button type="button" class="std-button std-block std-padding-large std-red std-margin-bottom"
+                        onclick="document.getElementById('subscribe').style.display='none'">Send
+                </button>-->
             </div>
-            <div class="std-col s6">
-                <p><img src="/images/shop/shop3.jpg" alt="Men in Hats" style="width:100%"
-                        class="std-grayscale"></p>
-                <p><img src="/images/shop/shop4.jpg" alt="Jeans" style="width:100%"></p>
-            </div>-->
         </div>
     </div>
-</div>
 
-<!-- Subscribe Modal -->
-<div id="subscribe" class="std-modal std-animate-opacity">
-    <div class="std-modal-content" style="padding:32px">
-        <div class="std-container std-white">
-            <i onclick="document.getElementById('subscribe').style.display='none'"
-               class="fa fa-remove std-transparent std-button std-xlarge std-right"></i>
-            <h2 class="std-wide">SUBSCRIBE</h2>
-            <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
-            <p><input class="std-input std-border" type="text" placeholder="Enter e-mail"></p>
-            <button type="button" class="std-button std-block std-padding-large std-red std-margin-bottom"
-                    onclick="document.getElementById('subscribe').style.display='none'">Subscribe
-            </button>
-        </div>
+
+    <!-- Footer -->
+    <!--<footer class="std-container std-dark-grey" style="padding:32px">-->
+    <!--<a href="#" class="std-button std-black std-padding-large std-margin-bottom"><i-->
+    <!--class="fa fa-arrow-up std-margin-right"></i>To the top</a>-->
+    <!--<p>Powered by <a href="https://www.stdschools.com/stdcss/default.asp" target="_blank">std.css</a></p>-->
+    <div class="std-section-bleed">
+        <% include template/footer.ejs %>
     </div>
-</div>
-
-<!-- Footer -->
-<!--<footer class="std-container std-dark-grey" style="padding:32px">-->
-<!--<a href="#" class="std-button std-black std-padding-large std-margin-bottom"><i-->
-<!--class="fa fa-arrow-up std-margin-right"></i>To the top</a>-->
-<!--<p>Powered by <a href="https://www.stdschools.com/stdcss/default.asp" target="_blank">std.css</a></p>-->
-<div class="parent">
-    <% include template/footer.ejs %>
 </div>
 <!--</footer>-->
-
-<script>
-    // Toggle between hiding and showing blog replies/comments
-    document.getElementById("myBtn").click();
-    function myFunction(id) {
-        var x = document.getElementById(id);
-        if (x.className.indexOf("std-show") == -1) {
-            x.className += " std-show";
-        } else {
-            x.className = x.className.replace(" std-show", "");
-        }
-    }
-
-    function likeFunction(x) {
-        x.style.fontWeight = "bold";
-        x.innerHTML = "✓ Liked";
-    }
-</script>
-<!-- Add Google Maps -->
-<script>
-    function myMap() {
-        myCenter = new google.maps.LatLng(27.8906911, 78.069989);
-        var mapOptions = {
-            center: myCenter,
-            zoom: 12, scrollwheel: false, draggable: false,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
-
-        var marker = new google.maps.Marker({
-            position: myCenter,
-        });
-        marker.setMap(map);
-    }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6Pviy7a1tfYcpRZySfCt9qhbVvVbUIJQ&callback=myMap"></script>
-
-<!-- Add Slide Show -->
-<script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function currentDiv(n) {
-        showDivs(slideIndex = n);
-    }
-
-    function plusDivs(n) {
-        showDivs(slideIndex += n);
-    }
-
-    function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("std-image");
-        if (n > x.length) {
-            slideIndex = 1
-        }
-        if (n < 1) {
-            slideIndex = x.length
-        }
-        ;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex - 1].style.display = "block";
-    }
-</script>
-<script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-        showDivs(slideIndex += n);
-    }
-
-    function currentDiv(n) {
-        showDivs(slideIndex = n);
-    }
-
-    function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        if (n > x.length) {
-            slideIndex = 1
-        }
-        if (n < 1) {
-            slideIndex = x.length
-        }
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" std-white", "");
-        }
-        x[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " std-white";
-    }
-</script>
-<script>
-    var slideIndex = 0;
-    carousel();
-
-    function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > x.length) {
-            slideIndex = 1
-        }
-        x[slideIndex - 1].style.display = "block";
-        setTimeout(carousel, 2000); // Change image every 2 seconds
-    }
-</script>
-
 </body>
 </html>
