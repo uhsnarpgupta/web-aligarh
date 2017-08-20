@@ -2,15 +2,59 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="/stylesheets/navBar.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/standards.css" />
+    <style type="text/css">
+        .nav-links{
+
+        }
+    </style>
 </head>
 <body>
-    <div class="topnav" id="myTopnav">
-    <a href="/">Home</a>
-    <a href="#contact">Contact</a>
-    <a href="/about">About</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+    <div id="mySidenav" class="sidenav" style="width: 250px; display: none">
+        <div class="std-col-12" >
+            <a href="/">Home</a>
+        </div>
+        <hr>
+        <div class="std-col-12">
+            <a href="/attraction">Attraction</a>
+        </div>
+        <hr>
+        <div class="std-col-12">
+         <a href="/restaurant">Restaurant</a>
+        </div>
+        <hr>
+        <div class="std-col-12">
+            <a href="/shop">Shopping</a>
+        </div>
+        <hr>
+        <div class="std-col-12">
+          <a href="/hotel">Hotels</a>
+        </div>
+        <hr>
+        <div class="std-col-12">
+            <a href="/event">Events</a>
+        </div>
+        <hr>
+        <div class="std-col-12">
+            <a href="/study">Education</a>
+        </div>
+        <hr>
+        <div class="std-col-12">
+            <a href="#">Contact Us</a>
+        </div>
+        <hr>
+        <div class="std-col-12">
+            <a href="#">About Us</a>
+        </div>
 
+    </div>
+    <div class="topnav" id="myTopnav">
+        <span style="font-size:30px;cursor:pointer; float: left; color: white; padding-left: 1%; padding-top: 0.2%" onclick="openNav()">&#9776;</span>
+        <a href="/">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="/about">About</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
     <script>
     function myFunction() {
         var x = document.getElementById("myTopnav");
@@ -20,6 +64,18 @@
             x.className = "topnav";
         }
     }
-</script>
+    </script>
+
+    <script>
+        var count=0;
+        function openNav() {
+            var x = document.getElementById('mySidenav');
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
