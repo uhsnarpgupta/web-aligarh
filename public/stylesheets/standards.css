@@ -16,6 +16,8 @@ h5 {font-size: 1.4em;}
 
 p {font-size: 1.2em;}
 
+a {text-decoration: none;}
+
 /*Wide Letter Spacing*/
 .std-wide{
    letter-spacing: 4px;
