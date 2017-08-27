@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/stylesheets/std.css">
+    <link rel="stylesheet" href="/stylesheets/standards.css">
     <link rel="stylesheet" href="/stylesheets/fonts/fontsOswald.css">
     <link rel="stylesheet" href="/stylesheets/fonts/fontsOpenSans.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,35 +16,45 @@
 </head>
 <body>
 
-<div>
+<div class="std-header">
     <% include template/navigationBar.ejs %>
 </div>
+<!--End Header-->
 
-<div class="std-container std-padding std-black" style="text-align: center">
-    <h4>Shopping Deals</h4>
-</div>
+<div class="std-col-12">
+    <div class="std-top-row" style="text-align: center">
+        <h4><strong>Shopping Deals</strong></h4>
+    </div>
 
-<div style="max-width:500px; max-height: 400px;">
-    <img class ="mySlides" src="images/deals/Shoppingdeal1.jpg" width="1400px" height="400px">
-    <img class ="mySlides" src="images/deals/Shoppingdeal2.jpg" width="1400px" height="400px">
-    <img class ="mySlides" src="images/deals/Shoppingdeal3.jpg" width="1400px" height="400px">
-    <img class ="mySlides" src="images/deals/Shoppingdeal4.png" width="1400px" height="400px">
+    <br/>
 
-    <button class="w3-button w3-black w3-display-left" onclick="tempDivs(-1)">&#10094;</button>
-    <button class="w3-button w3-black w3-display-right" onclick="tempDivs(1)">&#10095;</button>
+    <div>
+        <img class="mySlides" src="images/deals/Shoppingdeal1.jpg">
+        <img class="mySlides" src="images/deals/Shoppingdeal2.jpg">
+        <img class="mySlides" src="images/deals/Shoppingdeal3.jpg">
+        <img class="mySlides" src="images/deals/Shoppingdeal4.png">
 
-    <div class="w3-row-padding w3-section" style="width:1400px;">
-        <div class="w3-col s4" style="width:330px;">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/deals/Shoppingdeal1.jpg" style="width:100%" onclick="currentDiv(1)">
+        <button class="w3-button w3-black w3-display-left" onclick="tempDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="tempDivs(1)">&#10095;</button>
+
+    </div>
+
+    <div class="w3-row-padding w3-section tabcontent">
+        <div class="w3-col s4" style="width:25%;">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="images/deals/Shoppingdeal1.jpg" style="width:100%"
+                 onclick="currentDiv(1)">
         </div>
-        <div class="w3-col s4" style="width:330px;">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/deals/Shoppingdeal2.jpg" style="width:100%" onclick="currentDiv(2)">
+        <div class="w3-col s4" style="width:25%;">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="images/deals/Shoppingdeal2.jpg" style="width:100%"
+                 onclick="currentDiv(2)">
         </div>
-        <div class="w3-col s4" style="width:330px;">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/deals/Shoppingdeal3.jpg" style="width:100%" onclick="currentDiv(3)">
+        <div class="w3-col s4" style="width:25%;">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="images/deals/Shoppingdeal3.jpg" style="width:100%"
+                 onclick="currentDiv(3)">
         </div>
-        <div class="w3-col s4" style="width:335px;">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/deals/Shoppingdeal4.png" style="width:100%" onclick="currentDiv(4)">
+        <div class="w3-col s4" style="width:25%;">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="images/deals/Shoppingdeal4.png" style="width:100%"
+                 onclick="currentDiv(4)">
         </div>
     </div>
 </div>

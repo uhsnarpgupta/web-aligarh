@@ -33,7 +33,8 @@ var restaurantdeals = require('./routes/restaurantdeals');
 var shoppingdeals = require('./routes/shoppingdeals');
 var hoteldeals = require('./routes/hoteldeals');
 var study = require('./routes/study');
-
+var recipe = require('./routes/recipe');
+var recipe2 = require('./routes/recipe2');
 
 var app = express();
 
@@ -103,6 +104,10 @@ app.use('/hoteldeals',hoteldeals);
 
 //Education routes
 app.use('/study',study);
+
+//Recipe routes
+app.use('/recipe',recipe);
+app.use('/recipe2',recipe2);
 
 //Admin Routes
 app.use('/insert',admin);
