@@ -1,23 +1,371 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%=title%></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+	  <title>Hotels</title>
+	  <link rel='stylesheet' href='/stylesheets/shop.css'/>
+      <link rel="stylesheet" href="/stylesheets/standards.css">
+      <link rel="stylesheet" href="/stylesheets/style.css">
+      <link rel="stylesheet" href="/stylesheets/hotel.css">
+      <link rel="stylesheet" href="/stylesheets/modal.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <style>
+          /* Container DIV - automatically generated */
+          .simply-scroll-container {
+              position: relative;
+          }
+
+          /* Clip DIV - automatically generated */
+          .simply-scroll-clip {
+              position: relative;
+              overflow: hidden;
+          }
+
+          /* UL/OL/DIV - the element that simplyScroll is inited on
+          Class name automatically added to element */
+          .simply-scroll-list {
+              overflow: hidden;
+              margin: 0;
+              padding: 0;
+              list-style: none;
+          }
+
+          .simply-scroll-list li {
+              padding: 0;
+              margin: 0;
+              list-style: none;
+          }
+
+          .simply-scroll-list li img {
+              border: none;
+              display: block;
+          }
+
+          /* Custom class modifications - adds to / overrides above
+
+          .simply-scroll is default base class */
+
+          /* Container DIV */
+          .simply-scroll {
+              width: 576px;
+              height: 200px;
+              margin-bottom: 1em;
+          }
+
+          /* Clip DIV */
+          .simply-scroll .simply-scroll-clip {
+              width: 576px;
+              height: 200px;
+          }
+
+          /* Explicitly set height/width of each list item */
+          .simply-scroll .simply-scroll-list li {
+              float: left; /* Horizontal scroll only */
+              width: 290px;
+              height: 200px;
+          }
+      </style>
+      <style>
+          .mySlides {display:none;}
+      </style>
   </head>
-  <body bgcolor="White" height="100%">
-    <table height="100%" width="100%" border=0>
-    	<tr width="100%">
-    		<td width="100%" height="100%">
-			    <table width="100%" height="100%"  background="/images/city.gif" border=0>
-			    	<tr width="100%" height="100%">
-			    		<td width="100%" height="100%">
-			    			<% include template/header.ejs%>
-			    			<h1 align="center"><img src="/images/aligarh.png"  height="450" width="1000"></h1>
-			    		</td>
-			    	</tr>
-			    </table>
-			  </td>
-		</tr>
-		</table>
+
+  <body>
+
+  <div>
+      <% include template/navigationBar.ejs %>
+  </div>
+
+  <div class="hotelsbackground">
+      <br />
+	  <h1 style="color:red;margin-top: 40px; font-family: 'Alegreya' ,sans-serif;">&nbsp;<strong>HOTELS</strong></h1>
+  </div>
+
+  <section>
+      <div id="section1" class="tabs">
+  <nav>
+      <ul>
+          <li><a href="#section-1" class="icon-shop" style="color: yellow"><span>Luxury Hotels</span></a></li>
+          <li><a href="#section-2" class="icon-cup" style="color: yellow"><span>Primium Hotels</span></a></li>
+      </ul>
+  </nav>
+
+  <div class="content">
+      <section id="section-1">
+          <div class="mediabox">
+              <img src="images/palmtree.jpg" alt="Hotel Palm Tree" />
+              <h3>Hotel Palm Tree</h3>
+              <p>Sushi gumbo beet g courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame.</p>
+              <!--<button class="button button-blue" onclick="fullerimage()">View</button>-->
+              <a class="button button-blue" id="bttn1">View</a>
+          </div>
+          <div class="mediabox">
+              <img src="images/room1-min.jpg" alt="img02" />
+              <h3>Hotel Example</h3>
+              <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin seakale pumpkin onion chickpea gram corn pea.</p>
+              <button class="button button-purple">View</button>
+          </div>
+          <div class="mediabox">
+              <img src="images/room2-min.jpg" alt="img03" />
+              <h3>Hotel Example</h3>
+              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+              <button class="button button-gray">View</button>
+          </div>
+      </section>
+      <section id="section-2">
+          <div class="mediabox">
+              <img src="images/melroseinn.jpg" alt="img04" />
+              <h3>Hotel Melrose-inn</h3>
+              <p>Chickweed okra pea winter purslane coriande sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. </p>
+              <a class="button button-orange" id="bttn2">View</a>
+          </div>
+          <div class="mediabox">
+              <img src="images/room4-min.jpg" alt="img05" />
+              <h3>Hotel Example</h3>
+              <p>Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+              <button class="button button-darkblue">View</button>
+          </div>
+          <div class="mediabox">
+              <img src="images/room5-min.jpg" alt="img06" />
+              <h3>Hotel Example</h3>
+              <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. </p>
+              <button class="button button-pink">View</button>
+          </div>
+      </section>
+  </div>
+      </div>
+  </section>
+
+  <!-- The Modal -->
+  <div id="myModal" class="std-modal">
+      <!-- Modal content -->
+      <% include template/hotels/hotel-palmtree.ejs %>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal1" class="std-modal">
+      <!-- Modal content -->
+      <% include template/hotels/hotel-melrosein.ejs %>
+  </div>
+
+  <div style="width: 100%">
+      <% include template/footer.ejs %>
+  </div>
+
+  <script>
+
+      var scrollY = 0;
+      var distance = 10;
+      var speed = 2;
+      function autoScrollTo(el) {
+          var currentY = window.pageYOffset;
+          var targetY = document.getElementById(el).offsetTop;
+          var bodyHeight = document.body.offsetHeight;
+          var yPos = currentY + window.innerHeight;
+          // recursively calling with speed
+          var animator = setTimeout('autoScrollTo(\''+el+'\')',speed);
+          if(yPos > bodyHeight){
+              clearTimeout(animator);
+          } else {
+              if(currentY < targetY-distance){
+                  scrollY = currentY+distance;
+                  window.scroll(0, scrollY);
+              } else {
+                  clearTimeout(animator);
+              }
+          }
+      }
+      function resetScroller(el){
+          var currentY = window.pageYOffset;
+          var targetY = document.getElementById(el).offsetTop;
+          var animator = setTimeout('resetScroller(\''+el+'\')',speed);
+          if(currentY > targetY){
+              scrollY = currentY-distance;
+              window.scroll(0, scrollY);
+          } else {
+              clearTimeout(animator);
+          }
+          if (currentY == 0) {
+              // if we reach to the top of the page then clear the timeout
+              clearTimeout(animator);
+          }
+
+          window.addEventListener("keypress",function(){
+              clearTimeout(animator);
+          });
+          window.addEventListener("click",function(){
+              clearTimeout(animator);
+          });
+      }
+
+      /*
+       * Tabs
+       */
+      ;( function( window ) {
+          'use strict';
+          function extend( a, b ) {
+              for( var key in b ) {
+                  if( b.hasOwnProperty( key ) ) {
+                      a[key] = b[key];
+                  }
+              }
+              return a;
+          }
+
+          function sandeepTabs( el, options ) {
+              this.el = el;
+              this.options = extend( {}, this.options );
+              extend( this.options, options );
+              this._init();
+          }
+
+          sandeepTabs.prototype.options = {
+              start : 0
+          };
+
+          sandeepTabs.prototype._init = function() {
+              this.tabs = [].slice.call( this.el.querySelectorAll( 'nav > ul > li' ) );
+              this.items = [].slice.call( this.el.querySelectorAll( '.content > section' ) );
+              this.current = -1;
+              this._show();
+              this._initEvents();
+          };
+
+          sandeepTabs.prototype._initEvents = function() {
+              var self = this;
+              this.tabs.forEach( function( tab, idx ) {
+                  tab.addEventListener( 'click', function( ev ) {
+                      ev.preventDefault();
+                      self._show( idx );
+                  } );
+              } );
+          };
+
+          sandeepTabs.prototype._show = function( idx ) {
+              if( this.current >= 0 ) {
+                  this.tabs[ this.current ].className = '';
+                  this.items[ this.current ].className = '';
+              }
+              this.current = idx != undefined ? idx : this.options.start >= 0 && this.options.start < this.items.length ? this.options.start : 0;
+              this.tabs[ this.current ].className = 'tab-current';
+              this.items[ this.current ].className = 'content-current';
+          };
+
+          // adding to global namespace
+          window.sandeepTabs = sandeepTabs;
+
+      })( window );
+
+      new sandeepTabs( document.getElementById( 'section1' ) );
+
+  </script>
+
+  <!--<script>
+      // Get the modal // Common
+      var modal = document.getElementById('myModal');
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+
+      function  fullerimage() {
+//          var image = value;
+//          var src = "/images/fulls/" + image + ".jpg";
+//          var alt = data;
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+          /*var img = document.getElementById('img1');
+           img.onclick = function(){*/
+          modal.style.display = "block";
+//          modalImg.src = src;
+//          captionText.innerHTML = alt;
+//        }
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+  </script>-->
+
+  <!-- Add Google Maps -->
+  <script>
+      function myMap() {
+          myCenter = new google.maps.LatLng(27.8912996,78.07800440000005);
+          var mapOptions = {
+              center: myCenter,
+              zoom: 12, scrollwheel: false, draggable: false,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+          };
+          var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+          var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+          var marker = new google.maps.Marker({
+              position: myCenter,
+          });
+          marker.setMap(map);
+      }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+  <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+  </script>
+
+  <script>
+          // Get the modal
+          var modal = document.getElementById('myModal');
+          var modal1 = document.getElementById('myModal1');
+
+          // Get the button that opens the modal
+          var btn = document.getElementById("bttn1");
+
+          var btn1 = document.getElementById("bttn2");
+
+         /* var btn2 = document.getElementById("myBtn2");*/
+
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("std-close")[0];
+          var span1 = document.getElementsByClassName("std-close")[1];
+
+          // When the user clicks the button, open the modal
+          btn.onclick = function() {
+              modal.style.display = "block";
+          }
+          btn1.onclick = function() {
+              modal1.style.display = "block";
+          }
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+              modal.style.display = "none";
+          }
+
+          span1.onclick = function() {
+              modal1.style.display = "none";
+          }
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+              else if (event.target == modal1) {
+                  modal1.style.display = "none";
+              }
+          }
+      </script>
+
   </body>
 </html>

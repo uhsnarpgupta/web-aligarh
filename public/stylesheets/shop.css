@@ -55,7 +55,7 @@
 }
 
 a:hover {
-    background-color: #eeaa00;
+    /*background-color: #eeaa00;*/
 }
 
 a{
@@ -65,7 +65,7 @@ a{
     text-align: start;
     bottom: 0px;
     border: solid;
-    border-color: #eeaa00;
+    /*border-color: #eeaa00;*/
     padding-bottom: 5px;
     padding-top: 5px;
     padding-left: 5px;
@@ -149,6 +149,28 @@ a{
 }
 .left .two{
 
+}
+
+.hotelsbackground{
+    background-image: url("../images/hotel4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid;
+    width: auto;
+    height: 700px;
+}
+.fw-b {
+    font-weight: 700;
+}
+
+h1+h2 {
+    margin-top: 25px;
+}
+div.container {
+    padding-left: 40%;
+    padding-right: 25%;
+    margin-top: 25%;
+    color: black;
 }
 
 /* Div table specifcs Ends*/
