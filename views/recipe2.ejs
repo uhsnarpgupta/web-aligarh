@@ -4,6 +4,7 @@
     <title>Recipe of the Week</title>
     <link rel='stylesheet' href='/stylesheets/shop.css'/>
     <link rel="stylesheet" href="/stylesheets/standards.css">
+    <link rel="stylesheet" href="/stylesheets/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
@@ -42,7 +43,6 @@
         /* Slideshow container */
         .slideshow-container {
             max-width: 100%;
-            position: relative;
             margin: auto;
         }
 
@@ -102,6 +102,7 @@
         /* On smaller screens, decrease text size */
         @media only screen and (max-width: 300px) {
             .text {font-size: 11px}
+            .slideshow-container{max-width: 100%;}
         }
 
     </style>
@@ -113,19 +114,19 @@
     <% include template/navigationBar.ejs %>
 </div>
 
-<div class="std-col-12">
-    <div>
+<div class="std-section-fullWidth">
+    <div class="std-col-12">
         <img src="images/recipe.png" width="100%" height="50%">
         <div class="hero-text" style="margin-top: 50px;">
             <h1 class="std-wide" style="color: black; font-family: 'Times New Roman'; font-weight: 500;"><strong>Recipe of the Week</strong></h1>
             <p style="color: black; font-family: FontAwesome; font-weight: 300;">Feast your eyes on our daily dose of home cooks' top-rated recipes (and fantastic food photos).</p>
-            <div class="slideshow-container std-section-bleed">
+            <div class="std-section-bleed slideshow-container">
 
                 <div class="mySlides fade">
                     <img class="temp" src="images/deals/resdeal1.jpeg" style="width:100%">
                     <div class="hero-text">
                         <h1 class="std-wide">First</h1>
-                        <button id="frstrecipe" onclick="window.open('/sheeshmahal');"><p>View Recipe</p></button>
+                        <button id="frstrecipe" onclick="frstcontshow('resdeal1.jpeg','First Recipe');"><p>View Recipe</p></button>
                     </div>
                 </div>
 
@@ -133,7 +134,7 @@
                     <img class="temp" src="images/deals/resdeal2.png" style="width:100%">
                     <div class="hero-text">
                         <h1 class="std-wide">Second</h1>
-                        <button id="secondrecipe" onclick="window.open('/kss');"><p>View Recipe</p></button>
+                        <button id="secondrecipe" onclick="scndcontshow('resdeal2.png','Second Recipe');"><p>View Recipe</p></button>
                     </div>
                 </div>
 
@@ -141,7 +142,7 @@
                     <img class="temp" src="images/deals/resdeal3.jpeg" style="width:100%">
                     <div class="hero-text">
                         <h1 class="std-wide">Third</h1>
-                        <button id="thirdrecipe"><p>View Recipe</p></button>
+                        <button id="thirdrecipe" onclick="thrdcontshow('resdeal3.jpeg','Third Recipe');"><p>View Recipe</p></button>
                     </div>
                 </div>
 
@@ -149,7 +150,7 @@
                     <img class="temp" src="images/deals/resdeal4.jpg" style="width:100%">
                     <div class="hero-text">
                         <h1 class="std-wide">Fourth</h1>
-                        <button id="fourthrecipe"><p>View Recipe</p></button>
+                        <button id="fourthrecipe" onclick="frthcontshow('resdeal4.jpg','Fourth Recipe');"><p>View Recipe</p></button>
                     </div>
                 </div>
 
@@ -167,16 +168,96 @@
     </div>
 </div>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div id="caption"></div>
+<div class="std-section-fullWidth std-modal-content" id="frstcontainer" style="display: none; border: groove;">
+    <div class="std-col-8 std-col-t-8">
+        <div class="std-col-12" style="background-color: #3a3a3a; color: white">
+            <h1 id="caption1"></h1>
+        </div>
+        <p>We broadcasts your event in a way that is both technically elegant and very cost effective.</p>
+    </div>
+    <div class="std-col-4 std-col-t-4 aside" style="float: right">
+        <div style="height:25%">
+            <img class="temp" id="img01">
+        </div>
+        <hr>
+        <div style="height:25%">
+            <video controls autoplay loop poster="/images/comingsoon/coming-soon-1.gif" muted>
+                <source src="/images/movie.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+</div>
+
+<div class="std-section-fullWidth std-modal-content" id="scndcontainer" style="display: none; border: groove;">
+    <div class="std-col-8 std-col-t-8">
+        <div class="std-col-12" style="background-color: #3a3a3a; color: white">
+            <h1 id="caption2"></h1>
+        </div>
+        <p>We broadcasts your event in a way that is both technically elegant and very cost effective.</p>
+    </div>
+    <div class="std-col-4 std-col-t-4 aside" style="float: right">
+        <div style="height:25%">
+            <img class="temp" id="img02">
+        </div>
+        <hr>
+        <div style="height:25%">
+            <video controls autoplay loop poster="/images/comingsoon/coming-soon-1.gif" muted>
+                <source src="/images/movie.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+</div>
+
+<div class="std-section-fullWidth std-modal-content" id="thrdcontainer" style="display: none; border: groove;">
+    <div class="std-col-8 std-col-t-8">
+        <div class="std-col-12" style="background-color: #3a3a3a; color: white">
+            <h1 id="caption3"></h1>
+        </div>
+        <p>We broadcasts your event in a way that is both technically elegant and very cost effective.</p>
+    </div>
+    <div class="std-col-4 std-col-t-4 aside" style="float: right">
+        <div style="height:25%">
+            <img class="temp" id="img03">
+        </div>
+        <hr>
+        <div style="height:25%">
+            <video controls autoplay loop poster="/images/comingsoon/coming-soon-1.gif" muted>
+                <source src="/images/movie.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+</div>
+
+<div class="std-section-fullWidth std-modal-content" id="frthcontainer" style="display: none; border: groove;">
+    <div class="std-col-8 std-col-t-8">
+        <div class="std-col-12" style="background-color: #3a3a3a; color: white">
+            <h1 id="caption4"></h1>
+        </div>
+        <p>We broadcasts your event in a way that is both technically elegant and very cost effective.</p>
+    </div>
+    <div class="std-col-4 std-col-t-4 aside" style="float: right">
+        <div style="height:25%">
+            <img class="temp" id="img04">
+        </div>
+        <hr>
+        <div style="height:25%">
+            <video controls autoplay loop poster="/images/comingsoon/coming-soon-1.gif" muted>
+                <source src="/images/movie.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
 </div>
 
 <div style="width: 100%">
     <% include template/footer.ejs %>
 </div>
+
+<!--onclick="window.open('/sheeshmahal');"
+onclick="window.open('/kss');"-->
 
 <script>
     var slideIndex = 0;
@@ -215,7 +296,7 @@
     function showDivs(n) {
         var i;
         var x = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
+        var dots = document.getElementsByClassName("dot");
         if (n > x.length) {slideIndex = 1}
         if (n < 1) {slideIndex = x.length}
         for (i = 0; i < x.length; i++) {
@@ -227,6 +308,66 @@
         x[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " w3-red";
     }
+</script>
+
+<script>
+
+    function frstcontshow(image, data) {
+        var modal = document.getElementById('frstcontainer');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption1");
+        var src = "/images/deals/" + image;
+        var alt = data;
+        modal.style.display = "block";
+        modalImg.src = src;
+        captionText.innerHTML = alt;
+        document.getElementById('scndcontainer').style.display = 'none';
+        document.getElementById('thrdcontainer').style.display = 'none';
+        document.getElementById('frthcontainer').style.display = 'none';
+    }
+
+    function scndcontshow(image, data) {
+        var modal = document.getElementById('scndcontainer');
+        var modalImg = document.getElementById("img02");
+        var captionText = document.getElementById("caption2");
+        var src = "/images/deals/" + image;
+        var alt = data;
+        modal.style.display = "block";
+        modalImg.src = src;
+        captionText.innerHTML = alt;
+        document.getElementById('frstcontainer').style.display = 'none';
+        document.getElementById('thrdcontainer').style.display = 'none';
+        document.getElementById('frthcontainer').style.display = 'none';
+    }
+
+    function thrdcontshow(image, data) {
+        var modal = document.getElementById('thrdcontainer');
+        var modalImg = document.getElementById("img03");
+        var captionText = document.getElementById("caption3");
+        var src = "/images/deals/" + image;
+        var alt = data;
+        modal.style.display = "block";
+        modalImg.src = src;
+        captionText.innerHTML = alt;
+        document.getElementById('frstcontainer').style.display = 'none';
+        document.getElementById('scndcontainer').style.display = 'none';
+        document.getElementById('frthcontainer').style.display = 'none';
+    }
+
+    function frthcontshow(image, data) {
+        var modal = document.getElementById('frthcontainer');
+        var modalImg = document.getElementById("img04");
+        var captionText = document.getElementById("caption4");
+        var src = "/images/deals/" + image;
+        var alt = data;
+        modal.style.display = "block";
+        modalImg.src = src;
+        captionText.innerHTML = alt;
+        document.getElementById('frstcontainer').style.display = 'none';
+        document.getElementById('scndcontainer').style.display = 'none';
+        document.getElementById('thrdcontainer').style.display = 'none';
+    }
+
 </script>
 
 </body>
