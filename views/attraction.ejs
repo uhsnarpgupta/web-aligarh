@@ -5,69 +5,382 @@
     <title>Attraction</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/stylesheets/standards.css">
     <link rel="stylesheet" href="/stylesheets/attraction.css">
+    <link rel="stylesheet" href="/stylesheets/standards.css">
+
+
 
 </head>
 
-<body>
+<body bgcolor="white" marginheight="100%">
 
 <div class="std-header">
     <% include template/navigationBar.ejs %>
 </div>
-
-
 <div class="std-top-row clear">
     <!--First row Starts-->
     <div class="std-section-bleed">
-        <div class="attraction-head-image">
-            <div class="attraction-hero-text">
+        <div class="attraction-head-image mySlides fade" style="background-image: url('../images/attraction/tourism1.jpg');">
+            <div class="hero-text">
                 <h1 class="std-wide">Attraction</h1>
+                <h2 class="hero-sub-text">And I'm a Musician</h2>
+                <button><p>Fact</p></button>
             </div>
+        </div>
+        <div class="attraction-head-image mySlides fade" style="background-image: url('../images/attraction/tourism2.jpg');">
+            <div class="hero-text">
+                <h1 class="std-wide">Attraction</h1>
+                <h2 class="hero-sub-text">And I'm a Musician</h2>
+                <button><p>Fact</p></button>
+            </div>
+        </div>
+        <div class="attraction-head-image mySlides fade" style="background-image: url('../images/attraction/buddhist-temple-mumbai.jpg');">
+            <div class="hero-text">
+                <h1 class="std-wide">Attraction</h1>
+                <h2 class="hero-sub-text">And I'm a Musician</h2>
+                <button><p>Fact</p></button>
+            </div>
+        </div>
+        <div class="attraction-head-image mySlides fade" style="background-image: url('../images/attraction/gateway-of-india.jpg');">
+            <div class="hero-text">
+                <h1 class="std-wide">Attraction</h1>
+                <h2 class="hero-sub-text">And I'm a Musician</h2>
+                <button><p>Fact</p></button>
+            </div>
+        </div>
+        <div class="attraction-head-image mySlides fade" style="background-image: url('../images/attraction/palace_of_mysore_india.jpg');">
+            <div class="hero-text">
+                <h1 class="std-wide">Attraction</h1>
+                <h2 class="hero-sub-text">And I'm a Musician</h2>
+                <button><p>Fact</p></button>
+            </div>
+        </div>
+        <div class="attraction-head-image mySlides fade" style="background-image: url('../images/attraction/taj-mahal-indian-monuments-pictures.jpg'); background-size: cover; ">
+            <div class="hero-text">
+                <h1 class="std-wide">Attraction</h1>
+                <h2 class="hero-sub-text">And I'm a Musician</h2>
+                <button><p>Fact</p></button>
+            </div>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="mainCurrentSlide(0);"></span>
+            <span class="dot" onclick="mainCurrentSlide(1);"></span>
+            <span class="dot" onclick="mainCurrentSlide(2);"></span>
+            <span class="dot" onclick="mainCurrentSlide(3);"></span>
+            <span class="dot" onclick="mainCurrentSlide(4);"></span>
+            <span class="dot" onclick="mainCurrentSlide(5);"></span>
         </div>
     </div>
     <!--First row Ends-->
-    <div class="std-section-fullWidth" style="border: solid">
-        <div class="std-col-12 removeAll" style="background-color: black; color: white">
-            <h3>Jama Masjid</h3>
-        </div>
-        <div class="std-col-12 std-col-t-12">
-            <% include template/attractiongallery.ejs %>
-        </div>
-        <!--Second Row ends-->
-        <div class="std-col-12 removeAll" style="background-color: black; color: white">
-            <h3>Manglayatan</h3>
-        </div>
-        <div class="std-col-12 std-col-t-12">
-            <% include template/attractionMangalayatan.ejs %>
-        </div>
+    <!--Second row starts-->
+    <div class="std-section-fullWidth">
+        <section>
+            <section>
+                <div class="std-col-6 std-col-t-6">
+                    <article>
+                        <img class="attraction-img" src="../images/attraction/mangalayatan.jpg"  style="" alt="Mangalayatan - the place !">
+                    </article>
+                    <aside>
+                        <h2>Teerthdham Mangalayatan'</h2>
+                        <button id="myBtn" class="eventBtnTop">
+                            More
+                        </button>
+                        <div class="btn-container">
+
+                        </div>
+                    </aside>
+                </div>
+            </section>
+            <section>
+                <div class="std-col-6 std-col-t-6">
+                    <article>
+                        <img class="attraction-img" src="../images/attraction/Aligarh-Jama-Masjid2.jpg" alt="Jama Masjid - the place !" >
+                    </article>
+                    <aside>
+                        <h2>Jama Masjid</h2>
+                        <button id="jmBtn" class="eventBtnTop">
+                            More
+                        </button>
+                    </aside>
+
+
+                </div>
+
+            </section>
+        </section>
     </div>
-    <!-- Subscribe Modal -->
-    <div id="subscribe" class="std-modal std-animate-opacity">
-        <div class="std-modal-content" style="padding:32px">
-            <div class="std-container std-white">
-                <i onclick="document.getElementById('subscribe').style.display='none'"
-                   class="fa fa-remove std-transparent std-button std-xlarge std-right"></i>
-                <h2 class="std-wide">Share Pics</h2>
-                <p>Send some good pictures and we will show case on our site at:</p>
-                <p>attraction@beyondlimits.com<!--<input class="std-input std-border" type="text" placeholder="Enter e-mail">--></p>
-                <!--<button type="button" class="std-button std-block std-padding-large std-red std-margin-bottom"
-                        onclick="document.getElementById('subscribe').style.display='none'">Send
-                </button>-->
+    <!--Second row Ends-->
+
+    <!-- The Mangalayatan Modal Starts-->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="modal-close">X</span>
+            <div class="modal-slideshow-container">
+                <div class="modal-mySlides modal-fade">
+                    <div class="modal-numbertext">1 / 3</div>
+                    <img class="attraction-img" src="../images/attraction/mangalayatan.jpg">
+                    <div class="text">Teerthdham Mangalayatan' complex is considered one of the largest Jain religious centres of its kind in the country.
+                        It is the auspiciousness of tirthankar lord mahavir, infinit teerthankara, five supereme beings, lord manscript,
+                        Pujya Gurudev his follower Champaben and with the help of great personalities that the built teerthdham mangalayatan
+                        is a meditatory land of the followers of truth. This place is not personalized but it belongs to everyone to everyone.
+                        Mangalaytan is ending preaches of omniscience to every person.</div>
+                </div>
+
+                <div class="modal-mySlides modal-fade">
+                    <div class="modal-numbertext">2 / 3</div>
+                    <img class="attraction-img" src="../images/attraction/mangalayatan2.jpg" >
+                    <div class="text">Mangalayatan - The Beauty !!</div>
+                </div>
+
+                <div class="modal-mySlides modal-fade">
+                    <div class="modal-numbertext">3 / 3</div>
+                    <img class="attraction-img" src="../images/attraction/mangalayatan3.jpg" >
+                    <div class="text">Mangalayatan - The Place !!</div>
+                </div>
+
+                <a class="modal-prev" onclick="modalplusSlides(-1)">&#10094;</a>
+                <a class="modal-next" onclick="modalplusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="modal-dot" onclick="modalCurrentSlide(1)"></span>
+                <span class="modal-dot" onclick="modalCurrentSlide(2)"></span>
+                <span class="modal-dot" onclick="modalCurrentSlide(3)"></span>
             </div>
         </div>
-    </div>
 
+    </div>
+    <!--Modal Mangalayatan Ends-->
+<!--Jama Masjid Modal Starts-->
+    <div id="myModal-JM" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="modal-close-JM">X</span>
+            <div class="modal-slideshow-container">
+                <div class="modal-mySlides-jm modal-fade">
+                    <div class="modal-numbertext">1 / 3</div>
+                    <img class="attraction-img" src="../images/attraction/Aligarh-Jama-Masjid2.jpg">
+                    <div class="text">The Jama Masjid of Aligarh is the largest mosque of city and situated at the highest point in Aligarh.
+                        The mosque is commonly called “Jama Masjid” which means Friday. It was built by Mughal emperor Sabit Khan Bahadur Jung
+                        Bin Muhammad Beg Mughal Turk between 1714 A.D. (1127 Hijri) and 1728 A.D. (1141 Hijri),
+                        which was the 11th year of the reign of Mohammad Shah Ghazi (1702- 1748), a Mughal Emperor,
+                        son of Khujista Akhtar Jahan Shah, the son of Bahadur Shah I.</div>
+                </div>
+
+                <div class="modal-mySlides-jm modal-fade">
+                    <div class="modal-numbertext">2 / 3</div>
+                    <img class="attraction-img" src="../images/attraction/Aligarh-Jama-Masjid3.jpg">
+                    <div class="text">Jama Masjid</div>
+                </div>
+
+                <div class="modal-mySlides-jm modal-fade">
+                    <div class="modal-numbertext">3 / 3</div>
+                    <img class="attraction-img" src="../images/attraction/Aligarh-Jama-Masjid4.jpg">
+                    <div class="text">Jama Masjid</div>
+                </div>
+
+                <a class="modal-prev" onclick="modalplusSlidesjm(-1)">&#10094;</a>
+                <a class="modal-next" onclick="modalplusSlidesjm(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="modal-dot-jm" onclick="modalCurrentSlidejm(1)"></span>
+                <span class="modal-dot-jm" onclick="modalCurrentSlidejm(2)"></span>
+                <span class="modal-dot-jm" onclick="modalCurrentSlidejm(3)"></span>
+            </div>
+        </div>
+
+    </div>
+<!--JAma MAsjid Modal Ends-->
 
     <!-- Footer -->
-    <!--<footer class="std-container std-dark-grey" style="padding:32px">-->
-    <!--<a href="#" class="std-button std-black std-padding-large std-margin-bottom"><i-->
-    <!--class="fa fa-arrow-up std-margin-right"></i>To the top</a>-->
-    <!--<p>Powered by <a href="https://www.stdschools.com/stdcss/default.asp" target="_blank">std.css</a></p>-->
     <div class="std-section-bleed">
         <% include template/footer.ejs %>
     </div>
 </div>
 <!--</footer>-->
 </body>
+
+<!--Modal Mangalayatan Javascript Starts-->
+<script>
+    var modalslideIndex = 1;
+    modalshowSlides(modalslideIndex);
+
+    function modalplusSlides(n) {
+        modalshowSlides(modalslideIndex += n);
+    }
+
+    function modalCurrentSlide(n) {
+        modalshowSlides(modalslideIndex = n);
+    }
+
+    function modalshowSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("modal-mySlides");
+        var dots = document.getElementsByClassName("modal-dot");
+        if (n > slides.length) {modalslideIndex = 1}
+        if (n < 1) {modalslideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[modalslideIndex-1].style.display = "block";
+        dots[modalslideIndex-1].className += " active";
+    }
+</script>
+<!--Modal Mangalayatan Javascript Ends-->
+
+
+
+<!--Modal Jama Masjid Javascript Starts-->
+<script>
+    var modalslideIndexJM = 1;
+    modalshowSlidesjm(modalslideIndexJM);
+
+    function modalplusSlidesjm(n) {
+        modalshowSlidesjm(modalslideIndexJM += n);
+    }
+
+    function modalCurrentSlidejm(n) {
+        modalshowSlidesjm(modalslideIndexJM = n);
+    }
+
+    function modalshowSlidesjm(n) {
+        var i;
+        var slides = document.getElementsByClassName("modal-mySlides-jm");
+        var dots = document.getElementsByClassName("modal-dot-jm");
+        if (n > slides.length) {modalslideIndexJM = 1}
+        if (n < 1) {modalslideIndexJM = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[modalslideIndexJM-1].style.display = "block";
+        dots[modalslideIndexJM-1].className += " active";
+    }
+</script>
+<!--Modal Jama Masjid Javascript Ends-->
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex> slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+
+    /*On Dot Click Events Starts*/
+    var mainslideIndex = 1;
+    function mainCurrentSlide(n) {
+        mainshowSlides(mainslideIndex = n);
+    }
+
+    function mainshowSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {modalslideIndex = 1}
+        if (n < 1) {modalslideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[modalslideIndex-1].style.display = "block";
+        dots[modalslideIndex-1].className += " active";
+    }
+    /*On Dot Click Events Ends*/
+
+</script>
+
+<!--Modal Mangalayatan Script Starts-->
+<script>
+
+    // Get the modal
+    var modalm = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("modal-close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+        modalm.style.display = "block";
+
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modalm.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        alert(event.target);
+        if (event.target == modalm) {
+            alert('test');
+            modalm.style.display = "none";
+        }
+    }
+</script>
+<!--Modal Mangalayatan Script Ends-->
+
+<!--Modal Jama Masjid Script Starts-->
+<script>
+
+    // Get the modal
+    var modalJM = document.getElementById('myModal-JM');
+
+    // Get the button that opens the modal
+    var btnjm = document.getElementById("jmBtn");
+
+    // Get the <span> element that closes the modal
+    var spanjm = document.getElementsByClassName("modal-close-JM")[0];
+
+    // When the user clicks the button, open the modal
+    btnjm.onclick = function() {
+        modalJM.style.display = "block";
+
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    spanjm.onclick = function() {
+        modalJM.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modalJM) {
+            modalJM.style.display = "none";
+        }
+    }
+</script>
+<!--Modal Jama Masjid Script Ends-->
 </html>
