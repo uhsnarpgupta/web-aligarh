@@ -17,11 +17,8 @@
         .image {
             opacity: 1;
             display: block;
-            width: 100%;
-            height: auto;
             transition: .5s ease;
             backface-visibility: hidden;
-            position: absolute;
             border-color: transparent;
             border-style: solid;
             background-position: center;
@@ -140,120 +137,98 @@
     </style>
 
 </head>
-<body class="std-light-grey">
+<body>
 
 <div>
     <% include template/navigationBar.ejs %>
 </div>
 
-<div class="std-col-12">
-    <div class="std-top-row" style="text-align: center">
-        <h4><strong>Our Heroes - You made us Proud!!</strong></h4>
-    </div>
-
+<div class="std-top-row">
+    <h4><strong>Our Heroes - You made us Proud!!</strong></h4>
     <br/>
 
-    <div style="text-align: center; height: auto;">
-        <div style="width: 1428px; position: relative; height: 250px;">
-            <div class="imgdiv1" style="height: 250px; width: 357px; cursor: pointer; position: absolute; top: 0px;">
-                <div class="image"
-                     style="background-image: url('../images/Annu-Raj-Singh..jpg'); background-size: cover; top: 0px; left: 0px; right: 0px; bottom: 0px;"></div>
+    <div class="std-section-fullWidth" style="border: groove;">
+        <div class="std-col-12">
+            <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
+                <img class="image" src="/images/Annu-Raj-Singh..jpg">
                 <div class="middle">
                     <div class="text" id="img1">ANNU RAJ SINGH</div>
                 </div>
             </div>
-            <div class="imgdiv1"
-                 style="height: 250px; width: 357px; cursor: pointer; position: absolute; left: 350px; top: 0px;">
-                <div class="image"
-                     style="background-image: url('../images/bharat-bhushan.jpg'); background-size: cover; top: 0px; left: 0px; right: 0px; bottom: 0px;"></div>
+            <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
+                <img class="image" src="/images/bharat-bhushan.jpg">
                 <div class="middle">
                     <div class="text" id="img2">BHARAT BHUSHAN</div>
                 </div>
             </div>
-            <div class="imgdiv1"
-                 style="height: 250px; width: 357px; cursor: pointer; position: absolute; left: 700px; top: 0px;">
-                <div class="image"
-                     style="background-image: url('../images/piyushcricketer.jpg'); background-size: cover; top: 0px; left: 0px; right: 0px; bottom: 0px;"></div>
+            <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
+                <img class="image" src="/images/piyushcricketer.jpg">
                 <div class="middle">
                     <div class="text" id="img3">PIYUSH CHAWLA</div>
                 </div>
             </div>
-            <div class="imgdiv1"
-                 style="height: 250px; width: 357px; cursor: pointer; position: absolute; left: 1050px; top: 0px;">
-                <div class="image"
-                     style="background-image: url('../images/temp1.jpg'); background-size: cover; top: 0px; left: 0px; right: 0px; bottom: 0px;"></div>
+            <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
+                <img class="image" src="/images/temp1.jpg">
                 <div class="middle">
                     <div class="text" id="img4">RAVINDRA JAIN</div>
                 </div>
             </div>
         </div>
-        <div style="width: 1428px; position: relative; height: 250px;">
-            <div class="imgdiv1" style="height: 250px; width: 357px; cursor: pointer; position: absolute; top: 0px;">
-                <div class="image"
-                     style="background-image: url('../images/Chandrachur-Singh.jpg'); background-size: cover; top: 0px; left: 0px; right: 0px; bottom: 0px;"></div>
+        <div class="std-col-12">
+            <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
+                <img class="image" src="/images/Chandrachur-Singh.jpg">
                 <div class="middle">
                     <div class="text" id="img5">CHANDRACHUR SINGH</div>
                 </div>
             </div>
-            <div class="imgdiv1"
-                 style="height: 253px; width: 357px; cursor: pointer; position: absolute; left: 350px; top: 0px;">
-                <div class="image"
-                     style="background-image: url('../images/Javed_Aktar.jpg'); background-size: cover; top: 0px; left: 0px; right: 0px; bottom: 0px;"></div>
+            <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
+                <img class="image" src="/images/sls.jpg">
                 <div class="middle">
-                    <div class="text" id="img6">JAVED AKHTAR</div>
+                    <div class="text" id="img6">SRI LAL SHUKLA</div>
                 </div>
             </div>
-            <div class="imgdiv1"
-                 style="height: 250px; width: 357px; cursor: pointer; position: absolute; left: 700px; top: 0px;">
-                <div class="image"
-                     style="background-image: url('../images/Hyder.jpg'); background-size: cover; top: 0px; left: 0px; right: 0px; bottom: 0px;"></div>
+            <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
+                <img class="image" src="/images/Hyder.jpg">
                 <div class="middle">
                     <div class="text" id="img7">QURRATULAIN HYDER</div>
                 </div>
             </div>
-            <div class="imgdiv1"
-                 style="height: 250px; width: 357px; cursor: pointer; position: absolute; left: 1050px; top: 0px;">
-                <div class="image"
-                     style="background-image: url('../images/gauhar_raza.jpg'); background-size: cover; top: 0px; left: 0px; right: 0px; bottom: 0px;"></div>
+            <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
+                <img class="image" src="/images/gauhar_raza.jpg">
                 <div class="middle">
                     <div class="text" id="img8">GAUHAR RAZA</div>
                 </div>
             </div>
         </div>
-        <div style="width: 1428px; position: relative; height: 250px;">
-            <div class="imgdiv1" style="height: 250px; width: 357px; cursor: pointer; position: absolute; top: 0px;">
-                <div class="image"
-                     style="background-image: url('../images/paytm.jpg'); background-size: cover; top: 0px; left: 0px; right: 0px; bottom: 0px;"></div>
+        <div class="std-col-12">
+            <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
+                <img class="image" src="/images/paytm.jpg">
                 <div class="middle">
                     <div class="text" id="img9">VIJAY SHEKHAR SHARMA</div>
                 </div>
             </div>
-            <div class="imgdiv1"
-                 style="height: 253px; width: 357px; cursor: pointer; position: absolute; left: 350px; top: 0px;">
-                <div class="image"
-                     style="background-image: url('../images/Kanika-Maheshwari.jpg'); background-size: cover; top: 0px; left: 0px; right: 0px; bottom: 0px;"></div>
+            <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
+                <img class="image" src="/images/Kanika-Maheshwari.jpg">
                 <div class="middle">
                     <div class="text" id="img10">KANIKA MAHESHWARI</div>
                 </div>
             </div>
-            <div class="imgdiv1"
-                 style="height: 250px; width: 357px; cursor: pointer; position: absolute; left: 700px; top: 0px;">
-                <div class="image"
-                     style="background-image: url('../images/gopal.jpg'); background-size: cover; top: 0px; left: 0px; right: 0px; bottom: 0px;"></div>
+            <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
+                <img class="image" src="/images/gopal.jpg">
                 <div class="middle">
                     <div class="text" id="img11">GOPAL DAS NEERAJ</div>
                 </div>
             </div>
-            <div class="imgdiv1"
-                 style="height: 250px; width: 357px; cursor: pointer; position: absolute; left: 1050px; top: 0px;">
-                <div class="image"
-                     style="background-image: url('../images/shadkhan.jpg'); background-size: cover; top: 0px; left: 0px; right: 0px; bottom: 0px;"></div>
+            <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
+                <img class="image" src="/images/shadkhan.jpg">
                 <div class="middle">
                     <div class="text" id="img12">SHAD KHAN</div>
                 </div>
             </div>
         </div>
     </div>
+
+    <br/>
 </div>
 
 <!-- The Modal -->
@@ -326,8 +301,9 @@
         captionText.innerHTML = alt5;
     };
 
-    var src6 = "/images/Javed_Aktar.jpg";
-    var alt6 = "Javed Akhtar (born 17 January 1945) is an Indian poet, lyricist and screenwriter. Akhtar is a mainstream writer and some of his most successful work was carried out with Salim Khan as half of the script-writing duo credited as Salim-Javed between 1971 and 1982. He is a recipient of the Padma Shri (1999), Padma Bhushan (2007), the Sahitya Akademi Award as well as five National Film Awards.";
+    var src6 = "/images/sls.jpg";
+    var alt6 = "Sri Lal Sukla was born on 31-12-1925 in Atrauli, Aligarh in the state of Uttar Pradesh, India. He was an Indian Writer, Novelist, PCS officer & IAS Officer. He has written over 25 books, including Raag Darbari, Makaan, Sooni Ghaati Ka Sooraj, Pehla Padaav and Bisrampur Ka Sant." +
+        "He received the Jnanpith Award, the highest Indian literary award, in 2011. His first major award was the Sahitya Akademi Award for his novel Raag Darbari in 1969. He received the Vyas Samman award in 1999 for the novel Bisrampur ka Sant. In 2008, he was awarded the Padma Bhushan by the President of India for his contribution to Indian literature and culture.";
     // Get the image and insert it inside the modal - use its "alt" text as a caption
     var img6 = document.getElementById('img6');
     img6.onclick = function(){

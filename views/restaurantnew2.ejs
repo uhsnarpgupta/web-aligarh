@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<head xmlns="http://www.w3.org/1999/html">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Restaurant</title>
+        <link rel="stylesheet" href="/stylesheets/standards.css">
+        <link rel="stylesheet" href="/stylesheets/education.css">
+        <link rel="stylesheet" href="/stylesheets/hotel.css">
+        <link rel='stylesheet' href='/stylesheets/default.css'/>
+    <style>
+        .temph4 {
+            margin-top: 20px;
+            margin-bottom: 5px;
+            font-weight: 700;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .temph6 {
+            font-family: inherit;
+            font-weight: 500;
+            line-height: 1.1;
+            color: inherit;
+        }
+        .hero-image:hover {
+            box-shadow: 0 0 2px 1px rgba(184, 0, 34, 0.5);
+            border-radius: 20%;
+        }
+        .product {
+            width: 376px;
+            position: relative;
+            float: left;
+            margin: 0 20px 0 0;
+        }
+
+        .product>img {
+            display: block;
+            position: relative;
+        }
+
+        .product:hover .product-hover,
+        .product:active .product-hover {
+            opacity: 1;
+        }
+
+        .product-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            background-size: 30px 30px;
+            background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, transparent 75%, transparent);
+            animation: barberpole 0.5s linear infinite;
+        }
+        @keyframes barberpole {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 60px 30px;
+            }
+        }
+
+        .product-info {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            background: white;
+            width: 150px;
+            padding: 10px 10px 50px 10px;
+        }
+
+        .subhead {
+            color: #f00;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .product-name {
+            color: #990033;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 0;
+            letter-spacing: -1px;
+        }
+
+        .price {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .amount {
+            color: red;
+            font-size: 150%;
+        }
+
+        .amount>span {
+            font-size: 75%;
+        }
+
+        h1 {
+            font-size: 72px;
+            margin: 2px 0 0 0;
+        }
+    </style>
+</head>
+    <body>
+        <div class="std-header">
+            <% include template/navigationBar.ejs %>
+        </div>
+
+        <div class="std-top-row">
+            <div class="std-section-bleed">
+                <div class="hero-image mySlides fade" style="background-image: url('../images/restaurant/res1.jpg');">
+                    <div class="std-col-5 page-slot-content">
+                        <h1 style="font-size: 40px;">
+                            RESTAURANT
+                        </h1>
+                        <h4>
+                            You don't need a silver fork to eat good food
+                        </h4>
+                    </div>
+                    <!--<div class="hero-text">
+                        <h1 class="std-wide" style="font-family: 'Droid Serif'; font-weight: 700;">RESTAURANT</h1>
+                        <br><br>
+                        <h2 class="hero-sub-text" style="color: black;">You don't need a silver fork to eat good food</h2>
+                    </div>-->
+                </div>
+                <div class="hero-image mySlides fade" style="background-image: url('../images//restaurant/res2.jpg');">
+                    <div class="std-col-5 page-slot-content">
+                        <h1 style="font-size: 40px">
+                            RESTAURANT
+                        </h1>
+                        <h4>
+                            People who love to eat are always the best people
+                        </h4>
+                    </div>
+                    <!--<div class="hero-text">
+                        <h1 class="std-wide" style="font-family: 'Droid Serif'; font-weight: 700;">RESTAURANT</h1>
+                        <br><br><br>
+                        <h2 class="hero-sub-text" style="color: black;">People who love to eat are always the best people</h2>
+                    </div>-->
+                </div>
+                <div class="hero-image mySlides fade" style="background-image: url('../images/restaurant/res3.jpg');">
+                    <div class="std-col-5 page-slot-content">
+                        <h1 style="font-size: 40px">
+                            RESTAURANT
+                        </h1>
+                        <h4>
+                            One cannot think well, love well, sleep well, if one has not dined well
+                        </h4>
+                    </div>
+                    <!--<div class="hero-text">
+                        <h1 class="std-wide" style="font-family: 'Droid Serif'; font-weight: 700;">RESTAURANT</h1>
+                        <br><br><br><br>
+                        <h2 class="hero-sub-text" style="color: black;">One cannot think well, love well, sleep well, if one has not dined well</h2>
+                    </div>-->
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="std-section-fullWidth">
+                <div class="std-col-12">
+                    <div class="std-col-5 std-col-t-5 mediabox" style="margin-left: 5%;" onclick="window.open('/kss')">
+                        <div style="float: left; height: 50%; width: 50%">
+                            <img src="/images/events2.jpg" height="50%"/>
+                        </div>
+                        <div style="float: right; height: 50%; width: 50%">
+                            <h4 class="temph4">KSS</h4>
+                            <h6 class="temph6">Street Food</h6>
+                        </div>
+                    </div>
+                    <div class="std-col-5 std-col-t-5 mediabox" onclick="window.open('/swadeshi')">
+                        <div style="float: left; height: 50%; width: 50%">
+                            <img src="/images/events2.jpg" height="50%"/>
+                        </div>
+                        <div style="float: right; height: 50%; width: 50%">
+                            <h4 class="temph4">SWADESHI</h4>
+                            <h6 class="temph6">Street Food</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="std-col-12">
+                    <div class="std-col-3 std-col-t-3 product" style="margin-left: 10%;">
+                        <div class="product-hover"></div><img src="/images/restaurant/res4.jpg" />
+                        <div class="product-info">
+                            <div class="subhead">Sale</div>
+                            <h2 class="product-name">Fleece</h2>
+                            <p class="product-description">Beat the chill and get cozy.</p>
+                            <div class="price" onclick="window.open('/kss')"><span class="from">More Info</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="std-col-3 std-col-t-3 product">
+                        <div class="product-hover"></div>
+                        <img src="/images/restaurant/res4.jpg" />
+                        <div class="product-info">
+                            <div class="subhead">Sale</div>
+                            <h2 class="product-name">Fleece</h2>
+                            <p class="product-description">Beat the chill and get cozy.</p>
+                            <div class="price" onclick="window.open('/swadeshi')"><span class="from">More Info</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="std-col-3 std-col-t-3 product">
+                        <div class="product-hover"></div>
+                        <img src="/images/restaurant/res4.jpg" />
+                        <div class="product-info">
+                            <div class="subhead">Sale</div>
+                            <h2 class="product-name">Fleece</h2>
+                            <p class="product-description">Beat the chill and get cozy.</p>
+                            <div class="price" onclick="window.open('/swadeshi')"><span class="from">More Info</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="std-col-12">
+                    <div class="std-col-5 std-col-t-5 mediabox" style="margin-left: 5%;" onclick="window.open('/kss')">
+                        <div style="float: left; height: 50%; width: 50%">
+                            <img src="/images/events2.jpg" height="50%"/>
+                        </div>
+                        <div style="float: right; height: 50%; width: 50%">
+                            <h4 class="temph4">KSS</h4>
+                            <h6 class="temph6">Street Food</h6>
+                        </div>
+                    </div>
+                    <div class="std-col-5 std-col-t-5 mediabox" onclick="window.open('/swadeshi')">
+                        <div style="float: left; height: 50%; width: 50%">
+                            <img src="/images/events2.jpg" height="50%"/>
+                        </div>
+                        <div style="float: right; height: 50%; width: 50%">
+                            <h4 class="temph4">SWADESHI</h4>
+                            <h6 class="temph6">Street Food</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="std-section-bleed">
+            <% include template/footer.ejs %>
+        </div>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 5000);
+            }
+        </script>
+
+    </body>
+</html>

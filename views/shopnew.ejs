@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<head xmlns="http://www.w3.org/1999/html">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Shopping</title>
+        <link rel="stylesheet" href="/stylesheets/standards.css">
+        <link rel="stylesheet" href="/stylesheets/modal.css">
+        <link rel="stylesheet" href="/stylesheets/education.css">
+
+
+
+        </head>
+    <body>
+        <div class="std-header">
+            <% include template/navigationBar.ejs %>
+        </div>
+        <!--End Header-->
+        <div class="std-top-row">
+
+            <!--1st Row-->
+            <div class="std-section-bleed">
+
+                <div class="hero-image mySlides fade" style="background-image: url('../images/shop1.jpg');">
+                    <div class="hero-text">
+                        <h1 class="std-wide" style="color: black; font-family: 'Calibri Light'; border: 2px solid grey; border-radius: 5px;">SHOPPING</h1>
+                        <button style="color: orange;"><p>SHOP NOW</p></button>
+                    </div>
+
+                    </div>
+                <div class="hero-image mySlides fade" style="background-image: url('../images/shop3.jpg');">
+                    <div class="hero-text">
+                        <h1 class="std-wide" style="color: black; font-family: 'Droid Serif'; border: 2px solid grey; border-radius: 5px; ">SHOPPING</h1>
+                        <button style="color: orange;"><p>SHOP NOW</p></button>
+                    </div>
+
+                </div>
+                <div class="hero-image mySlides fade" style="background-image: url('../images/shop2.jpg');">
+                    <div class="hero-text">
+                        <h1 class="std-wide" style="color: white; font-family: 'Times New Roman'; border: 2px solid grey; border-radius: 5px; border-style: double">SHOPPING</h1>
+                        <button style="color: orange;"><p>SHOP NOW</p></button>
+                    </div>
+                </div>
+            </div>
+
+                <div style="text-align:center">
+                    <!--<span class="dot"></span>-->
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <!--1st row ends-->
+
+            <!--2nd Row-->
+       <!-- <div class="std-col-12 std-section-bleed" >
+            <div style=" width: 100%">
+                <img src="/images/tagline.jpg">
+            </div>
+        </div>-->
+             <!--2nd row ends-->
+
+        <div class="std-col-12 std-section-bleed" style="margin-left: 12.5%; margin-right: 5%; margin-top: 5%">
+            <div class="std-col-t-4" style="width: 25%;/* ;margin-left: 6.5% ;margin-right: 2%;*/ ">
+                <div style="margin: 10%;">
+                    <img src="/images/shop4.jpg">
+                </div>
+            </div>
+            <div class="std-col-t-4" onclick="window.open('/swadeshi')" style="width: 25%;outline: 3px solid white; outline-offset: -25px; /* margin-left: 4% ;margin-right: 2%;*/ /*border: 2px solid grey; border-radius: 5px;*/">
+                <img src="/images/shop4.jpg">
+            </div>
+            <div class="std-col-t-4" style="width: 25%; /*margin-left: 4% ;margin-right: 2%*/">
+                <div style="margin: 10%;">
+                    <img src="/images/shop4.jpg">
+                </div>
+            </div>
+
+        </div>
+
+        <!--3rd row starts-->
+        <div class="std-section-fullWidth aside" style="margin-top: 5%">
+        <div class="std-col-12">
+            <div class="std-col-t-3" style="max-height: 300px; outline: 3px solid white; outline-offset: -25px;">
+                <img src="/images/model1.jpg">
+
+            </div>
+            <div class="std-col-t-3" style="max-height: 300px;">
+                <img src="/images/model3.jpg">
+
+            </div>
+            <div class="std-col-t-3" style="max-height: 300px; outline: 3px solid white; outline-offset: -25px;">
+                <img src="/images/model2.jpg">
+
+            </div>
+            <div class="std-col-t-3" style="max-height: 300px;">
+                <img src="/images/model4.jpg">
+
+            </div>
+
+        </div>
+        <div class="std-col-12">
+            <div class="std-col-t-3" style="max-height: 300px;">
+                <img src="/images/model1.jpg">
+
+            </div>
+            <div class="std-col-t-3" style="max-height: 300px; outline: 3px solid white; outline-offset: -25px;">
+                <img src="/images/model3.jpg">
+
+            </div>
+            <div class="std-col-t-3" style="max-height: 300px;">
+                <img src="/images/model2.jpg">
+
+            </div>
+            <div class="std-col-t-3" style="max-height: 300px; outline: 3px solid white; outline-offset: -25px;">
+                <img src="/images/model4.jpg">
+
+            </div>
+
+        </div>
+        <div class="std-col-12">
+            <div class="std-col-t-3" style="max-height: 300px; outline: 3px solid white; outline-offset: -25px;">
+                <img src="/images/model1.jpg">
+
+            </div>
+            <div class="std-col-t-3" style="max-height: 300px;">
+                <img src="/images/model3.jpg">
+
+            </div>
+            <div class="std-col-t-3" style="max-height: 300px; outline: 3px solid white; outline-offset: -25px;">
+                <img src="/images/model2.jpg">
+
+            </div>
+            <div class="std-col-t-3" style="max-height: 300px;">
+                <img src="/images/model4.jpg">
+
+            </div>
+
+        </div>
+        </div>
+
+        <!--The Footer-->
+        <div class="std-section-bleed">
+            <% include template/footer.ejs %>
+        </div>
+        <!--Footer End-->
+    </body>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex> slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+</script>
+</html>

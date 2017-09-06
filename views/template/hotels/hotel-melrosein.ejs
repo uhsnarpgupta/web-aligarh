@@ -94,22 +94,41 @@
                 <hr>
                 <div class="std-top-row" style="background-color: black; color: white">
                     <h4>Rooms</h4>
-                    <div class="std-section-bleed" style="max-width:100%">
-                        <img class="mySlides" src="images/room1.jpg" style="width:100%">
-                        <img class="mySlides" src="images/room2.jpg" style="width:100%">
-                        <img class="mySlides" src="images/room3.jpg" style="width:100%">
-                        <img class="mySlides" src="images/room4.jpg" style="width:100%">
-                        <img class="mySlides" src="images/room5.jpg" style="width:100%">
+                    <div>
+                        <img class="mySlides" src="images/room1.jpg">
+                        <img class="mySlides" src="images/room2.jpg">
+                        <img class="mySlides" src="images/room3.jpg">
+                        <img class="mySlides" src="images/room4.jpg">
+                        <img class="mySlides" src="images/room5.jpg">
+                        <button class="btn" id="btn1" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="btn" id="btn2" onclick="plusDivs(1)">&#10095;</button>
                     </div>
-
                 </div>
                 <hr>
 
             </div>
         </div>
-
     </div>
 </div>
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+    }
+</script>
 
 </body>
 </html>

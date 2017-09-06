@@ -2,6 +2,11 @@
 <html>
 <title>std.CSS Template</title>
 <link rel="stylesheet" href="/stylesheets/standards.css">
+<!--<style>
+    .mySlidespm{
+        display: none;
+    }
+</style>-->
 <head>
 </head>
 <body class="std-light-grey">
@@ -90,68 +95,39 @@
                 <hr>
                 <div class="std-top-row" style="background-color: black; color: white">
                     <h4>Rooms</h4>
-                    <div class="std-section-bleed" style="max-width:100%">
-                        <img class="mySlides" src="images/room1.jpg" style="width:100%">
-                        <img class="mySlides" src="images/room2.jpg" style="width:100%">
-                        <img class="mySlides" src="images/room3.jpg" style="width:100%">
-                        <img class="mySlides" src="images/room4.jpg" style="width:100%">
-                        <img class="mySlides" src="images/room5.jpg" style="width:100%">
+                    <div>
+                        <img class="mySlidespm" src="images/room1.jpg">
+                        <img class="mySlidespm" src="images/room2.jpg">
+                        <img class="mySlidespm" src="images/room3.jpg">
+                        <img class="mySlidespm" src="images/room4.jpg">
+                        <img class="mySlidespm" src="images/room5.jpg">
+                        <button class="btn" id="btn1" onclick="plusDivspm(-1)">&#10094;</button>
+                        <button class="btn" id="btn2" onclick="plusDivspm(1)">&#10095;</button>
                     </div>
-
                 </div>
                 <hr>
-                <!--<div class="std-container std-padding std-black"-->
-                     <!--style="margin-top: 4%; background-color: black; color: white;">-->
-                    <!--<h4>Attration</h4>-->
-                <!--</div>-->
-
-                <!--<div>-->
-                    <!--<h1>PALM SKY , THE TERRACE GARDEN</h1>-->
-                    <!--<hr>-->
-                    <!--&lt;!&ndash;<div class="std-top-row" style="background-color: black; color: white">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<h4>Rooms</h4>&ndash;&gt;-->
-                    <!--<div class="std-section-bleed" style="max-width:100%">-->
-                        <!--<img class="mySlides" src="images/palmsky1.jpg" style="width:100%">-->
-                        <!--<img class="mySlides" src="images/palmsky2.jpg" style="width:100%">-->
-                        <!--<img class="mySlides" src="images/palmsky3.jpg" style="width:100%">-->
-                        <!--<img class="mySlides" src="images/palmsky4.jpg" style="width:100%">-->
-                        <!--<img class="mySlides" src="images/palmsky5.jpg" style="width:100%">-->
-                    <!--</div>-->
-                <!--</div>-->
-
-
             </div>
         </div>
-        <!-- <div class="std-col-3 std-col-t-12">
-             <div class="aside">
-                 <div class="std-white std-margin">
-                     <div class="std-container std-padding std-black">
-                         <h4>Hotel Location</h4>
-                     </div>
-                     <div id="googleMap" style="width:100%;height:200px;"></div>
-                 </div>
-
-                 <hr>
-                 <div class="std-container std-padding std-black">
-                     <h4>Rooms</h4>
-                     <div class="w3-content w3-section" style="max-width:500px">
-                         <img class="mySlides" src="images/room1.jpg" style="width:100%">
-                         <img class="mySlides" src="images/room5.jpg" style="width:100%">
-                         <img class="mySlides" src="images/room2.jpg" style="width:100%">
-                         <img class="mySlides" src="images/room4.jpg" style="width:100%">
-                     </div>
-
-                 </div>
-
-                 &lt;!&ndash;<picture>&ndash;&gt;
-                 &lt;!&ndash;<source srcset="/images/brandLogo/school-logo.png" media="(max-width: 1024px)">&ndash;&gt;
-                 &lt;!&ndash;<source srcset="/images/brandLogo/school-logo.png">&ndash;&gt;
-                 &lt;!&ndash;<img src="/images/brandLogo/school-logo.png" alt="Image">&ndash;&gt;
-                 &lt;!&ndash;</picture>&ndash;&gt;
-             </div>
-         </div>-->
     </div>
 </div>
+<script>
+    var slideIndexpm = 1;
+    showDivspm(slideIndexpm);
 
+    function plusDivspm(n) {
+        showDivspm(slideIndexpm += n);
+    }
+
+    function showDivspm(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlidespm");
+        if (n > x.length) {slideIndexpm = 1}
+        if (n < 1) {slideIndexpm = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndexpm-1].style.display = "block";
+    }
+</script>
 </body>
 </html>

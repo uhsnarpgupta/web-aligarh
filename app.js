@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var restaurant = require('./routes/restaurant');
-var shopping = require('./routes/shopping');
+var shopping = require('./routes/shopnew');
 var hotel = require('./routes/hotel');
 var aboutus = require('./routes/about');
 var event = require('./routes/event');
@@ -35,6 +35,7 @@ var hoteldeals = require('./routes/hoteldeals');
 var study = require('./routes/study');
 var recipe = require('./routes/recipe');
 var recipe2 = require('./routes/recipe2');
+var restaurantnew = require('./routes/restaurantnew');
 
 var app = express();
 
@@ -53,7 +54,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //Home Page Routes
 app.use('/', index);
 app.use('/restaurant',restaurant);
-app.use('/shop',shopping);
+app.use('/shopnew',shopping);
 app.use('/hotel',hotel);
 app.use('/about',aboutus);
 app.use('/event',event);
@@ -82,7 +83,7 @@ app.use('/justforfun',justforfun);
 
 //restaurant routes
 app.use('/kss',kss);
-
+app.use('/restaurantnew',restaurantnew);
 
 //attraction route
 app.use('/attraction', attraction);
