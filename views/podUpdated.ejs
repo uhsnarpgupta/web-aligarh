@@ -5,10 +5,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/stylesheets/standards.css">
-    <link rel="stylesheet" href="/stylesheets/std.css">
     <link rel="stylesheet" href="/stylesheets/templateU.css"/>
 
     <style>
+
+        .std-light-grey, .std-hover-light-grey:hover, .std-light-gray, .std-hover-light-gray:hover {
+            color: #000 !important;
+            background-color: #f1f1f1 !important
+        }
+
+        .std-content {
+            max-width: 980px;
+            margin: auto
+        }
+
+        .std-row-padding, .std-row-padding > .std-half, .std-row-padding > .std-third, .std-row-padding > .std-twothird, .std-row-padding > .std-threequarter, .std-row-padding > .std-quarter, .std-row-padding > .std-col {
+            padding: 0 8px
+        }
+
+        .std-padding-small {
+            padding: 4px 8px !important
+        }
+
+        .std-padding {
+            padding: 8px 16px !important
+        }
+
+        .std-padding-large {
+            padding: 12px 24px !important
+        }
+
+        .std-padding-16 {
+            padding-top: 16px !important;
+            padding-bottom: 16px !important
+        }
+
+        .std-padding-24 {
+            padding-top: 24px !important;
+            padding-bottom: 24px !important
+        }
+
+        .std-padding-32 {
+            padding-top: 32px !important;
+            padding-bottom: 32px !important
+        }
+
+        .std-padding-48 {
+            padding-top: 48px !important;
+            padding-bottom: 48px !important
+        }
+
+        .std-padding-64 {
+            padding-top: 64px !important;
+            padding-bottom: 64px !important
+        }
+
+        .std-border-red, .std-hover-border-red:hover {
+            border-color: #f44336 !important
+        }
+
+        .std-border-green, .std-hover-border-green:hover {
+            border-color: #4CAF50 !important
+        }
+
+        .std-border-blue, .std-hover-border-blue:hover {
+            border-color: #2196F3 !important
+        }
+
+        .std-border-yellow, .std-hover-border-yellow:hover {
+            border-color: #ffeb3b !important
+        }
+
+        .std-border-white, .std-hover-border-white:hover {
+            border-color: #fff !important
+        }
+
+        .std-border-black, .std-hover-border-black:hover {
+            border-color: #000 !important
+        }
+
+        .std-border-grey, .std-hover-border-grey:hover, .std-border-gray, .std-hover-border-gray:hover {
+            border-color: #bbb !important
+        }
+
+        .std-border-0 {
+            border: 0 !important
+        }
+
+        .std-border {
+            border: 1px solid #ccc !important
+        }
+
+        .std-border-top {
+            border-top: 1px solid #ccc !important
+        }
+
+        .std-border-bottom {
+            border-bottom: 1px solid #ccc !important
+        }
+
+        .std-border-left {
+            border-left: 1px solid #ccc !important
+        }
+
+        .std-border-right {
+            border-right: 1px solid #ccc !important
+        }
         /* MODAL CSS */
         /* The Modal (background) */
         .modal {
@@ -97,68 +199,68 @@
     <% include template/navigationBar.ejs %>
 </div>
 
-<!-- std-content defines a container for fixed size centered content,
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="std-content" style="max-width:1600px">
-
 <div class="std-top-row" style="text-align: center;">
-    &nbsp
-    <h4><strong>Picture(s) of the Day</strong></h4>
-</div>
 
     <br/>
-    <!-- Grid -->
-    <div id="wrapper" style="padding-top: 10px">
-        <div class="std-row std-padding std-border">
-        <!-- Main -->
-        <section id="main">
+    <h4><strong>Picture(s) of the Day</strong></h4>
 
-            <!-- Thumbnails -->
-            <section class="thumbnails demo-gallery" id="demo-test-gallery" data-pswp-uid="1">
-                <div>
-                    <a href="#" onclick="fullerimage('01','Lorem ipsum dolor sit amet')" data-author="Samuel Rohl"
-                       data-med-size="1024x683" data-med="images/thumbs/01.jpg"
-                       data-size="1600x1068">
-                        <img src="images/thumbs/01.jpg" alt=""/>
-                        <h3>Lorem ipsum dolor sit amet</h3>
+    <br/>
 
-                    </a>
-                    <a href="#" onclick="fullerimage('02','Lorem ipsum dolor sit amet')">
-                        <img src="images/thumbs/02.jpg" alt=""/>
-                        <h3>Lorem ipsum dolor sit amet</h3>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" onclick="fullerimage('03','Lorem ipsum dolor sit amet')">
-                        <img src="images/thumbs/03.jpg" alt=""/>
-                        <h3>Lorem ipsum dolor sit amet</h3>
-                    </a>
-                    <a href="#" onclick="fullerimage('04','Lorem ipsum dolor sit amet')">
-                        <img src="images/thumbs/04.jpg" alt=""/>
-                        <h3>Lorem ipsum dolor sit amet</h3>
-                    </a>
-                    <a href="#" onclick="fullerimage('05','Lorem ipsum dolor sit amet')">
-                        <img src="images/thumbs/05.jpg" alt=""/>
-                        <h3>Lorem ipsum dolor sit amet</h3>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" onclick="fullerimage('06','Lorem ipsum dolor sit amet')">
-                        <img src="images/thumbs/06.jpg" alt=""/>
-                        <h3>Lorem ipsum dolor sit amet</h3>
-                    </a>
-                    <a href="#" onclick="fullerimage('07','Lorem ipsum dolor sit amet')">
-                        <img src="images/thumbs/07.jpg" alt=""/>
-                        <h3>Lorem ipsum dolor sit amet</h3>
-                    </a>
-                </div>
+    <div class="std-section-bleed std-content" style="border: groove; background-color: white;">
+
+        <!-- Grid -->
+<!--        <div id="wrapper" style="padding-top: 10px">
+        <div class="std-row std-padding std-border">-->
+            <!-- Main -->
+            <section id="main">
+
+                <!-- Thumbnails -->
+                <section class="thumbnails demo-gallery" id="demo-test-gallery" data-pswp-uid="1">
+                    <div>
+                        <a href="#" onclick="fullerimage('01','Lorem ipsum dolor sit amet')" data-author="Samuel Rohl"
+                           data-med-size="1024x683" data-med="images/thumbs/01.jpg"
+                           data-size="1600x1068">
+                            <img src="images/thumbs/01.jpg" alt=""/>
+                            <h3>Lorem ipsum dolor sit amet</h3>
+
+                        </a>
+                        <a href="#" onclick="fullerimage('02','Lorem ipsum dolor sit amet')">
+                            <img src="images/thumbs/02.jpg" alt=""/>
+                            <h3>Lorem ipsum dolor sit amet</h3>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" onclick="fullerimage('03','Lorem ipsum dolor sit amet')">
+                            <img src="images/thumbs/03.jpg" alt=""/>
+                            <h3>Lorem ipsum dolor sit amet</h3>
+                        </a>
+                        <a href="#" onclick="fullerimage('04','Lorem ipsum dolor sit amet')">
+                            <img src="images/thumbs/04.jpg" alt=""/>
+                            <h3>Lorem ipsum dolor sit amet</h3>
+                        </a>
+                        <a href="#" onclick="fullerimage('05','Lorem ipsum dolor sit amet')">
+                            <img src="images/thumbs/05.jpg" alt=""/>
+                            <h3>Lorem ipsum dolor sit amet</h3>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" onclick="fullerimage('06','Lorem ipsum dolor sit amet')">
+                            <img src="images/thumbs/06.jpg" alt=""/>
+                            <h3>Lorem ipsum dolor sit amet</h3>
+                        </a>
+                        <a href="#" onclick="fullerimage('07','Lorem ipsum dolor sit amet')">
+                            <img src="images/thumbs/07.jpg" alt=""/>
+                            <h3>Lorem ipsum dolor sit amet</h3>
+                        </a>
+                    </div>
+                </section>
+
             </section>
 
-        </section>
-
-        <!-- END std-content -->
-    </div>
-    </div>
+            <!-- END std-content -->
+        </div>
+    <!--</div>
+    </div>-->
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -166,7 +268,6 @@ and is wrapped around the whole page content, except for the footer in this exam
         <img class="modal-content" id="img01">
         <div id="caption"></div>
     </div>
-
 </div>
 
 <!-- Scripts -->
@@ -200,10 +301,10 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 </script>
 
-<script src="routes/jquery.min.js"></script>
+<!--<script src="routes/jquery.min.js"></script>
 <script src="routes/jquery.poptrox.min.js"></script>
 <script src="routes/skel.min.js"></script>
-<script src="routes/main.js"></script>
+<script src="routes/main.js"></script>-->
 </body>
 
 </html>
