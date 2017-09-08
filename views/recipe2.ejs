@@ -2,10 +2,9 @@
 <html xmlns:http="http://www.w3.org/1999/xhtml">
 <head>
     <title>Recipe of the Week</title>
-    <link rel='stylesheet' href='/stylesheets/shop.css'/>
     <link rel="stylesheet" href="/stylesheets/standards.css">
-    <link rel="stylesheet" href="/stylesheets/modal.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--    <link rel='stylesheet' href='/stylesheets/shop.css'/>
+    <link rel="stylesheet" href="/stylesheets/modal.css">-->
 
     <style>
         img {
@@ -110,59 +109,68 @@
 </head>
 <body>
 
-<div>
+<div class="std-header">
     <% include template/navigationBar.ejs %>
 </div>
 
-<div class="std-section-fullWidth">
-    <div class="std-col-12">
-        <img src="images/recipe.png" width="100%" height="50%">
-        <div class="hero-text" style="margin-top: 50px;">
-            <h1 class="std-wide" style="color: black; font-family: 'Times New Roman'; font-weight: 500;"><strong>Recipe of the Week</strong></h1>
-            <p style="color: black; font-family: FontAwesome; font-weight: 300;">Feast your eyes on our daily dose of home cooks' top-rated recipes (and fantastic food photos).</p>
-            <div class="std-section-bleed slideshow-container">
+<div class="std-top-row">
+    <div class="std-section-bleed">
+        <div class="std-col-12">
+            <img src="images/recipe.png" width="100%" height="50%">
+            <div class="hero-text" style="margin-top: 50px;">
+                <h1 class="std-wide" style="color: black; font-family: 'Times New Roman'; font-weight: 500;"><strong>Recipe
+                        of the Week</strong></h1>
+                <p style="color: black; font-family: FontAwesome; font-weight: 300;">Feast your eyes on our daily dose
+                    of
+                    home cooks' top-rated recipes (and fantastic food photos).</p>
+                <div class="std-section-bleed slideshow-container">
 
-                <div class="mySlides fade">
-                    <img class="temp" src="images/deals/resdeal1.jpeg" style="width:100%">
-                    <div class="hero-text">
-                        <h1 class="std-wide">First</h1>
-                        <button id="frstrecipe" onclick="frstcontshow('resdeal1.jpeg','First Recipe');"><p>View Recipe</p></button>
+                    <div class="mySlides fade">
+                        <img class="temp" src="images/deals/resdeal1.jpeg" style="width:100%">
+                        <div class="hero-text">
+                            <h1 class="std-wide">First</h1>
+                            <button id="frstrecipe" onclick="frstcontshow('resdeal1.jpeg','First Recipe');"><p>View
+                                    Recipe</p></button>
+                        </div>
                     </div>
-                </div>
 
-                <div class="mySlides fade">
-                    <img class="temp" src="images/deals/resdeal2.png" style="width:100%">
-                    <div class="hero-text">
-                        <h1 class="std-wide">Second</h1>
-                        <button id="secondrecipe" onclick="scndcontshow('resdeal2.png','Second Recipe');"><p>View Recipe</p></button>
+                    <div class="mySlides fade">
+                        <img class="temp" src="images/deals/resdeal2.png" style="width:100%">
+                        <div class="hero-text">
+                            <h1 class="std-wide">Second</h1>
+                            <button id="secondrecipe" onclick="scndcontshow('resdeal2.png','Second Recipe');"><p>View
+                                    Recipe</p></button>
+                        </div>
                     </div>
-                </div>
 
-                <div class="mySlides fade">
-                    <img class="temp" src="images/deals/resdeal3.jpeg" style="width:100%">
-                    <div class="hero-text">
-                        <h1 class="std-wide">Third</h1>
-                        <button id="thirdrecipe" onclick="thrdcontshow('resdeal3.jpeg','Third Recipe');"><p>View Recipe</p></button>
+                    <div class="mySlides fade">
+                        <img class="temp" src="images/deals/resdeal3.jpeg" style="width:100%">
+                        <div class="hero-text">
+                            <h1 class="std-wide">Third</h1>
+                            <button id="thirdrecipe" onclick="thrdcontshow('resdeal3.jpeg','Third Recipe');"><p>View
+                                    Recipe</p></button>
+                        </div>
                     </div>
-                </div>
 
-                <div class="mySlides fade">
-                    <img class="temp" src="images/deals/resdeal4.jpg" style="width:100%">
-                    <div class="hero-text">
-                        <h1 class="std-wide">Fourth</h1>
-                        <button id="fourthrecipe" onclick="frthcontshow('resdeal4.jpg','Fourth Recipe');"><p>View Recipe</p></button>
+                    <div class="mySlides fade">
+                        <img class="temp" src="images/deals/resdeal4.jpg" style="width:100%">
+                        <div class="hero-text">
+                            <h1 class="std-wide">Fourth</h1>
+                            <button id="fourthrecipe" onclick="frthcontshow('resdeal4.jpg','Fourth Recipe');"><p>View
+                                    Recipe</p></button>
+                        </div>
                     </div>
-                </div>
 
-            </div>
-            <div style="text-align:center">
-                <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
-                <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
-                <br><br>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+                </div>
+                <div style="text-align:center">
+                    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+                    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+                    <br><br>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
             </div>
         </div>
     </div>
@@ -271,12 +279,14 @@ onclick="window.open('/kss');"-->
             slides[i].style.display = "none";
         }
         slideIndex++;
-        if (slideIndex> slides.length) {slideIndex = 1}
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
         for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
         }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
         setTimeout(showSlides, 5000); // Change image every 5 seconds
     }
 </script>
@@ -297,16 +307,20 @@ onclick="window.open('/kss');"-->
         var i;
         var x = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("dot");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        }
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" w3-red", "");
         }
-        x[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " w3-red";
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-red";
     }
 </script>
 

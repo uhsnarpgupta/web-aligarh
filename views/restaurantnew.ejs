@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<head xmlns="http://www.w3.org/1999/html">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Restaurant</title>
+        <link rel="stylesheet" href="/stylesheets/standards.css">
+        <link rel='stylesheet' href='/stylesheets/default.css'/>
+        <link rel="stylesheet" href="/stylesheets/hotel.css">
+    <style>
+        .box-radius {
+            box-shadow: 0 0 2px 1px rgba(184, 0, 34, 0.5);
+            border-radius: 20%;
+        }
+        .product {
+            width: 376px;
+            position: relative;
+            float: left;
+            margin: 0 20px 0 0;
+        }
+
+        .product>img {
+            display: block;
+            position: relative;
+        }
+
+        .product:hover .product-hover,
+        .product:active .product-hover {
+            opacity: 1;
+        }
+
+        .product-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            background-size: 30px 30px;
+            background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, transparent 75%, transparent);
+            animation: barberpole 0.5s linear infinite;
+        }
+        @keyframes barberpole {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 60px 30px;
+            }
+        }
+
+        .product-info {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            background: white;
+            width: 150px;
+            padding: 10px 10px 50px 10px;
+        }
+
+        .subhead {
+            color: #f00;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .product-name {
+            color: #990033;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 0;
+            letter-spacing: -1px;
+        }
+
+        .price {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .amount>span {
+            font-size: 75%;
+        }
+
+        h1 {
+            font-size: 72px;
+            margin: 2px 0 0 0;
+        }
+    </style>
+    <style>
+        @media only screen and (min-width: 768px) {
+            .res-div-temp {
+                margin-left: 10%;
+            }
+            .res-div2-temp {
+                margin-left: 5%;
+            }
+        }
+    </style>
+</head>
+    <body>
+        <div class="std-header">
+            <% include template/navigationBar.ejs %>
+        </div>
+
+        <div class="std-top-row">
+            <div class="std-section-bleed" style="height: 500px;">
+                <div class="hero-image mySlides fade std-parallax box-radius"
+                     style="background-image: url('../images/restaurant/res1.jpg');">
+                    <div class="std-col-5 page-slot-content">
+                        <h1 style="font-size: 40px;">
+                            RESTAURANT
+                        </h1>
+                        <h4>
+                            You don't need a silver fork to eat good food
+                        </h4>
+                    </div>
+                    <!--<div class="hero-text">
+                        <h1 class="std-wide" style="font-family: 'Droid Serif'; font-weight: 700;">RESTAURANT</h1>
+                        <br><br>
+                        <h2 class="hero-sub-text" style="color: black;">You don't need a silver fork to eat good food</h2>
+                    </div>-->
+                </div>
+                <div class="hero-image mySlides fade std-parallax box-radius"
+                     style="background-image: url('../images//restaurant/res2.jpg');">
+                    <div class="std-col-5 page-slot-content">
+                        <h1 style="font-size: 40px">
+                            RESTAURANT
+                        </h1>
+                        <h4>
+                            People who love to eat are always the best people
+                        </h4>
+                    </div>
+                    <!--<div class="hero-text">
+                        <h1 class="std-wide" style="font-family: 'Droid Serif'; font-weight: 700;">RESTAURANT</h1>
+                        <br><br><br>
+                        <h2 class="hero-sub-text" style="color: black;">People who love to eat are always the best people</h2>
+                    </div>-->
+                </div>
+                <div class="hero-image mySlides fade std-parallax box-radius"
+                     style="background-image: url('../images/restaurant/res3.jpg');">
+                    <div class="std-col-5 page-slot-content">
+                        <h1 style="font-size: 40px">
+                            RESTAURANT
+                        </h1>
+                        <h4>
+                            One cannot think well, love well, sleep well, if one has not dined well
+                        </h4>
+                    </div>
+                    <!--<div class="hero-text">
+                        <h1 class="std-wide" style="font-family: 'Droid Serif'; font-weight: 700;">RESTAURANT</h1>
+                        <br><br><br><br>
+                        <h2 class="hero-sub-text" style="color: black;">One cannot think well, love well, sleep well, if one has not dined well</h2>
+                    </div>-->
+                </div>
+            </div>
+            <br><br><br>
+            <div class="std-col-12" style="background-color: tan">
+                <div class="center">
+                    <div class="std-col-4">
+                        <div class="iconDiv" style="width: 150px;">
+                            <img src="/images/restaurant/starters-main.jpg"style="border-radius: 50%;border: 15px solid white;"/>
+                        </div>
+                        <div class="iconCaption">
+                            <h2 style="text-align: center">
+                                STARTERS
+                            </h2>
+                            <h4>“Yeast is to flour as action is to ambition. Rising to success requires adding and
+                                alternating starters.”</h4>
+                        </div>
+                    </div>
+                    <div class="std-col-4">
+                        <div class="iconDiv" style="width: 150px;">
+                            <img src="/images/restaurant/main-course.jpg"style="border-radius: 50%;border: 15px solid white;"/>
+                        </div>
+                        <div class="iconCaption">
+                            <h2 style="text-align: center">
+                                MAIN COURSE
+                            </h2>
+                            <h4>“A good food is mouthwatering when you see it and finger licking when you eat it.”</h4>
+                        </div>
+                    </div>
+                    <div class="std-col-4">
+                        <div class="iconDiv" style="width: 150px;">
+                            <img src="/images/restaurant/desserts.jpg"style="border-radius: 50%;border: 15px solid white;"/>
+                        </div>
+                        <div class="iconCaption">
+                            <h2 style="text-align: center">
+                                DESERTS
+                            </h2>
+                            <h4>“Life's short. Buy the shoes. Drink the wine. Order the dessert.”</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="std-section-fullWidth" style="padding-top: 3%; position: relative">
+                <div class="std-col-12 page-slot"
+                     style="background-image: url('../images/restaurant/restaurant-theme.jpg'); height: 100%">
+                    <div class="std-col-5 std-col-t-5 mediabox res-div2-temp" onclick="window.open('/kss')">
+                        <div style="float: left; height: 50%; width: 50%">
+                            <img src="/images/events2.jpg" height="50%"/>
+                        </div>
+                        <div>
+                            <h3>KSS</h3>
+                            <h4>We broadcasts your event in a way that is both technically elegant and very cost effective.</h4>
+                        </div>
+                    </div>
+                    <div class="std-col-5 std-col-t-5 mediabox" onclick="window.open('/swadeshi')">
+                        <div style="float: left; height: 50%; width: 50%">
+                            <img src="/images/events2.jpg" height="50%"/>
+                        </div>
+                        <div>
+                            <h3>Swadeshi</h3>
+                            <h4>We broadcasts your event in a way that is both technically elegant and very cost effective.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="std-col-12">
+                    <div class="std-col-3 std-col-t-3 product res-div-temp">
+                        <div class="product-hover"></div>
+                        <img src="/images/restaurant/res4.jpg"/>
+                        <div class="product-info">
+                            <div class="subhead">Coming Soon</div>
+                            <h2 class="product-name">Fleece</h2>
+                            <p class="product-description">Beat the chill and get cozy.</p>
+                            <div class="price"><span class="from">More Info</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="std-col-3 std-col-t-3 product">
+                        <div class="product-hover"></div>
+                        <img src="/images/restaurant/res4.jpg"/>
+                        <div class="product-info">
+                            <div class="subhead">Coming Soon</div>
+                            <h2 class="product-name">Fleece</h2>
+                            <p class="product-description">Beat the chill and get cozy.</p>
+                            <div class="price"><span class="from">More Info</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="std-col-3 std-col-t-3 product">
+                        <div class="product-hover"></div>
+                        <img src="/images/restaurant/res4.jpg"/>
+                        <div class="product-info">
+                            <div class="subhead">Coming Soon</div>
+                            <h2 class="product-name">Fleece</h2>
+                            <p class="product-description">Beat the chill and get cozy.</p>
+                            <div class="price"><span class="from">More Info</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="std-col-12 page-slot"
+                     style="background-image: url('../images/restaurant/restaurant-theme.jpg'); height: 100%">
+                    <div class="std-col-5 std-col-t-5 mediabox res-div2-temp">
+                        <div style="float: left; height: 50%; width: 50%">
+                            <img src="/images/events2.jpg" height="50%"/>
+                        </div>
+                        <div>
+                            <h3>Coming Soon</h3>
+                            <h4>We broadcasts your event in a way that is both technically elegant and very cost effective.</h4>
+                        </div>
+                    </div>
+                    <div class="std-col-5 std-col-t-5 mediabox">
+                        <div style="float: left; height: 50%; width: 50%">
+                            <img src="/images/events2.jpg" height="50%"/>
+                        </div>
+                        <div>
+                            <h3>Coming Soon</h3>
+                            <h4>We broadcasts your event in a way that is both technically elegant and very cost effective.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="std-section-bleed">
+            <% include template/footer.ejs %>
+        </div>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 5000);
+            }
+        </script>
+
+    </body>
+</html>
