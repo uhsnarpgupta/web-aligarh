@@ -1,4 +1,9 @@
 
+h5{
+    font-family: "Lucida Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
 a{
     text-decoration: none;
     color: white;
@@ -10,9 +15,20 @@ a:active, a:hover {
 }
 
 .event-container{
-    background-color: #cddc39;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    /*margin-top: 5px;*/
+    /*margin-bottom: 5px;*/
+    width: 100%;
+    margin: 0 2.5%;
+    margin-bottom: 1%;
+    position: relative;
+    /*height: 9em;*/
+}
+
+.event-container div{
+    display: inline-block;
+    margin: 0.5em;
+    white-space: normal;
+    text-align: center;
 }
 .banner{
     width: 100%;
@@ -21,21 +37,7 @@ a:active, a:hover {
     max-width: 1200px;
     margin: 0 auto;
 }
-.one-fourth{
-    width: 23%;
-    float: left;
-    text-align: center;
-    margin: 1%;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-    transition: transform linear 0.2s;
-    /*
-    border:2px dotted #000000;
-    */
-}
-.one-fourth:hover{
-    box-shadow: 4px 4px 4px #ccc;
-    transform: scale(1.1);
-}
+
 #html{
     background-color: white;
 }
@@ -64,6 +66,19 @@ article{
     width: 50%;
     height: auto;
 }
+
+article > h2, aside > h2{
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: "Lucida Grande";
+}
+
+article > p, aside > p, .one-third > p{
+    font-weight: normal;
+    font-size: medium;
+    font-family: "Lucida Grande";
+}
+
 #tablet{
     background-color: #C3D7DF;
 }
@@ -107,7 +122,7 @@ aside{
 .caption-link{
     width: 100%;
     margin-left: auto;
-    font-size: x-large;
+    font-size: large;
     height: auto;
     padding: 0.25%;
     margin-right: auto;
@@ -130,6 +145,7 @@ aside{
     padding: 0 0 1%;
     clear: both;
 }
+
 /*#hide{
     display: none;
 }
@@ -225,7 +241,6 @@ iframe{
     width: 100%;
 }
 
-
 .btnTop{
     margin-top: 4%;
     margin-left: 2%;
@@ -248,7 +263,7 @@ iframe{
     height: 400px;
 }
 #container{
-    width: 92%;
+    width: 100%;
     height: 550px;
     border: 1px solid black;
     margin: 0 auto;
@@ -284,7 +299,6 @@ iframe{
 }
 .btn-container{
     font-size: 24px!important;
-    padding-left: 40%;
     padding-top: 11%;
 }
 
@@ -292,12 +306,10 @@ iframe{
     position: relative;
     padding: 0.2%;
     color: #1f1f21;
-    background-color: ghostwhite;
 }
 
-.std-12-col{
-    width: 98%;
-    margin: 0 auto;
+.std-top-row{
+    padding-top: 3.6%;
 }
 .stats{
     color: #fff;
@@ -352,7 +364,6 @@ iframe{
     }
     .btn-container{
         font-size: 20px!important;
-        padding-left: 40%;
         padding-top: 0.25%;
     }
     #tablet2{
@@ -370,7 +381,9 @@ iframe{
     #container{
         height: 270px;
     }
-
+    .std-one-fourth-card {
+        width: 100px;
+    }
 }
 
 @media screen and (max-width: 425px){
@@ -384,36 +397,7 @@ iframe{
         width: fit-content;
         height: auto;
     }
-}
-
-@media screen and (min-width: 1200px){
-    /*.image:after, .image:before {*/
-        /*position: absolute;*/
-        /*!*position: inherit;*!*/
-        /*opacity: 0;*/
-        /*transition: all 0.5s;*/
-        /*-webkit-transition: all 0.5s;*/
-    /*}*/
-    /*.image:after {*/
-        /*content: '\A';*/
-        /*width: 22.5%; height:22%;*/
-        /*margin-left: 2%;*/
-        /*background:rgba(0,0,0,0.6);*/
-    /*}*/
-    /*.image:before {*/
-        /*content: attr(data-content);*/
-        /*width: 23%;*/
-        /*color: #fff;*/
-        /*z-index: 1;*/
-        /*margin-bottom: 100px;*/
-        /*bottom: 0;*/
-        /*padding: 4px 10px;*/
-        /*text-align: center;*/
-        /*background: #f00;*/
-        /*box-sizing: border-box;*/
-        /*-moz-box-sizing:border-box;*/
-    /*}*/
-    /*.image:hover:after, .image:hover:before {*/
-        /*opacity: 1;*/
-    /*}*/
+    .std-one-fourth-card {
+        width: 100px;
+    }
 }
