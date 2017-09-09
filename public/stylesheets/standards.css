@@ -18,6 +18,12 @@ p {font-size: 1.2em;}
 
 a {text-decoration: none;}
 
+.std-div-inside-border{
+    outline: 1px darkgrey;
+    outline-offset: -5px;
+    outline-style: solid;
+}
+
 /*Wide Letter Spacing*/
 .std-wide{
    letter-spacing: 4px;
@@ -133,6 +139,14 @@ body {
     color: white;
 }
 
+.hero-text, h1{
+    font-size: xx-large;
+}
+
+.hero-text, h3{
+    font-size: larger;
+}
+
 .hero-text button {
     border: none;
     outline: 0;
@@ -198,6 +212,83 @@ div.std-panel{
     padding: 0 18px;
 }
 
+/* One fourth Cards
+-----------------------------------------------------------------------------*/
+.std-one-fourth-card{
+    float: left;
+    margin: 0;
+    width: 100%;
+    padding: 0 0.5%;
+    border: 1px solid #ddd;
+    background: #fff;
+    box-shadow: 2px 2px 2px #ccc;
+    padding-top: 10px;
+    border-left: 5px solid #675765;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    max-height: 600px;
+    transition: transform linear 0.2s;
+}
+.std-one-fourth-card:hover{
+    box-shadow: 4px 4px 4px #ccc;
+    transform: scale(1.1);
+}
+
+iframe{
+    position: relative;
+    height: 100%;
+    width: 115%;
+    scrolling: no;
+    frameborder:0;
+    allowTransparency:true;
+    allowFullScreen:true;
+}
+
+/* Buttons
+-----------------------------------------------------------------------------*/
+.button{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    height: 36px;
+    line-height: 35px;
+    padding: 0 20px;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+    background-clip: padding-box;
+    border: 1px solid;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.08), 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #47494f;
+    border-color: #2f3034 #2f3034 #232427;
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.08), 0 1px 2px rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(to bottom, #55585f, #47494f 66%, #3d3f44);
+}
+
+.button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    background-image: radial-gradient(center top, farthest-corner, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0));
+}
+.button:hover:before {
+    background-image: radial-gradient(farthest-corner, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.03));
+}
+.button:active {
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.button:active:before {
+    content: none;
+}
 
 /* Box Sizing Content
 -----------------------------------------------------------------------------*/
@@ -298,6 +389,7 @@ li:hover {
     opacity: 0.75;
 }
 
+
 /*-----------------------------------------------------------------------------*/
 
 
@@ -328,6 +420,19 @@ li:hover {
         float: left;
         /*padding: 10px !important;*/
         /*border: 1px solid red;*/
+    }
+
+    .std-one-fourth-card{
+        width: 48%;
+        margin: 1%;
+    }
+
+    .hero-text, h1{
+        font-size: 65px;
+    }
+
+    .hero-text, h3{
+        font-size: 25px;
     }
 }
 
@@ -424,6 +529,18 @@ li:hover {
     .std-top-row{
         padding-top: 3.2%;
         /*float: none;*/
+    }
+    .std-one-fourth-card{
+        width: 31%;
+        margin: 1%;
+    }
+
+    .hero-text, h1{
+        font-size: 80px;
+    }
+
+    .hero-text, h3{
+        font-size: 30px;
     }
 }
 

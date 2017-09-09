@@ -108,6 +108,16 @@ h3 {
     margin-left: 40%;
 }
 
+a > .button{
+    height: 40px;
+    font-size: 15px;
+    color: black;
+    background: white;
+    border-color: floralwhite whitesmoke antiquewhite;
+    background-image: linear-gradient(to bottom, whitesmoke, white 66%, antiquewhite);
+}
+
+
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {

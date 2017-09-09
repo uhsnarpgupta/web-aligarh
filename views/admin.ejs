@@ -2,7 +2,7 @@
 <html>
 <head>
     <title><%=title%></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/standards.css' />
 </head>
 <body bgcolor="White" height="100%">
 <table height="100%" width="100%" border=0>
@@ -91,21 +91,30 @@
                 </tr>
                 <tr>
                     <td>
-                      <%
-                        item.forEach(function (item) { %>
-                        <li>
-                            <%=item.shop_name%> <br>
-                            <%=item.shop_address%> <br>
-                            <%=item.shop_zip%>
-                        </li>
-                       <% })
-                           item.length = 0;
-                        %>
+
                     </td>
                 </tr>
             </table>
         </td>
     </tr>
 </table>
+<div class="std-section-fullWidth">
+    <%
+    item.forEach(function (item) { %>
+    <div class="std-col-12">
+        <div class="std-col-4">
+            <%=item.shop_name%> <br>
+        </div>
+        <div class="std-col-4">
+            <%=item.shop_address%>
+        </div>
+        <div class="std-col-4">
+            <%=item.shop_zip%>
+        </div>
+    </div>
+    <% })
+    item.length = 0;
+    %>
+</div>
 </body>
 </html>
