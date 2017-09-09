@@ -8,9 +8,9 @@ h1 {font-size: 2.2em;}
 
 h2 {font-size: 2.0em;}
 
-h3 {font-size: 1.8em;}
+h3 {font-size: 1.1rem;}
 
-h4 {font-size: 1.6em;}
+h4 {font-size: 1rem;}
 
 h5 {font-size: 1.4em;}
 
@@ -29,6 +29,46 @@ a {text-decoration: none;}
    letter-spacing: 4px;
 }
 
+.std-left {
+    float: left !important
+}
+
+.std-right {
+    float: right !important
+}
+
+.std-margin {
+    margin: 16px !important
+}
+
+.std-margin-top {
+    margin-top: 16px !important
+}
+
+.std-margin-bottom {
+    margin-bottom: 16px !important
+}
+
+.std-margin-left {
+    margin-left: 16px !important
+}
+
+.std-margin-right {
+    margin-right: 16px !important
+}
+
+.std-padding-small {
+    padding: 4px 8px !important
+}
+
+.std-padding {
+    padding: 8px 16px !important
+}
+
+.std-padding-large {
+    padding: 12px 24px !important
+}
+
 /* Remove padding and margin */
 .removeAll{
     margin: 0;
@@ -38,6 +78,18 @@ a {text-decoration: none;}
 
 .white{
     color: white;
+}
+
+.black{
+    color: #000;
+}
+
+.std-div-black{
+    background-color: #000;
+}
+
+.std-div-white{
+    background-color: #ffffff;
 }
 
 .child-white > * {
@@ -427,11 +479,11 @@ li:hover {
         margin: 1%;
     }
 
-    .hero-text, h1{
+    .hero-text{
         font-size: 65px;
     }
 
-    .hero-text, h3{
+    .hero-text{
         font-size: 25px;
     }
 }
@@ -535,11 +587,11 @@ li:hover {
         margin: 1%;
     }
 
-    .hero-text, h1{
+    .hero-text{
         font-size: 80px;
     }
 
-    .hero-text, h3{
+    .hero-text{
         font-size: 30px;
     }
 }

@@ -102,10 +102,10 @@ h3 {
 }
 
 .iconDiv{
-    height: 100px;
-    width: 100px;
+    height: 40px;
+    width: 40px;
     position: center;
-    margin-left: 40%;
+    margin-left: 36%;
 }
 
 a > .button{
