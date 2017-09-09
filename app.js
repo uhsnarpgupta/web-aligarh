@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var mongo = require('mongodb');
+// var mongo = require('mongodb');
 
 var index = require('./routes/index');
 var restaurant = require('./routes/restaurant');
@@ -36,6 +36,8 @@ var study = require('./routes/study');
 var recipe = require('./routes/recipe');
 var recipe2 = require('./routes/recipe2');
 var restaurantnew = require('./routes/restaurantnew');
+var menu = require('./routes/menu');
+
 
 var app = express();
 
@@ -109,6 +111,9 @@ app.use('/study',study);
 //Recipe routes
 app.use('/recipe',recipe);
 app.use('/recipe2',recipe2);
+
+app.use('/menu', menu);
+
 
 //Admin Routes
 app.use('/insert',admin);
