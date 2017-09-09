@@ -5,118 +5,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/stylesheets/std.css">
-    <link rel="stylesheet" href="/stylesheets/fonts/fontsOswald.css">
-    <link rel="stylesheet" href="/stylesheets/fonts/fontsOpenSans.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/standards.css">
+    <link rel="stylesheet" href="/stylesheets/restaurants.css">
 
-    <!--<link rel="stylesheet" href="/stylesheets/fonts/fontsAwesome.css">-->
+    <!--<style>-->
+    <!--h1, h2, h3, h4, h5, h6 {-->
+    <!--font-family: "Oswald"-->
+    <!--}-->
 
-    <!--<link rel="stylesheet" href="https://www.stdschools.com/stdcss/4/std.css">-->
-    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">-->
-    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">-->
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-    <style>
-        h1, h2, h3, h4, h5, h6 {
-            font-family: "Oswald"
-        }
+    <!--body {-->
+    <!--font-family: "Open Sans"-->
+    <!--}-->
 
-        body {
-            font-family: "Open Sans"
-        }
+    <!--.mySlides {-->
+    <!--display: none-->
+    <!--}-->
 
-        .mySlides {
-            display: none
-        }
+    <!--.std-left, .std-right, .std-badge {-->
+    <!--cursor: pointer-->
+    <!--}-->
 
-        .std-left, .std-right, .std-badge {
-            cursor: pointer
-        }
+    <!--.std-badge {-->
+    <!--height: 13px;-->
+    <!--width: 13px;-->
+    <!--padding: 0-->
+    <!--}-->
 
-        .std-badge {
-            height: 13px;
-            width: 13px;
-            padding: 0
-        }
+    <!--/* MODAL CSS */-->
+    <!--/* The Modal (background) */-->
+    <!--.modal {-->
+    <!--display: none; /* Hidden by default */-->
+    <!--position: fixed; /* Stay in place */-->
+    <!--z-index: 1; /* Sit on top */-->
+    <!--padding-top: 100px; /* Location of the box */-->
+    <!--left: 0;-->
+    <!--top: 0;-->
+    <!--width: 100%; /* Full width */-->
+    <!--height: 100%; /* Full height */-->
+    <!--overflow: auto; /* Enable scroll if needed */-->
+    <!--background-color: rgb(0,0,0); /* Fallback color */-->
+    <!--background-color: rgba(0,0,0,0.9); /* Black w/ opacity */-->
+    <!--}-->
 
-        /* MODAL CSS */
-        /* The Modal (background) */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            padding-top: 100px; /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-        }
+    <!--/* Modal Content (image) */-->
+    <!--.modal-content {-->
+    <!--margin: auto;-->
+    <!--display: block;-->
+    <!--width: 50%;-->
+    <!--max-width: 400px;-->
+    <!--}-->
 
-        /* Modal Content (image) */
-        .modal-content {
-            margin: auto;
-            display: block;
-            width: 50%;
-            max-width: 400px;
-        }
+    <!--/* Caption of Modal Image */-->
+    <!--#caption {-->
+    <!--margin: auto;-->
+    <!--display: block;-->
+    <!--width: 80%;-->
+    <!--max-width: 700px;-->
+    <!--text-align: center;-->
+    <!--color: #ccc;-->
+    <!--padding: 10px 0;-->
+    <!--height: 150px;-->
+    <!--}-->
 
-        /* Caption of Modal Image */
-        #caption {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-            text-align: center;
-            color: #ccc;
-            padding: 10px 0;
-            height: 150px;
-        }
+    <!--/* Add Animation */-->
+    <!--.modal-content, #caption {-->
+    <!-- -webkit-animation-name: zoom;-->
+    <!-- -webkit-animation-duration: 0.6s;-->
+    <!--animation-name: zoom;-->
+    <!--animation-duration: 0.6s;-->
+    <!--}-->
 
-        /* Add Animation */
-        .modal-content, #caption {
-            -webkit-animation-name: zoom;
-            -webkit-animation-duration: 0.6s;
-            animation-name: zoom;
-            animation-duration: 0.6s;
-        }
+    <!--@-webkit-keyframes zoom {-->
+    <!--from {-webkit-transform:scale(0)}-->
+    <!--to {-webkit-transform:scale(1)}-->
+    <!--}-->
 
-        @-webkit-keyframes zoom {
-            from {-webkit-transform:scale(0)}
-            to {-webkit-transform:scale(1)}
-        }
+    <!--@keyframes zoom {-->
+    <!--from {transform:scale(0)}-->
+    <!--to {transform:scale(1)}-->
+    <!--}-->
 
-        @keyframes zoom {
-            from {transform:scale(0)}
-            to {transform:scale(1)}
-        }
+    <!--/* The Close Button */-->
+    <!--.close {-->
+    <!--position: absolute;-->
+    <!--top: 15px;-->
+    <!--right: 35px;-->
+    <!--color: #f1f1f1;-->
+    <!--font-size: 40px;-->
+    <!--font-weight: bold;-->
+    <!--transition: 0.3s;-->
+    <!--}-->
 
-        /* The Close Button */
-        .close {
-            position: absolute;
-            top: 15px;
-            right: 35px;
-            color: #f1f1f1;
-            font-size: 40px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
+    <!--.close:hover,-->
+    <!--.close:focus {-->
+    <!--color: #bbb;-->
+    <!--text-decoration: none;-->
+    <!--cursor: pointer;-->
+    <!--}-->
 
-        .close:hover,
-        .close:focus {
-            color: #bbb;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        /* 100% Image Width on Smaller Screens */
-        @media only screen and (max-width: 700px){
-            .modal-content {
-                width: 100%;
-            }
-        }
-    </style>
+    <!--/* 100% Image Width on Smaller Screens */-->
+    <!--@media only screen and (max-width: 700px){-->
+    <!--.modal-content {-->
+    <!--width: 100%;-->
+    <!--}-->
+    <!--}-->
+    <!--</style>-->
 </head>
 <body class="std-light-grey">
 
@@ -126,393 +119,304 @@
 
 <!-- std-content defines a container for fixed size centered content,
 and is wrapped around the whole page content, except for the footer in this example -->
-<div class="std-content" style="max-width:1600px">
+<!--<div class="std-content" style="max-width:1600px">-->
 
-    <!-- Image header -->
-    <div class="std-content std-display-container" style="max-width:100%">
-        <header class="std-display-container std-wide" id="home">
-            <div class="std-display-left std-padding-large">
-                <!--<h1 class="std-jumbo std-text-white std-hide-small">Adidas</h1>
-                <h1 class="std-text-white"><b>STORE OUTLET</b></h1>-->
-                <!--<h6>-->
-                <!--<button class="std-button std-white std-padding-large std-large std-opacity std-hover-opacity-off"-->
-                <!--onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE-->
-                <!--</button>-->
-                <!--</h6>-->
-            </div>
+<!-- Image header -->
+<div class="std-top-row">
 
-            <div class="jumbotron mySlides"
-                 style="background-image: url('../images/restaurant/kwalitysnakeshoppe.jpg');background-size: cover;background-color: black; ">
-                <div class="page-title" style="width: 500px;">
-                    <h1 class="padding-multiline"><span>Kwality Snack Shoppe</span></h1>
+    <!--1st Row-->
+    <div class="std-section-bleed">
+        <div class="hero-image"
+             style="background-image: url('../images/restaurant/kwalitysnakeshoppe.jpg') ;outline: 5px solid white; outline-offset: -20px; outline-style: double">
+            <div class="hero-text">
+                <div>
+                    <img src="images/kss3.png"/>
                 </div>
             </div>
-            <div class="jumbotron mySlides"
-                 style="background-image: url('../images/restaurant/kwalitysnakeshoppe.jpg');background-size: cover;background-color: black;">
-                <div class="page-title" style="width: 500px;">
-                    <h1 class="padding-multiline"><span>Kwality Snack Shoppe</span></h1>
-                </div>
-            </div>
-            <div class="jumbotron mySlides"
-                 style="background-image: url('../images/restaurant/kwalitysnakeshoppe.jpg');background-size: cover; background-color: black;">
-                <div class="page-title" style="width: 500px;">
-                    <h1 class="padding-multiline"><span>Kwality Snack Shoppe</span></h1>
-                </div>
-            </div>
-
-        </header>
-        <div class="std-center std-container std-section std-large std-text-white std-display-bottommiddle"
-             style="width:100%">
-            <span class="std-badge demo std-border std-transparent std-hover-white"
-                  onclick="currentDiv(1)"></span>
-            <span class="std-badge demo std-border std-transparent std-hover-white"
-                  onclick="currentDiv(2)"></span>
-            <span class="std-badge demo std-border std-transparent std-hover-white"
-                  onclick="currentDiv(3)"></span>
         </div>
     </div>
-
     <!-- Grid -->
-    <div class="std-row std-padding std-border">
+    <div class="std-section-fullWidth" style="margin-top: 2%">
 
         <!-- About/Information menu -->
-        <div class="std-col l4">
-            <!-- About Card -->
-            <div class="std-margin">
-                <div style="background-color:white;" class="std-hover-grey">
-                    <a href="#">
-                    <span><img src="/images/leaf.png" alt="Image" class="std-left"
-                               style="width:30px"></span>
-                        <span><h4>Visit Website</h4></span>
-                    </a>
+        <div class="std-col-12">
+            <div class="std-col-4">
+                <!-- About Card -->
+                <div class="aside-section">
+                    <button class="button" onclick="">
+                        <span><img src="/images/brandLogo/cannes-lions-logo.png" alt="Image"
+                                   style="width:10%; float: left"></span>
+                        Visit Website
+                    </button>
+                    <button class="button" onclick="">
+                        <span><img src="/images/brandLogo/facebook-logo.png" alt="Image" style="width:10%; float: left"></span>&nbsp;
+                        &nbsp;@Facebook &nbsp;&nbsp;&nbsp;
+                    </button>
+                    <button class="button" onclick="">
+                        <span><img src="/images/brandLogo/twitter-logo.png" alt="Image" style="width:10%; float: left"></span>
+                        @Twitter
+                    </button>
+                    <button class="button" onclick="">
+                        <span><img src="/images/brandLogo/instagram-logo.png" alt="Image"
+                                   style="width:10%; float: left"></span>
+                        @Instagram
+                    </button>
                 </div>
-                <div style="background-color: white" class="std-hover-grey">
-                    <a href="#" style="">
-                    <span><img src="/images/Facebook_logo.png" alt="Image" class="std-left"
-                               style="width:30px"></span>
-                        <span><h4>Facebook</h4></span>
-                    </a>
-                </div>
-                <div style="background-color: white" class="std-hover-grey">
-                    <a href="#subs">
-                    <span><img src="/images/Twitter_bird_logo.png" alt="Image" class="std-left"
-                               style="width:30px"></span>
-                        <span><h4>Twitter</h4></span>
-                    </a>
-                </div>
-                <div style="background-color: white" class="std-hover-grey">
-                    <a href="#photo-section">
-                    <span><img src="/images/leaf.png" alt="Image" class="std-left"
-                               style="width:30px"></span>
-                        <span><h4>View Photos</h4></span></a>
-                </div>
+                <hr>
 
-            </div>
-            <hr>
-
-            <div class="std-margin">
+                <div class="aside-section">
                     <span style="line-height: 30px">
                         <h3 style="display: block">Kwality Snack Shoppe</h3><h4>Center Point<br>Aligarh - 202001 <br> Contact us @ 1234567890
                             <br> Email us: support@kss.com </h4>
                     </span>
-            </div>
-            <hr>
-
-            <!-- Posts -->
-            <div class="std-white std-margin">
-                <div class="std-container std-padding std-black">
-                    <h4>Our Specials</h4>
                 </div>
-                <ul class="std-ul std-hoverable std-white">
-                    <li class="std-padding-16">
-                        <img src="/images/shopping.png" alt="Image" class="std-left std-margin-right"
-                             style="width:50px">
-                        <span class="std-large">Chicken Biryani</span>
-                        <br>
-                        <!--<span>BOGO @ 50%</span>-->
-                    </li>
-                    <li class="std-padding-16">
-                        <img src="/images/shopping.jpg" alt="Image" class="std-left std-margin-right"
-                             style="width:50px">
-                        <span class="std-large">paneer lababdar</span>
-                        <br>
-                        <!--<span>10% Off on Sarees</span>-->
-                    </li>
-                    <li class="std-padding-16">
-                        <img src="/images/shopping.jpg" alt="Image" class="std-left std-margin-right"
-                             style="width:50px">
-                        <span class="std-large">Gobhi Manchurian</span>
-                        <br>
-                        <!--<span>50% OFF</span>-->
-                    </li>
-                    <li class="std-padding-16">
-                        <img src="/images/shopping.jpg" alt="Image" class="std-left std-margin-right std-sepia"
-                             style="width:50px">
-                        <span class="std-large">Hakka Noodles</span>
-                        <br>
-                        <!--<span>25% OFF</span>-->
-                    </li>
-                </ul>
-            </div>
-            <hr>
+                <hr>
 
-            <!-- Advertising -->
-            <div class="std-white std-margin">
-                <div class="std-container std-padding std-black">
-                    <h4>Videos</h4>
-                </div>
-                <div class="std-container std-white">
-                    <div class="std-container std-display-container std-light-grey std-section"
-                         style="height:200px">
-                        <span class="std-display-middle">
-                            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FSHEESHMAHALSAREEPLAZA%2Fvideos%2F1682700585303994%2F&show_text=0&width=360" width="420" height="230" style="overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-                        </span>
+                <!-- Posts -->
+                <div class="std-white std-margin">
+                    <div class="std-container std-padding std-black">
+                        <h4>Our Specials</h4>
                     </div>
+                    <ul class="std-ul std-hoverable std-white">
+                        <li class="std-padding-16">
+                            <img src="/images/brandLogo/maincourses.png" alt="Image" class="std-left std-margin-right"
+                                 style="width:50px">
+                            <span class="std-large">Chicken Biryani</span>
+                            <br>
+                            <!--<span>BOGO @ 50%</span>-->
+                        </li>
+                        <li class="std-padding-16">
+                            <img src="/images/brandLogo/pies.png" alt="Image" class="std-left std-margin-right"
+                                 style="width:50px">
+                            <span class="std-large">Paneer lababdar</span>
+                            <br>
+                            <!--<span>10% Off on Sarees</span>-->
+                        </li>
+                        <li class="std-padding-16">
+                            <img src="/images/brandLogo/sideDishes.png" alt="Image" class="std-left std-margin-right"
+                                 style="width:50px">
+                            <span class="std-large">Gobhi Manchurian</span>
+                            <br>
+                            <!--<span>50% OFF</span>-->
+                        </li>
+                        <li class="std-padding-16">
+                            <img src="/images/brandLogo/soups.png" alt="Image"
+                                 class="std-left std-margin-right std-sepia"
+                                 style="width:50px">
+                            <span class="std-large">Hakka Noodles</span>
+                            <br>
+                            <!--<span>25% OFF</span>-->
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <hr>
+                <hr>
 
-            <div class="std-white std-margin">
-                <div class="std-container std-padding std-black">
-                    <h4>
-                        Facebook
-                    </h4>
-                </div>
-                <!-- <div>
-                     <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmedia%2Fset%2F%3Fset%3Da.1676676049239781.1073741829.1494508170789904%26type%3D1%26l%3D1f93571e85&width=1000&show_text=true&height=539&appId" width="1000" height="539" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-                 </div>
-                 <div>
-                     <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSHEESHMAHALSAREEPLAZA%2Fposts%2F1949671925273524%3A0&width=900" width="900" height="502" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-                 </div>-->
-                <div class="std-padding-16">
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKwalitys-Snack-Shoppe-778433248849270%2F&tabs=timeline&width=940&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-                </div>
-            </div>
-            <hr>
-
-            <!-- Follow Me -->
-            <!--<div class="std-white std-margin">
-                <div class="std-container std-padding std-black">
-                    <h4>Follow Me</h4>
-                </div>
-                <div class="std-container std-xlarge std-padding">
-                    <i class="fa fa-facebook-official std-hover-opacity"></i>
-                    <i class="fa fa-instagram std-hover-opacity"></i>
-                    <i class="fa fa-snapchat std-hover-opacity"></i>
-                    <i class="fa fa-pinterest-p std-hover-opacity"></i>
-                    <i class="fa fa-twitter std-hover-opacity"></i>
-                    <i class="fa fa-linkedin std-hover-opacity"></i>
-                </div>
-            </div>-->
-            <hr>
-
-            <!-- Subscribe -->
-            <!--<div id="subs" class="std-white std-margin">
-                <div class="std-container std-padding std-black">
-                    <h4>Subscribe</h4>
-                </div>
-                <div class="std-container std-white">
-                    <p>Enter your e-mail below and get notified on the latest blog posts.</p>
-                    <p><input class="std-input std-border" type="text" placeholder="Enter e-mail"
-                              style="width:100%">
-                    </p>
-                    <p>
-                        <button type="button"
-                                onclick="document.getElementById('subscribe').style.display='block'"
-                                class="std-button std-block std-red">Subscribe
-                        </button>
-                    </p>
-                </div>
-            </div>-->
-
-            <!-- END About/Intro Menu -->
-        </div>
-        <!-- Blog entries -->
-        <div class="std-col l8 s12">
-
-            <div class="std-white std-margin">
-                <!-- Blog entry -->
-
-
-                <div class="std-container std-white std-margin std-padding-large">
-                    <div class="std-center">
-                        <h3>Kwality Snack Shoppe</h3>
-                        <h5>Our Journey, <span class="std-opacity">Article Dated: July 2, 2017</span></h5>
+                <!-- Advertising -->
+                <div class="std-white std-margin">
+                    <div class="std-container std-padding std-black">
+                        <h4>Videos</h4>
                     </div>
-
-                    <div class="std-justify">
-                        <img src="../images/shop/adidas2.jpg" alt="Adidas" style="width:100%" class="std-padding-16">
-                        <p><strong>We are Expending !</strong> Kwality Snack Shoppe is expending into multiple areas in Aligarh.</p>
-                        <p>We have branches at Center point, railway road and opening at other places soon.</p>
-                        <!-- <p class="std-left">
-                             <button class="std-button std-white std-border" onclick="likeFunction(this)"><b><i
-                                             class="fa fa-thumbs-up"></i> Like</b></button>
-                         </p>
-                         <p class="std-right">
-                             <button class="std-button std-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies
-                                      </b>
-                                 <span class="std-tag std-white">1</span></button>
-                         </p>
-                         <p class="std-clear"></p>-->
-                        <!--<div class="std-row std-margin-bottom" id="demo1" style="display:none">
-                            <hr>
-                            <div class="std-col l2 m3">
-                                <img src="../images/Facebook_logo.png" style="width:90px;">
-                            </div>
-                            <div class="std-col l10 m9">
-                                <h4>George <span class="std-opacity std-medium">May 3, 2015, 6:32 PM</span></h4>
-                                <p>Great blog post! Following</p>
-                            </div>
-                        </div>-->
+                    <div class="std-padding-16" style="height: 300px">
+                            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FSHEESHMAHALSAREEPLAZA%2Fvideos%2F1682700585303994%2F&show_text=0&width=360"></iframe>
                     </div>
                 </div>
                 <hr>
 
-                <!-- END BLOG ENTRIES -->
-
-                <div class="std-container std-padding std-black">
-                    <h4>Features</h4>
+                <div class="std-white std-margin">
+                    <div class="std-container std-padding std-black">
+                        <h4>
+                            Facebook
+                        </h4>
+                    </div>
+                    <div class="std-padding-16" style="height: 600px">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKwalitys-Snack-Shoppe-778433248849270%2F&tabs=timeline&width=940&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                        ></iframe>
+                    </div>
                 </div>
-                <table class="features-wrapper std-table std-striped std-bordered std-border std-hoverable std-white">
-                    <tr class="feature clearfix">
-                        <td class="feature-category">
-                            Established From
-                        </td>
-                        <td class="feature-name">1990<br>
+                <hr>
 
-                        </td>
-                    </tr>
-                    <tr class="feature clearfix">
-                        <td class="feature-category">
-                            Shopping
-                        </td>
-                        <td class="feature-name">Clothing &amp; Accessory Stores<br>Bridal &amp; Formalwear<br>Children
-                            &amp; Infants<br>Eyewear<br>Fur<br>Handbags<br>Hats<br>Jewelry &amp; Watches<br>Lingerie<br>Maternity<br>Men's
-                            Apparel<br>Shoes<br>Women's Apparel<br>Cosmetics/Beauty/Fragrance Shops<br>Department Stores<br>
-
-                        </td>
-                    </tr>
-                    <tr class="feature clearfix">
-                        <td class="feature-category">
-                            Accessibility
-                        </td>
-                        <td class="feature-name">Wheelchair Accessible<br></td>
-                    </tr>
-
-                    <tr class="feature clearfix">
-                        <td class="feature-category">
-                            Internet
-                        </td>
-                        <td class="feature-name">WiFi Available<br></td>
-                    </tr>
-
-                    <tr class="feature clearfix">
-                        <td class="feature-category">
-                            Miscellaneous
-                        </td>
-                        <td class="feature-name">Kid Friendly<br></td>
-                    </tr>
-
-                    <tr class="feature clearfix">
-                        <td class="feature-category">
-                            Payment Types
-                        </td>
-                        <td class="feature-name">Credit Cards Accepted<br></td>
-                    </tr>
-
-                    <tr class="feature clearfix">
-                        <td class="feature-category">
-                            Services
-                        </td>
-                        <td class="feature-name">Multilingual Staff<br>
-
-                        </td>
-                    </tr>
-                </table>
-
+                <!-- END About/Intro Menu -->
             </div>
+            <!-- Blog entries -->
+            <div class="std-col-8">
 
-            <!-- Google Maps Starts-->
-            <div class="std-white std-margin">
-                <div class="std-container std-padding std-black">
-                    <h4>Store Location</h4>
+                <div class="std-white std-margin">
+
+                    <!-- Blog entry -->
+                    <div class="std-container std-padding std-black">
+                        <h4>What do we Offer ?</h4>
+                    </div>
+
+                    <div class="std-container std-white std-margin std-padding-large">
+                        <div class="std-one-fourth-card" id="css">
+                            <div data-content="Upcoming Events!" class="image std-div-inside-border">
+                                <img src="/images/food1.png"/>
+                            </div>
+                            <div class="one-fourth-caption">
+                                <p>Burgers</p>
+                            </div>
+                        </div>
+                        <div class="std-one-fourth-card" id="css">
+                            <div data-content="Upcoming Events!" class="image std-div-inside-border">
+                                <img src="/images/food1.png"/>
+                            </div>
+                            <div class="one-fourth-caption">
+                                <p>Food Item 2</p>
+                            </div>
+                        </div>
+                        <div class="std-one-fourth-card" id="css">
+                            <div data-content="Upcoming Events!" class="image std-div-inside-border">
+                                <img src="/images/food1.png"/>
+                            </div>
+
+                            <div class="one-fourth-caption">
+                                <p>Food Item 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- END BLOG ENTRIES -->
+
+                    <div class="std-container std-padding std-black">
+                        <h4>MENU</h4>
+                    </div>
+                    <div style="background-color: white">
+                        <img src="/images/brandLogo/restManu.png" style="height: 500px">
+                    </div>
+
+                    <div class="std-container std-padding std-black" style="margin-top: 1%">
+                        <h4>Features</h4>
+                    </div>
+
+
+                    <table class="features-wrapper std-table std-striped std-bordered std-border std-hoverable std-white">
+                        <tr class="feature clearfix">
+                            <td class="feature-category">
+                                Established From
+                            </td>
+                            <td class="feature-name">1990<br>
+
+                            </td>
+                        </tr>
+                        <tr class="feature clearfix">
+                            <td class="feature-category">
+                                Shopping
+                            </td>
+                            <td class="feature-name">Clothing &amp; Accessory Stores<br>Bridal &amp; Formalwear<br>Children
+                                &amp; Infants<br>Eyewear<br>Fur<br>Handbags<br>Hats<br>Jewelry &amp; Watches<br>Lingerie<br>Maternity<br>Men's
+                                Apparel<br>Shoes<br>Women's Apparel<br>Cosmetics/Beauty/Fragrance Shops<br>Department
+                                Stores<br>
+
+                            </td>
+                        </tr>
+                        <tr class="feature clearfix">
+                            <td class="feature-category">
+                                Accessibility
+                            </td>
+                            <td class="feature-name">Wheelchair Accessible<br></td>
+                        </tr>
+
+                        <tr class="feature clearfix">
+                            <td class="feature-category">
+                                Internet
+                            </td>
+                            <td class="feature-name">WiFi Available<br></td>
+                        </tr>
+
+                        <tr class="feature clearfix">
+                            <td class="feature-category">
+                                Miscellaneous
+                            </td>
+                            <td class="feature-name">Kid Friendly<br></td>
+                        </tr>
+
+                        <tr class="feature clearfix">
+                            <td class="feature-category">
+                                Payment Types
+                            </td>
+                            <td class="feature-name">Credit Cards Accepted<br></td>
+                        </tr>
+
+                        <tr class="feature clearfix">
+                            <td class="feature-category">
+                                Services
+                            </td>
+                            <td class="feature-name">Multilingual Staff<br>
+
+                            </td>
+                        </tr>
+                    </table>
+
                 </div>
-                <div id="googleMap" style="width:100%;height:400px;"></div>
+
+                <!-- Google Maps Starts-->
+                <div class="std-white std-margin">
+                    <div class="std-container std-padding std-black">
+                        <h4>Store Location</h4>
+                    </div>
+                    <div id="googleMap" style="width:100%;height:400px;"></div>
+                </div>
+
+                <!-- Photos -->
+                <div id="photo-section" class="std-white std-margin">
+                    <div class="std-container std-padding std-black">
+                        <h4>Photos</h4>
+                    </div>
+                    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+                    <div class="std-row-padding std-center">
+                        <div class="std-col m3">
+                            <img src="/images/shop/saree1.jpg" style="width:100%"
+                                 onclick="fullerimage('1','The mist over the mountains')" class="std-hover-opacity"
+                                 alt="The mist over the mountains">
+                        </div>
+
+                        <div class="std-col m3">
+                            <img src="/images/shop/saree2.jpg" style="width:100%"
+                                 onclick="fullerimage('2','Coffee beans')"
+                                 class="std-hover-opacity"
+                                 alt="Coffee beans">
+                        </div>
+
+                        <div class="std-col m3">
+                            <img src="/images/shop/saree3.jpg" style="width:100%"
+                                 onclick="fullerimage('3','Bear closeup')"
+                                 class="std-hover-opacity"
+                                 alt="Bear closeup">
+                        </div>
+
+                        <div class="std-col m3">
+                            <img src="/images/shop/saree4.jpg" style="width:100%"
+                                 onclick="fullerimage('4','Quiet ocean')"
+                                 class="std-hover-opacity"
+                                 alt="Quiet ocean">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END GRID -->
             </div>
-
-            <!-- Photos -->
-            <div id="photo-section" class="std-white std-margin">
-                <div class="std-container std-padding std-black">
-                    <h4>Photos</h4>
-                </div>
-                <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-                <div class="std-row-padding std-center">
-                    <div class="std-col m3">
-                        <img src="/images/shop/saree1.jpg" style="width:100%" onclick="fullerimage('1','The mist over the mountains')" class="std-hover-opacity"
-                             alt="The mist over the mountains">
-                    </div>
-
-                    <div class="std-col m3">
-                        <img src="/images/shop/saree2.jpg" style="width:100%" onclick="fullerimage('2','Coffee beans')" class="std-hover-opacity"
-                             alt="Coffee beans">
-                    </div>
-
-                    <div class="std-col m3">
-                        <img src="/images/shop/saree3.jpg" style="width:100%" onclick="fullerimage('3','Bear closeup')" class="std-hover-opacity"
-                             alt="Bear closeup">
-                    </div>
-
-                    <div class="std-col m3">
-                        <img src="/images/shop/saree4.jpg" style="width:100%" onclick="fullerimage('4','Quiet ocean')" class="std-hover-opacity"
-                             alt="Quiet ocean">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Google Maps Ends-->
-
-            <!--Twitter Starts -->
-            <!-- <div class="std-white std-margin">
-                  <div class="std-container std-padding std-black">
-                      <h4>
-                          Twitter
-                      </h4>
-                 </div>
-                 <div>
-                     <a href="https://twitter.com/intent/tweet?button_hashtag=LoveTwitter" class="twitter-hashtag-button" data-show-count="false">Tweet #LoveTwitter</a>
-                     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                 </div>
-                 <div>
-                     <a class="twitter-grid" data-lang="en" data-limit="5" href="https://twitter.com/TwitterDev/timelines/539487832448843776">National Park Tweets</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                 </div>
-             </div>-->
-            <!--Twitter Ends -->
-
-        <!-- END GRID -->
+        </div>
     </div>
+
 
     <!-- END std-content -->
 </div>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="caption"></div>
-    </div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
 
 </div>
 
-<!-- Footer -->
-<!--<footer class="std-container std-dark-grey" style="padding:32px">-->
-<!--<a href="#" class="std-button std-black std-padding-large std-margin-bottom"><i-->
-<!--class="fa fa-arrow-up std-margin-right"></i>To the top</a>-->
-<!--<p>Powered by <a href="https://www.stdschools.com/stdcss/default.asp" target="_blank">std.css</a></p>-->
-<!--</footer>-->
 
 <script>
     // Toggle between hiding and showing blog replies/comments
     document.getElementById("myBtn").click();
+
     function myFunction(id) {
         var x = document.getElementById(id);
         if (x.className.indexOf("std-show") == -1) {
@@ -530,7 +434,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 <!-- Add Google Maps -->
 <script>
     function myMap() {
-        myCenter = new google.maps.LatLng(27.8912996,78.07800440000005);
+        myCenter = new google.maps.LatLng(27.8912996, 78.07800440000005);
         var mapOptions = {
             center: myCenter,
             zoom: 12, scrollwheel: false, draggable: false,
@@ -625,33 +529,34 @@ and is wrapped around the whole page content, except for the footer in this exam
     }
 </script>
 <script>
-        // Get the modal // Common
-        var modal = document.getElementById('myModal');
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
+    // Get the modal // Common
+    var modal = document.getElementById('myModal');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
 
-        function  fullerimage(value, data) {
-            var image = value;
-            var src = "/images/shop/saree" + image + ".jpg";
-            var alt = data;
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            /*var img = document.getElementById('img1');
-             img.onclick = function(){*/
-            modal.style.display = "block";
-            modalImg.src = src;
-            captionText.innerHTML = alt;
+    function fullerimage(value, data) {
+        var image = value;
+        var src = "/images/shop/saree" + image + ".jpg";
+        var alt = data;
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        /*var img = document.getElementById('img1');
+         img.onclick = function(){*/
+        modal.style.display = "block";
+        modalImg.src = src;
+        captionText.innerHTML = alt;
 //        }
-        }
+    }
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
 
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
 
-    </script>
+</script>
 
 </body>
 </html>
+

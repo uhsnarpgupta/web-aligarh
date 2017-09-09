@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var mongo = require('mongodb');
+var mongoClient = mongo.MongoClient;
 //var mongo = require('mongodb');
 //var mongoClient = mongo.MongoClient;
 var assert = require('assert');
