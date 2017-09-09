@@ -8,9 +8,9 @@ h1 {font-size: 2.2em;}
 
 h2 {font-size: 2.0em;}
 
-h3 {font-size: 1.8em;}
+h3 {font-size: 1.1rem;}
 
-h4 {font-size: 1.6em;}
+h4 {font-size: 1rem;}
 
 h5 {font-size: 1.4em;}
 
@@ -479,11 +479,11 @@ li:hover {
         margin: 1%;
     }
 
-    .hero-text, h1{
+    .hero-text{
         font-size: 65px;
     }
 
-    .hero-text, h3{
+    .hero-text{
         font-size: 25px;
     }
 }
@@ -587,11 +587,11 @@ li:hover {
         margin: 1%;
     }
 
-    .hero-text, h1{
+    .hero-text{
         font-size: 80px;
     }
 
-    .hero-text, h3{
+    .hero-text{
         font-size: 30px;
     }
 }
