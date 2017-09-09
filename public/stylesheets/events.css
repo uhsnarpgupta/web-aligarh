@@ -326,6 +326,26 @@ iframe{
 }
 
 
+.std-one-third-card{
+    float: left;
+    margin: 0;
+    width: 23%;
+    padding: 0 0.5%;
+    border: 1px solid #ddd;
+    background: #fff;
+    box-shadow: 2px 2px 2px #ccc;
+    padding-top: 10px;
+    border-left: 5px solid #675765;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    max-height: 600px;
+    transition: transform linear 0.2s;
+}
+.std-one-third-card:hover{
+    box-shadow: 4px 4px 4px #ccc;
+    transform: scale(1.1);
+}
+
 /*----------------MEDIA!!!----------------*/
 @media screen and (max-width: 768px){
     .banner{
@@ -381,8 +401,8 @@ iframe{
     #container{
         height: 270px;
     }
-    .std-one-fourth-card {
-        width: 100px;
+    .std-one-third-card{
+        width: 48%;
     }
 }
 
@@ -397,7 +417,10 @@ iframe{
         width: fit-content;
         height: auto;
     }
-    .std-one-fourth-card {
-        width: 100px;
+}
+
+@media screen and (max-width: 375px) {
+    .std-one-third-card{
+        width: 98%;
     }
 }

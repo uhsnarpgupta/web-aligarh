@@ -29,6 +29,46 @@ a {text-decoration: none;}
    letter-spacing: 4px;
 }
 
+.std-left {
+    float: left !important
+}
+
+.std-right {
+    float: right !important
+}
+
+.std-margin {
+    margin: 16px !important
+}
+
+.std-margin-top {
+    margin-top: 16px !important
+}
+
+.std-margin-bottom {
+    margin-bottom: 16px !important
+}
+
+.std-margin-left {
+    margin-left: 16px !important
+}
+
+.std-margin-right {
+    margin-right: 16px !important
+}
+
+.std-padding-small {
+    padding: 4px 8px !important
+}
+
+.std-padding {
+    padding: 8px 16px !important
+}
+
+.std-padding-large {
+    padding: 12px 24px !important
+}
+
 /* Remove padding and margin */
 .removeAll{
     margin: 0;
@@ -38,6 +78,18 @@ a {text-decoration: none;}
 
 .white{
     color: white;
+}
+
+.black{
+    color: #000;
+}
+
+.std-div-black{
+    background-color: #000;
+}
+
+.std-div-white{
+    background-color: #ffffff;
 }
 
 .child-white > * {
