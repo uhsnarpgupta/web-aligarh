@@ -2,7 +2,7 @@
 .attraction-head-image {
     /* Set a specific height */
     height: 100%;
-    padding: 20%;
+    padding: 40%;
 
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -317,5 +317,5 @@ body {font-family: Verdana,sans-serif;margin:0}
     }
 }
 /****************************************************
-Modal MAngalayatan CSS Ends
+Modal Mangalayatan CSS Ends
 *****************************************************/
