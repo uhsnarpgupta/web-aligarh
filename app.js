@@ -40,6 +40,7 @@ var restaurantnew = require('./routes/restaurantnew');
 
 
 var contactus = require('./routes/contactus');
+var privacypolicy = require('./routes/privacypolicy');
 
 var app = express();
 
@@ -64,6 +65,7 @@ app.use('/about',aboutus);
 app.use('/event',event);
 app.use('/admin',admin);
 app.use('/contactus',contactus);
+app.use('/privacypolicy',privacypolicy);
 
 //Education Route
 app.use('/neet', neet);
