@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About US</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheets/contactus.css">
+    <link rel="stylesheet" href="/stylesheets/standards.css">
+</head>
+<body bgcolor="white" marginheight="100%" >
+<!--Header Navigation Bar Starts-->
+<div class="std-header">
+    <% include template/navigationBar.ejs %>
+</div>
+<!--Header NAvigation Bar Ends-->
+<div class="std-top-row clear">
+    <!--Fist Row Starts-->
+    <div class="std-section-bleed">
+        <div class="contactus-head-image" style="background-image: url('../images/contactus/contactus.png')";>
+        </div>
+    </div>
+    <!--First Row Ends-->
+    <!--Third Row Starts-->
+    <div class="std-col-12 std-col-t-12" style="align-content: inherit" id="diva">
+        <div class="std-col-6 std-col-t-6">
+            <div class="std-curved-box" style="background-color: #3E5C9A">
+                <div>
+                    <p class="paragraph">
+                        Have a question ? Talk to us at below details:<br><br>
+                    </p>
+                </div>
+                <div>
+                    <span style="height: 36px"><img src="../images/contactus/emailus.gif" style="width:10%; float: left;padding-left: 30px;"/></span>
+                    <p class="signature">Email us at: contactus@aligarhcity.in</p>
+
+                    <span style="height: 36px"><img src="../images/contactus/callus2.gif" style="width:10%; float: left;padding-left: 30px;"/></span>
+                    <p class="signature">Call us at: +91 999-999-9999</p>
+
+                    <span style="height: 36px"><img src="../images/contactus/Small_house_home.png" style="width:10%; float: left;padding-left: 30px;"/></span>
+                    <p class="signature">Meet us at: Brilliant Minds <br>Chase Compound, Jail Road, Aligarh-202001</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="std-col-6 std-col-t-6">
+            <div>
+                <img src="/images/contactus/contactus.gif" class="image"/>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class=" std-section-bleed ">
+        <% include template/footer.ejs %>
+    </div>
+</div>
+</body>
+</html>

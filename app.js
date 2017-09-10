@@ -39,6 +39,8 @@ var restaurantnew = require('./routes/restaurantnew');
 //var menu = require('./routes/menu');
 
 
+var contactus = require('./routes/contactus');
+
 var app = express();
 
 // view engine setup
@@ -61,6 +63,7 @@ app.use('/hotel',hotel);
 app.use('/about',aboutus);
 app.use('/event',event);
 app.use('/admin',admin);
+app.use('/contactus',contactus);
 
 //Education Route
 app.use('/neet', neet);
