@@ -8,108 +8,125 @@
     <link rel="stylesheet" href="/stylesheets/standards.css">
     <link rel="stylesheet" href="/stylesheets/restaurants.css">
 
-    <!--<style>-->
-    <!--h1, h2, h3, h4, h5, h6 {-->
-    <!--font-family: "Oswald"-->
-    <!--}-->
+    <style>
+        .menu-item {
+            background-color: #ffdddd;
+            border-left: 6px solid #f44336;
+            margin-bottom: 1%;
+            width: 47%;
+            margin-left: 1%;
+            float: left;
+        }
 
-    <!--body {-->
-    <!--font-family: "Open Sans"-->
-    <!--}-->
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Oswald"
+        }
 
-    <!--.mySlides {-->
-    <!--display: none-->
-    <!--}-->
+        body {
+            font-family: "Open Sans"
+        }
 
-    <!--.std-left, .std-right, .std-badge {-->
-    <!--cursor: pointer-->
-    <!--}-->
+        .mySlides {
+            display: none
+        }
 
-    <!--.std-badge {-->
-    <!--height: 13px;-->
-    <!--width: 13px;-->
-    <!--padding: 0-->
-    <!--}-->
+        .std-left, .std-right, .std-badge {
+            cursor: pointer
+        }
 
-    <!--/* MODAL CSS */-->
-    <!--/* The Modal (background) */-->
-    <!--.modal {-->
-    <!--display: none; /* Hidden by default */-->
-    <!--position: fixed; /* Stay in place */-->
-    <!--z-index: 1; /* Sit on top */-->
-    <!--padding-top: 100px; /* Location of the box */-->
-    <!--left: 0;-->
-    <!--top: 0;-->
-    <!--width: 100%; /* Full width */-->
-    <!--height: 100%; /* Full height */-->
-    <!--overflow: auto; /* Enable scroll if needed */-->
-    <!--background-color: rgb(0,0,0); /* Fallback color */-->
-    <!--background-color: rgba(0,0,0,0.9); /* Black w/ opacity */-->
-    <!--}-->
+        .std-badge {
+            height: 13px;
+            width: 13px;
+            padding: 0
+        }
 
-    <!--/* Modal Content (image) */-->
-    <!--.modal-content {-->
-    <!--margin: auto;-->
-    <!--display: block;-->
-    <!--width: 50%;-->
-    <!--max-width: 400px;-->
-    <!--}-->
+        /* MODAL CSS */
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0); /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+        }
 
-    <!--/* Caption of Modal Image */-->
-    <!--#caption {-->
-    <!--margin: auto;-->
-    <!--display: block;-->
-    <!--width: 80%;-->
-    <!--max-width: 700px;-->
-    <!--text-align: center;-->
-    <!--color: #ccc;-->
-    <!--padding: 10px 0;-->
-    <!--height: 150px;-->
-    <!--}-->
+        /* Modal Content (image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 50%;
+            max-width: 400px;
+        }
 
-    <!--/* Add Animation */-->
-    <!--.modal-content, #caption {-->
-    <!-- -webkit-animation-name: zoom;-->
-    <!-- -webkit-animation-duration: 0.6s;-->
-    <!--animation-name: zoom;-->
-    <!--animation-duration: 0.6s;-->
-    <!--}-->
+        /* Caption of Modal Image */
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
 
-    <!--@-webkit-keyframes zoom {-->
-    <!--from {-webkit-transform:scale(0)}-->
-    <!--to {-webkit-transform:scale(1)}-->
-    <!--}-->
+        /* Add Animation */
+        .modal-content, #caption {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
 
-    <!--@keyframes zoom {-->
-    <!--from {transform:scale(0)}-->
-    <!--to {transform:scale(1)}-->
-    <!--}-->
+        @-webkit-keyframes zoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
 
-    <!--/* The Close Button */-->
-    <!--.close {-->
-    <!--position: absolute;-->
-    <!--top: 15px;-->
-    <!--right: 35px;-->
-    <!--color: #f1f1f1;-->
-    <!--font-size: 40px;-->
-    <!--font-weight: bold;-->
-    <!--transition: 0.3s;-->
-    <!--}-->
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+            to {
+                transform: scale(1)
+            }
+        }
 
-    <!--.close:hover,-->
-    <!--.close:focus {-->
-    <!--color: #bbb;-->
-    <!--text-decoration: none;-->
-    <!--cursor: pointer;-->
-    <!--}-->
+        /* The Close Button */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
 
-    <!--/* 100% Image Width on Smaller Screens */-->
-    <!--@media only screen and (max-width: 700px){-->
-    <!--.modal-content {-->
-    <!--width: 100%;-->
-    <!--}-->
-    <!--}-->
-    <!--</style>-->
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px) {
+            .modal-content {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body class="std-light-grey">
 
@@ -216,7 +233,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                         <h4>Videos</h4>
                     </div>
                     <div class="std-padding-16" style="height: 300px">
-                            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FSHEESHMAHALSAREEPLAZA%2Fvideos%2F1682700585303994%2F&show_text=0&width=360"></iframe>
+                        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FSHEESHMAHALSAREEPLAZA%2Fvideos%2F1682700585303994%2F&show_text=0&width=360"></iframe>
                     </div>
                 </div>
                 <hr>
@@ -283,8 +300,79 @@ and is wrapped around the whole page content, except for the footer in this exam
                     <div class="std-container std-padding std-black">
                         <h4>MENU</h4>
                     </div>
-                    <div style="background-color: white">
-                        <img src="/images/brandLogo/restManu.png" style="height: 500px">
+                    <div class="std-container std-padding">
+
+                        <div class="menu-item">
+                            <h2><strong style="float: left; padding-left: 1%">Masala Dosa</strong>
+                                <div style="float: right; padding-right: 1%">... Rs 90</div>
+                            </h2>
+                        </div>
+                        <div class="menu-item" style="background-color: lightgreen;
+            border-left: 6px solid darkgreen;">
+                            <h2><strong style="float: left; padding-left: 1%">Idli Sambhar</strong>
+                                <div style="float: right; padding-right: 1%">... Rs 50</div>
+                            </h2>
+                        </div>
+                        <div class="menu-item" style="background-color: lightskyblue;
+            border-left: 6px solid dodgerblue;">
+                            <h2><strong style="float: left; padding-left: 1%">Chowmein</strong>
+                                <div style="float: right; padding-right: 1%">... Rs 80</div>
+                            </h2>
+                        </div>
+                        <div class="menu-item" style="background-color: lightpink;
+            border-left: 6px solid deeppink;">
+                            <h2><strong style="float: left; padding-left: 1%">Pizza</strong>
+                                <div style="float: right; padding-right: 1%">... Rs 200</div>
+                            </h2>
+                        </div>
+                        <div class="menu-item" style="background-color: lightyellow;
+            border-left: 6px solid yellow;">
+                            <h2><strong style="float: left; padding-left: 1%">Garlic Bread</strong>
+                                <div style="float: right; padding-right: 1%">... Rs 50</div>
+                            </h2>
+                        </div>
+                        <div class="menu-item" style="background-color: lightgrey;
+            border-left: 6px solid slategrey;">
+                            <h2><strong style="float: left; padding-left: 1%">Burger</strong>
+                                <div style="float: right; padding-right: 1%">... Rs 40</div>
+                            </h2>
+                        </div>
+                        <div class="menu-item">
+                            <h2><strong style="float: left; padding-left: 1%">Masala Dosa</strong>
+                                <div style="float: right; padding-right: 1%">... Rs 90</div>
+                            </h2>
+                        </div>
+                        <div class="menu-item" style="background-color: lightgreen;
+            border-left: 6px solid darkgreen;">
+                            <h2><strong style="float: left; padding-left: 1%">Idli Sambhar</strong>
+                                <div style="float: right; padding-right: 1%">... Rs 50</div>
+                            </h2>
+                        </div>
+                        <div class="menu-item" style="background-color: lightskyblue;
+            border-left: 6px solid dodgerblue;">
+                            <h2><strong style="float: left; padding-left: 1%">Chowmein</strong>
+                                <div style="float: right; padding-right: 1%">... Rs 80</div>
+                            </h2>
+                        </div>
+                        <div class="menu-item" style="background-color: lightpink;
+            border-left: 6px solid deeppink;">
+                            <h2><strong style="float: left; padding-left: 1%">Pizza</strong>
+                                <div style="float: right; padding-right: 1%">... Rs 200</div>
+                            </h2>
+                        </div>
+                        <div class="menu-item" style="background-color: lightyellow;
+            border-left: 6px solid yellow;">
+                            <h2><strong style="float: left; padding-left: 1%">Garlic Bread</strong>
+                                <div style="float: right; padding-right: 1%">... Rs 50</div>
+                            </h2>
+                        </div>
+                        <div class="menu-item" style="background-color: lightgrey;
+            border-left: 6px solid slategrey;">
+                            <h2><strong style="float: left; padding-left: 1%">Burger</strong>
+                                <div style="float: right; padding-right: 1%">... Rs 40</div>
+                            </h2>
+                        </div>
+                        <!--<img src="/images/brandLogo/restManu.png" style="height: 500px">-->
                     </div>
 
                     <div class="std-container std-padding std-black" style="margin-top: 1%">
