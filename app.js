@@ -36,7 +36,7 @@ var study = require('./routes/study');
 var recipe = require('./routes/recipe');
 var recipe2 = require('./routes/recipe2');
 var restaurantnew = require('./routes/restaurantnew');
-var menu = require('./routes/menu');
+//var menu = require('./routes/menu');
 
 
 var app = express();
@@ -112,7 +112,7 @@ app.use('/study',study);
 app.use('/recipe',recipe);
 app.use('/recipe2',recipe2);
 
-app.use('/menu', menu);
+//app.use('/menu', menu);
 
 
 //Admin Routes
