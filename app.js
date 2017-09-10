@@ -36,7 +36,7 @@ var study = require('./routes/study');
 var recipe = require('./routes/recipe');
 var recipe2 = require('./routes/recipe2');
 var restaurantnew = require('./routes/restaurantnew');
-//var menu = require('./routes/menu');
+/*var menu = require('./routes/menu');*/
 
 
 var contactus = require('./routes/contactus');
