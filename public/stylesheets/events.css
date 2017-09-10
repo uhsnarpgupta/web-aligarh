@@ -14,22 +14,6 @@ a:active, a:hover {
     background-color: #3a3a3a;
 }
 
-.event-container{
-    /*margin-top: 5px;*/
-    /*margin-bottom: 5px;*/
-    width: 100%;
-    margin: 0 2.5%;
-    margin-bottom: 1%;
-    position: relative;
-    /*height: 9em;*/
-}
-
-.event-container div{
-    display: inline-block;
-    margin: 0.5em;
-    white-space: normal;
-    text-align: center;
-}
 .banner{
     width: 100%;
 }
@@ -325,6 +309,103 @@ iframe{
     width: 20%;
 }
 
+.event-container{
+    /*margin-top: 5px;*/
+    /*margin-bottom: 5px;*/
+    /*width: 100%;*/
+    /*margin: 0 2.5%;*/
+    /*margin-bottom: 1%;*/
+    /*position: relative;*/
+
+    overflow: auto;
+    white-space: nowrap;
+    padding: 1%;
+
+    /*height: 9em;*/
+}
+
+.event-container-item {
+    width: 23%;
+    margin-left: 1%;
+    /*float: left;*/
+    position: relative;
+    height: 100%;
+    display: inline-block;
+    padding: 0 0.5%;
+    border: 1px solid #ddd;
+    background: #fff;
+    box-shadow: 2px 2px 2px #ccc;
+    padding-top: 10px;
+    border-left: 5px solid #675765;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    max-height: 600px;
+    transition: transform linear 0.2s;
+}
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/*.event-container div{*/
+    /*display: inline-block;*/
+    /*margin: 0.5em;*/
+    /*white-space: normal;*/
+    /*text-align: center;*/
+/*}*/
+
+.horizontal-scroll-wrapper {
+    overflow: auto;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1%;
+    white-space: nowrap;
+}
+
+.horizontal-scroll-wrapper > div {
+    width: 23%;
+    margin-left: 1%;
+    height: 100%;
+    display: inline-block;
+    padding: 0 0.5%;
+    border: 1px solid #ddd;
+    background: #fff;
+    box-shadow: 2px 2px 2px #ccc;
+    padding-top: 10px;
+    border-left: 5px solid #675765;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    max-height: 600px;
+    transition: transform linear 0.2s;
+}
+
+.horizontal-scroll-wrapper > div:hover {
+    box-shadow: 4px 4px 4px #ccc;
+    transform: scale(1.1);
+}
 
 .std-one-third-card{
     float: left;

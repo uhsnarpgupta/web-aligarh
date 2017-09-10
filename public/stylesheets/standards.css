@@ -441,6 +441,46 @@ li:hover {
     opacity: 0.75;
 }
 
+/*-----------------------------------------------------------------------------
+ARROWS SYMBOLS
+-----------------------------------------------------------------------------*/
+
+.std-arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+
+    border-bottom: 20px solid black;
+}
+
+.std-arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+
+    border-top: 20px solid #f00;
+}
+
+.std-arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+
+    border-left: 20px solid green;
+}
+
+.std-arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+
+    border-right:20px solid blue;
+}
+
 
 /*-----------------------------------------------------------------------------*/
 
