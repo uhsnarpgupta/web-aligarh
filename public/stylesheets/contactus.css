@@ -1,0 +1,56 @@
+/*Mobile CSS Starts*/
+
+.contactus-head-image {
+    /* Set a specific height */
+    height: 100%;
+    padding: 20%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /*margin-top: 25px;*/
+}
+
+.signature {
+    color: white;
+    font-family: 'Comic Sans MS';
+    margin-right: 10%;
+    padding-bottom: 5%;
+    text-align: right;
+    font-size: medium;
+}
+
+.paragraph {
+    color: white;
+    font-family: 'Comic Sans MS';
+    margin: 5%;
+    padding: 5%;
+    text-align: center;
+    font-size: medium;
+}
+
+.image {
+    height: 500px;
+}
+/*Mobile CSS Ends*/
+
+/*Media Query for Tablet CSS Starts*/
+@media only screen and (min-width: 412px){
+
+}
+/*Tablet CSS Ends*/
+
+/*Media query for Tablets Starts*/
+@media only screen and (min-width: 600px) {
+
+}
+/*Media Query for Tablets Ends*/
+
+/*Media Query for Desktops Starts*/
+@media only screen and (min-width: 768px) {
+
+}
+/*MEdia Query for Desktop Ends*/
+
