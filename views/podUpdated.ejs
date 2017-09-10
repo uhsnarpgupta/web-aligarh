@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/stylesheets/standards.css">
     <link rel="stylesheet" href="/stylesheets/templateU.css"/>
-
+    <link rel="stylesheet" href="/stylesheets/education.css">
     <style>
 
         .std-light-grey, .std-hover-light-grey:hover, .std-light-gray, .std-hover-light-gray:hover {
@@ -23,94 +23,6 @@
             padding: 0 8px
         }
 
-        .std-padding-small {
-            padding: 4px 8px !important
-        }
-
-        .std-padding {
-            padding: 8px 16px !important
-        }
-
-        .std-padding-large {
-            padding: 12px 24px !important
-        }
-
-        .std-padding-16 {
-            padding-top: 16px !important;
-            padding-bottom: 16px !important
-        }
-
-        .std-padding-24 {
-            padding-top: 24px !important;
-            padding-bottom: 24px !important
-        }
-
-        .std-padding-32 {
-            padding-top: 32px !important;
-            padding-bottom: 32px !important
-        }
-
-        .std-padding-48 {
-            padding-top: 48px !important;
-            padding-bottom: 48px !important
-        }
-
-        .std-padding-64 {
-            padding-top: 64px !important;
-            padding-bottom: 64px !important
-        }
-
-        .std-border-red, .std-hover-border-red:hover {
-            border-color: #f44336 !important
-        }
-
-        .std-border-green, .std-hover-border-green:hover {
-            border-color: #4CAF50 !important
-        }
-
-        .std-border-blue, .std-hover-border-blue:hover {
-            border-color: #2196F3 !important
-        }
-
-        .std-border-yellow, .std-hover-border-yellow:hover {
-            border-color: #ffeb3b !important
-        }
-
-        .std-border-white, .std-hover-border-white:hover {
-            border-color: #fff !important
-        }
-
-        .std-border-black, .std-hover-border-black:hover {
-            border-color: #000 !important
-        }
-
-        .std-border-grey, .std-hover-border-grey:hover, .std-border-gray, .std-hover-border-gray:hover {
-            border-color: #bbb !important
-        }
-
-        .std-border-0 {
-            border: 0 !important
-        }
-
-        .std-border {
-            border: 1px solid #ccc !important
-        }
-
-        .std-border-top {
-            border-top: 1px solid #ccc !important
-        }
-
-        .std-border-bottom {
-            border-bottom: 1px solid #ccc !important
-        }
-
-        .std-border-left {
-            border-left: 1px solid #ccc !important
-        }
-
-        .std-border-right {
-            border-right: 1px solid #ccc !important
-        }
         /* MODAL CSS */
         /* The Modal (background) */
         .modal {
@@ -190,30 +102,44 @@
             }
         }
 
+        @media only screen and (min-width: 600px) {
+            .textcontent{
+                font-size: 20px;
+            }
+        }
+
+        .mediabox {
+            width: 100%; /* as I have set margin 2% then width of each mediabox will be (100-(2*2*3))/3 = 29.3 */
+        }
+
+        .mediabox:hover{
+            box-shadow: 4px 4px 4px #ccc;
+            transform: scale(1.1);
+        }
+
     </style>
 
 </head>
-<body class="std-light-grey">
+<body class="std-light-grey" onload="myFunction()">
 
 <div>
     <% include template/navigationBar.ejs %>
 </div>
 
 <div class="std-top-row" style="text-align: center;">
-
     <br/>
-    <h4><strong>Picture(s) of the Day</strong></h4>
-
+    <h2><strong>Picture(s) of the Day</strong></h2>
     <br/>
-
-    <div class="std-section-bleed std-content" style="border: groove; background-color: white;">
-
+    <h4><strong>Share Your Picture at gunjan_varshney@aligarhcity.in</strong>
+        <button style="width: 100px;" class="caption-link mediabox" id="myBtn4" onclick="window.open('http://www.gmail.com')">SHARE</button>
+    </h4>
+    <br/>
+    <div id="maincontent" class="std-section-bleed std-content" style="outline: 3px solid lightgrey; outline-offset: -12px; background-color: white; display: none;">
         <!-- Grid -->
 <!--        <div id="wrapper" style="padding-top: 10px">
         <div class="std-row std-padding std-border">-->
             <!-- Main -->
             <section id="main">
-
                 <!-- Thumbnails -->
                 <section class="thumbnails demo-gallery" id="demo-test-gallery" data-pswp-uid="1">
                     <div>
@@ -221,36 +147,36 @@
                            data-med-size="1024x683" data-med="images/thumbs/01.jpg"
                            data-size="1600x1068">
                             <img src="images/thumbs/01.jpg" alt=""/>
-                            <h3>Lorem ipsum dolor sit amet</h3>
+                            <h3 class="textcontent">Lorem ipsum dolor sit amet</h3>
 
                         </a>
                         <a href="#" onclick="fullerimage('02','Lorem ipsum dolor sit amet')">
                             <img src="images/thumbs/02.jpg" alt=""/>
-                            <h3>Lorem ipsum dolor sit amet</h3>
+                            <h3 class="textcontent">Lorem ipsum dolor sit amet</h3>
                         </a>
                     </div>
                     <div>
                         <a href="#" onclick="fullerimage('03','Lorem ipsum dolor sit amet')">
                             <img src="images/thumbs/03.jpg" alt=""/>
-                            <h3>Lorem ipsum dolor sit amet</h3>
+                            <h3 class="textcontent">Lorem ipsum dolor sit amet</h3>
                         </a>
                         <a href="#" onclick="fullerimage('04','Lorem ipsum dolor sit amet')">
                             <img src="images/thumbs/04.jpg" alt=""/>
-                            <h3>Lorem ipsum dolor sit amet</h3>
+                            <h3 class="textcontent">Lorem ipsum dolor sit amet</h3>
                         </a>
                         <a href="#" onclick="fullerimage('05','Lorem ipsum dolor sit amet')">
                             <img src="images/thumbs/05.jpg" alt=""/>
-                            <h3>Lorem ipsum dolor sit amet</h3>
+                            <h3 class="textcontent">Lorem ipsum dolor sit amet</h3>
                         </a>
                     </div>
                     <div>
                         <a href="#" onclick="fullerimage('06','Lorem ipsum dolor sit amet')">
                             <img src="images/thumbs/06.jpg" alt=""/>
-                            <h3>Lorem ipsum dolor sit amet</h3>
+                            <h3 class="textcontent">Lorem ipsum dolor sit amet</h3>
                         </a>
                         <a href="#" onclick="fullerimage('07','Lorem ipsum dolor sit amet')">
                             <img src="images/thumbs/07.jpg" alt=""/>
-                            <h3>Lorem ipsum dolor sit amet</h3>
+                            <h3 class="textcontent">Lorem ipsum dolor sit amet</h3>
                         </a>
                     </div>
                 </section>
@@ -259,8 +185,6 @@
 
             <!-- END std-content -->
         </div>
-    <!--</div>
-    </div>-->
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -268,6 +192,51 @@
         <img class="modal-content" id="img01">
         <div id="caption"></div>
     </div>
+
+    <div id="myModal2" class="modal" style="background-color: whitesmoke; background-image: url('../images/disclaimer.jpg');">
+        <div style="text-align: center;">
+            <h2 style="font-size: 30px;"><strong><u>Picture(s) of the Day</u></strong></h2>
+            <br>
+            <h1><strong>Disclaimer</strong></h1>
+        </div>
+        <br>
+        <br>
+        <div><p>
+                The information contained on the website is for general information purposes only.
+                <br>
+                Aligarh City assumes no responsibility for omissions and the pictures provided to be downloaded by anyone.
+                <br>
+                In no event shall Aligarh City be liable for any special, direct, indirect, consequential, or incidental damages or any damages.
+            </p></div>
+        <br>
+        <br>
+        <div style="font-size: 20px">
+            <input type="checkbox" id="checkbox" name="agree" value="agree">I Agree
+        </div>
+        <br>
+        <div id="sharingpicture" style="display: none;font-size: 30px">
+            <p>Please click on OK button for sharing your Picture with us.</p>
+        </div>
+        <br>
+        <br>
+        <button style="width: 150px;" class="caption-link mediabox" id="myBtn" onclick="getmainbody()">OK</button>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <button class="caption-link mediabox" style="width: 150px;" id="myBtn2"onclick="getmodal()">NOT OK</button>
+    </div>
+
+    <div id="myModal3" class="modal" style="background-color: whitesmoke; display:none;">
+        <br>
+        <br>
+        <div style="color: black; font-family: 'Times New Roman'; font-weight: 500; font-size: 70px;"><p>
+                Sorry!!! You can't be able to see this Page.
+            </p></div>
+        <br>
+        <br>
+        <a href="/">
+        <button style="width: 250px;" class="caption-link mediabox" id="myBtn3">GO TO HOME PAGE</button>
+        </a>
+    </div>
+
 </div>
 
 <!-- Scripts -->
@@ -299,6 +268,41 @@
         modal.style.display = "none";
     }
 
+</script>
+
+<script>
+    var modal = document.getElementById('myModal2');
+
+    // When the user clicks on div, open the popup
+    function myFunction() {
+        modal.style.display = "block";
+    }
+    
+    function getmodal() {
+        document.getElementById('myModal2').style.display = "none";
+        document.getElementById('myModal3').style.display = "block";
+    }
+
+    function getmainbody() {
+        var text1 = document.getElementById("checkbox").checked;
+        if(text1 == true) {
+            document.getElementById('myModal3').style.display = "none";
+            document.getElementById('myModal2').style.display = "none";
+            document.getElementById('maincontent').style.display = "block";
+        }
+        else{
+            alert("For Viewing the Page You have to select the 'I AGREE' Checkbox first!!!");
+            document.getElementById('checkbox').focus();
+        }
+    }
+    
+</script>
+
+<script>
+    var text = document.getElementById('checkbox');
+    text.onclick = function() {
+        document.getElementById('sharingpicture').style.display = "block";
+    }
 </script>
 
 <!--<script src="routes/jquery.min.js"></script>

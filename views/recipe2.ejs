@@ -3,6 +3,7 @@
 <head>
     <title>Recipe of the Week</title>
     <link rel="stylesheet" href="/stylesheets/standards.css">
+    <link rel="stylesheet" href="/stylesheets/education.css">
 <!--    <link rel='stylesheet' href='/stylesheets/shop.css'/>
     <link rel="stylesheet" href="/stylesheets/modal.css">-->
 
@@ -104,20 +105,45 @@
             .slideshow-container{max-width: 100%;}
         }
 
+        /* MODAL CSS */
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        }
+
+        .mediabox {
+            width: 100%; /* as I have set margin 2% then width of each mediabox will be (100-(2*2*3))/3 = 29.3 */
+        }
+
+        .mediabox:hover{
+            box-shadow: 4px 4px 4px #ccc;
+            transform: scale(1.1);
+        }
+
     </style>
 
 </head>
-<body>
+<body onload="myFunction()">
 
 <div class="std-header">
     <% include template/navigationBar.ejs %>
 </div>
 
 <div class="std-top-row">
-    <div class="std-section-bleed">
+    <div id="maincontent" class="std-section-bleed" style=" display: none;">
         <div class="std-col-12">
-            <img src="images/recipe.png" width="100%" height="50%">
-            <div class="hero-text" style="margin-top: 50px;">
+            <img src="images/recipe.png" width="100%" height="100%">
+            <div class="hero-text" style="margin-top: 10%;">
                 <h1 class="std-wide" style="color: black; font-family: 'Times New Roman'; font-weight: 500;"><strong>Recipe
                         of the Week</strong></h1>
                 <p style="color: black; font-family: FontAwesome; font-weight: 300;">Feast your eyes on our daily dose
@@ -174,6 +200,19 @@
             </div>
         </div>
     </div>
+</div>
+
+<div id="myModal2" class="modal" style="background-color: whitesmoke; background-image: url('../images/disclaimer2.jpg');">
+    <div style="text-align: center;">
+        <h2 style="font-size: 50px;"><strong><u>Recipe of the Week</u></strong></h2>
+    </div>
+    <div id="sharingpicture" style="font-size: 30px">
+        <p>Please click on OK button for sharing your wonderful Recipe with us at gunjan_varshney@aligarhcity.in</p>
+    </div>
+    <br>
+    <br>
+    <button style="width: 200px;" class="caption-link mediabox" id="myBtn" onclick="window.open('http://www.gmail.com')">SHARE YOUR RECIPE</button>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button class="caption-link mediabox" style="width: 150px;" id="myBtn2"onclick="getmainbody()">VIEW RECIPE</button>
 </div>
 
 <div class="std-section-fullWidth std-modal-content" id="frstcontainer" style="display: none; border: groove;">
@@ -260,13 +299,15 @@
     </div>
 </div>
 
-<div style="width: 100%">
+<!--The Footer-->
+<div class="std-section-bleed" style="padding-bottom: 0%">
     <% include template/footer.ejs %>
 </div>
+<!--Footer End-->
 
 <!--onclick="window.open('/sheeshmahal');"
 onclick="window.open('/kss');"-->
-
+</body>
 <script>
     var slideIndex = 0;
     showSlides();
@@ -384,5 +425,27 @@ onclick="window.open('/kss');"-->
 
 </script>
 
-</body>
+<script>
+    var modal = document.getElementById('myModal2');
+
+    // When the user clicks on div, open the popup
+    function myFunction() {
+        modal.style.display = "block";
+    }
+
+    // Get the <span> element that closes the modal
+    /*var span = document.getElementById("close2");
+
+     // When the user clicks on <span> (x), close the modal
+     span.onclick = function() {
+     modal.style.display = "none";
+     document.getElementById('myModal').style.display = "block";
+     }*/
+
+    function getmainbody() {
+        document.getElementById('myModal2').style.display = "none";
+        document.getElementById('maincontent').style.display = "block";
+    }
+
+</script>
 </html>
