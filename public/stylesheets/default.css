@@ -116,7 +116,28 @@ a > .button{
     border-color: floralwhite whitesmoke antiquewhite;
     background-image: linear-gradient(to bottom, whitesmoke, white 66%, antiquewhite);
 }
+div > .hero-text{
+    font-size: 80px;
+    font-family: 'Lobster';
+}
 
+@media only screen and (min-width: 376px) {
+    div > .hero-text{
+        font-size: 120px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    div > .hero-text{
+        font-size: 180px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    div > .hero-text{
+        font-size: 220px;
+    }
+}
 
 
 /* Turn off parallax scrolling for tablets and phones */

@@ -7,6 +7,31 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/standards.css"/>
     <link rel="stylesheet" href="/stylesheets/modal.css">
 
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            var $item = $('div.item'), //Cache your DOM selector
+                visible = 2, //Set the number of items that will be visible
+                index = 0, //Starting index
+                endIndex = ( $item.length / visible ) - 1; //End index (NOTE:: Requires visible to be a factor of $item.length... You can improve this by rounding...)
+
+            $('div#arrowR').click(function(){
+                if(index < endIndex ){
+                    index++;
+                    $item.animate({'left':'-=300px'});
+                }
+            });
+
+            $('div#arrowL').click(function(){
+                if(index > 0){
+                    index--;
+                    $item.animate({'left':'+=300px'});
+                }
+            });
+
+        });
+    </script>
+
     <script type="text/javascript" src="template/modals.js"></script>
     <script type="text/javascript">
         function openTabHeader(cityName, elmnt, fontWeight) {
@@ -158,52 +183,128 @@
                 document.getElementById("defaultOpen").click();
             </script>
             <!--<span onclick="this.parentElement.style.display='none'">x</span>-->
-            <div class="event-container">
-                <div class="std-one-third-card" id="html">
-                    <div data-content="Check-Out!" class="image">
-                        <img src="/images/events2.jpg"/>
+            <div class="std-section-fullWidth">
+                <div class="horizontal-scroll-wrapper"style="position: relative">
+                    <div class="event-container-item" id="html">
+                        <div data-content="Check-Out!" class="image">
+                            <img src="/images/events2.jpg"/>
+                        </div>
+                        <div class="one-fourth-caption">
+                            <h2>Exhibition</h2>
+                            <p>We broadcasts your event in a<br> way that is both technically elegant<br> and very cost
+                                effective.</p>
+                        </div>
+                        <button onclick="handleOpenClose(event,'O1')" class="button">View Details &rarr;</button>
                     </div>
-                    <div class="one-fourth-caption">
-                        <h2>Exhibition</h2>
-                        <p>We broadcasts your event in a way that is both technically elegant and very cost
-                            effective.</p>
+                    <div class="event-container-item" id="css">
+                        <div data-content="Upcoming Events!" class="image">
+                            <img src="/images/events3.jpg"/>
+                        </div>
+                        <div class="one-fourth-caption">
+                            <h2>DJ Night</h2>
+                            <p>We broadcasts your event in a<br> way that is both technically elegant<br> and very cost
+                                effective.</p>
+                        </div>
+                        <button onclick="handleOpenClose(event,'O2')" class="button">View Details &rarr;</button>
                     </div>
-                    <button onclick="handleOpenClose(event,'O1')" class="button">View Details &rarr;</button>
-                </div>
-                <div class="std-one-third-card" id="css">
-                    <div data-content="Upcoming Events!" class="image">
-                        <img src="/images/events3.jpg"/>
+                    <div class="event-container-item" id="seo">
+                        <div data-content="Wowsome!" class="image">
+                            <img src="/images/events4.jpg"/>
+                        </div>
+                        <div class="one-fourth-caption">
+                            <h2>New Year Eve</h2>
+                            <p>We broadcasts your event in a<br> way that is both technically elegant<br> and very cost
+                                effective.</p>
+                        </div>
+                        <button onclick="handleOpenClose(event,'O3')" class="button">View Details &rarr;</button>
                     </div>
-                    <div class="one-fourth-caption">
-                        <h2>DJ Night</h2>
-                        <p>We broadcasts your event in a way that is both technically elegant and very cost
-                            effective.</p>
+                    <div class="event-container-item" id="social">
+                        <div data-content="Traditional!" class="image">
+                            <img src="/images/events5.jpg"/>
+                        </div>
+                        <div class="one-fourth-caption">
+                            <h2>Club Party</h2>
+                            <p>We broadcasts your event in a<br> way that is both technically elegant<br> and very cost
+                                effective.</p>
+                        </div>
+                        <button onclick="handleOpenClose(event,'O4')" class="button">View Details &rarr;</button>
                     </div>
-                    <button onclick="handleOpenClose(event,'O2')" class="button">View Details &rarr;</button>
-                </div>
-                <div class="std-one-third-card" id="seo">
-                    <div data-content="Wowsome!" class="image">
-                        <img src="/images/events4.jpg"/>
+                    <div class="event-container-item">
+                        <div data-content="Check-Out!" class="image">
+                            <img src="/images/events2.jpg"/>
+                        </div>
+                        <div class="one-fourth-caption">
+                            <h2>Exhibition</h2>
+                            <p>We broadcasts your event in a<br> way that is both technically elegant<br> and very cost
+                                effective.</p>
+                        </div>
+                        <button onclick="handleOpenClose(event,'O1')" class="button">View Details &rarr;</button>
                     </div>
-                    <div class="one-fourth-caption">
-                        <h2>New Year Eve</h2>
-                        <p>We broadcasts your event in a way that is both technically elegant and very cost
-                            effective.</p>
+                    <div class="event-container-item">
+                        <div data-content="Upcoming Events!" class="image">
+                            <img src="/images/events3.jpg"/>
+                        </div>
+                        <div class="one-fourth-caption">
+                            <h2>DJ Night</h2>
+                            <p>We broadcasts your event in a<br> way that is both technically elegant<br> and very cost
+                                effective.</p>
+                        </div>
+                        <button onclick="handleOpenClose(event,'O2')" class="button">View Details &rarr;</button>
                     </div>
-                    <button onclick="handleOpenClose(event,'O3')" class="button">View Details &rarr;</button>
-                </div>
-                <div class="std-one-third-card" id="social">
-                    <div data-content="Traditional!" class="image">
-                        <img src="/images/events5.jpg"/>
-                    </div>
-                    <div class="one-fourth-caption">
-                        <h2>Club Party</h2>
-                        <p>We broadcasts your event in a way that is both technically elegant and very cost
-                            effective.</p>
-                    </div>
-                    <button onclick="handleOpenClose(event,'O4')" class="button">View Details &rarr;</button>
                 </div>
             </div>
+
+
+        </div>
+            </div>
+
+            <!--<div class="event-container">-->
+                <!--<div class="std-one-third-card" id="html">-->
+                    <!--<div data-content="Check-Out!" class="image">-->
+                        <!--<img src="/images/events2.jpg"/>-->
+                    <!--</div>-->
+                    <!--<div class="one-fourth-caption">-->
+                        <!--<h2>Exhibition</h2>-->
+                        <!--<p>We broadcasts your event <br>in a way that is both <br>technically elegant and <br>very cost-->
+                            <!--effective.</p>-->
+                    <!--</div>-->
+                    <!--<button onclick="handleOpenClose(event,'O1')" class="button">View Details &rarr;</button>-->
+                <!--</div>-->
+                <!--<div class="std-one-third-card" id="css">-->
+                    <!--<div data-content="Upcoming Events!" class="image">-->
+                        <!--<img src="/images/events3.jpg"/>-->
+                    <!--</div>-->
+                    <!--<div class="one-fourth-caption">-->
+                        <!--<h2>DJ Night</h2>-->
+                        <!--<p>We broadcasts your event in a way that is both technically elegant and very cost-->
+                            <!--effective.</p>-->
+                    <!--</div>-->
+                    <!--<button onclick="handleOpenClose(event,'O2')" class="button">View Details &rarr;</button>-->
+                <!--</div>-->
+                <!--<div class="std-one-third-card" id="seo">-->
+                    <!--<div data-content="Wowsome!" class="image">-->
+                        <!--<img src="/images/events4.jpg"/>-->
+                    <!--</div>-->
+                    <!--<div class="one-fourth-caption">-->
+                        <!--<h2>New Year Eve</h2>-->
+                        <!--<p>We broadcasts your event in a way that is both technically elegant and very cost-->
+                            <!--effective.</p>-->
+                    <!--</div>-->
+                    <!--<button onclick="handleOpenClose(event,'O3')" class="button">View Details &rarr;</button>-->
+                <!--</div>-->
+                <!--<div class="std-one-third-card" id="social">-->
+                    <!--<div data-content="Traditional!" class="image">-->
+                        <!--<img src="/images/events5.jpg"/>-->
+                    <!--</div>-->
+                    <!--<div class="one-fourth-caption">-->
+                        <!--<h2>Club Party</h2>-->
+                        <!--<p>We broadcasts your event in a way that is both technically elegant and very cost-->
+                            <!--effective.</p>-->
+                    <!--</div>-->
+                    <!--<button onclick="handleOpenClose(event,'O4')" class="button">View Details &rarr;</button>-->
+                <!--</div>-->
+
+            <!--</div>-->
             <!--End four column section-->
 
             <div class="std-col-12">
@@ -291,7 +392,7 @@
             <!--End hidden divs-->
 
             <!--End main two column sections-->
-            <section class="inner-wrapper-3">
+            <div class="inner-wrapper-3">
                 <section class="one-third" id="google">
                     <h2>Entertainment</h2>
                     <div>
@@ -322,7 +423,7 @@
                         ut
                         platonem definiebas, ex atqui oportere tincidunt vel.</p>
                 </section>
-            </section>
+            </div>
 
         </div>
         <!--End of 1st fragment-->
