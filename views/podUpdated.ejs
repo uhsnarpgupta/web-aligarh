@@ -120,7 +120,7 @@
     </style>
 
 </head>
-<body class="std-light-grey" onload="myFunction()">
+<body class="std-light-grey">
 
 <div>
     <% include template/navigationBar.ejs %>
@@ -130,11 +130,11 @@
     <br/>
     <h2><strong>Picture(s) of the Day</strong></h2>
     <br/>
-    <h4><strong>Share Your Picture at gunjan_varshney@aligarhcity.in</strong>
-        <button style="width: 100px;" class="caption-link mediabox" id="myBtn4" onclick="window.open('http://www.gmail.com')">SHARE</button>
+    <h4><strong>Share Your Picture with us at pics@aligarhcity.in</strong>
+        <button style="width: 100px;" class="caption-link mediabox" id="myBtn" onclick="getmodal()">SHARE</button>
     </h4>
     <br/>
-    <div id="maincontent" class="std-section-bleed std-content" style="outline: 3px solid lightgrey; outline-offset: -12px; background-color: white; display: none;">
+    <div id="maincontent" class="std-section-bleed std-content" style="outline: 3px solid lightgrey; outline-offset: -12px; background-color: white;">
         <!-- Grid -->
 <!--        <div id="wrapper" style="padding-top: 10px">
         <div class="std-row std-padding std-border">-->
@@ -193,7 +193,7 @@
         <div id="caption"></div>
     </div>
 
-    <div id="myModal2" class="modal" style="background-color: whitesmoke; background-image: url('../images/disclaimer.jpg');">
+    <div id="sharemodal" class="modal" style="background-color: whitesmoke; background-image: url('../images/disclaimer.jpg'); display:none;">
         <div style="text-align: center;">
             <h2 style="font-size: 30px;"><strong><u>Picture(s) of the Day</u></strong></h2>
             <br>
@@ -210,36 +210,14 @@
             </p></div>
         <br>
         <br>
-        <div style="font-size: 20px">
-            <input type="checkbox" id="checkbox" name="agree" value="agree">I Agree
-        </div>
-        <br>
-        <div id="sharingpicture" style="display: none;font-size: 30px">
-            <p>Please click on OK button for sharing your Picture with us.</p>
-        </div>
-        <br>
-        <br>
-        <button style="width: 150px;" class="caption-link mediabox" id="myBtn" onclick="getmainbody()">OK</button>
+        <button style="width: 150px;" class="caption-link mediabox" id="myBtn" onclick="getgmailbody()">Agree</button>
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <button class="caption-link mediabox" style="width: 150px;" id="myBtn2"onclick="getmodal()">NOT OK</button>
-    </div>
-
-    <div id="myModal3" class="modal" style="background-color: whitesmoke; display:none;">
-        <br>
-        <br>
-        <div style="color: black; font-family: 'Times New Roman'; font-weight: 500; font-size: 70px;"><p>
-                Sorry!!! You can't be able to see this Page.
-            </p></div>
-        <br>
-        <br>
-        <a href="/">
-        <button style="width: 250px;" class="caption-link mediabox" id="myBtn3">GO TO HOME PAGE</button>
-        </a>
+        <button class="caption-link mediabox" style="width: 150px;" id="myBtn2"onclick="getmainbody()">Not Agree</button>
     </div>
 
 </div>
 
-<!-- Scripts -->
+<!-- Scripts  -->
 
 <script>
     // Get the modal // Common
@@ -271,44 +249,23 @@
 </script>
 
 <script>
-    var modal = document.getElementById('myModal2');
-
-    // When the user clicks on div, open the popup
-    function myFunction() {
-        modal.style.display = "block";
-    }
     
     function getmodal() {
-        document.getElementById('myModal2').style.display = "none";
-        document.getElementById('myModal3').style.display = "block";
+        document.getElementById('sharemodal').style.display = "block";
     }
 
     function getmainbody() {
-        var text1 = document.getElementById("checkbox").checked;
-        if(text1 == true) {
-            document.getElementById('myModal3').style.display = "none";
-            document.getElementById('myModal2').style.display = "none";
-            document.getElementById('maincontent').style.display = "block";
-        }
-        else{
-            alert("For Viewing the Page You have to select the 'I AGREE' Checkbox first!!!");
-            document.getElementById('checkbox').focus();
-        }
+        document.getElementById('sharemodal').style.display = "none";
+    }
+
+    function getgmailbody()
+    {
+        window.open('http://www.gmail.com');
+        document.getElementById('sharemodal').style.display = "none";
     }
     
 </script>
 
-<script>
-    var text = document.getElementById('checkbox');
-    text.onclick = function() {
-        document.getElementById('sharingpicture').style.display = "block";
-    }
-</script>
-
-<!--<script src="routes/jquery.min.js"></script>
-<script src="routes/jquery.poptrox.min.js"></script>
-<script src="routes/skel.min.js"></script>
-<script src="routes/main.js"></script>-->
 </body>
 
 </html>
