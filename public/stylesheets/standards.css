@@ -489,6 +489,12 @@ ARROWS SYMBOLS
 /* MEDIA QUERIES
 -----------------------------------------------------------------------------*/
 
+@media only screen and (min-width: 375px) {
+    .std-top-row{
+        padding-top: 5%;
+    }
+}
+
 @media only screen and (min-width: 600px) {
     /* For tablets: */
     .std-col-t-1 {width: 8.33%;}
