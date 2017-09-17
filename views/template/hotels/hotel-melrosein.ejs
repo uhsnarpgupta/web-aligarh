@@ -3,6 +3,12 @@
 <title>std.CSS Template</title>
 <link rel="stylesheet" href="/stylesheets/standards.css">
 <head>
+    <style>
+        .std-col-p-3 {width: 100%;}
+        @media only screen and (max-width: 500px){
+ .std-col-p-3 {width: 100%;}
+        }
+    </style>
 </head>
 <body class="std-light-grey">
 
@@ -10,24 +16,24 @@
 <div class="std-section-fullWidth std-modal-content">
     <div class="std-close std-top-row" style="float: right; padding: 0 1%; background-color: white">&times;</div>
     <div class="std-col-12" style="float: left">
-        <div class="std-col-3 std-col-t-3" style="width: 30%">
+        <div class="std-col-3 std-col-t-3 std-col-p-3">
             <div class="eduLogo">
                 <picture>
                     <source srcset="/images/melroseinn.jpg" media="(max-width: 1024px)">
                     <source srcset="/images/melroseinn.jpg">
-                    <img src="/images/melroseinn.jpg" alt="Image">
+                    <img class="std-col-p-3" src="/images/melroseinn.jpg" alt="Image">
                 </picture>
             </div>
 
-            <div class="aside" style="height: 100%;">
+          <!--  <div class="aside" style="height: 100%;">
                 <div>
                     <div class="std-top-row" style="background-color: black; color: white">
                         <h4>Hotel Location</h4>
                     </div>
                     <div id="map" style="width:100%;height:200px;"></div>
-                </div>
+                </div>-->
 
-                <div>
+               <!-- <div>
                     <ul>
                         <div class="std-container std-padding std-black"
                              style="margin-top: 4%; background-color: black; color: white;">
@@ -41,9 +47,9 @@
                         <p>+91 9927036828 , 9927036668 , 9927030772</p>
                         <p>info@hotelmelroseinn.com</p>
                     </ul>
-                </div>
+                </div>-->
             </div>
-            <div class="std-col-12">
+           <!-- <div class="std-col-12">
                 <div class="std-container std-padding std-black"
                      style="margin-top: 4%; background-color: black; color: white;">
                         <h4>Connect With Us</h4>
@@ -56,27 +62,27 @@
                 <div class="std-col-2">
                     <a href="https://twitter.com/" target="_blank">
                     <img src="/images/brandLogo/twitter-logo.png">
-                    <!--</a>-->
+                    &lt;!&ndash;</a>&ndash;&gt;
                     </a></div>
                 <div class="std-col-2">
                     <a href="https://www.instagram.com/"  target="_blank">
                     <img src="/images/brandLogo/instagram-logo.png">
-                    <!--</a>-->
+                    &lt;!&ndash;</a>&ndash;&gt;
                     </a></div>
                 <div class="std-col-2">
                     <a href="http://hotelmelroseinn.com/"  target="_blank">
                         <img src="/images/website.png">
                     </a>
-                </div>
-                <div class="std-col-2" style="padding: auto 0">
+                </div>-->
+                <!--<div class="std-col-2" style="padding: auto 0">
                     <a href="https://www.youtube.com/"  target="_blank">
                         <img src="/images/brandLogo/youtube-1-logo.png">
                     </a>
-                </div>
+                </div>-->
 
             </div>
         </div>
-        <div class="std-col-6 std-col-t-9" style="width: 70%">
+       <!-- <div class="std-col-6 std-col-t-9" style="width: 70%">
             <div>
                 <div class="std-top-row" style="background-color: black; color: white">
                     <h4>Hotel Melrose-Inn</h4>
@@ -106,7 +112,7 @@
                 </div>
                 <hr>
 
-            </div>
+            </div>-->
         </div>
     </div>
 </div>

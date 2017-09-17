@@ -156,10 +156,10 @@
                 <div class="std-section-bleed slideshow-container">
 
                     <div class="mySlides fade">
-                        <img class="temp" src="images/deals/resdeal1.jpeg" style="width:100%">
+                        <img class="temp" src="images/recipe/recipe1.jpg" style="width:100%; height: 400px;">
                         <div class="hero-text">
-                            <h1 class="std-wide">First</h1>
-                            <button id="frstrecipe" onclick="frstcontshow('resdeal1.jpeg','First Recipe');"><p>View
+                            <h1 class="std-wide" style="color:black;">Peanut Butter Ice Cream Pie</h1>
+                            <button id="frstrecipe" onclick="frstcontshow('recipe1.jpg','Peanut Butter Ice Cream Pie');"><p>View
                                     Recipe</p></button>
                         </div>
                     </div>
@@ -210,7 +210,30 @@
         <div class="std-col-12" style="background-color: #3a3a3a; color: white">
             <h1 id="caption1"></h1>
         </div>
-        <p>We broadcasts your event in a way that is both technically elegant and very cost effective.</p>
+        <div>
+            <h4>Ingredients - </h4>
+            <p>
+                15 Oreo cookies (crushed)</p>
+            <p> 1⁄2 cup butter (melted)</p>
+            <p> 1 quart vanilla ice cream (softened-not melted)</p>
+            <p>  1 cup chunky peanut butter</p>
+            <p>   1 teaspoon vanilla</p>
+            <p>  1⁄2 cup peanuts (crushed)</p>
+            <p>  1⁄4 cup chocolate syrup
+            </p>
+        </div>
+        <div>
+            <h4>Directions -
+            </h4>
+            <p>
+                Combine Oreos and butter and mix well.</p>
+            <p>Press into pie dish to form a crust going 3/4 of the way up the sides.</p>
+            <p>  Mix ice cream, peanut butter & vanilla until well blended and smooth.</p>
+            <p>  Pour into crust.</p>
+            <p>   Freeze for a few hours (until frozen).</p>
+            <p>  Sprinkle crushed peanuts on top and drizzle chocolate syrup right before serving.
+            </p>
+        </div>
     </div>
     <div class="std-col-4 std-col-t-4 aside" style="float: right">
         <div style="height:25%">
@@ -218,10 +241,11 @@
         </div>
         <hr>
         <div style="height:25%">
-            <video controls autoplay loop poster="/images/comingsoon/coming-soon-1.gif" muted>
+            <img class="temp" src="images/recipe/recipe1-1.jpg">
+            <!--<video controls autoplay loop poster="/images/comingsoon/coming-soon-1.gif" muted>
                 <source src="/images/movie.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
-            </video>
+            </video>-->
         </div>
     </div>
 </div>
@@ -361,7 +385,7 @@ onclick="window.open('/kss');"-->
         var modal = document.getElementById('frstcontainer');
         var modalImg = document.getElementById("img01");
         var captionText = document.getElementById("caption1");
-        var src = "/images/deals/" + image;
+        var src = "/images/recipe/" + image;
         var alt = data;
         modal.style.display = "block";
         modalImg.src = src;
