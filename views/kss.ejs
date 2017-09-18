@@ -312,30 +312,26 @@
                     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
                     <div class="std-row-padding std-center">
                         <div class="std-col m3">
-                            <img src="/images/shop/saree1.jpg" style="width:100%"
-                                 onclick="fullerimage('1','The mist over the mountains')" class="std-hover-opacity"
-                                 alt="The mist over the mountains">
+                            <img src="/images/restaurant/kwality1.jpg" style="width:100%"
+                                 onclick="fullerimage('1')" class="std-hover-opacity">
                         </div>
 
                         <div class="std-col m3">
-                            <img src="/images/shop/saree2.jpg" style="width:100%"
-                                 onclick="fullerimage('2','Coffee beans')"
-                                 class="std-hover-opacity"
-                                 alt="Coffee beans">
+                            <img src="/images/restaurant/kwality2.jpg" style="width:100%"
+                                 onclick="fullerimage('2')"
+                                 class="std-hover-opacity">
                         </div>
 
                         <div class="std-col m3">
-                            <img src="/images/shop/saree3.jpg" style="width:100%"
-                                 onclick="fullerimage('3','Bear closeup')"
-                                 class="std-hover-opacity"
-                                 alt="Bear closeup">
+                            <img src="/images/restaurant/kwality3.jpg" style="width:100%"
+                                 onclick="fullerimage('3')"
+                                 class="std-hover-opacity">
                         </div>
 
                         <div class="std-col m3">
-                            <img src="/images/shop/saree4.jpg" style="width:100%"
-                                 onclick="fullerimage('4','Quiet ocean')"
-                                 class="std-hover-opacity"
-                                 alt="Quiet ocean">
+                            <img src="/images/restaurant/kwality4.jpg" style="width:100%"
+                                 onclick="fullerimage('4')"
+                                 class="std-hover-opacity">
                         </div>
                     </div>
                 </div>
@@ -353,7 +349,6 @@
 <div id="myModal" class="modal">
     <span class="close">&times;</span>
     <img class="modal-content" id="img01">
-    <div id="caption"></div>
 </div>
 
 </div>
@@ -480,16 +475,14 @@
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
 
-    function fullerimage(value, data) {
+    function fullerimage(value) {
         var image = value;
-        var src = "/images/shop/saree" + image + ".jpg";
-        var alt = data;
+        var src = "/images/restaurant/kwality" + image + ".jpg";
         // Get the image and insert it inside the modal - use its "alt" text as a caption
         /*var img = document.getElementById('img1');
          img.onclick = function(){*/
         modal.style.display = "block";
         modalImg.src = src;
-        captionText.innerHTML = alt;
 //        }
     }
 
