@@ -41,7 +41,7 @@ var restaurantnew = require('./routes/restaurantnew');
 
 var contactus = require('./routes/contactus');
 var privacypolicy = require('./routes/privacypolicy');
-// var aboutaligarh = require('./routes/aboutaligarh');
+var aboutaligarh = require('./routes/aboutaligarh');
 
 var app = express();
 
@@ -67,7 +67,7 @@ app.use('/event',event);
 app.use('/admin',admin);
 app.use('/contactus',contactus);
 app.use('/privacypolicy',privacypolicy);
-// app.use('/aboutaligarh',aboutaligarh);
+app.use('/aboutaligarh',aboutaligarh);
 
 //Education Route
 app.use('/neet', neet);
