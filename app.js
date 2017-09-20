@@ -37,7 +37,7 @@ var recipe = require('./routes/recipe');
 var recipe2 = require('./routes/recipe2');
 var restaurantnew = require('./routes/restaurantnew');
 /*var menu = require('./routes/menu');*/
-
+var comingsoon = require('./routes/comingsoon');
 
 var contactus = require('./routes/contactus');
 var privacypolicy = require('./routes/privacypolicy');
@@ -120,7 +120,7 @@ app.use('/recipe',recipe);
 app.use('/recipe2',recipe2);
 
 //app.use('/menu', menu);
-
+app.use('/comingsoon',comingsoon);
 
 //Admin Routes
 app.use('/insert',admin);

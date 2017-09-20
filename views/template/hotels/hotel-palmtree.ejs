@@ -2,12 +2,17 @@
 <html>
 <title>std.CSS Template</title>
 <link rel="stylesheet" href="/stylesheets/standards.css">
-<!--<style>
-    .mySlidespm{
-        display: none;
-    }
-</style>-->
 <head>
+    <style>
+
+        @media only screen and (max-width: 500px){
+            .std-col-p-3 {width: 100%;}
+        }
+        @media only screen and (min-width: 1500px) {
+
+            .std-col-t-9 {width: 70%}
+        }
+    </style>
 </head>
 <body class="std-light-grey">
 
@@ -15,7 +20,7 @@
 <div class="std-section-fullWidth std-modal-content">
     <div class="std-close std-top-row" style="float: right; padding: 0 1%; background-color: white">&times;</div>
     <div class="std-col-12" style="float: left">
-        <div class="std-col-3 std-col-t-3" style="width: 30%">
+        <div class="std-col-3 std-col-t-3 std-col-p-3" >
             <div class="eduLogo">
                 <picture>
                     <source srcset="/images/palmtree.jpg" media="(max-width: 1024px)">
@@ -63,11 +68,11 @@
                     <img src="/images/brandLogo/twitter-logo.png">
                     </a>
                 </div>
-                <div class="std-col-2">
+                <!--<div class="std-col-2">
                     <a href="https://www.instagram.com/" target="_blank">
                     <img src="/images/brandLogo/instagram-logo.png">
                     </a>
-                </div>
+                </div>-->
                 <div class="std-col-2">
                     <a href="http://palmtreealigarh.com/"  target="_blank">
                         <img src="/images/website.png">
@@ -80,7 +85,7 @@
                 </div>
             </div>
         </div>
-        <div class="std-col-6 std-col-t-9" style="width: 70%">
+        <div class="std-col-9 std-col-t-9 std-col-p-3" >
             <div>
                 <div class="std-top-row" style="background-color: black; color: white">
                     <h4>Palm Tree Hotel</h4>

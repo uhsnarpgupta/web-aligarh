@@ -313,24 +313,25 @@
                     <div class="std-row-padding std-center">
                         <div class="std-col m3">
                             <img src="/images/restaurant/kwality1.jpg" style="width:100%"
-                                 onclick="fullerimage('1')" class="std-hover-opacity">
+                                 onclick="openModal();currentSlide(1)"
+                                 class="std-hover-opacity">
                         </div>
 
                         <div class="std-col m3">
                             <img src="/images/restaurant/kwality2.jpg" style="width:100%"
-                                 onclick="fullerimage('2')"
+                                 onclick="openModal();currentSlide(2)"
                                  class="std-hover-opacity">
                         </div>
 
                         <div class="std-col m3">
                             <img src="/images/restaurant/kwality3.jpg" style="width:100%"
-                                 onclick="fullerimage('3')"
+                                 onclick="openModal();currentSlide(3)"
                                  class="std-hover-opacity">
                         </div>
 
                         <div class="std-col m3">
                             <img src="/images/restaurant/kwality4.jpg" style="width:100%"
-                                 onclick="fullerimage('4')"
+                                 onclick="openModal();currentSlide(4)"
                                  class="std-hover-opacity">
                         </div>
                     </div>
@@ -346,17 +347,40 @@
 </div>
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<!--<div id="myModal" class="modal">
     <span class="close">&times;</span>
     <img class="modal-content" id="img01">
-</div>
+</div>-->
+
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+        <div class="mySlides">
+            <img src="/images/restaurant/kwality1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="/images/restaurant/kwality2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="/images/restaurant/kwality3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="/images/restaurant/kwality4.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
 
 </div>
-
 
 <script>
     // Toggle between hiding and showing blog replies/comments
-    document.getElementById("myBtn").click();
+    //document.getElementById("myBtn").click();
 
     function myFunction(id) {
         var x = document.getElementById(id);
@@ -392,7 +416,7 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6Pviy7a1tfYcpRZySfCt9qhbVvVbUIJQ&callback=myMap"></script>
 
 <!-- Add Slide Show -->
-<script>
+<!--<script>
     var slideIndex = 1;
     showDivs(slideIndex);
 
@@ -418,58 +442,8 @@
         }
         x[slideIndex - 1].style.display = "block";
     }
-</script>
-<script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-        showDivs(slideIndex += n);
-    }
-
-    function currentDiv(n) {
-        showDivs(slideIndex = n);
-    }
-
-    function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        if (n > x.length) {
-            slideIndex = 1
-        }
-        if (n < 1) {
-            slideIndex = x.length
-        }
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" std-white", "");
-        }
-        x[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " std-white";
-    }
-</script>
-<script>
-    var slideIndex = 0;
-    carousel();
-
-    function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > x.length) {
-            slideIndex = 1
-        }
-        x[slideIndex - 1].style.display = "block";
-        setTimeout(carousel, 2000); // Change image every 2 seconds
-    }
-</script>
-<script>
+</script>-->
+<!--<script>
     // Get the modal // Common
     var modal = document.getElementById('myModal');
     var modalImg = document.getElementById("img01");
@@ -494,6 +468,39 @@
         modal.style.display = "none";
     }
 
+</script>-->
+
+<script>
+    function openModal() {
+        document.getElementById('myModal').style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
 </script>
 
 </body>
