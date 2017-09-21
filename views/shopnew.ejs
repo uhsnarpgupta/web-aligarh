@@ -1,185 +1,218 @@
 <!DOCTYPE html>
 <head xmlns="http://www.w3.org/1999/html">
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Shopping</title>
-        <link rel="stylesheet" href="/stylesheets/standards.css">
-        <link rel="stylesheet" href="/stylesheets/modal.css">
-        <link rel="stylesheet" href="/stylesheets/education.css">
-        <link rel="stylesheet" href="/stylesheets/shopnew.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shopping</title>
+    <link rel="stylesheet" href="/stylesheets/standards.css">
+    <link rel="stylesheet" href="/stylesheets/modal.css">
+    <link rel="stylesheet" href="/stylesheets/education.css">
+    <link rel="stylesheet" href="/stylesheets/shopnew.css">
 
+</head>
+<body>
+<div class="std-header">
+    <% include template/navigationBar.ejs %>
+</div>
+<!--End Header-->
+<div class="std-top-row">
 
+    <!--1st Row-->
+    <div class="std-section-bleed">
+        <div class="hero-image mySlides fade" style="background-image: url('../images/shop1.jpg'); padding: 30%">
+            <div class="hero-text">
+                <h1 class="std-wide" style="color: black; font-family: 'Times New Roman'; border: 2px solid grey; border-radius: 5px;">SHOPPING</h1>
+                <button onclick="scrollWin(0, 650)" style="color: orange;"><p>SHOP NOW</p></button>
+            </div>
 
-        </head>
-    <body>
-        <div class="std-header">
-            <% include template/navigationBar.ejs %>
         </div>
-        <!--End Header-->
-        <div class="std-top-row">
-
-            <!--1st Row-->
-            <div class="std-section-bleed">
-                <div class="hero-image mySlides fade" style="background-image: url('../images/shop1.jpg'); padding: 30%">
-                    <div class="hero-text">
-                        <h1 class="std-wide" style="color: black; font-family: 'Times New Roman'; border: 2px solid grey; border-radius: 5px;">SHOPPING</h1>
-                        <button onclick="scrollWin(0, 650)" style="color: orange;"><p>SHOP NOW</p></button>
-                    </div>
-
-                    </div>
-                <div class="hero-image mySlides fade" style="background-image: url('../images/shop3.jpg');padding: 30%">
-                    <div class="hero-text">
-                        <h1 class="std-wide" style="color: black; font-family: 'Times New Roman'; border: 2px solid grey; border-radius: 5px; ">SHOPPING</h1>
-                        <button onclick="scrollWin(0, 650)" style="color: orange;"><p>SHOP NOW</p></button>
-                    </div>
-
-                </div>
-                <div class="hero-image mySlides fade" style="background-image: url('../images/shop2.jpg');padding: 30%">
-                    <div class="hero-text">
-                        <h1 class="std-wide" style="color: white; font-family: 'Times New Roman'; border: 2px solid grey; border-radius: 5px; border-style: double">SHOPPING</h1>
-                        <button onclick="scrollWin(0, 650)" style="color: orange;"><p>SHOP NOW</p></button>
-                    </div>
-                </div>
+        <div class="hero-image mySlides fade" style="background-image: url('../images/shop3.jpg');padding: 30%">
+            <div class="hero-text">
+                <h1 class="std-wide" style="color: black; font-family: 'Times New Roman'; border: 2px solid grey; border-radius: 5px; ">SHOPPING</h1>
+                <button onclick="scrollWin(0, 650)" style="color: orange;"><p>SHOP NOW</p></button>
             </div>
 
-                <div style="text-align:center">
-                    <!--<span class="dot"></span>-->
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
+        </div>
+        <div class="hero-image mySlides fade" style="background-image: url('../images/shop2.jpg');padding: 30%">
+            <div class="hero-text">
+                <h1 class="std-wide" style="color: white; font-family: 'Times New Roman'; border: 2px solid grey; border-radius: 5px; border-style: double">SHOPPING</h1>
+                <button onclick="scrollWin(0, 650)" style="color: orange;"><p>SHOP NOW</p></button>
             </div>
-            <!--1st row ends-->
+        </div>
+    </div>
 
-            <!--2nd Row-->
-       <!-- <div class="std-col-12 std-section-bleed" >
-            <div style=" width: 100%">
-                <img src="/images/tagline.jpg">
-            </div>
-        </div>-->
-             <!--2nd row ends-->
+    <div style="text-align:center">
+        <!--<span class="dot"></span>-->
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</div>
+<!--1st row ends-->
 
-        <div class="std-col-12 std-section-bleed res-div-temp" style="margin-left: 12.5%; margin-right: 5%;">
-            <div class="std-col-t-4" style="width: 25%;/* ;margin-left: 6.5% ;margin-right: 2%;*/ ">
-                <div class="mediabox">
-                <div style="margin: 10%;">
+<!--2nd Row-->
+<!-- <div class="std-col-12 std-section-bleed" >
+     <div style=" width: 100%">
+         <img src="/images/tagline.jpg">
+     </div>
+ </div>-->
+<!--2nd row ends-->
+<div class="horizontal-scroll-wrapper"style="position: relative">
+
+    <!--<div class="std-col-12 std-section-bleed res-div-temp" style="margin-left: 12.5%; margin-right: 5%;">-->
+        <div class="event-container-item">
+            <div class="mediaback">
+                <div style="margin: 2%;">
                     <img class="imgg" src="/images/shop4.jpg">
                 </div>
             </div>
-            </div>
-            <div class="std-col-t-4" onclick="window.open('/sheeshmahal')" style="width: 25%; height: 480px;">
-                <div class="mediaback">
-                    <img src="/images/Model-Sarees.jpg">
-                    <h1 class="hero-sub-text" style="position: absolute; padding-left: 25px; color: white;">SHEESH MAHAL</h1>
-                </div>
-            </div>
-            <div class="std-col-t-4" style="width: 25%; /*margin-left: 4% ;margin-right: 2%*/">
-                <div class="mediabox">
-                <div style="margin: 10%;">
-                    <img class="imgg" src="/images/shop4.jpg">
-                </div>
-                </div>
-            </div>
-
         </div>
-
-        <!--3rd row starts-->
-        <div class="std-section-fullWidth aside res-div2-temp">
-            <div class="std-col-12">
-                <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
-                    <div class="show-image">
-                    <img class="image" src="/images/model1.jpg">
-                            <input class="update" type="button" value="SHOP NOW" />
-                       <!-- <h1 class="hero-sub-text" style="position: absolute; ">  </h1>-->
-
-                    </div>
-                    </div>
-                <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
-                    <div class="show-image">
-                    <img class="imageE" src="/images/model2.jpg">
-                    <input class="update" type="button" value="SHOP NOW" />
-                    </div>
-                </div>
-                <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
-                    <div class="show-image">
-                    <img class="image" src="/images/model3.jpg">
-                    <input class="update" type="button" value="SHOP NOW" />
-                </div>
-                </div>
-                <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
-                    <div class="show-image">
-                    <img class="imageE" src="/images/model4.jpg">
-                    <input class="update" type="button" value="SHOP NOW" />
-                </div>
-                </div>
-            </div>
-            <div class="std-col-12">
-                <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
-                    <div class="show-image">
-                    <img class="imageE" src="/images/model1.jpg">
-                    <input class="update" type="button" value="SHOP NOW" />
-                </div>
-                </div>
-                <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
-                    <div class="show-image">
-                    <img class="image" src="/images/model2.jpg">
-                    <input class="update" type="button" value="SHOP NOW" />
-                </div>
-                </div>
-                <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
-                    <div class="show-image">
-                    <img class="imageE" src="/images/model3.jpg">
-                    <input class="update" type="button" value="SHOP NOW" />
-                </div>
-                </div>
-                <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
-                    <div class="show-image">
-                    <img class="image" src="/images/model4.jpg">
-                    <input class="update" type="button" value="SHOP NOW" />
-                </div>
-                </div>
-            </div>
-            <div class="std-col-12">
-                <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
-                    <div class="show-image">
-                    <img class="image" src="/images/model1.jpg">
-                    <input class="update" type="button" value="SHOP NOW" />
-                </div>
-                </div>
-                <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
-                    <div class="show-image">
-                    <img class="imageE" src="/images/model2.jpg">
-                    <input class="update" type="button" value="SHOP NOW" />
-                </div>
-                </div>
-                <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
-                    <div class="show-image">
-                    <img class="image" src="/images/model3.jpg">
-                    <input class="update" type="button" value="SHOP NOW" />
-                </div>
-                </div>
-                <div class="std-col-t-3 imgdiv1" style="max-height: 300px;cursor: pointer;position: relative;">
-                    <div class="show-image">
-                    <img class="imageE" src="/images/model4.jpg">
-                    <input class="update" type="button" value="SHOP NOW" />
-                </div>
+        <div class="event-container-item center-align" onclick="window.open('/sheeshmahal')">
+            <div class="mediaback">
+                <img src="/images/Model-Sarees.jpg">
+                <!--<h1 class="hero-sub-text" style="position: absolute; padding-left: 25px; color: white;">SHEESH MAHAL</h1>-->
+                <div class="overlay">
+                    <div class="text">SHEESH MAHAL</div>
                 </div>
             </div>
         </div>
-
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
+    <div class="event-container-item">
+        <div class="mediaback">
+            <div style="margin: 2%;">
+                <img class="imgg" src="/images/shop4.jpg">
+            </div>
         </div>
-
-        <!--The Footer-->
-        <div class="std-section-bleed">
-            <% include template/footer.ejs %>
+    </div>
+    <div class="event-container-item center-align" onclick="window.open('/sheeshmahal')">
+        <div class="mediaback">
+            <img src="/images/Model-Sarees.jpg">
+            <!--<h1 class="hero-sub-text" style="position: absolute; padding-left: 25px; color: white;">SAREE SUHAG</h1>-->
+            <div class="overlay">
+                <div class="text">SAREE SUHAG</div>
+            </div>
         </div>
-        <!--Footer End-->
-    </body>
+    </div>
+    <div class="event-container-item">
+        <div class="mediaback">
+            <div style="margin: 2%;">
+                <img class="imgg" src="/images/shop4.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="event-container-item center-align" onclick="window.open('/swadeshi')">
+        <div class="mediaback">
+            <img src="/images/Model-Sarees.jpg">
+            <!--<h1 class="hero-sub-text" style="position: absolute; padding-left: 25px; color: white;">UPCOMING SHOP</h1>-->
+            <div class="overlay">
+                <div class="text">SWADESHI</div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+
+<!--3rd row starts-->
+<div class="std-section-fullWidth aside res-div2-temp">
+    <div class="std-section-fullWidth">
+        <h1>
+            Shop Now!
+        </h1>
+    </div>
+    <div class="std-col-12">
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="image" src="/images/model1.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+                <!-- <h1 class="hero-sub-text" style="position: absolute; ">  </h1>-->
+
+            </div>
+        </div>
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="imageE" src="/images/model2.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="image" src="/images/model3.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="imageE" src="/images/model4.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+    </div>
+    <div class="std-col-12">
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="imageE" src="/images/model1.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="image" src="/images/model2.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="imageE" src="/images/model3.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="image" src="/images/model4.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+    </div>
+    <div class="std-col-12">
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="image" src="/images/model1.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="imageE" src="/images/model2.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="image" src="/images/model3.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="imageE" src="/images/model4.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+<!--The Footer-->
+<div class="std-section-bleed">
+    <% include template/footer.ejs %>
+</div>
+<!--Footer End-->
+</body>
 <script>
     var slideIndex = 0;
     showSlides();

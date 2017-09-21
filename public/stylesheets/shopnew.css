@@ -7,6 +7,60 @@
     float: left;
 }
 
+.horizontal-scroll-wrapper {
+    overflow: auto;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1%;
+    white-space: nowrap;
+}
+
+.horizontal-scroll-wrapper > div {
+    /*width: 23%;*/
+    width: 45%;
+    margin-left: 1%;
+    height: 100%;
+    display: inline-block;
+    padding: 0 0.5%;
+    /*border: 1px solid #ddd;*/
+    background: #fff;
+    box-shadow: 2px 2px 2px #ccc;
+    padding-top: 10px;
+    /*border-left: 5px solid #675765;*/
+    /*border-radius: 5px;*/
+    padding-bottom: 10px;
+    max-height: 600px;
+    transition: transform linear 0.2s;
+}
+
+.center-align{
+    transform: translateY(0%);
+}
+
+.event-container-item {
+    width: 23%;
+    margin-left: 1%;
+    /*float: left;*/
+    position: relative;
+    height: 100%;
+    display: inline-block;
+    /*padding: 0 0.5%;*/
+    /*border: 1px solid #ddd;*/
+    background: #fff;
+    /*box-shadow: 2px 2px 2px #ccc;*/
+    padding-top: 10px;
+    /*border-left: 5px solid #675765;*/
+    /*border-radius: 5px;*/
+    /*padding-bottom: 10px;*/
+    max-height: 600px;
+    transition: transform linear 0.2s;
+}
+
+/*.horizontal-scroll-wrapper > div:hover {*/
+    /*box-shadow: 4px 4px 4px #ccc;*/
+    /*transform: scale(1.1);*/
+/*}*/
+
 .image {
     opacity: 1;
     display: block;
@@ -51,12 +105,12 @@
 }
 
 .text {
-    background-color: #00B7FF;
+    /*background-color: #00B7FF;*/
     line-height: 1.2;
+    transform: translate(-50%, -20%);
     white-space: nowrap;
     text-overflow: ellipsis;
     color: white;
-    font-size: 24px;
     padding: 16px 32px;
     font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
     color: rgb(255, 255, 255);
@@ -117,8 +171,8 @@
 }
 
 .mediabox {
-    float: left;
-    width: 100%; /* as I have set margin 2% then width of each mediabox will be (100-(2*2*3))/3 = 29.3 */
+    /*float: left;*/
+    /*width: 100%; !* as I have set margin 2% then width of each mediabox will be (100-(2*2*3))/3 = 29.3 *!*/
     background: #fff;
 }
 
@@ -152,13 +206,13 @@
     width: 100%; /* as I have set margin 2% then width of each mediabox will be (100-(2*2*3))/3 = 29.3 */
     background: #fff;
     outline: 3px solid white;
-    outline-offset: -25px;
+    outline-offset: -1rem;
 }
 
-.mediaback:hover{
-    box-shadow: 4px 4px 4px #ccc;
-    transform: scale(1.1);
-}
+/*.mediaback:hover{*/
+    /*box-shadow: 4px 4px 4px #ccc;*/
+    /*transform: scale(1.1);*/
+/*}*/
 
 .mediaback:hover .hero-sub-text{
     box-shadow: 4px 4px 4px #ccc;
@@ -199,12 +253,13 @@
     transition: .5s ease;
 }
 
+
 .container {
     position: relative;
     width: 100%;
 }
 
-.container:hover .overlay {
+.event-container-item:hover .overlay {
     bottom: 0;
     height: 100%;
 }
@@ -227,6 +282,10 @@
     }
     .res-div2-temp {
         margin-top: 5%;
+    }
+
+    .horizontal-scroll-wrapper > div{
+        width: 23%;
     }
 }
 
@@ -257,4 +316,14 @@ div.show-image input.update {
 div.show-image input.delete {
     top:0;
     left:79%;
+}
+
+@media screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+
+    .event-container-item {
+        width: 50%;
+    }
 }
