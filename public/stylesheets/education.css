@@ -118,6 +118,10 @@
     /*text-align: center;*/
 }
 
+.iframe > iframe{
+    width: 100%;
+}
+
 .active li {
     position: absolute;
     top: 130px;
