@@ -120,6 +120,10 @@ td {
     margin: 0 auto; // top, bottom - and left, right values, respectively.
 }
 
+.center-vertical{
+    margin: auto 0;
+}
+
 
 /* Text Transformation
 -----------------------------------------------------------------------------*/
