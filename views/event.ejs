@@ -8,24 +8,24 @@
     <link rel="stylesheet" href="/stylesheets/modal.css">
 
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
 
             var $item = $('div.item'), //Cache your DOM selector
                 visible = 2, //Set the number of items that will be visible
                 index = 0, //Starting index
                 endIndex = ( $item.length / visible ) - 1; //End index (NOTE:: Requires visible to be a factor of $item.length... You can improve this by rounding...)
 
-            $('div#arrowR').click(function(){
-                if(index < endIndex ){
+            $('div#arrowR').click(function () {
+                if (index < endIndex) {
                     index++;
-                    $item.animate({'left':'-=300px'});
+                    $item.animate({'left': '-=300px'});
                 }
             });
 
-            $('div#arrowL').click(function(){
-                if(index > 0){
+            $('div#arrowL').click(function () {
+                if (index > 0) {
                     index--;
-                    $item.animate({'left':'+=300px'});
+                    $item.animate({'left': '+=300px'});
                 }
             });
 
@@ -144,6 +144,8 @@
 </header>
 <!--End Header-->
 <div class="std-top-row">
+
+    <!--Start Slideshow Banner-->
     <div class="std-section-bleed">
         <section id="header1">
             <div id="container">
@@ -154,19 +156,15 @@
                 <img class="slides" src="images/events12.jpg">
                 <button class="btn" id="btn1" onclick="plusIndex(-1)">&#10094;</button>
                 <button class="btn" id="btn2" onclick="plusIndex(1)">&#10095;</button>
-                <!--</div>-->
             </div>
         </section>
     </div>
-    <!--<div class="std-section-bleed">-->
-    <!--<section class="banner tabHeader" id="header2">-->
-    <!--<div class="banner-inner">-->
-    <!--<img src="images/rocket_design.png">-->
-    <!--</div>-->
-    <!--</section>-->
-    <!--</div>-->
-    <!--End Slidshow Banner-->
+    <!--End Slideshow Banner-->
+
+    <!--Start first row-->
     <div class="std-section-bleed">
+
+        <!--Start Tabs-->
         <div class="tab">
             <button class="tablink" onclick="openTab(event, 'div1'), openTabHeader('header1',this,'bold')"
                     id="defaultOpen">
@@ -175,290 +173,341 @@
             <button class="tablink" onclick="openTab(event, 'div2'), openTabHeader('header2',this,'bold')">Private
             </button>
         </div>
-        <!--End of Tabs-->
+        <!--End Tabs-->
 
+        <!--Start four column section-->
         <div id="div1" class="tabcontent std-section-fullWidth">
             <script>
                 // Get the element with id="defaultOpen" and click on it
                 document.getElementById("defaultOpen").click();
             </script>
             <!--<span onclick="this.parentElement.style.display='none'">x</span>-->
+
+            <!--<div>-->
+            <!--<div class="button" style="float: left; margin-top: 10%">-->
+            <!--<h3><</h3>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--Start of Scrolling 4-col Container-->
             <div class="std-section-fullWidth">
-                <div class="horizontal-scroll-wrapper"style="position: relative">
-                    <div class="event-container-item" id="html">
+                <div class="horizontal-scroll-wrapper">
+                    <div class="event-container-item" id="html" style="margin-left: 0">
                         <div data-content="Check-Out!" class="image">
-                            <img src="/images/events2.jpg"/>
+                            <img src="/images/events/adventure-skydivin.jpeg"/>
+                        </div>
+                        <div class="event-type">
+                            <p>Adventures</p>
                         </div>
                         <div class="one-fourth-caption">
-                            <h2>Exhibition</h2>
-                            <p>We broadcasts your event in a<br> way that is both technically elegant<br> and very cost
-                                effective.</p>
+                            <p><b>Tandem, Skydiving in Aligarh</b></p>
+                            <span>
+                            <p>Aligarh, Aligarh, India</p>
+                            </span>
                         </div>
                         <button onclick="handleOpenClose(event,'O1')" class="button">View Details &rarr;</button>
+                        <span class="std-ribbon" title="Featured Event">Featured</span>
                     </div>
                     <div class="event-container-item" id="css">
                         <div data-content="Upcoming Events!" class="image">
-                            <img src="/images/events3.jpg"/>
+                            <img src="/images/events/business-sep29.jpg"/>
+                        </div>
+                        <div class="event-type">
+                            <p>Business</p>
                         </div>
                         <div class="one-fourth-caption">
-                            <h2>DJ Night</h2>
-                            <p>We broadcasts your event in a<br> way that is both technically elegant<br> and very cost
-                                effective.</p>
+                            <p><b>Self-Actualized Leadership Seminar, 30th Edition</b></p>
+                            <span><p>
+                                Fri Sep 29 2017 at 03:00 pm</p>
+                            </span>
                         </div>
                         <button onclick="handleOpenClose(event,'O2')" class="button">View Details &rarr;</button>
+                        <span class="std-ribbon" title="Featured Event">Featured</span>
+
                     </div>
                     <div class="event-container-item" id="seo">
                         <div data-content="Wowsome!" class="image">
-                            <img src="/images/events4.jpg"/>
+                            <img src="/images/events/exhibition-oct2.jpeg"/>
+                        </div>
+                        <div class="event-type">
+                            <p>Exhibition</p>
                         </div>
                         <div class="one-fourth-caption">
-                            <h2>New Year Eve</h2>
-                            <p>We broadcasts your event in a<br> way that is both technically elegant<br> and very cost
-                                effective.</p>
+                            <p><b>Exhibition of Books and Photographs</b></p>
+                            <span><p>Maulana Azad Central Library, Aligarh Muslim University, Aligarh Muslim University, Aligarh, India</p>
+                            </span>
                         </div>
                         <button onclick="handleOpenClose(event,'O3')" class="button">View Details &rarr;</button>
+                        <span class="std-ribbon" title="Featured Event">Featured</span>
+
                     </div>
                     <div class="event-container-item" id="social">
                         <div data-content="Traditional!" class="image">
-                            <img src="/images/events5.jpg"/>
+                            <img src="/images/events/workshop-oct6.jpeg"/>
+                        </div>
+                        <div class="event-type">
+                            <p>Workshops</p>
                         </div>
                         <div class="one-fourth-caption">
-                            <h2>Club Party</h2>
-                            <p>We broadcasts your event in a<br> way that is both technically elegant<br> and very cost
-                                effective.</p>
+                            <p><b>Arduino and Embedded Systems Workshop</b></p>
+                            <span>
+                            Fri Oct 06 2017 at 04:00 pm
+                        </span>
                         </div>
                         <button onclick="handleOpenClose(event,'O4')" class="button">View Details &rarr;</button>
+                        <span class="std-ribbon" title="Featured Event">Featured</span>
+
                     </div>
                     <div class="event-container-item">
                         <div data-content="Check-Out!" class="image">
-                            <img src="/images/events2.jpg"/>
+                            <img src="/images/events/competition-Mr&Miss.jpeg"/>
+                        </div>
+                        <div class="event-type">
+                            <p>Competition</p>
                         </div>
                         <div class="one-fourth-caption">
-                            <h2>Exhibition</h2>
-                            <p>We broadcasts your event in a<br> way that is both technically elegant<br> and very cost
-                                effective.</p>
+                            <p><b>Miss and Mr Aligarh</b></p>
+                            <span>
+                            Fri Oct 06 2017 at 04:00 pm
+                        </span>
                         </div>
-                        <button onclick="handleOpenClose(event,'O1')" class="button">View Details &rarr;</button>
+                        <button onclick="handleOpenClose(event,'O5')" class="button">View Details &rarr;</button>
+                        <span class="std-ribbon" title="Featured Event">Featured</span>
+
                     </div>
                     <div class="event-container-item">
                         <div data-content="Upcoming Events!" class="image">
-                            <img src="/images/events3.jpg"/>
+                            <img src="/images/events/exhibition-oct3.jpeg"/>
+                        </div>
+                        <div class="event-type">
+                            <p>Exhbition</p>
                         </div>
                         <div class="one-fourth-caption">
-                            <h2>DJ Night</h2>
-                            <p>We broadcasts your event in a<br> way that is both technically elegant<br> and very cost
-                                effective.</p>
+                            <p>Laadlee Exhibition</p>
+                            <span>
+                            Tue Oct 03 2017 at 09:00 am
+                        </span>
                         </div>
-                        <button onclick="handleOpenClose(event,'O2')" class="button">View Details &rarr;</button>
+                        <button onclick="handleOpenClose(event,'O6')" class="button">View Details &rarr;</button>
+                        <span class="std-ribbon" title="Featured Event">Featured</span>
+
                     </div>
                 </div>
             </div>
+            <!--End Scrolling 4-col Container-->
 
-
-        </div>
-            </div>
-
-            <!--<div class="event-container">-->
-                <!--<div class="std-one-third-card" id="html">-->
-                    <!--<div data-content="Check-Out!" class="image">-->
-                        <!--<img src="/images/events2.jpg"/>-->
-                    <!--</div>-->
-                    <!--<div class="one-fourth-caption">-->
-                        <!--<h2>Exhibition</h2>-->
-                        <!--<p>We broadcasts your event <br>in a way that is both <br>technically elegant and <br>very cost-->
-                            <!--effective.</p>-->
-                    <!--</div>-->
-                    <!--<button onclick="handleOpenClose(event,'O1')" class="button">View Details &rarr;</button>-->
-                <!--</div>-->
-                <!--<div class="std-one-third-card" id="css">-->
-                    <!--<div data-content="Upcoming Events!" class="image">-->
-                        <!--<img src="/images/events3.jpg"/>-->
-                    <!--</div>-->
-                    <!--<div class="one-fourth-caption">-->
-                        <!--<h2>DJ Night</h2>-->
-                        <!--<p>We broadcasts your event in a way that is both technically elegant and very cost-->
-                            <!--effective.</p>-->
-                    <!--</div>-->
-                    <!--<button onclick="handleOpenClose(event,'O2')" class="button">View Details &rarr;</button>-->
-                <!--</div>-->
-                <!--<div class="std-one-third-card" id="seo">-->
-                    <!--<div data-content="Wowsome!" class="image">-->
-                        <!--<img src="/images/events4.jpg"/>-->
-                    <!--</div>-->
-                    <!--<div class="one-fourth-caption">-->
-                        <!--<h2>New Year Eve</h2>-->
-                        <!--<p>We broadcasts your event in a way that is both technically elegant and very cost-->
-                            <!--effective.</p>-->
-                    <!--</div>-->
-                    <!--<button onclick="handleOpenClose(event,'O3')" class="button">View Details &rarr;</button>-->
-                <!--</div>-->
-                <!--<div class="std-one-third-card" id="social">-->
-                    <!--<div data-content="Traditional!" class="image">-->
-                        <!--<img src="/images/events5.jpg"/>-->
-                    <!--</div>-->
-                    <!--<div class="one-fourth-caption">-->
-                        <!--<h2>Club Party</h2>-->
-                        <!--<p>We broadcasts your event in a way that is both technically elegant and very cost-->
-                            <!--effective.</p>-->
-                    <!--</div>-->
-                    <!--<button onclick="handleOpenClose(event,'O4')" class="button">View Details &rarr;</button>-->
-                <!--</div>-->
-
+            <!--<div>-->
+            <!--<div class="button" style="float: left; margin-top: 10%">-->
+            <!--<h3>></h3>-->
             <!--</div>-->
-            <!--End four column section-->
-
-            <div class="std-col-12">
-                <div class="inner-hidden-container inner-wrapper-2" id="O1">
-                    <article id="mobile">
-                        <h2>Entertainment</h2>
-                        <p>XYZ Street, ABC Road, City<br>7:00 pm - 8:00 pm</p>
-
-                        <p>We broadcasts your event in a way that is both technically elegant and very cost effective.
-                            Anyone with a PC, Smart Devices and an Internet connection are able to associate with your
-                            event
-                            from any corner of the world. </p>
-                        <div class="btn-container">
-                            <button onclick="document.getElementById('myModal').style.display='block'"
-                                    class="button">
-                                For More Info
-                            </button>
-                        </div>
-                    </article>
-                    <aside class="hand-mobile">
-                        <img src="/images/events2.jpg" class="hidDivImg">
-                    </aside>
-                </div>
-                <div class="inner-hidden-container inner-wrapper" id="O2">
-                    <article id="tablet">
-                        <img src="/images/events3.jpg" class="hidDivImg">
-                    </article>
-                    <aside id="tablet2">
-                        <h2>Entertainment</h2>
-                        <p>XYZ Street, ABC Road, City<br>7:00 pm - 8:00 pm</p>
-                        <p>We broadcasts your event in a way that is both technically elegant and very cost effective.
-                            Anyone with a PC, Smart Devices and an Internet connection are able to associate with your
-                            event
-                            from any corner of the world. </p>
-                        <div class="btn-container">
-                            <button onclick="document.getElementById('myModal').style.display='block'"
-                                    class="button">
-                                For More Info
-                            </button>
-                        </div>
-                    </aside>
-                </div>
-                <div class="inner-hidden-container inner-wrapper-2" id="O3">
-                    <article id="mobile">
-                        <h2>Entertainment</h2>
-                        <p>XYZ Street, ABC Road, City<br>7:00 pm - 8:00 pm</p>
-                        <p>We broadcasts your event in a way that is both technically elegant and very cost effective.
-                            Anyone with a PC, Smart Devices and an Internet connection are able to associate with your
-                            event
-                            from any corner of the world. </p>
-                        <div class="btn-container">
-                            <button onclick="document.getElementById('myModal').style.display='block'"
-                                    class="button">
-                                For More Info
-                            </button>
-                        </div>
-                    </article>
-                    <aside class="hand-mobile">
-                        <img src="/images/events4.jpg" class="hidDivImg">
-                    </aside>
-                </div>
-                <div class="inner-hidden-container inner-wrapper" id="O4">
-                    <article>
-                        <img src="/images/events5.jpg" class="hidDivImg">
-                    </article>
-                    <aside id="desktop">
-                        <h2>Entertainment</h2>
-                        <p>XYZ Street, ABC Road, City<br>7:00 pm - 8:00 pm</p>
-                        <p>We broadcasts your event in a way that is both technically elegant and very cost effective.
-                            Anyone with a PC, Smart Devices and an Internet connection are able to associate with your
-                            event
-                            from any corner of the world. </p>
-                        <div class="btn-container">
-                            <button onclick="document.getElementById('myModal').style.display='block'"
-                                    class="button">
-                                For More Info
-                            </button>
-                        </div>
-                    </aside>
-                </div>
-
-                <!--End main two column sections-->
-
-            </div>
-            <!--End hidden divs-->
-
-            <!--End main two column sections-->
-            <div class="inner-wrapper-3">
-                <section class="one-third" id="google">
-                    <h2>Entertainment</h2>
-                    <div>
-                        <img src="/images/logo1.png" class="logos">
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, pro delectus assueverit an, suscipit appellantur at vel. Qui cu iusto
-                        errem oratio. No omnis debet has, erat equidem pertinacia sit eu. Id accumsan perpetua mei, vel
-                        ut
-                        platonem definiebas, ex atqui oportere tincidunt vel.</p>
-                </section>
-                <section class="one-third" id="marketing">
-                    <h2>Entertainment</h2>
-                    <div>
-                        <img src="/images/logo2.png" class="logos">
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, pro delectus assueverit an, suscipit appellantur at vel. Qui cu iusto
-                        errem oratio. No omnis debet has, erat equidem pertinacia sit eu. Id accumsan perpetua mei, vel
-                        ut
-                        platonem definiebas, ex atqui oportere tincidunt vel.</p>
-                </section>
-                <section class="one-third" id="customers">
-                    <h2>Entertainment</h2>
-                    <div>
-                        <img src="/images/logo1.png" class="logos">
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, pro delectus assueverit an, suscipit appellantur at vel. Qui cu iusto
-                        errem oratio. No omnis debet has, erat equidem pertinacia sit eu. Id accumsan perpetua mei, vel
-                        ut
-                        platonem definiebas, ex atqui oportere tincidunt vel.</p>
-                </section>
-            </div>
+            <!--</div>-->
 
         </div>
-        <!--End of 1st fragment-->
+        <!--End four column section-->
 
-        <div id="div2" class="tabcontent">
-
-        </div>
-        <!--End of 2nd Fragment-->
-
-        <div class="std-section-bleed">
-            <div class="std-col-12 stats">
-                <div class="std-col-3">
-                    <span class="w3-xxlarge">14+</span>
-                    <br>Daily Events
-                </div>
-                <div class="std-col-3">
-                    <span class="w3-xxlarge">55+</span>
-                    <br>Events Telecast
-                </div>
-                <div class="std-col-3">
-                    <span class="w3-xxlarge">89+</span>
-                    <br>Successfull Launches
-                </div>
-                <div class="std-col-3">
-                    <span class="w3-xxlarge">150+</span>
-                    <br>Upcoming Events
-                </div>
-            </div>
-        </div>
-
-        <!-- Menu Modal -->
-        <div id="myModal" class="std-modal">
-            <% include template/modals/modal-contactUs.ejs %>
-        </div>
     </div>
+    <!--End first row-->
+
+    <div class="std-col-12">
+        <div class="inner-hidden-container inner-wrapper-2" id="O1">
+            <article class="std-padding-apply" id="mobile">
+                <h2>Tandem Skydiving Aligarh</h2>
+                <p> Aligarh, India<br> Sun Oct 15 2017 at 06:43 am </p>
+
+                <p>Recently, Skydiving in Aligarh gathers the attention which offers tandem jump at Aligarh airstrip on
+                    Kanpur – Aligarh expressway. In this jump, you will be connected to a harness which will be attached
+                    to a tandem instructor, who will be the lead throughout the time.</p>
+                <div class="btn-container">
+                    <button onclick="document.getElementById('myModal').style.display='block'"
+                            class="button">
+                        For More Info
+                    </button>
+                </div>
+            </article>
+            <aside class="hand-mobile">
+                <div class="hero-image" style="background-image: url('../images/events/adventure-skydivin.jpeg')">
+                </div>
+            </aside>
+        </div>
+        <div class="inner-hidden-container inner-wrapper" id="O2">
+            <article id="tablet">
+                <div class="hero-image" style="background-image: url('../images/events/business-sep29.jpg')">
+                </div>
+            </article>
+            <aside class="std-padding-apply" id="tablet2">
+                <h2>SELF-ACTUALIZED LEADERSHIP SEMINAR, 30TH EDITION</h2>
+                <h3>India Habitat Center, DMA Conference Hall, India Habitat Center, Lodhi Road, New Delhi, India<br>Fri
+                    Sep 29 2017 at 03:00 pm</h3>
+                <p>
+                    Who should participate and Why?<br>
+                    -Seasoned leaders wishing to become a spiritual mentor/guru.<br>
+                    -Spiritual seekers who want to realize the spiritual wisdom through a completely rational model.<br>
+                    -People seeking an end to corruption, inflation, recession, choked cities, political turmoil,
+                    communal disharmony, and last but not the least the drastic effects of Global Warming.
+                </p>
+                <h3>Registration Fee: Free</h3>
+                <div class="btn-container">
+                    <button onclick="document.getElementById('myModal').style.display='block'"
+                            class="button">
+                        For More Info
+                    </button>
+                </div>
+            </aside>
+        </div>
+        <div class="inner-hidden-container inner-wrapper-2" id="O3">
+            <article class="std-padding-apply" id="mobile">
+                <h2>EXHIBITION OF BOOKS AND PHOTOGRAPHS ON MAHATMA GANDHI 2017 </h2>
+                <p> Maulana Azad Central Library, Aligarh Muslim University, Aligarh, India<br>Mon Oct 02 2017 at 08:55
+                    am</p>
+                <p>Exhibition of Books and Photographs on Mahatma Gandhi is being organized on the occassion of Gandhi
+                    Jayanti and its a regular feature of the AMU. There will be a Cleaniness drive before opening the
+                    Exhibition at 9.45, followed by Gandhi Commemorative Lectures at 10am in the Cultural Hall of the MA
+                    Library</p>
+                <div class="btn-container">
+                    <button onclick="document.getElementById('myModal').style.display='block'"
+                            class="button">
+                        For More Info
+                    </button>
+                </div>
+            </article>
+            <aside class="hand-mobile">
+                <div class="hero-image" style="background-image: url('../images/events/exhibition-oct2.jpeg')">
+                </div>
+            </aside>
+        </div>
+        <div class="inner-hidden-container inner-wrapper" id="O4">
+            <article>
+                <div class="hero-image" style="background-image: url('../images/events/workshop-oct6.jpeg')">
+                </div>
+            </article>
+            <aside class="std-padding-apply" id="desktop">
+                <h2>Arduino and Embedded Systems Workshop</h2>
+                <p>Assembly Hall, Zhcet, Amu, ZHCET, Aligarh, India<br>Fri Oct 06 2017 at 04:00 pm</p>
+                <p>A Learning by Doing Workshop on Arduino and Embedded Systems.<br>
+                    Participants with best performance will also get free projet guidance as well as internship and job
+                    opportunity from Bit N Byte laboratories pvt. ltd.
+
+                    <br>Registration Fee:<br>
+                    Rs 600 for SAE ZHCET members (please bring your membership acknowledgment slip during time of
+                    registration)<br>
+                    Rs 750 for everyone else
+                </p>
+                <div class="btn-container">
+                    <button onclick="document.getElementById('myModal').style.display='block'"
+                            class="button">
+                        For More Info
+                    </button>
+                </div>
+            </aside>
+        </div>
+        <div class="inner-hidden-container inner-wrapper" id="O5">
+            <article>
+                <div class="hero-image" style="background-image: url('../images/events/competition-Mr&Miss.jpeg')">
+                </div>
+            </article>
+            <aside class="std-padding-apply" id="desktop">
+                <h2>Miss and Mr Aligarh Uttar Pradesh</h2>
+                <p>TBD, Aligarh, India<br>Mon Oct 09 2017 at 10:00 am</p>
+                <p>We will choose Mr, Miss and Mrs Aligarh who will contest with other to get Uttar Pradesh crown,
+                    winner from Uttar Pradesh will represent state in India and Indian winner will represent India in
+                    world finale.
+                    <br>* Age limit. : 16- 28
+                    <br>* Timing. : 10 Am. to 8 Pm
+                    <br>* Min Height. : Male - 5.6 & Female - 5.2
+                    <br>* Entry fee. : INR 1000
+                </p>
+                <div class="btn-container">
+                    <button onclick="document.getElementById('myModal').style.display='block'"
+                            class="button">
+                        For More Info
+                    </button>
+                </div>
+            </aside>
+        </div>
+        <div class="inner-hidden-container inner-wrapper" id="O6">
+            <article>
+                <div class="hero-image" style="background-image: url('../images/events/exhibition-oct3.jpeg')">
+                </div>
+            </article>
+            <aside class="std-padding-apply" id="desktop">
+                <h2>Laadlee Exhibition</h2>
+                <p>Hotel Abha Regency, Ram Ghat Road, Aligarh, India<br>Tue Oct 03 2017 at 09:00 am </p>
+                <p>Karwa Chauth @ Diwali special, Life Style & Handicraft... Special. Health Special...
+                </p>
+                <div class="btn-container">
+                    <button onclick="document.getElementById('myModal').style.display='block'"
+                            class="button">
+                        For More Info
+                    </button>
+                </div>
+            </aside>
+        </div>
+
+
+        <!--End main two column sections-->
+
+    </div>
+    <!--End hidden divs-->
+
+    <!--End main two column sections-->
+    <div class="inner-wrapper-3">
+        <section class="one-third" id="google">
+            <h2>David Guetta</h2>
+            <div class="iframe">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/sSX9YlNuUpc?start=190" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="one-third" id="marketing">
+            <h2>Armin Van Buuren</h2>
+            <div class="iframe">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/qkIvs6Z-5Ms?start=370" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="one-third" id="customers">
+            <h2>Tomorrowland Aftermovie</h2>
+            <div class="iframe">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/6dVFy4d61gU?start=40" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
+
+</div>
+<!--End of 1st fragment-->
+
+<div id="div2" class="tabcontent">
+    <div class="hero-image" style="background-image: url('../images/banners/giphy1.gif'); color: white">
+        <h1>
+            COMING SOON!
+        </h1>
+    </div>
+</div>
+<!--End of 2nd Fragment-->
+
+<!--<div class="std-section-bleed">-->
+    <!--<div class="std-col-12 stats">-->
+        <!--<div class="std-col-3">-->
+            <!--<span class="w3-xxlarge">14+</span>-->
+            <!--<br>Daily Events-->
+        <!--</div>-->
+        <!--<div class="std-col-3">-->
+            <!--<span class="w3-xxlarge">55+</span>-->
+            <!--<br>Events Telecast-->
+        <!--</div>-->
+        <!--<div class="std-col-3">-->
+            <!--<span class="w3-xxlarge">89+</span>-->
+            <!--<br>Successfull Launches-->
+        <!--</div>-->
+        <!--<div class="std-col-3">-->
+            <!--<span class="w3-xxlarge">150+</span>-->
+            <!--<br>Upcoming Events-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!-- Menu Modal -->
+<div id="myModal" class="std-modal">
+    <% include template/modals/modal-contactUs.ejs %>
+</div>
+</div>
 </div>
 <div style="width: 100%">
     <% include template/footer.ejs %>
