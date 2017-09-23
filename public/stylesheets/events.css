@@ -445,10 +445,10 @@ i {
     transition: transform linear 0.2s;
 }
 
-.horizontal-scroll-wrapper > div:hover {
-    box-shadow: 4px 4px 4px #ccc;
-    transform: scale(1.1);
-}
+/*.horizontal-scroll-wrapper > div:hover {*/
+    /*box-shadow: 4px 4px 4px #ccc;*/
+    /*transform: scale(1.1);*/
+/*}*/
 
 .std-one-third-card{
     float: left;
@@ -586,6 +586,12 @@ i {
     .horizontal-scroll-wrapper > div {
         width: 31%;
     }
+
+    .horizontal-scroll-wrapper > div:hover {
+        box-shadow: 4px 4px 4px #ccc;
+        transform: scale(1.1);
+    }
+
     .btn-container{
         padding-bottom: 0;
         padding-top: 11%;
