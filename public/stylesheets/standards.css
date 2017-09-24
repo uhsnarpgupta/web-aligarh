@@ -41,6 +41,10 @@ a {text-decoration: none;}
     margin: 16px !important
 }
 
+.std-margin-small {
+    margin: 6px !important
+}
+
 .std-margin-top {
     margin-top: 16px !important
 }
@@ -164,7 +168,7 @@ body {
     /*background-image: url(/images/events12.jpg) repeat;  !*change to background in order to work*!*/
     background-size: cover;
     color: #000000;
-    text-align:center;
+    /*text-align:center;*/
 }
 
 #wrapper {
@@ -301,7 +305,7 @@ div.std-panel{
 iframe{
     position: relative;
     height: 100%;
-    width: 115%;
+    width: 100%;
     scrolling: no;
     frameborder:0;
     allowTransparency:true;
@@ -553,7 +557,7 @@ ARROWS SYMBOLS
     }
 
     .hero-text{
-        font-size: 65px;
+        font-size: 40px;
     }
 
     .hero-sub-text{
