@@ -1,0 +1,426 @@
+.slides {
+    display:none;
+}
+
+
+.slides > img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.heading-section{
+    background-color: dimgray;
+    font-family: "Helvetica Neue";
+    color: white;
+    font-weight: bold;
+    line-height: 3rem;
+    text-align: center;
+    margin: 2px 3%;
+}
+
+.aside-heading-section{
+    background-color: dimgray;
+    font-family: "Helvetica Neue";
+    color: white;
+    font-weight: bold;
+    line-height: 3rem;
+    text-align: center;
+    margin-top:4%;
+}
+
+.heading-section > h2, .aside-heading-section > h2{
+    margin: 0;
+}
+.std-margin-small > .std-section-fullWidth{
+    padding: 3%;
+}
+.std-margin-small > .aside-section{
+    padding: 3%;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+}
+
+/* Next & previous buttons */
+.prev-btn, .next-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.prev-btn1, .next-btn1 {
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    padding: 16px;
+    margin-top: -75%;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.prev-btn1{
+    float: left;
+}
+
+.next-btn1{
+    float: right;
+}
+
+/* Position the "next button" to the right */
+.next-btn {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.next-btn1{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev-btn:hover, .next-btn:hover, .prev-btn1:hover, .next-btn1:hover {
+    background-color: rgba(999,2,3,0.8);
+}
+
+.std-section-bleed > .hero-text {
+    font-family: "Roboto Slab";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -250%);
+    color: white;
+    padding: 5px;
+    font-size: 1.15rem;
+    background-color: rgba(000, 0, 0, 0.75);
+    border-color: #00bcd4;
+    border: solid;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.fa {
+    padding: 1rem;
+    /*font-size: 30px;*/
+    width: 4rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fb-video{
+    height: 7rem;
+    max-height: 12rem;
+    padding: 1rem;
+}
+
+/* MODAL CSS */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 50%;
+    max-width: 400px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    margin-top: 3rem;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+
+}
+
+@media only screen and (min-width: 768px){
+    .slides{
+        height: 40rem;
+    }
+    .std-section-bleed > .hero-text {
+        transform: translate(-50%, -95%);
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 276px) {
+    .fb-video{
+        height: 8rem;
+    }
+}
+
+@media only screen and (min-width: 300px) {
+    .fb-video{
+        height: 9rem;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .fb-video{
+        height: 10rem;
+    }
+    .std-section-bleed > .hero-text {
+        transform: translate(-50%, -300%);
+    }
+}
+@media only screen and (min-width: 400px) {
+    .fb-video{
+        height: 12rem;
+    }
+    .std-section-bleed > .hero-text {
+        transform: translate(-50%, -500%);
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    .fb-video{
+        height: 13rem;
+    }
+}
+
+@media only screen and (min-width: 475px) {
+    .fb-video{
+        height: 14rem;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .fb-video{
+        height: 15rem;
+    }
+    .std-section-bleed > .hero-text {
+        transform: translate(-50%, -225%);
+    }
+}
+
+@media only screen and (min-width: 515px) {
+    .fb-video{
+        height: 16rem;
+    }
+}
+
+@media only screen and (min-width: 540px) {
+    .fb-video{
+        height: 17rem;
+    }
+
+    .std-section-bleed > .hero-text {
+        transform: translate(-50%, -300%);
+    }
+}
+
+@media only screen and (min-width: 575px) {
+    .fb-video{
+        height: 18rem;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .fb-video{
+        height: 19rem;
+    }
+
+    .std-section-bleed > .hero-text {
+        transform: translate(-50%, -150%);
+    }
+}
+@media only screen and (min-width: 625px) {
+    .fb-video{
+        height: 20rem;
+    }
+}
+
+@media only screen and (min-width: 515px) {
+    .fb-video{
+        height: 16rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .fb-video{
+        height: 7rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .fb-video{
+        height: 8rem;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .fb-video{
+        height: 9rem;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .fb-video{
+        height: 10rem;
+    }
+}
+@media only screen and (min-width: 1110px) {
+    .fb-video{
+        height: 11rem;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .fb-video{
+        height: 12rem;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .fb-video{
+        height: 13rem;
+    }
+}
