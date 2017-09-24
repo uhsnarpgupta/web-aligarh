@@ -168,7 +168,7 @@ body {
     /*background-image: url(/images/events12.jpg) repeat;  !*change to background in order to work*!*/
     background-size: cover;
     color: #000000;
-    /*text-align:center;*/
+    text-align:center;
 }
 
 #wrapper {
