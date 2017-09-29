@@ -16,6 +16,7 @@ var event = require('./routes/event');
 var admin = require('./routes/admin');
 var swadeshi = require('./routes/shopping/swadeshi')
 var kalaSaree = require('./routes/shopping/kalasaree');
+var dineshjewlers = require('./routes/shopping/dineshjewlers');
 var sheeshMahal = require('./routes/shopping/sheeshmahal');
 var raymonds = require('./routes/shopping/raymonds');
 var adidas = require('./routes/shopping/adidas');
@@ -82,6 +83,7 @@ app.use('/kalasaree',kalaSaree);
 app.use('/sheeshmahal',sheeshMahal);
 app.use('/raymonds',raymonds);
 app.use('/adidas',adidas);
+app.use('/dineshjewlers',dineshjewlers);
 
 //today in history
 app.use('/todayinhistory',todayinhistory);
