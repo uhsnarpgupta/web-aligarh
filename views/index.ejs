@@ -11,8 +11,8 @@
     <% include template/navigationBar.ejs %>
 </div>
 <div class="std-top-row">
-    <div class="std-section-bleed" style="height: 720px">
-        <div class="hero-image std-parallax" style="background-image: url('../images/banners/source.gif');">
+    <div class="std-section-bleed" id="hero">
+        <div class="hero-image std-parallax">
 
             <div class="hero-text">
                 Aligarh City
@@ -20,24 +20,24 @@
         </div>
     </div>
     <div class="std-section-fullWidth" style="padding-top: 3%; position: relative">
-        <div class="std-col-12 page-slot" style="background-image: url('../images/banners/attraction.jpg')">
+        <div class="std-col-12 page-slot" style="background-image: url('../images/banners/hardwarelocks.jpeg')">
             <div class="std-col-4 page-slot-content">
-                <h1 style="font-size: 2rem">
-                    ATTRACTION
+                <h1>
+                    HARDWARE & LOCKS
                 </h1>
                 <h4>
-                    Places to visit when you're here!
+                    Our world identity!
                 </h4>
             </div>
             <div class="caption std-col-3">
-                <a href="/attraction">
+                <a href="/comingsoon">
                     <button class="button">More Info</button>
                 </a>
             </div>
         </div>
-        <div class="std-col-12 page-slot" style="background-image: url('../images/banners/restaurant4.jpg')">
+        <div class="std-col-12 page-slot restaurant">
             <div class="std-col-4 page-slot-content">
-                <h1 style="font-size: 2rem">
+                <h1>
                     RESTAURANT
                 </h1>
                 <h4>One thousand flavors in one place.</h4>
@@ -60,7 +60,7 @@
     <div class="std-section-fullWidth">
         <div class="std-col-12 page-slot" style="background-image: url('../images/banners/shopping1_1.jpg')">
             <div class="std-col-4 page-slot-content">
-                <h1 style="font-size: 2rem">
+                <h1>
                     SHOPPING
                 </h1>
                 <h4>
@@ -73,9 +73,9 @@
                 </a>
             </div>
         </div>
-        <div class="std-col-12" style="background-image: url('../images/banners/hotels3.jpg'); height: 500px; background-size: 100% 100%; background-repeat: no-repeat; background-position: center;">
-            <div class="std-col-4" style="position: relative; left:50%; top: 50%; transform: translate(-50%, -50%); color: white; background-color: #1f1f21; opacity: 0.75;">
-                <h1 style="font-size: 2rem">
+        <div class="std-col-12 page-slot" style="background-image: url('../images/banners/hotels3.jpg');">
+            <div class="std-col-4 page-slot-content">
+                <h1>
                     HOTELS
                 </h1>
                 <h4>
@@ -100,7 +100,7 @@
         <div class="std-col-12 page-slot" style="background-image: url('../images/banners/events5_5.jpg')">
             <div class="std-col-4 page-slot-content">
 
-                <h1 style="font-size: 2rem">
+                <h1>
                     EVENTS
                 </h1>
                 <h4>
@@ -115,7 +115,7 @@
         </div>
         <div class="std-col-12 page-slot" style="background-image: url('../images/banners/education11.jpg')">
             <div class="std-col-4 page-slot-content">
-                <h1 style="font-size: 2rem">
+                <h1>
                     EDUCATION
                 </h1>
                 <h4>
@@ -124,6 +124,21 @@
             </div>
             <div class="caption std-col-3">
                 <a href="/study">
+                    <button class="button">More Info</button>
+                </a>
+            </div>
+        </div>
+        <div class="std-col-12 page-slot" style="background-image: url('../images/banners/attraction.jpg')">
+            <div class="std-col-4 page-slot-content">
+                <h1>
+                    ATTRACTION
+                </h1>
+                <h4>
+                    Places to visit when you're here!
+                </h4>
+            </div>
+            <div class="caption std-col-3">
+                <a href="/attraction">
                     <button class="button">More Info</button>
                 </a>
             </div>
