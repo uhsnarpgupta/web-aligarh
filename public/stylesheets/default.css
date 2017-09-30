@@ -10,12 +10,24 @@ body, html {
 .bgimg-1, .bgimg-2, .bgimg-3 {
     position: relative;
     opacity: 0.65;
+    display: none;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 0 0.6% 0;
+}
 
+#hero{
+    height: 375px;
+}
+
+.restaurant{
+    background-image: url('../images/banners/restaurant4.jpg')
+}
+
+.std-section-bleed > .hero-image{
+    background-image: url('../images/banners/giphy2.gif');
 }
 
 .std-col-12 > .std-col-4{
@@ -23,7 +35,7 @@ body, html {
 }
 
 .page-slot{
-    height: 500px;
+    height: 300px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -129,15 +141,21 @@ div > .hero-text{
     div > .hero-text{
         font-size: 120px;
     }
-}
 
-@media only screen and (min-width: 600px) {
-    div > .hero-text{
-        font-size: 180px;
+    .page-slot{
+        height: 400px;
     }
 }
 
+@media only screen and (min-width: 600px) {
+}
+
 @media only screen and (min-width: 768px) {
+
+    #hero{
+        height: 720px;
+    }
+
     div > .hero-text{
         font-size: 220px;
     }
@@ -151,6 +169,22 @@ div > .hero-text{
         width: 30%;
         top: 90%;
         transform: translate(30%, -40%)
+    }
+
+    .std-section-bleed > .hero-image{
+        background-image: url('../images/banners/source.gif');
+    }
+
+    .page-slot{
+        height: 500px;
+    }
+
+    .page-slot > h1{
+        font-size: 2rem;
+    }
+
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        display: block;
     }
 }
 
