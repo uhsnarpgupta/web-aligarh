@@ -3,7 +3,7 @@
 <head>
     <title>Recipe of the Week</title>
     <link rel="stylesheet" href="/stylesheets/standards.css">
-    <link rel="stylesheet" href="/stylesheets/receipe.css">
+    <link rel="stylesheet" href="/stylesheets/recipe.css">
     <link rel="stylesheet" href="/stylesheets/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript">
@@ -36,7 +36,16 @@
 
     <!--1st Row-->
     <div class="std-section-bleed">
-
+        <div id="headingdiv" style="text-align: center; background-color: lightgray; display: none;">
+            <br/>
+            <h2><strong>Recipe of the Week</strong></h2>
+            <h4><strong>Share Your Wonderful Recipe with us at recipe@aligarhcity.in</strong>
+                <button style="width: 100px;" class="caption-link mediabox" id="myBtn"
+                        onclick="window.open('http://www.gmail.com');">SHARE
+                </button>
+            </h4>
+            <br/>
+        </div>
         <!--Start Slide Show-->
         <div class="slideshow-container">
 
@@ -44,6 +53,7 @@
                 <div class="numbertext">1 / 4</div>
                 <img src="images/recipe/recipe1.jpg">
                 <div class="hero-text">
+                    <h2 style="color: black">Peanut Butter Ice Cream Pie</h2>
                     <button id="frstrecipe" onclick="frstcontshow('recipe1.jpg','Peanut Butter Ice Cream Pie');"><p>View
                             Recipe</p>
                     </button>
@@ -53,14 +63,17 @@
             <div class="slides fade">
                 <div class="numbertext">2 / 4</div>
                 <img src="images/deals/resdeal2.png">
-                <div class="hero-text"><button id="thirdrecipe" onclick="thrdcontshow('resdeal3.jpeg','Third Recipe');"><p>View
+                <div class="hero-text">
+                    <h2 style="color: black">Naan Khatai</h2>
+                    <button id="secondrecipe" onclick="scndcontainer('resdeal2.png','Second Recipe');"><p>View
                             Recipe</p></button></div>
             </div>
 
             <div class="slides fade">
                 <div class="numbertext">3 / 4</div>
                 <img src="images/deals/resdeal3.jpeg">
-                <div class="hero-text"><button id="fourthrecipe" onclick="frthcontshow('resdeal4.jpg','Fourth Recipe');"><p>View
+                <div class="hero-text">
+                    <button id="thirdrecipe" onclick="thrdcontainer('resdeal3.jpg','Third Recipe');"><p>View
                             Recipe</p></button></div>
             </div>
 
@@ -84,6 +97,7 @@
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
         </div>
     </div>
 </div>
@@ -93,29 +107,31 @@
         <div class="std-col-12" style="background-color: #3a3a3a; color: white">
             <h1 id="caption1"></h1>
         </div>
-        <div>
-            <h4>Ingredients - </h4>
-            <p>
-                15 Oreo cookies (crushed)</p>
-            <p> 1⁄2 cup butter (melted)</p>
-            <p> 1 quart vanilla ice cream (softened-not melted)</p>
-            <p>  1 cup chunky peanut butter</p>
-            <p>   1 teaspoon vanilla</p>
-            <p>  1⁄2 cup peanuts (crushed)</p>
-            <p>  1⁄4 cup chocolate syrup
-            </p>
-        </div>
-        <div>
-            <h4>Directions -
-            </h4>
-            <p>
-                Combine Oreos and butter and mix well.</p>
-            <p>Press into pie dish to form a crust going 3/4 of the way up the sides.</p>
-            <p>  Mix ice cream, peanut butter & vanilla until well blended and smooth.</p>
-            <p>  Pour into crust.</p>
-            <p>   Freeze for a few hours (until frozen).</p>
-            <p>  Sprinkle crushed peanuts on top and drizzle chocolate syrup right before serving.
-            </p>
+        <div class="verticalscroll">
+            <div>
+                <h4>Ingredients - </h4>
+                <p>
+                    15 Oreo cookies (crushed)</p>
+                <p> 1⁄2 cup butter (melted)</p>
+                <p> 1 quart vanilla ice cream (softened-not melted)</p>
+                <p> 1 cup chunky peanut butter</p>
+                <p> 1 teaspoon vanilla</p>
+                <p> 1⁄2 cup peanuts (crushed)</p>
+                <p> 1⁄4 cup chocolate syrup
+                </p>
+            </div>
+            <div>
+                <h4>Directions -
+                </h4>
+                <p>
+                    Combine Oreos and butter and mix well.</p>
+                <p>Press into pie dish to form a crust going 3/4 of the way up the sides.</p>
+                <p> Mix ice cream, peanut butter & vanilla until well blended and smooth.</p>
+                <p> Pour into crust.</p>
+                <p> Freeze for a few hours (until frozen).</p>
+                <p> Sprinkle crushed peanuts on top and drizzle chocolate syrup right before serving.
+                </p>
+            </div>
         </div>
     </div>
     <div class="std-col-4 std-col-t-4 aside" style="float: right">
@@ -239,6 +255,7 @@
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
         modal.style.display = "none";
+        document.getElementById("headingdiv").style.display = 'block';
     }
 
     // When the user clicks anywhere outside of the modal, close it
@@ -248,7 +265,6 @@
         }
     }
 </script>
-
 <script>
     var slideIndex = 1;
     showSlides(slideIndex);

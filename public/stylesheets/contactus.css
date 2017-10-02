@@ -1,56 +1,106 @@
-/*Mobile CSS Starts*/
-
-.contactus-head-image {
-    /* Set a specific height */
-    height: 100%;
-    padding: 20%;
-
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    /*margin-top: 25px;*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 
-.signature {
+input[type=submit] {
+    background-color: #4CAF50;
     color: white;
-    font-family: 'Comic Sans MS';
-    margin-right: 10%;
-    padding-bottom: 5%;
-    text-align: right;
-    font-size: medium;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.paragraph {
-    color: white;
-    font-family: 'Comic Sans MS';
-    margin: 5%;
-    padding: 5%;
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    /*background-color: #080808;*/
+    text-align: left;
+    padding: 20px;
+}
+
+.std-top-row{
+    padding-top: 6.9%;
+}
+
+.fa {
+    padding: 1rem;
+    width: 4rem;
     text-align: center;
-    font-size: medium;
+    text-decoration: none;
+    background: #f0f0f0;
+    margin: 4px 5px;
+    border-radius: 50%;
 }
 
-.image {
-    height: 500px;
+.fa:hover {
+    opacity: 0.7;
 }
-/*Mobile CSS Ends*/
 
-/*Media Query for Tablet CSS Starts*/
-@media only screen and (min-width: 412px){
+.fa-facebook {
+    color: #3B5998;
+}
+.fa-twitter {
+    color: #55ACEE;
+}
+.fa-youtube {
+    color: #bb0000;
+}
+
+.icon-font{
+    font-size: 30px;
+    left: 40%;
+}
+
+.icon-div{
+    position: absolute;
+    top: 21rem;
+    width: 20%;
+    /*left: 10%;*/
+}
+.icon-font > .std-col-4{
+    width: 33.3333333%;
+}
+
+@media only screen and (min-width: 768px){
+    .icon-div{
+        width: 20%;
+        top: 22rem;
+    }
+    .icon-font{
+        transform: translate(100%,0%);
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .icon-div{
+        top: 21rem;
+    }
 
 }
-/*Tablet CSS Ends*/
 
-/*Media query for Tablets Starts*/
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1200px) {
+    .icon-font{
+        font-size: 30px;
+    }
 
+    .fa {
+        padding: 1rem;
+        width: 4rem;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+    }
 }
-/*Media Query for Tablets Ends*/
-
-/*Media Query for Desktops Starts*/
-@media only screen and (min-width: 768px) {
-
-}
-/*MEdia Query for Desktop Ends*/
-

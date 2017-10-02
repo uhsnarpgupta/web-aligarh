@@ -6,55 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/stylesheets/contactus.css">
     <link rel="stylesheet" href="/stylesheets/standards.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
-<body bgcolor="white" marginheight="100%" >
+<body bgcolor="#f9f9f9">
 <!--Header Navigation Bar Starts-->
 <div class="std-header">
     <% include template/navigationBar.ejs %>
 </div>
 <!--Header NAvigation Bar Ends-->
-<div class="std-top-row clear">
-    <!--Fist Row Starts-->
-    <div class="std-section-bleed">
-        <div class="contactus-head-image" style="background-image: url('../images/contactus/contactus.png')";>
-        </div>
-    </div>
-    <!--First Row Ends-->
-    <!--Third Row Starts-->
-    <div class="std-col-12 std-col-t-12" style="align-content: inherit" id="diva">
-        <div class="std-col-6 std-col-t-6">
-            <div class="std-curved-box" style="background-color: #3E5C9A">
-                <div>
-                    <p class="paragraph">
-                        Have a question ? Talk to us at below details:<br><br>
-                    </p>
-                </div>
-                <div style="border: solid; border-color: #3E5C9A">
-                    <span style="height: 36px"><img src="../images/contactus/emailus.gif" style="width:10%; float: left;padding-left: 30px;"/></span>
-                    <p class="signature" style="float: left;">Email us at: </p><p class="signature">contactus@aligarhcity.in</p>
-                </div>
-                <div style="border: solid; border-color: #3E5C9A">
-                    <span style="height: 36px"><img src="../images/contactus/callus2.gif" style="width:10%; float: left;padding-left: 30px;"/></span>
-                    <p class="signature" style="float: left;">Call us at:  </p><p class="signature">+91 992-702-5543</p>
-                </div>
-                <div style="border: transparent;">
-                    <span style="height: 36px"><img src="../images/contactus/Small_house_home.png" style="width:10%; float: left;padding-left: 30px;"/></span>
-                    <p class="signature" style="float: left;">Meet us at:  </p>
-                    <p class="signature">PNV Events <br>House No - 921, Gali No - 5, Rambagh Colony, Ramghat Road, Aligarh-202001</p>
 
+<div class="std-top-row" style="margin-bottom: 50px">
+    <div class="slideshow-container">
+        <div id="googleMap" style="width:100%;height:400px; border: groove; border-bottom-color: white"></div>
+        <div class="std-col-12 icon-div">
+            <div class="std-col-4 icon-font">
+                <div class="std-col-4 std-col-t-4">
+                    <a href="#" class="fa fa-facebook"></a>
                 </div>
-            </div>
-        </div>
-        <div class="std-col-6 std-col-t-6">
-            <div>
-                <img src="/images/contactus/contactus.gif" class="image"/>
+                <div class="std-col-4 std-col-t-4">
+                    <a href="#" class="fa fa-twitter"></a>
+                </div>
+                <div class="std-col-4 std-col-t-4">
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+
             </div>
         </div>
     </div>
-    <!-- Footer -->
-    <div class=" std-section-bleed ">
-        <% include template/footer.ejs %>
+
+    <div class="std-section-fullWidth" style="margin-top: 5%">
+        <h1>
+            Tell us more about you and we'll contact you soon :)
+        </h1>
+        <div class="std-col-12 boxshadow">
+            <div class="std-col-8" style="min-height: 512px; text-align: left;">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">E-Mail Id</label>
+                    <input type="text" id="email" name="email" placeholder="Your email address..">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">India</option>
+                        <option value="usa">USA</option>
+                        <option value="usa">UK</option>
+                        <option value="canada">Canada</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>            </div>
+            <div class="std-col-4" style="margin-top: 10px">
+                <div class="std-section-fullWidth" style="min-height: 504px">
+                    <div class="std-col-12">
+                        <h2>Contact Information</h2>
+                    </div>
+                    <div class="std-col-12">
+                        <h3>PNV Events
+                        House No - 921, Gali No - 5, <br>Rambagh Colony, Ramghat Road, <br>Aligarh-202001
+                        </h3>
+                        <h3>
+                            contactus@aligarhcity.in
+                        </h3>
+                        <h3>
+                            +91 992-702-5543
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+</div>
+<div>
+        <% include template/footer.ejs %>
+</div>
+
+
 </body>
+<script>
+    function myMap() {
+        myCenter = new google.maps.LatLng(27.8912996,78.07800440000005);
+        var mapOptions = {
+            center: myCenter,
+            zoom: 12, scrollwheel: false, draggable: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: myCenter,
+        });
+        marker.setMap(map);
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6Pviy7a1tfYcpRZySfCt9qhbVvVbUIJQ&callback=myMap"></script>
+
 </html>

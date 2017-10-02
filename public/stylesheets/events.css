@@ -272,7 +272,7 @@ iframe{
     position: relative;
     margin-top: -1.45rem;
     margin-left: 2%;
-    z-index: 4;
+    z-index: 1;
     color: white;
     background-color: deepskyblue;
     /*padding: 0 1rem;*/
