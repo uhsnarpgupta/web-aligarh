@@ -23,7 +23,24 @@
     width: 100%; /* as I have set margin 2% then width of each mediabox will be (100-(2*2*3))/3 = 29.3 */
 }
 
+.verticalscroll
+{
+    width: 100%;
+    height: 330px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+
 .mediabox:hover{
     box-shadow: 4px 4px 4px #ccc;
     transform: scale(1.1);
 }
+
+@media only screen and (min-width: 768px) {
+    .verticalscroll
+    {
+        height: 530px;
+    }
+}
+
+

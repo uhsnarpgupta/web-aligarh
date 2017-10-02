@@ -502,7 +502,9 @@
 
 <!-- Menu Modal -->
 <div id="myModal" class="std-modal">
+    <div style="width: 50%; transform: translate(50%,0)" >
     <% include template/modals/modal-contactUs.ejs %>
+    </div>
 </div>
 </div>
 </div>
@@ -510,4 +512,20 @@
     <% include template/footer.ejs %>
 </div>
 </body>
+<script>
+    var span = document.getElementsByClassName("std-close")[0];
+
+    var modal = document.getElementById("myModal");
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 </html>

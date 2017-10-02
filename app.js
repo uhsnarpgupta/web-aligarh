@@ -42,6 +42,8 @@ var restaurantnew = require('./routes/restaurantnew');
 var comingsoon = require('./routes/comingsoon');
 
 var contactus = require('./routes/contactus');
+var formcontactus = require('./routes/form-contactus');
+
 var privacypolicy = require('./routes/privacypolicy');
 var aboutaligarh = require('./routes/aboutaligarh');
 
@@ -68,6 +70,7 @@ app.use('/about',aboutus);
 app.use('/event',event);
 app.use('/admin',admin);
 app.use('/contactus',contactus);
+app.use('/formcontactus',formcontactus);
 app.use('/privacypolicy',privacypolicy);
 app.use('/aboutaligarh',aboutaligarh);
 

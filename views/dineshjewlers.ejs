@@ -6,174 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/stylesheets/standards.css"/>
     <link rel="stylesheet" href="/stylesheets/kalasaree.css">
-    <link rel='stylesheet' href='/stylesheets/default.css'/>
+    <link rel='stylesheet' href='/stylesheets/jewellery.css'/>
+    <link rel='stylesheet' href='/stylesheets/shopnew.css'/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        .mySlides {display:none;}
-        h2 {
-            width: 100%;
-            text-align: center;
-            border-bottom: 1px solid #000;
-            line-height: 0.1em;
-            margin: 10px 0 20px;
-        }
-
-        h2 span {
-            background:#fff;
-            padding:0 10px;
-        }
-
-        .buttonlink {
-            background-color: transparent;
-            color: black;
-            float: left;
-            cursor: pointer;
-            padding: 20px 16px;
-            font-size: 17px;
-            width: 100%;
-            font-weight: normal;
-        }
-
-        .buttonlink:hover {
-            background-color: #f1aa90;
-        }
-
-        .imageshow {
-            width: 100%;
-            height: 90%;
-        }
-
-    </style>
-    <style>
-        @media only screen and (min-width: 768px) {
-            .res-div-temp {
-                margin-left: 100px;
-            }
-        }
-        .prev-btn2 {
-            display: block;
-            position: absolute;
-            background-color: #555;
-            color:white;
-            z-index: 2;
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 25px;
-            padding: 15px;
-            left:0px;
-        }
-
-        .next-btn2 {
-            display: block;
-            position: absolute;
-            background-color: #555;
-            color:white;
-            z-index: 2;
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 25px;
-            padding: 15px;
-            right:0px;
-        }
-
-        .prev-btn2{
-            float: left;
-            top: 1050px;
-        }
-
-        .next-btn2{
-            float: right;
-            top: 1050px;
-        }
-
-        .next-btn2{
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        .prev-btn2:hover, .next-btn2:hover {
-            background-color: rgba(999,2,3,0.8);
-        }
-
-    </style>
     <script type="text/javascript">
-        var divname;
         function handleOpenClose(evt, openCloseAction) {
-            divname = openCloseAction;
-            if(openCloseAction == 'diva1')
+            if(openCloseAction == 'diva')
             {
-                document.getElementById('diva1').style.display = "block";
-                document.getElementById('divb1').style.display = "none";
-                document.getElementById('divc1').style.display = "none";
-                document.getElementById('divd1').style.display = "none";
-                document.getElementById('dive1').style.display = "none";
-                document.getElementById('divb2').style.display = "none";
-                document.getElementById('divc2').style.display = "none";
-                document.getElementById('divd2').style.display = "none";
-                document.getElementById('dive2').style.display = "none";
-                document.getElementById('diva2').style.display = "none";
-                document.getElementById('leftarrow').style.display = "block";
-                document.getElementById('rightarrow').style.display = "none";
+                document.getElementById('diva').style.display = "block";
+                document.getElementById('divb').style.display = "none";
+                document.getElementById('divc').style.display = "none";
+                document.getElementById('divd').style.display = "none";
+                document.getElementById('dive').style.display = "none";
             }
-            else if(openCloseAction == 'divb1')
+            else if(openCloseAction == 'divb')
             {
-                document.getElementById('divb1').style.display = "block";
-                document.getElementById('diva1').style.display = "none";
-                document.getElementById('divc1').style.display = "none";
-                document.getElementById('divd1').style.display = "none";
-                document.getElementById('dive1').style.display = "none";
-                document.getElementById('divb2').style.display = "none";
-                document.getElementById('divc2').style.display = "none";
-                document.getElementById('divd2').style.display = "none";
-                document.getElementById('dive2').style.display = "none";
-                document.getElementById('diva2').style.display = "none";
-                document.getElementById('leftarrow').style.display = "block";
-                document.getElementById('rightarrow').style.display = "none";
+                document.getElementById('divb').style.display = "block";
+                document.getElementById('diva').style.display = "none";
+                document.getElementById('divc').style.display = "none";
+                document.getElementById('divd').style.display = "none";
+                document.getElementById('dive').style.display = "none";
             }
-            else if(openCloseAction == 'divc1')
+            else if(openCloseAction == 'divc')
             {
-                document.getElementById('divc1').style.display = "block";
-                document.getElementById('divb1').style.display = "none";
-                document.getElementById('diva1').style.display = "none";
-                document.getElementById('divd1').style.display = "none";
-                document.getElementById('dive1').style.display = "none";
-                document.getElementById('divb2').style.display = "none";
-                document.getElementById('divc2').style.display = "none";
-                document.getElementById('divd2').style.display = "none";
-                document.getElementById('dive2').style.display = "none";
-                document.getElementById('diva2').style.display = "none";
-                document.getElementById('leftarrow').style.display = "block";
-                document.getElementById('rightarrow').style.display = "none";
+                document.getElementById('divc').style.display = "block";
+                document.getElementById('divb').style.display = "none";
+                document.getElementById('diva').style.display = "none";
+                document.getElementById('divd').style.display = "none";
+                document.getElementById('dive').style.display = "none";
             }
-            else if(openCloseAction == 'divd1')
+            else if(openCloseAction == 'divd')
             {
-                document.getElementById('divd1').style.display = "block";
-                document.getElementById('divb1').style.display = "none";
-                document.getElementById('divc1').style.display = "none";
-                document.getElementById('diva1').style.display = "none";
-                document.getElementById('dive1').style.display = "none";
-                document.getElementById('divb2').style.display = "none";
-                document.getElementById('divc2').style.display = "none";
-                document.getElementById('divd2').style.display = "none";
-                document.getElementById('dive2').style.display = "none";
-                document.getElementById('diva2').style.display = "none";
-                document.getElementById('leftarrow').style.display = "block";
-                document.getElementById('rightarrow').style.display = "none";
+                document.getElementById('divd').style.display = "block";
+                document.getElementById('divb').style.display = "none";
+                document.getElementById('divc').style.display = "none";
+                document.getElementById('diva').style.display = "none";
+                document.getElementById('dive').style.display = "none";
             }
-            else if(openCloseAction == 'dive1')
+            else if(openCloseAction == 'dive')
             {
-                document.getElementById('dive1').style.display = "block";
-                document.getElementById('divb1').style.display = "none";
-                document.getElementById('divc1').style.display = "none";
-                document.getElementById('divd1').style.display = "none";
-                document.getElementById('diva1').style.display = "none";
-                document.getElementById('divb2').style.display = "none";
-                document.getElementById('divc2').style.display = "none";
-                document.getElementById('divd2').style.display = "none";
-                document.getElementById('dive2').style.display = "none";
-                document.getElementById('diva2').style.display = "none";
-                document.getElementById('leftarrow').style.display = "block";
-                document.getElementById('rightarrow').style.display = "none";
+                document.getElementById('dive').style.display = "block";
+                document.getElementById('divb').style.display = "none";
+                document.getElementById('divc').style.display = "none";
+                document.getElementById('divd').style.display = "none";
+                document.getElementById('diva').style.display = "none";
             }
         }
         function changecolor(evt,tab) {
@@ -215,8 +91,7 @@
             }
         }
         function setdiv() {
-            divname = "diva1";
-            document.getElementById('diva1').style.display = "block";
+            document.getElementById('diva').style.display = "block";
             document.getElementById('tab1').style.backgroundColor = "#f1aa90";
         }
     </script>
@@ -289,29 +164,29 @@
             <h2><span>EXPLORE BY CATEGORY</span></h2>
         </div>
 
-        <div class="std-col-12 std-col-t-12">
-            <div class="std-col-2 std-col-t-4 res-div-temp" id="tab1" onclick="changecolor(event,'tab1');">
-                <button class="buttonlink" id="button1" onclick="handleOpenClose(event,'diva1');">
+        <div class="std-col-12 std-col-t-12 res-div-temp">
+            <div class="std-col-2 std-col-t-4" id="tab1" onclick="changecolor(event,'tab1');">
+                <button class="buttonlink" id="button1" onclick="handleOpenClose(event,'diva');">
                     <strong>Rings</strong>
                 </button>
             </div>
             <div class="std-col-2 std-col-t-4" id="tab2" onclick="changecolor(event,'tab2');">
-                <button class="buttonlink" id="button2" onclick="handleOpenClose(event,'divb1');">
+                <button class="buttonlink" id="button2" onclick="handleOpenClose(event,'divb');">
                     <strong>Earrings</strong>
                 </button>
             </div>
             <div class="std-col-2 std-col-t-4" id="tab3" onclick="changecolor(event,'tab3');">
-                <button class="buttonlink" id="button3" onclick="handleOpenClose(event,'divc1');">
+                <button class="buttonlink" id="button3" onclick="handleOpenClose(event,'divc');">
                     <strong>Pendants</strong>
                 </button>
             </div>
             <div class="std-col-2 std-col-t-4" id="tab4" onclick="changecolor(event,'tab4');">
-                <button class="buttonlink" id="button4" onclick="handleOpenClose(event,'divd1');">
+                <button class="buttonlink" id="button4" onclick="handleOpenClose(event,'divd');">
                     <strong>Nose Pins</strong>
                 </button>
             </div>
             <div class="std-col-2 std-col-t-4" id="tab5" onclick="changecolor(event,'tab5');">
-                <button class="buttonlink" id="button5" onclick="handleOpenClose(event,'dive1');">
+                <button class="buttonlink" id="button5" onclick="handleOpenClose(event,'dive');">
                     <strong>Mangalsutras</strong>
                 </button>
             </div>
@@ -320,229 +195,171 @@
     </div>
 
     <div class="std-section-fullWidth">
-
-        <div class="std-col-12" style="display: none;" id="diva1">
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="image" src="/images/jewellery/j1.jpg">
+        <div class="horizontal-scroll-wrapper" style="position: relative; display: none;" id="diva">
+            <!--<div class="std-col-12 std-section-bleed res-div-temp" style="margin-left: 12.5%; margin-right: 5%;">-->
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/j1.jpg">
                 </div>
             </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="imageE" src="/images/jewellery/j2.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/j2.jpg">
                 </div>
             </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="image" src="/images/jewellery/j3.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/j3.jpg">
                 </div>
             </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="imageE" src="/images/jewellery/j4.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/j4.jpg">
                 </div>
             </div>
-        </div>
-        <div class="std-col-12" style="display: none;" id="diva2">
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="image" src="/images/jewellery/j4.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/j2.jpg">
                 </div>
             </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="imageE" src="/images/jewellery/j1.jpg">
-                </div>
-            </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="image" src="/images/jewellery/j2.jpg">
-                </div>
-            </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="imageE" src="/images/jewellery/j3.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/j3.jpg">
                 </div>
             </div>
         </div>
-        <div class="std-col-12" style="display: none;" id="divb1">
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="image" src="/images/jewellery/e1.jpg">
+        <div class="horizontal-scroll-wrapper" style="position: relative; display: none;" id="divb">
+            <!--<div class="std-col-12 std-section-bleed res-div-temp" style="margin-left: 12.5%; margin-right: 5%;">-->
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/e1.jpg">
                 </div>
             </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="imageE" src="/images/jewellery/e2.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/e2.jpg">
                 </div>
             </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="image" src="/images/jewellery/e3.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/e3.jpg">
                 </div>
             </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="imageE" src="/images/jewellery/e4.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/e4.jpg">
                 </div>
             </div>
-        </div>
-        <div class="std-col-12" style="display: none;" id="divb2">
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="image" src="/images/jewellery/e3.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/e2.jpg">
                 </div>
             </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="imageE" src="/images/jewellery/e4.jpg">
-                </div>
-            </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="image" src="/images/jewellery/e1.jpg">
-                </div>
-            </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="imageE" src="/images/jewellery/e2.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/e3.jpg">
                 </div>
             </div>
         </div>
-        <div class="std-col-12" style="display: none;" id="divc1">
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="image" src="/images/jewellery/p1.jpg">
+        <div class="horizontal-scroll-wrapper" style="position: relative; display: none;" id="divc">
+            <!--<div class="std-col-12 std-section-bleed res-div-temp" style="margin-left: 12.5%; margin-right: 5%;">-->
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/p1.jpg">
                 </div>
             </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="imageE" src="/images/jewellery/p2.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/p2.jpg">
                 </div>
             </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="image" src="/images/jewellery/p3.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/p3.jpg">
                 </div>
             </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="imageE" src="/images/jewellery/p4.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/p4.jpg">
                 </div>
             </div>
-        </div>
-        <div class="std-col-12" style="display: none;" id="divc2">
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="image" src="/images/jewellery/p2.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/p2.jpg">
                 </div>
             </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="imageE" src="/images/jewellery/p1.jpg">
-                </div>
-            </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="image" src="/images/jewellery/p4.jpg">
-                </div>
-            </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="imageE" src="/images/jewellery/p3.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/p3.jpg">
                 </div>
             </div>
         </div>
-        <div class="std-col-12" style="display: none;" id="divd1">
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="image" src="/images/jewellery/n1.jpg">
+        <div class="horizontal-scroll-wrapper" style="position: relative; display: none;" id="divd">
+            <!--<div class="std-col-12 std-section-bleed res-div-temp" style="margin-left: 12.5%; margin-right: 5%;">-->
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/n1.jpg">
                 </div>
             </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="imageE" src="/images/jewellery/n2.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/n2.jpg">
                 </div>
             </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="image" src="/images/jewellery/n3.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/n3.jpg">
                 </div>
             </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="imageE" src="/images/jewellery/n4.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/n4.jpg">
                 </div>
             </div>
-        </div>
-        <div class="std-col-12" style="display: none;" id="divd2">
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="image" src="/images/jewellery/n2.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/n2.jpg">
                 </div>
             </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="imageE" src="/images/jewellery/n4.jpg">
-                </div>
-            </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="image" src="/images/jewellery/n1.jpg">
-                </div>
-            </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="imageE" src="/images/jewellery/n3.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/n3.jpg">
                 </div>
             </div>
         </div>
-        <div class="std-col-12" style="display: none;" id="dive1">
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="image" src="/images/jewellery/m1.jpg">
+        <div class="horizontal-scroll-wrapper" style="position: relative; display: none;" id="dive">
+            <!--<div class="std-col-12 std-section-bleed res-div-temp" style="margin-left: 12.5%; margin-right: 5%;">-->
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/m1.jpg">
                 </div>
             </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="imageE" src="/images/jewellery/m2.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/m2.jpg">
                 </div>
             </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="image" src="/images/jewellery/m3.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/m3.jpg">
                 </div>
             </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="imageE" src="/images/jewellery/m4.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/m4.jpg">
                 </div>
             </div>
-        </div>
-        <div class="std-col-12" style="display: none;" id="dive2">
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="image" src="/images/jewellery/m4.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/m2.jpg">
                 </div>
             </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="imageE" src="/images/jewellery/m3.jpg">
-                </div>
-            </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="image" src="/images/jewellery/m2.jpg">
-                </div>
-            </div>
-            <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
-                <div class="show-image">
-                    <img class="imageE" src="/images/jewellery/m1.jpg">
+            <div class="event-container-item center-align">
+                <div style="margin: 2%;">
+                    <img src="/images/jewellery/m3.jpg">
                 </div>
             </div>
         </div>
-        <a class="prev-btn2" id="leftarrow" onclick="leftscrolldiv();">&#10094;</a>
-        <a style="display: none" class="next-btn2" id="rightarrow" onclick="rightscrolldiv();">&#10095;</a>
     </div>
 
     <div class="std-section-fullWidth">
@@ -592,10 +409,8 @@
                     </div>
                 </div>
             </div>
-
             <!-- Blog entries -->
             <div class="std-col-8">
-
                 <div class="std-margin-small">
 
                     <!-- Blog entry -->
@@ -605,13 +420,10 @@
                     </div>
                     <div class="std-section-fullWidth std-div-white">
                         <div class="std-justify" style="height: 700px; width: 100%">
-                                <iframe width="100%" height="800" src="https://www.youtube.com/embed/3gcENZ9QOfc" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="100%" height="800" src="https://www.youtube.com/embed/3gcENZ9QOfc" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
-
-
-                <!-- END GRID -->
             </div>
         </div>
     </div>
@@ -674,78 +486,6 @@
         setTimeout(carousel, 1000);
     }
 </script>
-<script>
-
-    function leftscrolldiv()
-    {
-        if (divname == "diva1") {
-            document.getElementById('diva2').style.display = 'block';
-            document.getElementById('rightarrow').style.display = 'block';
-            document.getElementById('diva1').style.display = 'none';
-            document.getElementById('leftarrow').style.display = 'none';
-        }
-        else if (divname == "divb1") {
-            document.getElementById('divb2').style.display = 'block';
-            document.getElementById('rightarrow').style.display = 'block';
-            document.getElementById('divb1').style.display = 'none';
-            document.getElementById('leftarrow').style.display = 'none';
-        }
-        else if (divname == "divc1") {
-            document.getElementById('divc2').style.display = 'block';
-            document.getElementById('rightarrow').style.display = 'block';
-            document.getElementById('divc1').style.display = 'none';
-            document.getElementById('leftarrow').style.display = 'none';
-        }
-        else if (divname == "divd1") {
-            document.getElementById('divd2').style.display = 'block';
-            document.getElementById('rightarrow').style.display = 'block';
-            document.getElementById('divd1').style.display = 'none';
-            document.getElementById('leftarrow').style.display = 'none';
-        }
-        else if (divname == "dive1") {
-            document.getElementById('dive2').style.display = 'block';
-            document.getElementById('rightarrow').style.display = 'block';
-            document.getElementById('dive1').style.display = 'none';
-            document.getElementById('leftarrow').style.display = 'none';
-        }
-    }
-
-    function rightscrolldiv()
-    {
-        if(divname == "diva1") {
-            document.getElementById('diva1').style.display = 'block';
-            document.getElementById('leftarrow').style.display = 'block';
-            document.getElementById('diva2').style.display = 'none';
-            document.getElementById('rightarrow').style.display = 'none';
-        }
-        else if (divname == "divb1") {
-            document.getElementById('divb1').style.display = 'block';
-            document.getElementById('leftarrow').style.display = 'block';
-            document.getElementById('divb2').style.display = 'none';
-            document.getElementById('rightarrow').style.display = 'none';
-        }
-        else if (divname == "divc1") {
-            document.getElementById('divc1').style.display = 'block';
-            document.getElementById('leftarrow').style.display = 'block';
-            document.getElementById('divc2').style.display = 'none';
-            document.getElementById('rightarrow').style.display = 'none';
-        }
-        else if (divname == "divd1") {
-            document.getElementById('divd1').style.display = 'block';
-            document.getElementById('leftarrow').style.display = 'block';
-            document.getElementById('divd2').style.display = 'none';
-            document.getElementById('rightarrow').style.display = 'none';
-        }
-        else if (divname == "dive1") {
-            document.getElementById('dive1').style.display = 'block';
-            document.getElementById('leftarrow').style.display = 'block';
-            document.getElementById('dive2').style.display = 'none';
-            document.getElementById('rightarrow').style.display = 'none';
-        }
-    }
-
-</script>
-
 </body>
 </html>
 
