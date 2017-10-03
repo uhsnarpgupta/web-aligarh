@@ -47,6 +47,8 @@ var formcontactus = require('./routes/form-contactus');
 var privacypolicy = require('./routes/privacypolicy');
 var aboutaligarh = require('./routes/aboutaligarh');
 
+var lock = require('./routes/locks');
+
 var app = express();
 
 // view engine setup
@@ -132,6 +134,9 @@ app.use('/comingsoon',comingsoon);
 //Admin Routes
 app.use('/insert',admin);
 app.use('/get-data',admin);
+
+//Hardware and Lock route
+app.use('/locks',lock);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
