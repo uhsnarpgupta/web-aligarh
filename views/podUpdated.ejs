@@ -8,21 +8,25 @@
     <link rel="stylesheet" href="/stylesheets/templateU.css"/>
     <link rel="stylesheet" href="/stylesheets/education.css">
     <link rel="stylesheet" href="/stylesheets/pod.css">
+    <link rel="stylesheet" href="/stylesheets/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="std-light-grey">
+<body class="std-light-grey" onload="document.getElementById('myPopup').click();">
 
 <div>
     <% include template/navigationBar.ejs %>
 </div>
 
 <div class="std-top-row" style="text-align: center;">
-    <br/>
-    <h2><strong>Picture(s) of the Day</strong></h2>
-    <br/>
-    <h4><strong>Share Your Picture with us at pics@aligarhcity.in</strong>
-        <button style="width: 100px;" class="caption-link mediabox" id="myBtn" onclick="getmodal()">SHARE</button>
-    </h4>
-    <br/>
+    <div id="headingdiv" style="text-align: center; background-color: lightgray; display: none;">
+        <br/>
+        <h2><strong>Picture(s) of the Day</strong></h2>
+        <br/>
+        <h4><strong>Share Your Picture with us at pics@aligarhcity.in</strong>
+            <button style="width: 100px;" class="caption-link mediabox" id="myBtn" onclick="getmodal()">SHARE</button>
+        </h4>
+        <br/>
+    </div>
     <div id="maincontent" class="std-section-bleed std-content" style="outline: 3px solid lightgrey; outline-offset: -12px; background-color: white;">
         <!-- Grid -->
         <!--        <div id="wrapper" style="padding-top: 10px">
@@ -73,14 +77,8 @@
 
         </section>
 
+        <div class="hero-btn button" style="display: none"><button id="myPopup" onclick="handleOpenClose('O1');">Wow!</button></div>
         <!-- END std-content -->
-    </div>
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="caption"></div>
     </div>
 
     <div id="sharemodal" class="modal" style="background-color: whitesmoke; background-image: url('../images/disclaimer.jpg'); display:none;">
@@ -107,33 +105,53 @@
 
 </div>
 
+<!-- The Modal -->
+<div id="myModal2" class="modal-pod">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal1" class="std-modal" style="background-color: #fefefe; width:50%; position: absolute; height: 20rem; transform: translate(50%, 50%); padding: 0">
+    <!-- Modal content -->
+    <div class="std-close" style="float: right; padding: 0 1%; background-color: white">&times;</div>
+    <div class="std-col-12" style="float: left;">
+        <h1 class="std-wide" style="font-family: 'Adobe Caslon Pro'; font-weight: 500;"><strong>Picture(s) of the Day</strong>
+        </h1>
+        <p style="color: black; font-family: FontAwesome; font-weight: 300;">Feast your eyes on our daily dose
+            of
+            home cooks' top-rated recipes (and fantastic food photos).</p>
+        <h4><strong>Share Your Picture with us at pics@aligarhcity.in</strong>
+            &nbsp&nbsp
+            <button style="width: 150px;" class="caption-link mediabox" id="myBtn" onclick="window.open('http://www.gmail.com');">SHARE</button>
+        </h4>
+    </div>
+</div>
+
 <!-- Scripts  -->
 
 <script>
     // Get the modal // Common
-    var modal = document.getElementById('myModal');
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
+    var modal2 = document.getElementById('myModal2');
+    var modalImg2 = document.getElementById("img01");
+    var captionText2 = document.getElementById("caption");
 
     function  fullerimage(value, data) {
         var image = value;
         var src = "/images/fulls/" + image + ".jpg";
         var alt = data;
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        /*var img = document.getElementById('img1');
-        img.onclick = function(){*/
-        modal.style.display = "block";
-        modalImg.src = src;
-        captionText.innerHTML = alt;
-//        }
+        modal2.style.display = "block";
+        modalImg2.src = src;
+        captionText2.innerHTML = alt;
     }
 
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    var span2 = document.getElementsByClassName("close")[0];
 
     // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
+    span2.onclick = function() {
+        modal2.style.display = "none";
     }
 
 </script>
@@ -154,6 +172,34 @@
         document.getElementById('sharemodal').style.display = "none";
     }
 
+</script>
+
+<script>
+
+    var btn = document.getElementById("myPopup");
+    var modal = document.getElementById('myModal1');
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("std-close")[0];
+
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+        document.getElementById("headingdiv").style.display = 'block';
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 </script>
 
 </body>

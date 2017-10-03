@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="/stylesheets/standards.css">
     <link rel="stylesheet" href="/stylesheets/recipe.css">
     <link rel="stylesheet" href="/stylesheets/modal.css">
+    <link rel="stylesheet" href="/stylesheets/shopnew.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript">
 
@@ -50,7 +51,7 @@
         <div class="slideshow-container">
 
             <div class="slides fade">
-                <div class="numbertext">1 / 4</div>
+                <div class="numbertext">1 / 2</div>
                 <img src="images/recipe/recipe1.jpg">
                 <div class="hero-text">
                     <h2 style="color: black">Peanut Butter Ice Cream Pie</h2>
@@ -61,19 +62,19 @@
             </div>
 
             <div class="slides fade">
-                <div class="numbertext">2 / 4</div>
-                <img src="images/deals/resdeal2.png">
+                <div class="numbertext">2 / 2</div>
+                <img src="images/recipe/recipe2.jpg">
                 <div class="hero-text">
                     <h2 style="color: black">Naan Khatai</h2>
-                    <button id="secondrecipe" onclick="scndcontainer('resdeal2.png','Second Recipe');"><p>View
+                    <button id="secondrecipe" onclick="scndcontshow('recipe2.jpg','Naan Khatai');"><p>View
                             Recipe</p></button></div>
             </div>
 
-            <div class="slides fade">
+            <!--<div class="slides fade">
                 <div class="numbertext">3 / 4</div>
                 <img src="images/deals/resdeal3.jpeg">
                 <div class="hero-text">
-                    <button id="thirdrecipe" onclick="thrdcontainer('resdeal3.jpg','Third Recipe');"><p>View
+                    <button id="thirdrecipe" onclick="thrdcontshow('resdeal3.jpg','Third Recipe');"><p>View
                             Recipe</p></button></div>
             </div>
 
@@ -82,7 +83,7 @@
                 <img src="images/deals/resdeal4.jpg">
                 <div class="hero-text"><button id="fourthrecipe" onclick="frthcontshow('resdeal4.jpg','Fourth Recipe');"><p>View
                             Recipe</p></button></div>
-            </div>
+            </div>-->
 
             <a class="prev-btn" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next-btn" onclick="plusSlides(1)">&#10095;</a>
@@ -96,8 +97,8 @@
         <div style="text-align:center; transform: translate(0, -450%)">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
+            <!--<span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>-->
         </div>
     </div>
 </div>
@@ -136,15 +137,17 @@
     </div>
     <div class="std-col-4 std-col-t-4 aside" style="float: right">
         <div style="height:25%">
-            <img class="temp" id="img01">
+            <img id="img01" style="width:100%; height: 220px;">
         </div>
         <hr>
-        <div style="height:25%">
-            <img class="temp" src="images/recipe/recipe1-1.jpg">
-            <!--<video controls autoplay loop poster="/images/comingsoon/coming-soon-1.gif" muted>
-                <source src="/images/movie.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>-->
+        <div class="column">
+            <div class="card">
+                <img src="images/recipe/recipe1-1.jpg" alt="Mike" style="width:100%; height: 220px;">
+                <div class="container">
+                    <h2>Gunjan Varshney</h2>
+                    <p class="title">Ramghat Road, Aligarh.</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -154,18 +157,82 @@
         <div class="std-col-12" style="background-color: #3a3a3a; color: white">
             <h1 id="caption2"></h1>
         </div>
-        <p>We broadcasts your event in a way that is both technically elegant and very cost effective.</p>
+        <div class="verticalscroll">
+            <div>
+                <p>
+                    <strong>COURSE</strong> - Dessert, Snack</p>
+                <p><strong>CUISINE</strong> - north indian</p>
+                <p><strong>PREP TIME</strong> - 15 minutes</p>
+                <p><strong>COOK TIME</strong> - 25 minutes</p>
+                <p><strong>TOTAL TIME</strong> - 40 minutes</p>
+                <p><strong>SERVINGS</strong> - 10 large nankhatais</p>
+                <p><strong>CALORIES</strong> - 198 kcal
+                </p>
+            </div>
+            <div>
+                <h4>Ingredients - </h4>
+                <p>
+                    1 cup all purpose flour (maida) or 125 grams maida</p>
+                <p> ¼ cup gram flour (besan) or 40 grams gram flour</p>
+                <p> ½ teaspoon baking soda</p>
+                <p> 1 teaspoon baking powder</p>
+                <p> 2 tablespoon sooji (fine rava or cream of wheat) or 20 grams sooji</p>
+                <p> 2 to 3 pinches nutmeg powder or grated nutmeg or ⅛ teaspoon nutmeg powder (jaiphal powder)</p>
+                <p> ½ teaspoon cardamom powder (choti elaichi powder)</p>
+                <p> ½ cup ghee (semi solid) or butter at room temperature, 80 grams</p>
+                <p> ½ cup sugar, 100 to 110 grams sugar or ⅔ cup powdered sugar or icing sugar or add as per taste</p>
+                <p> ½ tablespoon dahi (curd or yogurt)</p>
+                <p> 1 to 2 tablespoon milk</p>
+                <p> few almonds or chironji (charoli)
+                </p>
+            </div>
+            <div>
+                <h4>Directions -
+                </h4>
+                <strong>Making Nankhatai Mixture:</strong>
+                <p>powder the sugar finely in a grinder.</p>
+                <p>then cream the ghee and powdered sugar with a electric mixer or blender. you can also cream in a food
+                    processor.</p>
+                <p>the mixture should become smooth, light and creamy.</p>
+                <p>sift the the following dry ingredients - maida or all purpose flour, gram flour/besan, baking powder
+                    and baking soda. keep the sifted dry ingredients aside.</p>
+                <p>add curd/yogurt to the creamed ghee+sugar mixture. mix very well.</p>
+                <p>now add the sifted dry ingredients. also add the sooji/rava/cream of wheat, cardamom powder and
+                    nutmeg powder.</p>
+                <p>gently mix everything. do not knead.</p>
+                <p>just mix and gather to a smooth dough. if the mixture is too crumbly and you cannot bring together to
+                    a dough, then add 1 to 3 tbsp of milk. mix lightly and bring the mixture to a dough.</p>
+                <p>pinch medium sized balls from the dough.</p>
+                <p>roll them evenly in your palms. slightly flatten them. press chironji or almonds on the top
+                    lightly.</p>
+                <p>you can also make some criss cross designs on the nankhatais with a fork or toothpick.</p>
+                <strong>Baking Nankhatai:</strong>
+                <p>place the nankhatais in a baking tray.</p>
+                <p>keep some space between them as they expand while baking.</p>
+                <p>bake the nankhatai in a pre heated oven at 180 degrees C for 20-25 mins till light golden.</p>
+                <p>remove and place nankhatai on wire racks, so that they cool down.</p>
+                <p>when cooled, store the nankhatai in an air tight container.</p>
+            </div>
+            <div>
+                <strong>RECIPE NOTES: </strong>
+                <p>as the temperatures vary in different oven models, keep an eye while baking. if the nankhatais are
+                    not baked enough then bake them for some more minutes.</p>
+            </div>
+        </div>
     </div>
     <div class="std-col-4 std-col-t-4 aside" style="float: right">
         <div style="height:25%">
-            <img class="temp" id="img02">
+            <img id="img02" style="width:100%; height: 220px;">
         </div>
         <hr>
-        <div style="height:25%">
-            <video controls autoplay loop poster="/images/comingsoon/coming-soon-1.gif" muted>
-                <source src="/images/movie.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
+        <div class="column">
+            <div class="card">
+                <img src="images/recipe/recipe2-2.jpg" alt="Mike" style="width:100%; height: 220px;">
+                <div class="container">
+                    <h2>Komal Varshney</h2>
+                    <p class="title">Jail Road, Aligarh.</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -343,7 +410,7 @@
         var modal = document.getElementById('scndcontainer');
         var modalImg = document.getElementById("img02");
         var captionText = document.getElementById("caption2");
-        var src = "/images/deals/" + image;
+        var src = "/images/recipe/" + image;
         var alt = data;
         modal.style.display = "block";
         modalImg.src = src;
