@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<head xmlns="http://www.w3.org/1999/html">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Locks And Hardware</title>
+    <link rel="stylesheet" href="/stylesheets/standards.css">
+    <link rel="stylesheet" href="/stylesheets/modal.css">
+    <link rel="stylesheet" href="/stylesheets/education.css">
+    <link rel="stylesheet" href="/stylesheets/shopnew.css">
+ <link rel="stylesheet" href="/stylesheets/locks.css">
+
+</head>
+<body>
+<div class="std-header">
+    <% include template/navigationBar.ejs %>
+</div>
+<!--End Header-->
+<div class="std-top-row">
+
+    <!--1st Row-->
+    <div class="std-section-bleed">
+        <div class="hero-image mySlides fade" style="background-image: url('../images/locks.jpg'); padding: 30%;">
+            <div class="hero-text" style="color: white; font-size: 60px">
+                LOCKS!<br>
+                <button onclick="scrollWin(0, 650)" style="color: orange;"><p>SHOP NOW</p></button>
+            </div>
+
+        </div>
+        <div class="hero-image mySlides fade" style="background-image: url('../images/hardware.jpg');padding: 30%">
+            <div class="hero-text" style="color: black; font-size: 60px">
+                HARDWARE!<br>
+                <button onclick="scrollWin(0, 650)" style="color: orange;"><p>SHOP NOW</p></button>
+            </div>
+        <!--<div class="hero-image mySlides fade" style="background-image: url('../images/kitchen.jpg');padding: 30%">
+            <div class="hero-text" style="color: black">
+                KITCHEN!<br>
+                <button onclick="scrollWin(0, 650)" style="color: orange;"><p>SHOP NOW</p></button>
+            </div>
+
+        </div>
+        <div class="hero-image mySlides fade" style="background-image: url('../images/bathroom.jpg');padding: 30%">
+            <div class="hero-text" style="color: black">
+                BATHROOM!<br>
+                <button onclick="scrollWin(0, 650)" style="color: orange;"><p>SHOP NOW</p></button>
+            </div>
+        </div>-->
+    </div>
+
+    <div style="text-align:center">
+        <!--<span class="dot"></span>-->
+        <span class="dot"></span>
+        <span class="dot"></span>
+       <!-- <span class="dot"></span>
+        <span class="dot"></span>-->
+    </div>
+</div>
+<!--1st row ends-->
+
+<!--2nd Row-->
+<!-- <div class="std-col-12 std-section-bleed" >
+     <div style=" width: 100%">
+         <img src="/images/tagline.jpg">
+     </div>
+ </div>-->
+<!--2nd row ends-->
+<div class="std-col-12">
+    <div class="std-section-bleed">
+        <div class="std-col-6 std-col-t-6 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img  src="/images/eclectic-kitchen.jpg" style="margin-left: 25%">
+                <div class="hero-text">
+                    <h1 class="std-wide" style="margin-left: 5%">KITCHEN!</h1>
+                    <h3 class="hero-sub-text">Best Kitchen Interior.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="std-col-6 std-col-t-6 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img src="/images/flooring.jpg">
+                <div class="hero-text">
+                    <h1 class="std-wide">FLOORING!</h1>
+                    <h3 class="hero-sub-text">Carpets And Tiles.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="std-col-12">
+        <div class="std-section-bleed">
+            <div class="std-col-6 std-col-t-6 imgdiv1" style=";cursor: pointer;position: relative;">
+                <div class="show-image">
+                    <img  src="/images/locks2.jpg" style="margin-left: 25%">
+                    <div class="hero-text">
+                        <h1 class="std-wide">LOCKS!</h1>
+                        <h3 class="hero-sub-text">Handle And Door.</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="std-col-3 std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative; width: auto">
+                <div class="show-image">
+                    <img src="/images/bathroom2.jpg">
+                    <div class="hero-text">
+                        <h1 class="std-wide" style="font-size: 25px">BATHROOM!</h1>
+                        <h3 class="hero-sub-text" style="font-size: 18px">Tap's And Shower.</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="std-col-3 std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative; width: auto">
+                <div class="show-image">
+                    <img src="/images/tools.jpg">
+                    <div class="hero-text">
+                        <h1 class="std-wide" style="font-size: 25px">TOOLS!</h1>
+                        <h3 class="hero-sub-text" style="font-size: 18px;">All Of Hardware.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="std-section-fullWidth">
+        <h1>
+            Popular Now!
+        </h1>
+    </div>
+
+
+    <div class="horizontal-scroll-wrapper" style="position: relative">
+        <div class="event-container-item center-align">
+            <img class="img" src="/images/handle1.jpg">
+            <div class="underlay">
+                <div class="text">COMING SOON<br>
+                    <div class="button" style="margin-top: 3rem">
+                        <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-container-item center-align">
+            <img class="img" src="/images/handle1.jpg">
+            <div class="overlay">
+                <div class="text">COMING SOON<br>
+                    <div class="button" style="margin-top: 3rem">
+                        <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-container-item center-align">
+            <img class="img" src="/images/handle1.jpg">
+            <div class="underlay">
+                <div class="text">COMING SOON<br>
+                    <div class="button" style="margin-top: 3rem">
+                        <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-container-item center-align">
+            <img class="img" src="/images/handle1.jpg">
+            <div class="overlay">
+                <div class="text">COMING SOON<br>
+                    <div class="button" style="margin-top: 3rem">
+                        <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-container-item center-align">
+            <img class="img" src="/images/handle1.jpg">
+            <div class="underlay">
+                <div class="text">COMING SOON<br>
+                    <div class="button" style="margin-top: 3rem">
+                        <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-container-item center-align">
+            <img class="img" src="/images/handle1.jpg">
+            <div class="overlay">
+                <div class="text">COMING SOON<br>
+                    <div class="button" style="margin-top: 3rem">
+                        <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="std-section-fullWidth">
+        <h1>
+            DIY TIPS BLOG
+        </h1>
+    </div>
+
+    <div class="horizontal-scroll-wrapper" style="position: relative">
+        <div class="event-container-item center-align">
+            <img class="img" src="/images/handle.jpg">
+            <div class="rightlay">
+                <div class="text">COMING SOON<br>
+                    <div class="button" style="margin-top: 3rem">
+                        <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-container-item center-align">
+            <img class="img" src="/images/handle.jpg">
+            <div class="leftlay">
+                <div class="text">COMING SOON<br>
+                    <div class="button" style="margin-top: 3rem">
+                        <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-container-item center-align">
+            <img class="img" src="/images/handle.jpg">
+            <div class="rightlay">
+                <div class="text">COMING SOON<br>
+                    <div class="button" style="margin-top: 3rem">
+                        <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-container-item center-align">
+            <img class="img" src="/images/handle.jpg">
+            <div class="leftlay">
+                <div class="text">COMING SOON<br>
+                    <div class="button" style="margin-top: 3rem">
+                        <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-container-item center-align">
+            <img class="img" src="/images/handle.jpg">
+            <div class="rightlay">
+                <div class="text">COMING SOON<br>
+                    <div class="button" style="margin-top: 3rem">
+                        <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-container-item center-align">
+            <img class="img" src="/images/handle.jpg">
+            <div class="leftlay">
+                <div class="text">COMING SOON<br>
+                    <div class="button" style="margin-top: 3rem">
+                        <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="std-section-fullWidth">
+        <h1>
+            BATHING TIPS BLOG
+        </h1>
+    </div>
+
+    <div class="horizontal-scroll-wrapper" style="position: relative">
+        <div class="event-container-item center-align">
+            <img class="img" src="/images/shower2.jpg">
+            <div class="underlay">
+                <div class="text">COMING SOON<br>
+                    <div class="button" style="margin-top: 3rem">
+                        <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-container-item center-align">
+            <img class="img" src="/images/shower2.jpg">
+            <div class="overlay">
+                <div class="text">COMING SOON<br>
+                    <div class="button" style="margin-top: 3rem">
+                        <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-container-item center-align">
+            <img class="img" src="/images/shower2.jpg">
+            <div class="underlay">
+                <div class="text">COMING SOON<br>
+                    <div class="button" style="margin-top: 3rem">
+                        <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-container-item center-align">
+            <img class="img" src="/images/shower2.jpg">
+        </div>
+        <div class="overlay">
+            <div class="text">COMING SOON<br>
+                <div class="button" style="margin-top: 3rem">
+                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                </div>
+            </div>
+        </div>
+        <div class="event-container-item center-align">
+            <img class="img" src="/images/shower2.jpg">
+            <div class="underlay">
+                <div class="text">COMING SOON<br>
+                    <div class="button" style="margin-top: 3rem">
+                        <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-container-item center-align">
+            <img class="img" src="/images/shower2.jpg">
+            <div class="overlay">
+                <div class="text">COMING SOON<br>
+                    <div class="button" style="margin-top: 3rem">
+                        <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--<div class="std-col-12 std-section-bleed res-div-temp" style="margin-left: 12.5%; margin-right: 5%;">-->
+       <!-- <div class="event-container-item center-align">
+            <div class="mediaback">
+                <div style="margin: 2%;">
+                    <img class="imgg" src="/images/shop4.jpg">
+                    <div class="underlay">
+                        <div class="text">COMING SOON<br>
+                            <div class="button" style="margin-top: 3rem">
+                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="event-container-item center-align" onclick="window.open('/sheeshmahal')" style="padding: 0">
+            <div class="mediaback">
+                <img src="/images/shop/img2.jpg">
+                &lt;!&ndash;<h1 class="hero-sub-text" style="position: absolute; padding-left: 25px; color: white;">SHEESH MAHAL</h1>&ndash;&gt;
+                <div class="overlay">
+                    <div class="text">SHEESH MAHAL<br>
+                        <div class="button" style="margin-top: 3rem">
+                            <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-container-item center-align">
+            <div class="mediaback">
+                <div style="margin: 2%;">
+                    <img class="imgg" src="/images/shop4.jpg">
+                    <div class="underlay">
+                        <div class="text">COMING SOON<br>
+                            <div class="button" style="margin-top: 3rem">
+                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-container-item center-align" onclick="window.open('/kalasaree')" style="padding: 0">
+            <div class="mediaback">
+                <img src="/images/Model-Sarees.jpg">
+                &lt;!&ndash;<h1 class="hero-sub-text" style="position: absolute; padding-left: 25px; color: white;">SAREE SUHAG</h1>&ndash;&gt;
+                <div class="overlay">
+                    <div class="text">MASTER SAREE CENTRE<br>
+                        <div class="button" style="margin-top: 3rem">
+                            <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-container-item center-align">
+            <div class="mediaback">
+                <div style="margin: 2%;">
+                    <img class="imgg" src="/images/shop4.jpg">
+                    <div class="underlay">
+                        <div class="text">COMING SOON<br>
+                            <div class="button" style="margin-top: 3rem">
+                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-container-item center-align" onclick="window.open('/dineshjewlers')" style="padding: 0">
+            <div class="mediaback">
+                <img src="/images/shop/img1.jpg">
+                &lt;!&ndash;<h1 class="hero-sub-text" style="position: absolute; padding-left: 25px; color: white;">UPCOMING SHOP</h1>&ndash;&gt;
+                <div class="overlay">
+                    <div class="text">Dinesh Jewellers<br>
+                        <div class="button" style="margin-top: 3rem">
+                            <p style="color:#fefefe; font-family: 'Lato, sans-serif';">Shop!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+</div>
+
+<!--3rd row starts-->
+<!--<div class="std-section-fullWidth aside res-div2-temp">
+    <div class="std-section-fullWidth">
+        <h1>
+            Shop Now!
+        </h1>
+    </div>
+    <div class="std-col-12">
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="image" src="/images/model1.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+                &lt;!&ndash; <h1 class="hero-sub-text" style="position: absolute; ">  </h1>&ndash;&gt;
+
+            </div>
+        </div>
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="imageE" src="/images/model2.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="image" src="/images/model3.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="imageE" src="/images/model4.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+    </div>
+    <div class="std-col-12">
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="imageE" src="/images/model1.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="image" src="/images/model2.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="imageE" src="/images/model3.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="image" src="/images/model4.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+    </div>
+    <div class="std-col-12">
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="image" src="/images/model1.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="imageE" src="/images/model2.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="image" src="/images/model3.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+        <div class="std-col-t-3 imgdiv1" style=";cursor: pointer;position: relative;">
+            <div class="show-image">
+                <img class="imageE" src="/images/model4.jpg">
+                <input class="update" type="button" value="SHOP NOW" />
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<!-- The Modal -->
+<!--<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>-->
+
+<!--The Footer-->
+<div class="std-section-bleed">
+    <% include template/footer.ejs %>
+</div>
+<!--Footer End-->
+</body>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex> slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+</script>
+
+<script>
+    function scrollWin(x, y) {
+        window.scrollBy(x, y);
+    }
+</script>
+</html>
