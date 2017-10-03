@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<title>std.CSS Template</title>
+<head>
+    <link rel="stylesheet" href="/stylesheets/contactus.css">
+    <link rel="stylesheet" href="/stylesheets/standards.css">
+</head>
+<body class="std-light-grey">
+
+<!-- Modal content -->
+<div class="std-col-12">
+    <div class="container boxshadow" style="z-index: 7">
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">E-Mail Id</label>
+            <input type="text" id="email" name="email" placeholder="Your email address..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input value="Submit">
+        </form>
+
+    </div>
+</div>
+
+</body>
+
+<!--<script>
+    var form = document.getElementsByTagName('form')[0];
+    form.addEventListener('submit', contact, false);
+
+    function contact(e) {
+        // Prevent Default Form Submission
+        e.preventDefault();
+
+        var target = e.target || e.srcElement;
+        var i = 0;
+        var message = '';
+
+        // Loop Through All Input Fields
+        for (i = 0; i < target.length; ++i) {
+            // Check to make sure it's a value. Don't need to include Buttons
+            if (target[i].type != 'text' && target[i].type != 'textarea') {
+                // Skip to next input since this one doesn't match our rules
+                continue;
+            }
+
+            // Add Input Name and value followed by a line break
+            message += target[i].name + ': ' + target[i].value + "\r\n";
+        }
+        // Modify the hidden body input field that is required for the mailto: scheme
+        target.elements["body"].value = message;
+
+        // Submit the form since we previously stopped it. May cause recursive loop in some browsers? Should research this.
+        this.submit();
+    }
+</script>-->
+</html>
