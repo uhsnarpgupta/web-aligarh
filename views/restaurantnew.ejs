@@ -6,108 +6,7 @@
         <link rel="stylesheet" href="/stylesheets/standards.css">
         <link rel='stylesheet' href='/stylesheets/default.css'/>
         <link rel="stylesheet" href="/stylesheets/hotel.css">
-    <style>
-        .box-radius {
-            box-shadow: 0 0 2px 1px rgba(184, 0, 34, 0.5);
-            border-radius: 10%;
-        }
-        .product {
-            width: 376px;
-            position: relative;
-            float: left;
-            margin: 0 20px 0 0;
-        }
-
-        .product>img {
-            display: block;
-            position: relative;
-        }
-
-        .product:hover .product-hover,
-        .product:active .product-hover {
-            opacity: 1;
-        }
-
-        .product-hover {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            background-size: 30px 30px;
-            background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, transparent 75%, transparent);
-            animation: barberpole 0.5s linear infinite;
-        }
-        @keyframes barberpole {
-            from {
-                background-position: 0 0;
-            }
-            to {
-                background-position: 60px 30px;
-            }
-        }
-
-        .product-info {
-            position: absolute;
-            bottom: 30px;
-            right: 30px;
-            background: white;
-            width: 150px;
-            padding: 10px 10px 50px 10px;
-        }
-
-        .subhead {
-            color: #f00;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-
-        .product-name {
-            color: #990033;
-            text-transform: uppercase;
-            font-weight: bold;
-            margin: 0;
-            letter-spacing: -1px;
-        }
-
-        .price {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-        }
-
-        .amount>span {
-            font-size: 75%;
-        }
-
-        h1 {
-            font-size: 72px;
-            margin: 2px 0 0 0;
-        }
-    </style>
-    <style>
-        @media only screen and (min-width: 768px) {
-            .res-div-temp {
-                margin-left: 10%;
-            }
-            .res-div2-temp {
-                margin-left: 5%;
-            }
-            .res-div3-temp {
-                margin-top: 3rem;
-            }
-            .std-col-3{
-                width: 33.3333333%;
-                float: left;
-            }
-            .std-col-5{
-                width: 33.3333333%;
-                float: left;
-            }
-        }
-    </style>
+        <link rel='stylesheet' href='/stylesheets/restaurant.css'/>
 </head>
     <body>
         <div class="std-header">
@@ -172,7 +71,7 @@
                             <img src="/images/restaurant/starters-main.jpg"style="border-radius: 50%;border: 15px solid white;"/>
                         </div>
                         <div class="iconCaption">
-                            <h2 style="text-align: center; padding-top: 33px;">
+                            <h2 style="text-align: center; padding-top: 33px; padding-left: 3rem;">
                                 STARTERS
                             </h2>
                             <h4>“Yeast is to flour as action is to ambition. Rising to success requires adding and
@@ -195,7 +94,7 @@
                             <img src="/images/restaurant/desserts.jpg"style="border-radius: 50%;border: 15px solid white;"/>
                         </div>
                         <div class="iconCaption">
-                            <h2 style="text-align: center; padding-top: 33px;">
+                            <h2 style="text-align: center; padding-top: 33px; padding-left: 3rem;">
                                 DESERTS
                             </h2>
                             <h4>“Life's short. Buy the shoes. Drink the wine. Order the dessert.”</h4>
@@ -211,9 +110,8 @@
                             <img src="/images/restaurant/kwality.jpg" height="50%"/>
                         </div>
                         <div>
-                            <h3 style="font-weight: 300; color: red; font-size: large"><strong>Kwality's Snack Shoppe</strong></h3>
-                            <!--<h4 style="color: #990033">Multicuisine Restaurant</h4>-->
-                            <h2 class="product-name">Multicuisine Restaurant</h2>
+                            <h3 style="font-weight: 300; color: red; font-size: large"><strong>Kwality <br>Snack<br> Shoppe</strong></h3>
+                            <h2 class="product-name">Restaurant</h2>
                             <h4>Eat well and spend less</h4>
                         </div>
                     </div>
