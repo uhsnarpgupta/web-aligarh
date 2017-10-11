@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/stylesheets/education.css">
     <link rel="stylesheet" href="/stylesheets/pod.css">
     <link rel="stylesheet" href="/stylesheets/modal.css">
+    <link rel="stylesheet" href="/stylesheets/kalasaree.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="std-light-grey" onload="document.getElementById('myPopup').click();">
@@ -20,9 +21,7 @@
 <div class="std-top-row" style="text-align: center;">
     <div id="headingdiv" style="text-align: center; background-color: lightgray; display: none;">
         <br/>
-        <h2><strong>Picture(s) of the Day</strong></h2>
-        <br/>
-        <h4><strong>Share Your Picture with us at pics@aligarhcity.in</strong>
+        <h4><strong>Picture(s) of the Day!! Share Your Picture with us at pics@aligarhcity.in</strong>
             <button style="width: 100px;" class="caption-link mediabox" id="myBtn" onclick="getmodal()">SHARE</button>
         </h4>
         <br/>
@@ -36,12 +35,9 @@
             <!-- Thumbnails -->
             <section class="thumbnails demo-gallery" id="demo-test-gallery" data-pswp-uid="1">
                 <div>
-                    <a href="#" onclick="fullerimage('01','Let us always meet each other with smile, for the smile is the beginning of love.')" data-author="Samuel Rohl"
-                       data-med-size="1024x683" data-med="images/thumbs/01.jpg"
-                       data-size="1600x1068">
-                        <img src="images/thumbs/01.jpg" alt=""/>
+                    <a href="#" onclick="openModal();currentPopup(1)">
+                        <img src="images/thumbs/08.jpg" alt=""/>
                         <h3 class="textcontent">Let us always meet each other with smile, for the smile is the beginning of love.</h3>
-
                     </a>
                     <a href="#" onclick="fullerimage('02','Happiness is not something you postpone for the future; it is something you design for the present.')">
                         <img src="images/thumbs/02.jpg" alt=""/>
@@ -58,8 +54,8 @@
                         <img src="images/thumbs/04.jpg" alt=""/>
                         <h3 class="textcontent">The greatest gift of life is friendship, and I have received it.</h3>
                     </a>
-                    <a href="#" onclick="fullerimage('05','Be happy for this moment. This moment is your life.')">
-                        <img src="images/thumbs/05.jpg" alt=""/>
+                    <a href="#" onclick="openModal1();currentPopup1(1)">
+                        <img src="images/thumbs/11.jpg" alt=""/>
                         <h3 class="textcontent">Be happy for this moment. This moment is your life.</h3>
                     </a>
                 </div>
@@ -71,6 +67,10 @@
                     <a href="#" onclick="fullerimage('07','If opportunity doesnt knock, build a door.')">
                         <img src="images/thumbs/07.jpg" alt=""/>
                         <h3 class="textcontent">If opportunity doesnt knock, build a door.</h3>
+                    </a>
+                    <a href="#" onclick="fullerimage('10','We do not remember days, we remember moments.')">
+                        <img src="images/thumbs/10.jpg" alt=""/>
+                        <h3 class="textcontent">We do not remember days, we remember moments.</h3>
                     </a>
                 </div>
             </section>
@@ -113,6 +113,59 @@
 </div>
 
 <!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides1">
+            <img src="/images/thumbs/08.jpg" style="width:100%">
+            <div id="caption"><h3>By- Bhavika, Jail Road, Aligarh.</h3></div>
+            <div class="prev-btn1" onclick="plusPopup(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides1">
+            <img src="/images/thumbs/09.jpg" style="width:100%">
+            <div id="caption"><h3>By- Bhavika, Jail Road, Aligarh.</h3></div>
+            <div class="prev-btn1" onclick="plusPopup(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup(1)">&#10095;</div>
+        </div>
+    </div>
+</div>
+
+<div id="myModal3" class="modal">
+    <span class="close cursor" onclick="closeModal1()">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides2">
+            <img src="/images/thumbs/11.jpg" style="width:100%">
+            <div id="caption1" style="color: #FFFFFF;"><h3>Be happy for this moment. This moment is your life.</h3></div>
+            <div class="prev-btn2" onclick="plusPopup1(-1)">&#10094;</div>
+            <div class="next-btn2" onclick="plusPopup1(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides2">
+            <img src="/images/thumbs/12.jpg" style="width:100%">
+            <div id="caption1" style="color: #FFFFFF;"><h3>Be happy for this moment. This moment is your life.</h3></div>
+            <div class="prev-btn2" onclick="plusPopup1(-1)">&#10094;</div>
+            <div class="next-btn2" onclick="plusPopup1(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides2">
+            <img src="/images/thumbs/13.jpg" style="width:100%">
+            <div id="caption1" style="color: #FFFFFF;"><h3>Be happy for this moment. This moment is your life.</h3></div>
+            <div class="prev-btn2" onclick="plusPopup1(-1)">&#10094;</div>
+            <div class="next-btn2" onclick="plusPopup1(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides2">
+            <img src="/images/thumbs/14.jpg" style="width:100%">
+            <div id="caption1" style="color: #FFFFFF;"><h3>Be happy for this moment. This moment is your life.</h3></div>
+            <div class="prev-btn2" onclick="plusPopup1(-1)">&#10094;</div>
+            <div class="next-btn2" onclick="plusPopup1(1)">&#10095;</div>
+        </div>
+    </div>
+</div>
+
+<!-- The Modal -->
 <div id="myModal1" class="std-modal" style="background-color: #fefefe; width:50%; position: absolute; height: 20rem; transform: translate(50%, 50%); padding: 0">
     <!-- Modal content -->
     <div class="std-close" style="float: right; padding: 0 1%; background-color: white">&times;</div>
@@ -139,7 +192,7 @@
 
     function  fullerimage(value, data) {
         var image = value;
-        var src = "/images/fulls/" + image + ".jpg";
+        var src = "/images/thumbs/" + image + ".jpg";
         var alt = data;
         modal2.style.display = "block";
         modalImg2.src = src;
@@ -199,6 +252,72 @@
         if (event.target == modal) {
             modal.style.display = "none";
         }
+    }
+</script>
+
+<script>
+    function openModal() {
+        document.getElementById('myModal').style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showPopup(slideIndex);
+
+    function plusPopup(n) {
+        showPopup(slideIndex += n);
+    }
+
+    function currentPopup(n) {
+        showPopup(slideIndex = n);
+    }
+
+    function showPopup(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides1");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
+</script>
+
+<script>
+    function openModal1() {
+        document.getElementById('myModal3').style.display = "block";
+    }
+
+    function closeModal1() {
+        document.getElementById('myModal3').style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showPopup1(slideIndex);
+
+    function plusPopup1(n) {
+        showPopup1(slideIndex += n);
+    }
+
+    function currentPopup1(n) {
+        showPopup1(slideIndex = n);
+    }
+
+    function showPopup1(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides2");
+        var captionText = document.getElementById("caption1");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
     }
 </script>
 

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Testimonials</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheets/walloffame.css">
+</head>
+<body bgcolor="white" marginheight="100%" style="background-image: url('../images/wallpaper.jpg')">
+<!--Header Navigation Bar Starts-->
+<div class="std-header">
+    <% include template/navigationBar.ejs %>
+</div>
+
+<!-- Main Content -->
+<div class="std-top-row" style="text-align: center;">
+
+    <div class="std-col-12" style="background-color: #3a3a3a; color: white">
+        <h1>Aligarh City Videos</h1>
+    </div>
+    <section>
+        <div id="section1" class="tabs">
+            <nav>
+                <ul>
+                    <li><a href="#section-1" class="icon-shop"
+                           style="color: black"><span>Our Videos</span></a>
+                    </li>
+                    <li><a href="#section-2" class="icon-shop"
+                           style="color: black"><span>Testimonials</span></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="content">
+                <section id="section-1">
+                    <div class="std-col-12 fade">
+                        <div class="std-col-4 std-col-t-4 iframe" style="height: 300px;">
+                            <iframe width="33%" height="315" src="https://www.youtube.com/embed/5h4qz6wTxOY?start=190"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="std-col-4 std-col-t-4 iframe" style="height: 300px;">
+                            <iframe width="33%" height="315" src="https://www.youtube.com/embed/ZAfOFJtVa3U?start=40"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="std-col-4 std-col-t-4 iframe" style="height: 300px;">
+                            <iframe width="33%" height="315" src="https://www.youtube.com/embed/p7Ywj9SFAVw?start=370"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                    <div class="std-col-12 fade">
+
+                        <div class="std-col-4 std-col-t-4 iframe" style="height: 300px;">
+                            <iframe width="33%" height="315" src="https://www.youtube.com/embed/6dVFy4d61gU?start=40"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="std-col-4 std-col-t-4 iframe" style="height: 300px;">
+                            <iframe width="33%" height="315" src="https://www.youtube.com/embed/qkIvs6Z-5Ms?start=370"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="std-col-4 std-col-t-4 iframe" style="height: 300px;">
+                            <iframe width="33%" height="315" src="https://www.youtube.com/embed/sSX9YlNuUpc?start=190"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                </section>
+                <section id="section-2">
+                    <div class="std-col-12 fade">
+
+                        <div class="std-col-4 std-col-t-4 iframe" style="height: 300px;">
+                            <iframe width="33%" height="315" src="https://www.youtube.com/embed/6dVFy4d61gU?start=40"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="std-col-4 std-col-t-4 iframe" style="height: 300px;">
+                            <iframe width="33%" height="315" src="https://www.youtube.com/embed/qkIvs6Z-5Ms?start=370"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="std-col-4 std-col-t-4 iframe" style="height: 300px;">
+                            <iframe width="33%" height="315" src="https://www.youtube.com/embed/sSX9YlNuUpc?start=190"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                    <div class="std-col-12 fade">
+                        <div class="std-col-4 std-col-t-4 iframe" style="height: 300px;">
+                            <iframe width="33%" height="315" src="https://www.youtube.com/embed/5h4qz6wTxOY?start=190"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="std-col-4 std-col-t-4 iframe" style="height: 300px;">
+                            <iframe width="33%" height="315" src="https://www.youtube.com/embed/ZAfOFJtVa3U?start=40"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="std-col-4 std-col-t-4 iframe" style="height: 300px;">
+                            <iframe width="33%" height="315" src="https://www.youtube.com/embed/p7Ywj9SFAVw?start=370"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+</div>
+<!-- Main Content Ends -->
+
+<div class=" std-section-bleed ">
+    <% include template/footer.ejs %>
+</div>
+
+<script>
+
+    var scrollY = 0;
+    var distance = 10;
+    var speed = 2;
+    function autoScrollTo(el) {
+        var currentY = window.pageYOffset;
+        var targetY = document.getElementById(el).offsetTop;
+        var bodyHeight = document.body.offsetHeight;
+        var yPos = currentY + window.innerHeight;
+        // recursively calling with speed
+        var animator = setTimeout('autoScrollTo(\''+el+'\')',speed);
+        if(yPos > bodyHeight){
+            clearTimeout(animator);
+        } else {
+            if(currentY < targetY-distance){
+                scrollY = currentY+distance;
+                window.scroll(0, scrollY);
+            } else {
+                clearTimeout(animator);
+            }
+        }
+    }
+    function resetScroller(el){
+        var currentY = window.pageYOffset;
+        var targetY = document.getElementById(el).offsetTop;
+        var animator = setTimeout('resetScroller(\''+el+'\')',speed);
+        if(currentY > targetY){
+            scrollY = currentY-distance;
+            window.scroll(0, scrollY);
+        } else {
+            clearTimeout(animator);
+        }
+        if (currentY == 0) {
+            // if we reach to the top of the page then clear the timeout
+            clearTimeout(animator);
+        }
+
+        window.addEventListener("keypress",function(){
+            clearTimeout(animator);
+        });
+        window.addEventListener("click",function(){
+            clearTimeout(animator);
+        });
+    }
+
+    /*
+     * Tabs
+     */
+    ;( function( window ) {
+        'use strict';
+        function extend( a, b ) {
+            for( var key in b ) {
+                if( b.hasOwnProperty( key ) ) {
+                    a[key] = b[key];
+                }
+            }
+            return a;
+        }
+
+        function sandeepTabs( el, options ) {
+            this.el = el;
+            this.options = extend( {}, this.options );
+            extend( this.options, options );
+            this._init();
+        }
+
+        sandeepTabs.prototype.options = {
+            start : 0
+        };
+
+        sandeepTabs.prototype._init = function() {
+            this.tabs = [].slice.call( this.el.querySelectorAll( 'nav > ul > li' ) );
+            this.items = [].slice.call( this.el.querySelectorAll( '.content > section' ) );
+            this.current = -1;
+            this._show();
+            this._initEvents();
+        };
+
+        sandeepTabs.prototype._initEvents = function() {
+            var self = this;
+            this.tabs.forEach( function( tab, idx ) {
+                tab.addEventListener( 'click', function( ev ) {
+                    ev.preventDefault();
+                    self._show( idx );
+                } );
+            } );
+        };
+
+        sandeepTabs.prototype._show = function( idx ) {
+            if( this.current >= 0 ) {
+                this.tabs[ this.current ].className = '';
+                this.items[ this.current ].className = '';
+            }
+            this.current = idx != undefined ? idx : this.options.start >= 0 && this.options.start < this.items.length ? this.options.start : 0;
+            this.tabs[ this.current ].className = 'tab-current';
+            this.items[ this.current ].className = 'content-current';
+        };
+
+        // adding to global namespace
+        window.sandeepTabs = sandeepTabs;
+
+    })( window );
+
+    new sandeepTabs( document.getElementById( 'section1' ) );
+
+</script>
+
+</body>
+</html>
