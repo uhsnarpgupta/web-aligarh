@@ -426,6 +426,7 @@ i {
     margin: 0 auto;
     padding: 1%;
     white-space: nowrap;
+    overflow-y: hidden;
 }
 
 .horizontal-scroll-wrapper > div {
