@@ -31,3 +31,8 @@
 .event-container-item:hover  .leftlay {
     width: 100%;
 }
+
+.achieverimage{
+    width: 100%;
+    height:310px;
+}

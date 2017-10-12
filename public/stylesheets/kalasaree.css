@@ -66,7 +66,7 @@
     position: relative;
     top: 50%;
     padding: 16px;
-    margin-top: -44%;
+    margin-top: -70%;
     color: white;
     font-weight: bold;
     font-size: 25px;
@@ -276,9 +276,6 @@
     cursor: pointer;
 }
 
-
-
-
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
@@ -423,4 +420,9 @@
     .fb-video{
         height: 13rem;
     }
+}
+
+.shopimages{
+    width: 600px;
+    height: 500px;
 }
