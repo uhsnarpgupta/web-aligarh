@@ -31,6 +31,24 @@
     overflow-x:hidden;
 }
 
+.verticalscroll1
+{
+    padding-top: 30px;
+    width: 100%;
+    height: 280px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+
+.verticalscroll2
+{
+    padding-top: 30px;
+    width: 100%;
+    height: 280px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+
 .mediabox:hover{
     box-shadow: 4px 4px 4px #ccc;
     transform: scale(1.1);
@@ -38,6 +56,14 @@
 
 @media only screen and (min-width: 768px) {
     .verticalscroll
+    {
+        height: 480px;
+    }
+    .verticalscroll1
+    {
+        height: 480px;
+    }
+    .verticalscroll2
     {
         height: 480px;
     }
@@ -75,5 +101,113 @@
 .title {
     color: grey;
 }
+
+.slideshow-container1 {
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.slideshow-container2 {
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+}
+
+/* Next & previous buttons */
+.prev-btnS1, .next-btnS1{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -43px;
+    margin-left: -22rem;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Position the "next button" to the right */
+.next-btnS1 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev-btnS1:hover, .next-btnS1:hover{
+    background-color: rgba(999,2,3,0.8);
+}
+
+.prev-btnS2, .next-btnS2{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -43px;
+    margin-left: -25rem;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Position the "next button" to the right */
+.next-btnS2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev-btnS2:hover, .next-btnS2:hover{
+    background-color: rgba(999,2,3,0.8);
+}
+
+.slides1 > img{
+    max-width: 70%;
+    max-height: 70%;
+}
+
+/*@media only screen and (min-width: 768px){
+    .prev-btnS1, .next-btnS1{
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -43px;
+        margin-left: -23rem;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        background-color: rgba(0,0,0,0.8);
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width:599px){
+    .prev-btnS1, .next-btnS1{
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -43px;
+        margin-left: -17rem;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        background-color: rgba(0,0,0,0.8);
+    }
+}*/
 
 

@@ -1,0 +1,154 @@
+.std-section-bleed > .hero-image{
+    background-image: url('../images/parallax/pattern.png');
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Next & previous buttons */
+.prev-btnS, .next-btnS{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -90px;
+    margin-left: -25rem;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Position the "next button" to the right */
+.next-btnS {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev-btnS:hover, .next-btnS:hover{
+    background-color: rgba(999,2,3,0.8);
+}
+
+.event-container{
+    /*margin-top: 5px;*/
+    /*margin-bottom: 5px;*/
+    /*width: 100%;*/
+    /*margin: 0 2.5%;*/
+    /*margin-bottom: 1%;*/
+    /*position: relative;*/
+
+    overflow: auto;
+    white-space: nowrap;
+    padding: 1%;
+
+    /*height: 9em;*/
+}
+
+.event-container-item {
+    width: 23%;
+    margin-left: 1%;
+    /*float: left;*/
+    position: relative;
+    height: 100%;
+    display: inline-block;
+    padding: 0 0.5%;
+    border: 1px solid #ddd;
+    background: #fff;
+    box-shadow: 2px 2px 2px #ccc;
+    padding-top: 10px;
+    border-left: 5px solid #675765;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    max-height: 600px;
+    transition: transform linear 0.2s;
+}
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/*.event-container div{*/
+/*display: inline-block;*/
+/*margin: 0.5em;*/
+/*white-space: normal;*/
+/*text-align: center;*/
+/*}*/
+
+.horizontal-scroll-wrapper {
+    overflow: auto;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1%;
+    white-space: nowrap;
+    overflow-y: hidden;
+}
+
+.horizontal-scroll-wrapper > div {
+    width: 22%;
+    margin-left: 2rem;
+    height: 300px;
+    display: inline-block;
+    padding: 0 0.5%;
+    border: 1px solid #ddd;
+    background: #fff;
+    box-shadow: 2px 2px 2px #ccc;
+    padding-top: 10px;
+    border-left: 5px solid #675765;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    max-height: 600px;
+    transition: transform linear 0.2s;
+}
+
+.imgachiever{
+    width: 200px;
+    height: 150px;
+}
+
+
