@@ -2,7 +2,7 @@
     background-image: url('../images/parallax/pattern.png');
 }
 
-.slideshow-container {
+.slideshow-container1 {
     max-width: 100%;
     position: relative;
     width: 100%;
@@ -32,7 +32,7 @@
     width: auto;
     padding: 16px;
     margin-top: -90px;
-    margin-left: -25rem;
+    margin-left: -11rem;
     color: white;
     font-weight: bold;
     font-size: 25px;
@@ -113,13 +113,6 @@ i {
     -webkit-transform: rotate(45deg);
 }
 
-/*.event-container div{*/
-/*display: inline-block;*/
-/*margin: 0.5em;*/
-/*white-space: normal;*/
-/*text-align: center;*/
-/*}*/
-
 .horizontal-scroll-wrapper {
     overflow: auto;
     width: 90%;
@@ -130,7 +123,7 @@ i {
 }
 
 .horizontal-scroll-wrapper > div {
-    width: 22%;
+    width: 70%;
     margin-left: 2rem;
     height: 300px;
     display: inline-block;
@@ -148,7 +141,116 @@ i {
 
 .imgachiever{
     width: 200px;
-    height: 150px;
+    height: 200px;
+}
+
+.imgachiever2{
+    width: 600px;
+    height: 500px;
+}
+
+.hero-image1 {
+    /* The image used */
+    background-image: url('../images/parallax/pattern.png');
+
+    /* Set a specific height */
+    height: 100%;
+    padding: 3%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+@media only screen and (min-width: 768px){
+    .prev-btnS{
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -90px;
+        margin-left: -23rem;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    .horizontal-scroll-wrapper > div {
+        width: 22%;
+        margin-left: 2rem;
+        height: 300px;
+        display: inline-block;
+        padding: 0 0.5%;
+        border: 1px solid #ddd;
+        background: #fff;
+        box-shadow: 2px 2px 2px #ccc;
+        padding-top: 10px;
+        border-left: 5px solid #675765;
+        border-radius: 5px;
+        padding-bottom: 10px;
+        max-height: 600px;
+        transition: transform linear 0.2s;
+    }
+}
+
+@media only screen and (min-width: 400px){
+    .prev-btnS{
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -90px;
+        margin-left: -12rem;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        background-color: rgba(0,0,0,0.8);
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .prev-btnS{
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -90px;
+        margin-left: -10rem;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        background-color: rgba(0,0,0,0.8);
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .prev-btnS{
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -90px;
+        margin-left: -40rem;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        background-color: rgba(0,0,0,0.8);
+    }
 }
 
 

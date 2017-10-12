@@ -32,7 +32,7 @@
 .modal-content {
     margin: auto;
     display: block;
-    width: 50%;
+    width: 100%;
     max-width: 400px;
 }
 
@@ -112,7 +112,7 @@
     position: relative;
     top: 50%;
     padding: 16px;
-    margin-top: -57%;
+    margin-top: -71%;
     color: white;
     font-weight: bold;
     font-size: 25px;
@@ -137,5 +137,43 @@
 
 /* On hover, add a black background color with a little bit see-through */
 .prev-btn2:hover, .next-btn2:hover {
+    background-color: rgba(999,2,3,0.8);
+}
+
+.podimages{
+    width: 600px;
+    height: 500px;
+}
+
+.prev-btn3, .next-btn3 {
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    padding: 16px;
+    margin-top: -106%;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.prev-btn3{
+    float: left;
+}
+
+.next-btn3{
+    float: right;
+}
+
+/* Position the "next button" to the right */
+.next-btn3{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev-btn3:hover, .next-btn3:hover {
     background-color: rgba(999,2,3,0.8);
 }
