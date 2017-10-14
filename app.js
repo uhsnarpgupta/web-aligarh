@@ -86,7 +86,7 @@ app.use('/getresult', engtest);
 
 //Shopping Routes
 app.use('/swadeshi',swadeshi);
-app.use('/kalasaree',kalaSaree);
+app.use('/femina',kalaSaree);
 app.use('/sheeshmahal',sheeshMahal);
 app.use('/raymonds',raymonds);
 app.use('/adidas',adidas);
