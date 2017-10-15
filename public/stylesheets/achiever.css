@@ -24,34 +24,6 @@
     background-color: #717171;
 }
 
-/* Next & previous buttons */
-.prev-btnS, .next-btnS{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -90px;
-    margin-left: -11rem;
-    color: white;
-    font-weight: bold;
-    font-size: 25px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    background-color: rgba(0,0,0,0.8);
-}
-
-/* Position the "next button" to the right */
-.next-btnS {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev-btnS:hover, .next-btnS:hover{
-    background-color: rgba(999,2,3,0.8);
-}
-
 .event-container{
     /*margin-top: 5px;*/
     /*margin-bottom: 5px;*/
@@ -165,20 +137,32 @@ i {
 }
 
 @media only screen and (min-width: 768px){
-    .prev-btnS{
+    /* Next & previous buttons */
+    .prev-btnS, .next-btnS{
         cursor: pointer;
         position: absolute;
         top: 50%;
         width: auto;
         padding: 16px;
         margin-top: -90px;
-        margin-left: -23rem;
+        margin-left: -11rem;
         color: white;
         font-weight: bold;
         font-size: 25px;
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
         background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Position the "next button" to the right */
+    .next-btnS {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev-btnS:hover, .next-btnS:hover{
+        background-color: rgba(999,2,3,0.8);
     }
 
     .horizontal-scroll-wrapper > div {
@@ -197,53 +181,22 @@ i {
         max-height: 600px;
         transition: transform linear 0.2s;
     }
-}
 
-@media only screen and (min-width: 400px){
-    .prev-btnS{
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 16px;
-        margin-top: -90px;
-        margin-left: -12rem;
-        color: white;
-        font-weight: bold;
-        font-size: 25px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        background-color: rgba(0,0,0,0.8);
-    }
-}
-
-@media only screen and (max-width: 320px){
-    .prev-btnS{
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 16px;
-        margin-top: -90px;
-        margin-left: -10rem;
-        color: white;
-        font-weight: bold;
-        font-size: 25px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        background-color: rgba(0,0,0,0.8);
+    .achieverdivimg{
+        margin-left: 9%;
     }
 }
 
 @media only screen and (min-width: 1024px){
-    .prev-btnS{
+    /* Next & previous buttons */
+    .prev-btnS, .next-btnS{
         cursor: pointer;
         position: absolute;
         top: 50%;
         width: auto;
         padding: 16px;
-        margin-top: -90px;
-        margin-left: -43.5rem;
+        margin-top: -305px;
+        margin-left: -30rem;
         color: white;
         font-weight: bold;
         font-size: 25px;
@@ -251,6 +204,57 @@ i {
         border-radius: 0 3px 3px 0;
         background-color: rgba(0,0,0,0.8);
     }
+
+    /* Position the "next button" to the right */
+    .next-btnS {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev-btnS:hover, .next-btnS:hover{
+        background-color: rgba(999,2,3,0.8);
+    }
+
+    .achieverdivimg{
+        margin-left: 9%;
+    }
 }
+
+@media only screen and (min-width: 1366px){
+    /* Next & previous buttons */
+    .prev-btnS, .next-btnS{
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -305px;
+        margin-left: -40rem;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Position the "next button" to the right */
+    .next-btnS {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev-btnS:hover, .next-btnS:hover{
+        background-color: rgba(999,2,3,0.8);
+    }
+
+    .achieverdivimg{
+        margin-left: 9%;
+    }
+}
+
+
 
 
