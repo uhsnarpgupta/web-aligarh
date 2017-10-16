@@ -7,6 +7,14 @@
       "inquiry_mobile": "6027152885",
       "inquiry_country": "usa",
       "inquiry_message": "Hi, Please tell me the procedure of sending an advertisement."
+    },
+    "Sun Oct 15 2017 22:13:03 GMT-0400 (Eastern Daylight Time)": {
+      "inquiry_fname": "Mayank",
+      "inquiry_lname": "Varshney",
+      "inquiry_email": "msvarshney@gmail.com",
+      "inquiry_mobile": "6027486510",
+      "inquiry_country": "usa",
+      "inquiry_message": "Testing the JSON file"
     }
   }
 }
