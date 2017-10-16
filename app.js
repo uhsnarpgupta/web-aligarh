@@ -42,7 +42,7 @@ var restaurantnew = require('./routes/restaurantnew');
 var comingsoon = require('./routes/comingsoon');
 
 var contactus = require('./routes/contactus');
-var formcontactus = require('./routes/form-contactus');
+var formcontactus = require('./routes/contactus');
 
 var privacypolicy = require('./routes/privacypolicy');
 var aboutaligarh = require('./routes/aboutaligarh');
@@ -86,7 +86,7 @@ app.use('/getresult', engtest);
 
 //Shopping Routes
 app.use('/swadeshi',swadeshi);
-app.use('/kalasaree',kalaSaree);
+app.use('/femina',kalaSaree);
 app.use('/sheeshmahal',sheeshMahal);
 app.use('/raymonds',raymonds);
 app.use('/adidas',adidas);

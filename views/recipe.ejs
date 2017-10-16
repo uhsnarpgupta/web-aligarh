@@ -384,6 +384,7 @@
         captionText.innerHTML = alt;
         document.getElementById('scndcontainer').style.display = 'none';
         document.getElementById('thrdcontainer').style.display = 'none';
+        scrollWin(0, 600);
     }
 
     function scndcontshow(image, data) {
@@ -397,6 +398,7 @@
         captionText.innerHTML = alt;
         document.getElementById('frstcontainer').style.display = 'none';
         document.getElementById('thrdcontainer').style.display = 'none';
+        scrollWin(0, 600);
     }
 
     function thrdcontshow(image, data) {
@@ -410,6 +412,7 @@
         captionText.innerHTML = alt;
         document.getElementById('frstcontainer').style.display = 'none';
         document.getElementById('scndcontainer').style.display = 'none';
+        scrollWin(0, 600);
     }
 
     /*function frthcontshow(image, data) {
@@ -474,6 +477,11 @@
         slides[slideIndex1 - 1].style.display = "block";
     }
 
+</script>
+<script>
+    function scrollWin(x, y) {
+        window.scrollBy(x, y);
+    }
 </script>
 </html>
 

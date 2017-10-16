@@ -8,6 +8,7 @@
     <link rel='stylesheet' href='/stylesheets/restaurant.css'/>
     <link rel='stylesheet' href='/stylesheets/achiever.css'/>
     <link rel='stylesheet' href='/stylesheets/modal.css'/>
+    <link rel="stylesheet" href="/stylesheets/walloffame.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -51,86 +52,248 @@
                     <span class="dot" onclick="currentSlide(4)"></span>
                 </div>
 
-                <div class="std-col-12 std-section-bleed">
-                    <div class="std-col-4" onclick="fullerimage('1')">
-                        <img src="/images/achiever/1.jpg">
-                    </div>
-                    <div class="std-col-4" onclick="fullerimage('2')">
-                        <img src="/images/achiever/2.jpg">
-                    </div>
-                    <div class="std-col-4" onclick="fullerimage('4')">
-                        <img src="/images/achiever/4.jpg">
-                    </div>
+                <div class="std-section-fullWidth">
+                    <h1 style="font-family: 'Bitstream Vera Sans Bold'">
+                        Featured Products
+                    </h1>
                 </div>
-                <div class="std-col-12 std-section-bleed">
-                    <div class="std-col-4" onclick="fullerimage('5')">
-                        <img src="/images/achiever/5.jpg">
+
+                <section>
+                    <div id="section1" class="tabs">
+                        <nav>
+                            <ul>
+                                <li><a href="#section-1" class="icon-shop"
+                                       style="color: black"><span>Handles</span></a>
+                                </li>
+                                <li><a href="#section-2" class="icon-shop"
+                                       style="color: black"><span>Door Locks</span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="content">
+                            <section id="section-1">
+                                <div class="std-col-12 std-section-bleed">
+                                    <div class="std-col-3 std-col-t-3 mediabox achieverdivimg" onclick="scrollerchange('1')">
+                                        <img src="/images/achiever/2.jpg">
+                                    </div>
+                                    <div class="std-col-3 std-col-t-3 mediabox" onclick="scrollerchange('2')">
+                                        <img src="/images/achiever/7.jpg">
+                                    </div>
+                                    <div class="std-col-3 std-col-t-3 mediabox" onclick="scrollerchange('3')">
+                                        <img src="/images/achiever/11.jpg">
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="section-2">
+                                <div class="std-section-fullWidth">
+                                    <div class="horizontal-scroll-wrapper">
+                                        <div class="event-container-item">
+                                            <div class="std-col-12">
+                                                <img class="imgachiever" src="/images/achiever/1.jpg">
+                                            </div>
+                                            <div class="std-col-12">
+                                                <button class="button button-purple" onclick="fullerimage('1')">View</button>
+                                            </div>
+                                        </div>
+                                        <div class="event-container-item">
+                                            <div class="std-col-12">
+                                                <img class="imgachiever" src="/images/achiever/4.jpg">
+                                            </div>
+                                            <div class="std-col-12">
+                                                <button class="button button-purple" onclick="fullerimage('4')">View</button>
+                                            </div>
+                                        </div>
+                                        <div class="event-container-item">
+                                            <div class="std-col-12">
+                                                <img class="imgachiever" src="/images/achiever/5.jpg">
+                                            </div>
+                                            <div class="std-col-12">
+                                                <button class="button button-purple" onclick="fullerimage('5')">View</button>
+                                            </div>
+                                        </div>
+                                        <div class="event-container-item">
+                                            <div class="std-col-12">
+                                                <img class="imgachiever" src="/images/achiever/8.jpg">
+                                            </div>
+                                            <div class="std-col-12">
+                                                <button class="button button-purple" onclick="fullerimage('8')">View</button>
+                                            </div>
+                                        </div>
+                                        <div class="event-container-item">
+                                            <div class="std-col-12">
+                                                <img class="imgachiever" src="/images/achiever/17.jpg">
+                                            </div>
+                                            <div class="std-col-12">
+                                                <button class="button button-purple" onclick="fullerimage('17')">View</button>
+                                            </div>
+                                        </div>
+                                        <div class="event-container-item">
+                                            <div class="std-col-12">
+                                                <img class="imgachiever" src="/images/achiever/18.jpg">
+                                            </div>
+                                            <div class="std-col-12">
+                                                <button class="button button-purple" onclick="fullerimage('18')">View</button>
+                                            </div>
+                                        </div>
+                                        <div class="event-container-item">
+                                            <div class="std-col-12">
+                                                <img class="imgachiever" src="/images/achiever/23.jpg">
+                                            </div>
+                                            <div class="std-col-12">
+                                                <button class="button button-purple" onclick="fullerimage('23')">View</button>
+                                            </div>
+                                        </div>
+                                        <div class="event-container-item">
+                                            <div class="std-col-12">
+                                                <img class="imgachiever" src="/images/achiever/24.jpg">
+                                            </div>
+                                            <div class="std-col-12">
+                                                <button class="button button-purple" onclick="fullerimage('24')">View</button>
+                                            </div>
+                                        </div>
+                                        <div class="event-container-item">
+                                            <div class="std-col-12">
+                                                <img class="imgachiever" src="/images/achiever/25.jpg">
+                                            </div>
+                                            <div class="std-col-12">
+                                                <button class="button button-purple" onclick="fullerimage('25')">View</button>
+                                            </div>
+                                        </div>
+                                        <div class="event-container-item">
+                                            <div class="std-col-12">
+                                                <img class="imgachiever" src="/images/achiever/28.jpg">
+                                            </div>
+                                            <div class="std-col-12">
+                                                <button class="button button-purple" onclick="fullerimage('28')">View</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
                     </div>
-                    <div class="std-col-4" onclick="fullerimage('7')">
-                        <img src="/images/achiever/7.jpg">
-                    </div>
-                    <div class="std-col-4" onclick="fullerimage('8')">
-                        <img src="/images/achiever/8.jpg">
-                    </div>
-                </div>
+                </section>
             </div>
             <!--End Slide Show-->
-        </div>
-        <div class="std-section-fullWidth">
-            <h1 style="font-family: 'Bitstream Vera Sans Bold'">
-                Featured Products
-            </h1>
         </div>
     </div>
 
     <div class="std-section-fullWidth">
-        <div class="horizontal-scroll-wrapper">
+        <div class="horizontal-scroll-wrapper" id="container1" style="display: none;">
             <div class="event-container-item">
                 <div class="std-col-12">
-                    <img class="imgachiever" src="/images/achiever/9.jpg">
+                    <img class="imgachiever" src="/images/achiever/21.jpg">
                 </div>
                 <div class="std-col-12">
-                    <button class="button button-purple" onclick="window.open('/comingsoon')">View</button>
+                    <button class="button button-purple" onclick="fullerimage('21')">View</button>
                 </div>
             </div>
             <div class="event-container-item">
                 <div class="std-col-12">
-                    <img class="imgachiever" src="/images/achiever/12.jpg">
+                    <img class="imgachiever" src="/images/achiever/36.jpg">
                 </div>
                 <div class="std-col-12">
-                    <button class="button button-purple" onclick="window.open('/comingsoon')">View</button>
-                </div>
-            </div>
-            <div class="event-container-item">
-                <div class="std-col-12">
-                    <img class="imgachiever" src="/images/achiever/11.jpg">
-                </div>
-                <div class="std-col-12">
-                    <button class="button button-purple" onclick="window.open('/comingsoon')">View</button>
+                    <button class="button button-purple" onclick="fullerimage('36')">View</button>
                 </div>
             </div>
             <div class="event-container-item">
                 <div class="std-col-12">
-                    <img class="imgachiever" src="/images/achiever/2.jpg">
+                    <img class="imgachiever" src="/images/achiever/37.jpg">
                 </div>
                 <div class="std-col-12">
-                    <button class="button button-purple" onclick="window.open('/comingsoon')">View</button>
-                </div>
-            </div>
-            <div class="event-container-item">
-                <div class="std-col-12">
-                    <img class="imgachiever" src="/images/achiever/4.jpg">
-                </div>
-                <div class="std-col-12">
-                    <button class="button button-purple" onclick="window.open('/comingsoon')">View</button>
+                    <button class="button button-purple" onclick="fullerimage('37')">View</button>
                 </div>
             </div>
             <div class="event-container-item">
                 <div class="std-col-12">
-                    <img class="imgachiever" src="/images/achiever/13.jpg">
+                    <img class="imgachiever" src="/images/achiever/38.jpg">
                 </div>
                 <div class="std-col-12">
-                    <button class="button button-purple" onclick="window.open('/comingsoon')">View</button>
+                    <button class="button button-purple" onclick="fullerimage('38')">View</button>
+                </div>
+            </div>
+            <div class="event-container-item">
+                <div class="std-col-12">
+                    <img class="imgachiever" src="/images/achiever/39.jpg">
+                </div>
+                <div class="std-col-12">
+                    <button class="button button-purple" onclick="fullerimage('39')">View</button>
+                </div>
+            </div>
+            <div class="event-container-item">
+                <div class="std-col-12">
+                    <img class="imgachiever" src="/images/achiever/40.jpg">
+                </div>
+                <div class="std-col-12">
+                    <button class="button button-purple" onclick="fullerimage('40')">View</button>
+                </div>
+            </div>
+            <div class="event-container-item">
+                <div class="std-col-12">
+                    <img class="imgachiever" src="/images/achiever/41.jpg">
+                </div>
+                <div class="std-col-12">
+                    <button class="button button-purple" onclick="fullerimage('41')">View</button>
+                </div>
+            </div>
+            <div class="event-container-item">
+                <div class="std-col-12">
+                    <img class="imgachiever" src="/images/achiever/42.jpg">
+                </div>
+                <div class="std-col-12">
+                    <button class="button button-purple" onclick="fullerimage('42')">View</button>
+                </div>
+            </div>
+            <div class="event-container-item">
+                <div class="std-col-12">
+                    <img class="imgachiever" src="/images/achiever/43.jpg">
+                </div>
+                <div class="std-col-12">
+                    <button class="button button-purple" onclick="fullerimage('43')">View</button>
+                </div>
+            </div>
+            <div class="event-container-item">
+                <div class="std-col-12">
+                    <img class="imgachiever" src="/images/achiever/44.jpg">
+                </div>
+                <div class="std-col-12">
+                    <button class="button button-purple" onclick="fullerimage('44')">View</button>
+                </div>
+            </div>
+        </div>
+        <div class="horizontal-scroll-wrapper" id="container2" style="display: none;">
+            <div class="event-container-item">
+                <div class="std-col-12">
+                    <img class="imgachiever" src="/images/achiever/27.jpg">
+                </div>
+                <div class="std-col-12">
+                    <button class="button button-purple" onclick="fullerimage('27')">View</button>
+                </div>
+            </div>
+            <div class="event-container-item">
+                <div class="std-col-12">
+                    <img class="imgachiever" src="/images/achiever/34.jpg">
+                </div>
+                <div class="std-col-12">
+                    <button class="button button-purple" onclick="fullerimage('34')">View</button>
+                </div>
+            </div>
+        </div>
+        <div class="horizontal-scroll-wrapper" id="container3" style="display: none;">
+            <div class="event-container-item">
+                <div class="std-col-12">
+                    <img class="imgachiever" src="/images/achiever/32.jpg">
+                </div>
+                <div class="std-col-12">
+                    <button class="button button-purple" onclick="fullerimage('32')">View</button>
+                </div>
+            </div>
+            <div class="event-container-item">
+                <div class="std-col-12">
+                    <img class="imgachiever" src="/images/achiever/33.jpg">
+                </div>
+                <div class="std-col-12">
+                    <button class="button button-purple" onclick="fullerimage('33')">View</button>
                 </div>
             </div>
         </div>
@@ -150,7 +313,7 @@
                 Aligarh-202001
             </h2>
             <h3>
-                phone- +91 8077713234
+               <b>Mobile- +91 807 771 3234</b>
             </h3>
 
         </div>
@@ -255,10 +418,9 @@
     var modal = document.getElementById('myModal');
     var modalImg = document.getElementById("img01");
 
-    function  fullerimage(value, data) {
+    function  fullerimage(value) {
         var image = value;
         var src = "/images/achiever/" + image + ".jpg";
-        var alt = data;
         modal.style.display = "block";
         modalImg.src = src;
     }
@@ -269,6 +431,163 @@
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
         modal.style.display = "none";
+    }
+
+</script>
+
+<script>
+
+    var scrollY = 0;
+    var distance = 10;
+    var speed = 2;
+    function autoScrollTo(el) {
+        document.getElementById('container1').style.display = 'none';
+        document.getElementById('container2').style.display = 'none';
+        document.getElementById('container3').style.display = 'none';
+        var currentY = window.pageYOffset;
+        var targetY = document.getElementById(el).offsetTop;
+        var bodyHeight = document.body.offsetHeight;
+        var yPos = currentY + window.innerHeight;
+        // recursively calling with speed
+        var animator = setTimeout('autoScrollTo(\''+el+'\')',speed);
+        if(yPos > bodyHeight){
+            clearTimeout(animator);
+        } else {
+            if(currentY < targetY-distance){
+                scrollY = currentY+distance;
+                window.scroll(0, scrollY);
+            } else {
+                clearTimeout(animator);
+            }
+        }
+    }
+    function resetScroller(el){
+        document.getElementById('container1').style.display = 'none';
+        document.getElementById('container2').style.display = 'none';
+        document.getElementById('container3').style.display = 'none';
+        var currentY = window.pageYOffset;
+        var targetY = document.getElementById(el).offsetTop;
+        var animator = setTimeout('resetScroller(\''+el+'\')',speed);
+        if(currentY > targetY){
+            scrollY = currentY-distance;
+            window.scroll(0, scrollY);
+        } else {
+            clearTimeout(animator);
+        }
+        if (currentY == 0) {
+            // if we reach to the top of the page then clear the timeout
+            clearTimeout(animator);
+        }
+
+        window.addEventListener("keypress",function(){
+            document.getElementById('container1').style.display = 'none';
+            document.getElementById('container2').style.display = 'none';
+            document.getElementById('container3').style.display = 'none';
+            clearTimeout(animator);
+        });
+        window.addEventListener("click",function(){
+            document.getElementById('container1').style.display = 'none';
+            document.getElementById('container2').style.display = 'none';
+            document.getElementById('container3').style.display = 'none';
+            clearTimeout(animator);
+        });
+    }
+
+    /*
+     * Tabs
+     */
+    ;( function( window ) {
+        'use strict';
+        function extend( a, b ) {
+            document.getElementById('container1').style.display = 'none';
+            document.getElementById('container2').style.display = 'none';
+            document.getElementById('container3').style.display = 'none';
+            for( var key in b ) {
+                if( b.hasOwnProperty( key ) ) {
+                    a[key] = b[key];
+                }
+            }
+            return a;
+        }
+
+        function sandeepTabs( el, options ) {
+            document.getElementById('container1').style.display = 'none';
+            document.getElementById('container2').style.display = 'none';
+            document.getElementById('container3').style.display = 'none';
+            this.el = el;
+            this.options = extend( {}, this.options );
+            extend( this.options, options );
+            this._init();
+        }
+
+        sandeepTabs.prototype.options = {
+            start : 0
+        };
+
+        sandeepTabs.prototype._init = function() {
+            document.getElementById('container1').style.display = 'none';
+            document.getElementById('container2').style.display = 'none';
+            document.getElementById('container3').style.display = 'none';
+            this.tabs = [].slice.call( this.el.querySelectorAll( 'nav > ul > li' ) );
+            this.items = [].slice.call( this.el.querySelectorAll( '.content > section' ) );
+            this.current = -1;
+            this._show();
+            this._initEvents();
+        };
+
+        sandeepTabs.prototype._initEvents = function() {
+            document.getElementById('container1').style.display = 'none';
+            document.getElementById('container2').style.display = 'none';
+            document.getElementById('container3').style.display = 'none';
+            var self = this;
+            this.tabs.forEach( function( tab, idx ) {
+                tab.addEventListener( 'click', function( ev ) {
+                    ev.preventDefault();
+                    self._show( idx );
+                } );
+            } );
+        };
+
+        sandeepTabs.prototype._show = function( idx ) {
+            document.getElementById('container1').style.display = 'none';
+            document.getElementById('container2').style.display = 'none';
+            document.getElementById('container3').style.display = 'none';
+            if( this.current >= 0 ) {
+                this.tabs[ this.current ].className = '';
+                this.items[ this.current ].className = '';
+            }
+            this.current = idx != undefined ? idx : this.options.start >= 0 && this.options.start < this.items.length ? this.options.start : 0;
+            this.tabs[ this.current ].className = 'tab-current';
+            this.items[ this.current ].className = 'content-current';
+        };
+
+        // adding to global namespace
+        window.sandeepTabs = sandeepTabs;
+
+    })( window );
+
+    new sandeepTabs( document.getElementById( 'section1' ) );
+
+</script>
+
+<script>
+
+    function scrollerchange(val) {
+        if (val == '1') {
+            document.getElementById('container1').style.display = 'block';
+            document.getElementById('container2').style.display = 'none';
+            document.getElementById('container3').style.display = 'none';
+        }
+        else  if (val == '2') {
+            document.getElementById('container2').style.display = 'block';
+            document.getElementById('container1').style.display = 'none';
+            document.getElementById('container3').style.display = 'none';
+        }
+        else  if (val == '3') {
+            document.getElementById('container3').style.display = 'block';
+            document.getElementById('container1').style.display = 'none';
+            document.getElementById('container2').style.display = 'none';
+        }
     }
 
 </script>
