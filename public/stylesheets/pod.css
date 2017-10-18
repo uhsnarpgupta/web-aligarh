@@ -177,3 +177,8 @@
 .prev-btn3:hover, .next-btn3:hover {
     background-color: rgba(999,2,3,0.8);
 }
+
+#main2 {
+    transition: margin-left .5s;
+    padding: 25px;
+}
