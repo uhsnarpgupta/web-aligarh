@@ -27,7 +27,7 @@ body, html {
 }
 
 .std-section-bleed > .hero-image{
-    background-image: url('../images/anim6.gif');
+    background-image: url('../images/banners/giphy2.gif');
 }
 
 .std-col-12 > .std-col-4{
@@ -172,7 +172,7 @@ div > .hero-text{
     }
 
     .std-section-bleed > .hero-image{
-        background-image: url('../images/anim6.gif');
+        background-image: url('../images/banners/source.gif');
     }
 
     .page-slot{
