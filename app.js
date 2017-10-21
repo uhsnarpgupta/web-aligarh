@@ -51,6 +51,8 @@ var lock = require('./routes/locks');
 var achiever = require('./routes/achiever');
 var famewall = require('./routes/famewall');
 
+var rangoli = require('./routes/rangoli');
+
 var app = express();
 
 // view engine setup
@@ -145,6 +147,8 @@ app.use('/achiever',achiever);
 
 //wall of fame
 app.use('/famewall',famewall);
+
+app.use('/rangoli',rangoli);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
