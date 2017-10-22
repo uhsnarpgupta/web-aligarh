@@ -148,7 +148,9 @@ app.use('/achiever',achiever);
 //wall of fame
 app.use('/famewall',famewall);
 
+//Events
 app.use('/rangoli',rangoli);
+app.use('/like1',rangoli);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

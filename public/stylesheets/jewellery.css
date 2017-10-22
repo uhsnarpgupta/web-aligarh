@@ -166,9 +166,10 @@ h2 span {
 }
 
 .imgdj{
-    width: 500px;
-    height: 400px;
+    width: 350px;
+    /*height: 400px;*/
 }
+
 
 .modal-contentdj {
     margin: auto;
@@ -177,7 +178,7 @@ h2 span {
 
 .imgdj1{
     width: 200px;
-    height: 300px;
+    height: 400px;
 }
 
 .imgdjnecklace{
@@ -271,6 +272,14 @@ h2 span {
         width: 100%;
         font-weight: normal;
     }
+
+    .imgdj{
+        width: 350px;
+        /*height: 400px;*/
+    }
+
+
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -293,6 +302,12 @@ h2 span {
     .res-div-temp2 {
         margin-top: 2%;
     }
+
+    .imgdj{
+        width: 500px;
+        /*height: 400px;*/
+    }
+
 }
 
 @media only screen and (min-width: 300px) and (max-width:599px){
@@ -304,6 +319,12 @@ h2 span {
         width: 75px;
         height: 75px;
     }
+
+    .imgdj{
+        width: 350px;
+        /*height: 400px;*/
+    }
+
 }
 
 
