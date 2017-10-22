@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/standards.css"/>
     <link rel="stylesheet" href="/stylesheets/kalasaree.css">
     <link rel='stylesheet' href='/stylesheets/jewellery.css'/>
-    <link rel='stylesheet' href='/stylesheets/shopnew.css'/>
+    <!--<link rel='stylesheet' href='/stylesheets/shopnew.css'/>-->
     <link rel="stylesheet" href="/stylesheets/pod.css">
     <link rel="stylesheet" href="/stylesheets/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -66,35 +66,35 @@
         }
         function changecolor(evt,tab) {
             var tabname = document.getElementById(tab);
-            if(tabname.id==='tab1'){
+            if(tabname.id =='tab1'){
                 document.getElementById('tab1').style.backgroundColor = "#f1aa90";
                 document.getElementById('tab2').style.backgroundColor = "transparent";
                 document.getElementById('tab3').style.backgroundColor = "transparent";
                 document.getElementById('tab4').style.backgroundColor = "transparent";
                 document.getElementById('tab5').style.backgroundColor = "transparent";
             }
-            else if(tabname.id==='tab2'){
+            else if(tabname.id =='tab2'){
                 document.getElementById('tab2').style.backgroundColor = "#f1aa90";
                 document.getElementById('tab1').style.backgroundColor = "transparent";
                 document.getElementById('tab3').style.backgroundColor = "transparent";
                 document.getElementById('tab4').style.backgroundColor = "transparent";
                 document.getElementById('tab5').style.backgroundColor = "transparent";
             }
-            else if(tabname.id==='tab3'){
+            else if(tabname.id =='tab3'){
                 document.getElementById('tab3').style.backgroundColor = "#f1aa90";
                 document.getElementById('tab1').style.backgroundColor = "transparent";
                 document.getElementById('tab2').style.backgroundColor = "transparent";
                 document.getElementById('tab4').style.backgroundColor = "transparent";
                 document.getElementById('tab5').style.backgroundColor = "transparent";
             }
-            else if(tabname.id==='tab4'){
+            else if(tabname.id =='tab4'){
                 document.getElementById('tab4').style.backgroundColor = "#f1aa90";
                 document.getElementById('tab1').style.backgroundColor = "transparent";
                 document.getElementById('tab2').style.backgroundColor = "transparent";
                 document.getElementById('tab3').style.backgroundColor = "transparent";
                 document.getElementById('tab5').style.backgroundColor = "transparent";
             }
-            else if(tabname.id==='tab5'){
+            else if(tabname.id =='tab5'){
                 document.getElementById('tab5').style.backgroundColor = "#f1aa90";
                 document.getElementById('tab1').style.backgroundColor = "transparent";
                 document.getElementById('tab2').style.backgroundColor = "transparent";
@@ -108,7 +108,7 @@
         }
     </script>
 </head>
-<body bgcolor="#f3f3f3" style="text-align: start" onload="setdiv();">
+<body bgcolor="#f3f3f3" style="text-align: start; overflow-x: hidden;" onload="setdiv();">
 
 <div>
     <% include template/navigationBar.ejs %>
@@ -149,7 +149,7 @@
     </div>
 
     <!-- Grid -->
-    <div class="std-section-fullWidth" style="margin-top: 2%">
+    <div class="std-section-fullWidth res-div-temp2">
 
         <div class="std-col-12">
             <div class="mySlides" style="background-color: #d31865;">
@@ -173,19 +173,19 @@
         </div>
 
         <div class="std-col-12 std-section-bleed">
-            <div class="std-col-4 std-col-t-4 mediabox">
+            <div class="std-col-4 std-col-t-4 mediabox" onclick="fullerimage('dj1')">
                 <img src="/images/jewellery/dj1.jpg">
             </div>
-            <div class="std-col-4 std-col-t-4 mediabox">
+            <div class="std-col-4 std-col-t-4 mediabox" onclick="fullerimage('dj2')">
                 <img src="/images/jewellery/dj2.jpg">
             </div>
-            <div class="std-col-4 std-col-t-4 mediabox">
+            <div class="std-col-4 std-col-t-4 mediabox" onclick="fullerimage('dj3')">
                 <img src="/images/jewellery/dj3.jpg">
             </div>
         </div>
 
         <div class="std-col-12">
-            <h2><span>EXPLORE BY CATEGORY</span></h2>
+            <h2><span>EXPLORE BY CATEGORY IN JEWELLERY</span></h2>
         </div>
 
         <div class="std-col-12 std-col-t-12 res-div-temp">
@@ -206,394 +206,418 @@
             </div>
             <div class="std-col-2 std-col-t-4" id="tab4" onclick="changecolor(event,'tab4');">
                 <button class="buttonlink" id="button4" onclick="handleOpenClose(event,'divd');">
-                    <strong>Nose Pins</strong>
+                    <strong>Necklaces</strong>
                 </button>
             </div>
             <div class="std-col-2 std-col-t-4" id="tab5" onclick="changecolor(event,'tab5');">
                 <button class="buttonlink" id="button5" onclick="handleOpenClose(event,'dive');">
-                    <strong>Mangalsutras</strong>
+                    <strong>Bangels</strong>
                 </button>
             </div>
         </div>
 
-    </div>
+        <div class="std-section-fullWidth">
+            <div class="horizontal-scroll-wrapper" style="position: relative; display: none;" id="diva">
+                <!--<div class="std-col-12 std-section-bleed res-div-temp" style="margin-left: 12.5%; margin-right: 5%;">-->
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/j1.jpg">
+                        <div class="underlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('j1')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/j2.jpg">
+                        <div class="overlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('j2')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/j3.jpg">
+                        <div class="underlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('j3')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/j4.jpg">
+                        <div class="overlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('j4')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/j5.jpg">
+                        <div class="underlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('j5')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdjnecklace" src="/images/jewellery/j6.jpg">
+                        <div class="overlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('j6')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/j7.jpg">
+                        <div class="overlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('j7')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/j8.jpg">
+                        <div class="overlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('j8')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/j9.jpg">
+                        <div class="overlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('j9')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/j10.jpg">
+                        <div class="overlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('j10')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal-scroll-wrapper" style="position: relative; display: none;" id="divb">
+                <!--<div class="std-col-12 std-section-bleed res-div-temp" style="margin-left: 12.5%; margin-right: 5%;">-->
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/e1.jpg">
+                        <div class="rightlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('e1')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/e2.jpg">
+                        <div class="leftlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('e2')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/e3.jpg">
+                        <div class="rightlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('e3')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/e4.jpg">
+                        <div class="leftlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('e4')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal-scroll-wrapper" style="position: relative; display: none;" id="divc">
+                <!--<div class="std-col-12 std-section-bleed res-div-temp" style="margin-left: 12.5%; margin-right: 5%;">-->
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/p1.jpg">
+                        <div class="overlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('p1')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/p2.jpg">
+                        <div class="underlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('p2')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/p3.jpg">
+                        <div class="overlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('p3')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/p4.jpg">
+                        <div class="underlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('p4')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal-scroll-wrapper" style="position: relative; display: none;" id="divd">
+                <!--<div class="std-col-12 std-section-bleed res-div-temp" style="margin-left: 12.5%; margin-right: 5%;">-->
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdjnecklace" src="/images/jewellery/dj4.jpg">
+                        <div class="rightlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('dj4')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdjnecklace" src="/images/jewellery/dj5.jpg" onclick="fullerimage('dj5')">
+                        <div class="leftlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdjnecklace" src="/images/jewellery/dj6.jpg" onclick="fullerimage('dj6')">
+                        <div class="rightlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdjnecklace" src="/images/jewellery/dj7.jpg" onclick="fullerimage('dj7')">
+                        <div class="leftlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdjnecklace" src="/images/jewellery/dj8.jpg" onclick="fullerimage('dj8')">
+                        <div class="rightlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdjnecklace" src="/images/jewellery/dj9.jpg" onclick="fullerimage('dj9')">
+                        <div class="leftlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal-scroll-wrapper" style="position: relative; display: none;" id="dive">
+                <!--<div class="std-col-12 std-section-bleed res-div-temp" style="margin-left: 12.5%; margin-right: 5%;">-->
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/b1.jpg">
+                        <div class="underlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('b1')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/b2.jpg">
+                        <div class="overlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('b2')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/b3.jpg">
+                        <div class="underlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('b3')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/b4.jpg">
+                        <div class="overlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('b4')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container-item center-align">
+                    <div style="margin: 2%;">
+                        <img class="imgdj1" src="/images/jewellery/b5.jpg">
+                        <div class="underlaydj">
+                            <div class="txtdj"><br>
+                                <div class="button" style="margin-top: 3rem" onclick="fullerimage('b5')">
+                                    <p style="color:#fefefe; font-family: 'Lato, sans-serif';">View!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <div class="std-section-fullWidth">
-        <div class="horizontal-scroll-wrapper" style="position: relative; display: none;" id="diva">
-            <!--<div class="std-col-12 std-section-bleed res-div-temp" style="margin-left: 12.5%; margin-right: 5%;">-->
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/j1.jpg">
-                    <div class="underlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('j1')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="std-col-12">
+            <h2><span>EXPLORE BY CATEGORY IN GOLD COINS</span></h2>
+        </div>
+
+        <div class="std-col-12 std-col-t-12 res-div-tempGC">
+            <div class="std-col-2 std-col-t-4" id="tabgc1">
+                <button class="buttonlink" id="button1">
+                    <strong>2 gm</strong>
+                </button>
             </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/j2.jpg">
-                    <div class="overlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('j2')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="std-col-2 std-col-t-4" id="tabgc2">
+                <button class="buttonlink" id="button2">
+                    <strong>5 gm</strong>
+                </button>
             </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/j3.jpg">
-                    <div class="underlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('j3')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="std-col-2 std-col-t-4" id="tabgc3">
+                <button class="buttonlink" id="button3">
+                    <strong>10 gm</strong>
+                </button>
             </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/j4.jpg">
-                    <div class="overlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('j4')">View!</p>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+
+        <div class="std-section-fullWidth">
+            <div class="std-col-12 res-div-tempGC1">
+                <div class="std-col-3 std-col-t-3 mediabox" onclick="fullerimage('21')">
+                    <img src="/images/jewellery/21.jpg">
                 </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/j2.jpg">
-                    <div class="underlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('j2')">View!</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="std-col-3 std-col-t-3 mediabox" onclick="fullerimage('22')">
+                    <img src="/images/jewellery/22.jpg">
                 </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/j3.jpg">
-                    <div class="overlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('j3')">View!</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="std-col-3 std-col-t-3 mediabox" onclick="fullerimage('23')">
+                    <img src="/images/jewellery/23.jpg">
                 </div>
             </div>
         </div>
-        <div class="horizontal-scroll-wrapper" style="position: relative; display: none;" id="divb">
-            <!--<div class="std-col-12 std-section-bleed res-div-temp" style="margin-left: 12.5%; margin-right: 5%;">-->
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/e1.jpg">
-                    <div class="rightlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('e1')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/e2.jpg">
-                    <div class="leftlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('e2')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/e3.jpg">
-                    <div class="rightlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('e3')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/e4.jpg">
-                    <div class="leftlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('e4')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/e2.jpg">
-                    <div class="rightlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('e2')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/e3.jpg">
-                    <div class="leftlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('e3')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="horizontal-scroll-wrapper" style="position: relative; display: none;" id="divc">
-            <!--<div class="std-col-12 std-section-bleed res-div-temp" style="margin-left: 12.5%; margin-right: 5%;">-->
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/p1.jpg">
-                    <div class="overlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('p1')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/p2.jpg">
-                    <div class="underlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('p2')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/p3.jpg">
-                    <div class="overlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('p3')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/p4.jpg">
-                    <div class="underlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('p4')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/p2.jpg">
-                    <div class="overlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('p2')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/p3.jpg">
-                    <div class="underlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('p3')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="horizontal-scroll-wrapper" style="position: relative; display: none;" id="divd">
-            <!--<div class="std-col-12 std-section-bleed res-div-temp" style="margin-left: 12.5%; margin-right: 5%;">-->
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/n1.jpg">
-                    <div class="rightlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('n1')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/n2.jpg">
-                    <div class="leftlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('n2')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/n3.jpg">
-                    <div class="rightlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('n3')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/n4.jpg">
-                    <div class="leftlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('n4')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/n2.jpg">
-                    <div class="rightlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('n2')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/n3.jpg">
-                    <div class="leftlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('n3')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="horizontal-scroll-wrapper" style="position: relative; display: none;" id="dive">
-            <!--<div class="std-col-12 std-section-bleed res-div-temp" style="margin-left: 12.5%; margin-right: 5%;">-->
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/m1.jpg">
-                    <div class="underlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('m1')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/m2.jpg">
-                    <div class="overlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('m2')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/m3.jpg">
-                    <div class="underlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('m3')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/m4.jpg">
-                    <div class="overlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('m4')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/m2.jpg">
-                    <div class="underlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('m2')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-container-item center-align">
-                <div style="margin: 2%;">
-                    <img src="/images/jewellery/m3.jpg">
-                    <div class="overlaydj">
-                        <div class="txtdj"><br>
-                            <div class="button" style="margin-top: 3rem">
-                                <p style="color:#fefefe; font-family: 'Lato, sans-serif';" onclick="fullerimage('m3')">View!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div>
 
     <div class="std-section-fullWidth">
@@ -618,7 +642,7 @@
                             </div>
                             <div class="std-col-3 std-col-t-3" onclick="window.open('http://dineshjewellers.com/')">
                                 <a href="#">
-                                    <img src="/images/website.png">
+                                    <img class="imgdjwebsite" src="/images/website.png">
                                 </a>
                             </div>
                         </div>
@@ -655,7 +679,7 @@
                     </div>
                     <div class="std-section-fullWidth std-div-white">
                         <div class="std-justify" style="height: 499px; width: 100%">
-                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/3gcENZ9QOfc"
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/cHTBOXrSEvE"
                                     frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>

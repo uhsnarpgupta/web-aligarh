@@ -32,11 +32,6 @@ h2 span {
     height: 90%;
 }
 
-@media only screen and (min-width: 768px) {
-    .res-div-temp {
-        margin-left: 100px;
-    }
-}
 .prev-btn2 {
     display: block;
     position: absolute;
@@ -179,3 +174,136 @@ h2 span {
     margin: auto;
     display: block;
 }
+
+.imgdj1{
+    width: 200px;
+    height: 300px;
+}
+
+.imgdjnecklace{
+    width: 330px;
+    height: 300px;
+}
+
+.horizontal-scroll-wrapper {
+    overflow: auto;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1%;
+    white-space: nowrap;
+}
+
+.horizontal-scroll-wrapper > div {
+    /*width: 23%;*/
+    width: 45%;
+    margin-left: 1%;
+    height: 100%;
+    display: inline-block;
+    padding: 0 0.5%;
+    /*border: 1px solid #ddd;*/
+    background: #fff;
+    box-shadow: 2px 2px 2px #ccc;
+    padding-top: 10px;
+    /*border-left: 5px solid #675765;*/
+    /*border-radius: 5px;*/
+    padding-bottom: 10px;
+    max-height: 600px;
+    transition: transform linear 0.2s;
+}
+
+.horizontal-scroll-wrapper > div .no-padding{
+    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.center-align{
+    transform: translateY(0%);
+}
+
+.event-container-item {
+    width: 23%;
+    margin-left: 1%;
+    /*float: left;*/
+    position: relative;
+    height: 100%;
+    display: inline-block;
+    /*padding: 0 0.5%;*/
+    /*border: 1px solid #ddd;*/
+    background: #fff;
+    /*box-shadow: 2px 2px 2px #ccc;*/
+    padding-top: 10px;
+    /*border-left: 5px solid #675765;*/
+    /*border-radius: 5px;*/
+    /*padding-bottom: 10px;*/
+    max-height: 600px;
+    transition: transform linear 0.2s;
+}
+
+@media only screen and (min-width: 768px) {
+    .horizontal-scroll-wrapper > div{
+        width: 50%;
+    }
+
+    .res-div-temp {
+        margin-left: 70px;
+    }
+
+    .res-div-tempGC {
+        margin-left: 200px;
+    }
+
+    .res-div-tempGC1 {
+        margin-left: 100px;
+    }
+
+    .res-div-temp2 {
+        margin-top: 2%;
+    }
+
+    .buttonlink {
+        background-color: transparent;
+        color: black;
+        float: left;
+        cursor: pointer;
+        padding: 20px 6px;
+        font-size: 17px;
+        width: 100%;
+        font-weight: normal;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .horizontal-scroll-wrapper > div{
+        width: 32%;
+    }
+
+    .res-div-temp {
+        margin-left: 100px;
+    }
+
+    .res-div-tempGC {
+        margin-left: 300px;
+    }
+
+    .res-div-tempGC1 {
+        margin-left: 150px;
+    }
+
+    .res-div-temp2 {
+        margin-top: 2%;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width:599px){
+    .horizontal-scroll-wrapper > div{
+        width: 70%;
+    }
+
+    .imgdjwebsite{
+        width: 75px;
+        height: 75px;
+    }
+}
+
+
