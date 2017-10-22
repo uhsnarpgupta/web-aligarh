@@ -118,7 +118,7 @@
 
         function showImage(n) {
             var i;
-            var x = document.getElementsByClassName("slides");
+            var x = document.getElementsByName("slides");
             if (n > x.length) {
                 index = 1
             }
@@ -159,11 +159,11 @@
     <div class="std-section-bleed">
         <section id="header1">
             <div id="container">
-                <img class="slides" src="images/events/newyeareveNewyork.jpg">
-                <img class="slides" src="images/events9.jpg">
-                <img class="slides" src="images/events10.jpg">
-                <img class="slides" src="images/events11.jpg">
-                <img class="slides" src="images/events12.jpg">
+                <img name="slides" src="/images/events8.jpg">
+                <img name="slides" class="slides" src="/images/events9.jpg">
+                <img name="slides" class="slides" src="/images/events10.jpg">
+                <img name="slides" class="slides" src="/images/events11.jpg">
+                <img name="slides" class="slides" src="/images/events12.jpg">
                 <button class="btn" id="btn1" onclick="plusIndex(-1)">&#10094;</button>
                 <button class="btn" id="btn2" onclick="plusIndex(1)">&#10095;</button>
             </div>
