@@ -178,11 +178,11 @@ h2 span {
 
 .imgdj1{
     width: 200px;
-    height: 400px;
+    height: 300px;
 }
 
 .imgdjnecklace{
-    width: 330px;
+    width: 200px;
     height: 300px;
 }
 
@@ -278,7 +278,27 @@ h2 span {
         /*height: 400px;*/
     }
 
+    h2 {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #000;
+        line-height: 0.1em;
+        margin: 10px 0 20px;
+    }
 
+    h2 span {
+        background:#fff;
+        padding:0 10px;
+    }
+
+    .imgdjwebsite{
+        width: 55px;
+        height: 70px;
+    }
+
+    .slideshow-container {
+        height: 400px;
+    }
 
 }
 
@@ -308,6 +328,32 @@ h2 span {
         /*height: 400px;*/
     }
 
+    .imgdjnecklace{
+        width: 305px;
+        height: 400px;
+    }
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #000;
+        line-height: 0.1em;
+        margin: 10px 0 20px;
+    }
+
+    h2 span {
+        background:#fff;
+        padding:0 10px;
+    }
+
+    .imgdjwebsite{
+        width: 55px;
+        height: 70px;
+    }
+
+    .slideshow-container {
+        height: 640px;
+    }
 }
 
 @media only screen and (min-width: 300px) and (max-width:599px){
@@ -316,8 +362,8 @@ h2 span {
     }
 
     .imgdjwebsite{
-        width: 75px;
-        height: 75px;
+        width: 100px;
+        height: 100px;
     }
 
     .imgdj{
