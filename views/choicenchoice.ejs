@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html>
+<title>Choice N Choice</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheets/standards.css">
+    <link rel="stylesheet" href="/stylesheets/choicenchoice.css">
+    <link rel="stylesheet" href="/stylesheets/education.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body bgcolor="#d3d3d3" style="text-align: start">
+
+<div>
+    <% include template/navigationBar.ejs %>
+</div>
+<!-- Image header -->
+<div class="std-top-row">
+
+    <!--1st Row-->
+    <div class="std-section-bleed">
+
+        <!--Start Slide Show-->
+        <div class="slideshow-container">
+
+            <div class="slides fade">
+                <div class="numbertext">1 / 2</div>
+                <img src="/images/shop/cnc2.jpg">
+            </div>
+
+            <div class="slides fade">
+                <div class="numbertext">2 / 2</div>
+                <img src="/images/shop/cnc3.jpg">
+            </div>
+
+            <a class="prev-btn" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next-btn" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!--End Slide Show-->
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+        <div class="hero-text">Choice N Choice</div>
+
+    </div>
+
+    <section>
+        <div id="section1" class="tabs">
+            <nav>
+                <ul>
+                    <li><a href="#section-1" class="icon-shop"
+                           style="color: black"><span>Neck Wear</span></a>
+                    </li>
+                    <li><a href="#section-2" class="icon-shop"
+                           style="color: black"><span>Accessories</span></a>
+                    </li>
+                    <li><a href="#section-2" class="icon-shop"
+                           style="color: black"><span>Wallets</span></a>
+                    </li>
+                    <li><a href="#section-2" class="icon-shop"
+                           style="color: black"><span>Belts</span></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="content">
+                <section id="section-1">
+                    <div class="std-col-12 max-ht">
+                        <div class="std-col-t-3 imgdiv1 imgtemp" style="cursor: pointer;position: relative;">
+                            <img class="image" src="/images/choicenchoice/IMG-20171023-WA0072.jpg">
+                            <div class="middle">
+                                <div class="textcnc" id="img1" onclick="openModal();currentPopup(1)" class="std-hover-opacity">TIE</div>
+                            </div>
+                        </div>
+                        <div class="std-col-t-3 imgdiv1" style="cursor: pointer;position: relative;">
+                            <img class="image" src="/images/choicenchoice/bowtie.jpg">
+                            <div class="middle1">
+                                <div class="textcnc" id="img3" onclick="openModal1();currentPopup1(1)" class="std-hover-opacity">BOW</div>
+                            </div>
+                        </div>
+                        <div class="std-col-t-3 imgdiv1" style="cursor: pointer;position: relative;">
+                            <img class="image" src="/images/choicenchoice/scarf.jpg">
+                            <div class="middle1">
+                                <div class="textcnc" id="img4" onclick="fullerimage1('scarf');" class="std-hover-opacity">SCARF</div>
+                            </div>
+                        </div>
+                        <div class="std-col-t-3 imgdiv1 imgtemp" style="cursor: pointer;position: relative;">
+                            <img class="image" src="/images/choicenchoice/cravat.jpg">
+                            <div class="middle">
+                                <div class="textcnc" id="img5" onclick="openModal2();currentPopup2(1)" class="std-hover-opacity">CRAVAT</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section-2">
+                    <div class="std-col-12 max-ht">
+                        <div class="std-col-t-4 imgdiv1" style="cursor: pointer;position: relative;">
+                            <img class="image" src="/images/choicenchoice/cufflinks.jpg">
+                            <div class="middle">
+                                <div class="textcnc" id="img6" onclick="fullerimage2('cufflinks');" class="std-hover-opacity">CUFFLINKS</div>
+                            </div>
+                        </div>
+                        <div class="std-col-t-4 imgdiv1" style="cursor: pointer;position: relative;">
+                            <img class="image" src="/images/choicenchoice/IMG-20171023-WA0028.jpg">
+                            <div class="middle">
+                                <div class="textcnc" id="img7" onclick="openModal4();currentPopup4(1)" class="std-hover-opacity">BROOCH</div>
+                            </div>
+                        </div>
+                        <div class="std-col-t-4 imgdiv1" style="cursor: pointer;position: relative;">
+                            <img class="image" src="/images/choicenchoice/IMG-20171023-WA0045.jpg">
+                            <div class="middle">
+                                <div class="textcnc" id="img8" onclick="openModal5();currentPopup5(1)" class="std-hover-opacity">TIE PINS</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section-3">
+                    <div class="std-col-12 max-ht">
+                        <div class="std-col-t-3 imgdiv1" style="cursor: pointer;position: relative;">
+                            <img class="image" src="/images/choicenchoice/IMG-20171023-WA0090.jpg">
+                            <div class="middle">
+                                <div class="textcnc" id="img9" onclick="fullerimage('IMG-20171023-WA0090');" class="std-hover-opacity">WALLETS</div>
+                            </div>
+                        </div>
+                        <div class="std-col-t-3 imgdiv1" style="cursor: pointer;position: relative;">
+                            <img class="image" src="/images/choicenchoice/IMG-20171023-WA0092.jpg">
+                            <div class="middle">
+                                <div class="textcnc" id="img10" onclick="fullerimage('IMG-20171023-WA0092');" class="std-hover-opacity">WALLETS</div>
+                            </div>
+                        </div>
+                        <div class="std-col-t-3 imgdiv1" style="cursor: pointer;position: relative;">
+                            <img class="image" src="/images/choicenchoice/IMG-20171023-WA0096.jpg">
+                            <div class="middle">
+                                <div class="textcnc" id="img11" onclick="fullerimage('IMG-20171023-WA0096');" class="std-hover-opacity">WALLETS</div>
+                            </div>
+                        </div>
+                        <div class="std-col-t-3 imgdiv1" style="cursor: pointer;position: relative;">
+                            <img class="image" src="/images/choicenchoice/IMG-20171023-WA0097.jpg">
+                            <div class="middle">
+                                <div class="textcnc" id="img12" onclick="fullerimage('IMG-20171023-WA0097');" class="std-hover-opacity">WALLETS</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section-4">
+                    <div class="std-col-12 max-ht">
+                        <div class="std-col-t-3 imgdiv1 beltsimg" style="cursor: pointer;position: relative;">
+                            <img class="image" src="/images/choicenchoice/belts.jpg">
+                            <div class="middle">
+                                <div class="textcnc" id="img13" onclick="openModal3();currentPopup3(1)" class="std-hover-opacity">BELTS</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <div class="std-section-fullWidth std-modal-content">
+        <div class="std-col-12" style="float: left">
+            <div class="std-col-3 std-col-t-3">
+                <div class="eduLogo">
+                    <picture>
+                        <source srcset="/images/choicenchoice/IMG-20171015-WA0005.jpg" media="(max-width: 1024px)">
+                        <source srcset="/images/choicenchoice/IMG-20171015-WA0005.jpg">
+                        <img class="imglogo" src="/images/choicenchoice/IMG-20171015-WA0005.jpg" alt="Image">
+                    </picture>
+                </div>
+                <div>
+                    <ul>
+                        <li><h4>Address</h4></li>
+                        <p>Near Tanga Stand Railway Road, Aligarh, Uttar Pradesh, India PIN - 202001</p>
+                        <li><h4>Contact</h4></li>
+                        <p>+91-9837768936</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="std-col-6 std-col-t-9">
+                <video width="400" controls autoplay poster="/images/comingsoon/coming-soon-1.gif" muted>
+                    <source src="/images/choicenchoice/VID-20171015-WA0006.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+            <div class="std-col-3 std-col-t-12">
+                <div class="aside">
+                    <h3>Photos</h3>
+                    <hr>
+                    <picture onclick="openModal6();currentPopup6(2)">
+                        <source srcset="/images/choicenchoice/IMG-20171015-WA0003.jpg" media="(max-width: 1024px)">
+                        <source srcset="/images/choicenchoice/IMG-20171015-WA0003.jpg">
+                        <img class="imglogo" src="/images/choicenchoice/IMG-20171015-WA0003.jpg" alt="Image">
+                    </picture>
+                    <hr>
+                    <picture onclick="openModal6();currentPopup6(3)">
+                        <source srcset="/images/choicenchoice/IMG-20171023-WA0046.jpg" media="(max-width: 1024px)">
+                        <source srcset="/images/choicenchoice/IMG-20171023-WA0046.jpg">
+                        <img class="imglogo" src="/images/choicenchoice/IMG-20171023-WA0046.jpg" alt="Image">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- The Modal -->
+<div id="myModaltie" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides1">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0019.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides1">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0033.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides1">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0047.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides1">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0048.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides1">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0050.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides1">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0052.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides1">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0053.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides1">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0064.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides1">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0066.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides1">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0071.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides1">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0079.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides1">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0081.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup(1)">&#10095;</div>
+        </div>
+
+    </div>
+</div>
+<div id="myModalbow" class="modal">
+    <span class="close cursor" onclick="closeModal1()">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides2">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0026.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup1(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup1(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides2">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0037.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup1(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup1(1)">&#10095;</div>
+        </div>
+    </div>
+</div>
+<div id="myModalscarf" class="modal">
+    <span class="closescarf">&times;</span>
+    <img class="imgcncwallet modal-contentcnc" id="imgscarf">
+</div>
+<div id="myModalcravat" class="modal">
+    <span class="close cursor" onclick="closeModal2()">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides3">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0014.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup2(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup2(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides3">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0039.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup2(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup2(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides3">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0041.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup2(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup2(1)">&#10095;</div>
+        </div>
+    </div>
+</div>
+<div id="myModalcufflinks" class="modal">
+    <span class="closecufflinks">&times;</span>
+    <img class="imgcncwallet modal-contentcnc" id="imgcufflinks">
+</div>
+<div id="myModalbrooch" class="modal">
+    <span class="close cursor" onclick="closeModal4()">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides5">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0012.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup4(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup4(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0013.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup4(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup4(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0015.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup4(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup4(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0016.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup4(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup4(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0017.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup4(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup4(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0018.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup4(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup4(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0020.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup4(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup4(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0023.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup4(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup4(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0024.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup4(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup4(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0028.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup4(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup4(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0029.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup4(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup4(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0030.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup4(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup4(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0030.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup4(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup4(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0031.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup4(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup4(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0032.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup4(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup4(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0034.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup4(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup4(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0036.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup4(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup4(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0038.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup4(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup4(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0040.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup4(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup4(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0093.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup4(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup4(1)">&#10095;</div>
+        </div>
+
+    </div>
+</div>
+<div id="myModaltiepins" class="modal">
+    <span class="close cursor" onclick="closeModal5()">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides6">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0035.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup5(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup5(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides6">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0042.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup5(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup5(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides6">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0043.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup5(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup5(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides6">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0045.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup5(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup5(1)">&#10095;</div>
+        </div>
+    </div>
+</div>
+<div id="myModalwallets" class="modal">
+    <span class="closewallet">&times;</span>
+    <img class="imgcncwallet modal-contentcnc" id="imgwallet">
+</div>
+<div id="myModalbelts" class="modal">
+    <span class="close cursor" onclick="closeModal3()">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides4">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0021.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup3(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup3(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides4">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0022.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup3(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup3(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides4">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0027.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup3(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup3(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides4">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0051.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup3(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup3(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides4">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0060.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup3(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup3(1)">&#10095;</div>
+        </div>
+    </div>
+</div>
+<div id="myModalphotos" class="modal">
+    <span class="close cursor" onclick="closeModal6()">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides7">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171015-WA0005.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup6(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup6(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides7">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171015-WA0003.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup6(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup6(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides7">
+            <img class="shopimages" src="/images/choicenchoice/IMG-20171023-WA0046.jpg" style="width:100%">
+            <div class="prev-btn1" onclick="plusPopup6(-1)">&#10094;</div>
+            <div class="next-btn1" onclick="plusPopup6(1)">&#10095;</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slides");
+        var dots = document.getElementsByClassName("dot");
+
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+
+    }
+
+</script>
+<script>
+    var slideIndex = 0;
+    showSlidesAutomatically();
+
+    function showSlidesAutomatically() {
+        var i;
+        var slides = document.getElementsByClassName("slides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlidesAutomatically, 6000); // Change image every 2 seconds
+    }
+</script>
+
+<script>
+
+    var scrollY = 0;
+    var distance = 10;
+    var speed = 2;
+    function autoScrollTo(el) {
+        var currentY = window.pageYOffset;
+        var targetY = document.getElementById(el).offsetTop;
+        var bodyHeight = document.body.offsetHeight;
+        var yPos = currentY + window.innerHeight;
+        // recursively calling with speed
+        var animator = setTimeout('autoScrollTo(\''+el+'\')',speed);
+        if(yPos > bodyHeight){
+            clearTimeout(animator);
+        } else {
+            if(currentY < targetY-distance){
+                scrollY = currentY+distance;
+                window.scroll(0, scrollY);
+            } else {
+                clearTimeout(animator);
+            }
+        }
+    }
+    function resetScroller(el){
+        var currentY = window.pageYOffset;
+        var targetY = document.getElementById(el).offsetTop;
+        var animator = setTimeout('resetScroller(\''+el+'\')',speed);
+        if(currentY > targetY){
+            scrollY = currentY-distance;
+            window.scroll(0, scrollY);
+        } else {
+            clearTimeout(animator);
+        }
+        if (currentY == 0) {
+            // if we reach to the top of the page then clear the timeout
+            clearTimeout(animator);
+        }
+
+        window.addEventListener("keypress",function(){
+            clearTimeout(animator);
+        });
+        window.addEventListener("click",function(){
+            clearTimeout(animator);
+        });
+    }
+
+    /*
+     * Tabs
+     */
+    ;( function( window ) {
+        'use strict';
+        function extend( a, b ) {
+            for( var key in b ) {
+                if( b.hasOwnProperty( key ) ) {
+                    a[key] = b[key];
+                }
+            }
+            return a;
+        }
+
+        function sandeepTabs( el, options ) {
+            this.el = el;
+            this.options = extend( {}, this.options );
+            extend( this.options, options );
+            this._init();
+        }
+
+        sandeepTabs.prototype.options = {
+            start : 0
+        };
+
+        sandeepTabs.prototype._init = function() {
+            this.tabs = [].slice.call( this.el.querySelectorAll( 'nav > ul > li' ) );
+            this.items = [].slice.call( this.el.querySelectorAll( '.content > section' ) );
+            this.current = -1;
+            this._show();
+            this._initEvents();
+        };
+
+        sandeepTabs.prototype._initEvents = function() {
+            var self = this;
+            this.tabs.forEach( function( tab, idx ) {
+                tab.addEventListener( 'click', function( ev ) {
+                    ev.preventDefault();
+                    self._show( idx );
+                } );
+            } );
+        };
+
+        sandeepTabs.prototype._show = function( idx ) {
+            if( this.current >= 0 ) {
+                this.tabs[ this.current ].className = '';
+                this.items[ this.current ].className = '';
+            }
+            this.current = idx != undefined ? idx : this.options.start >= 0 && this.options.start < this.items.length ? this.options.start : 0;
+            this.tabs[ this.current ].className = 'tab-current';
+            this.items[ this.current ].className = 'content-current';
+        };
+
+        // adding to global namespace
+        window.sandeepTabs = sandeepTabs;
+
+    })( window );
+
+    new sandeepTabs( document.getElementById( 'section1' ) );
+
+</script>
+<script>
+    function openModal() {
+        document.getElementById('myModaltie').style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById('myModaltie').style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showPopup(slideIndex);
+
+    function plusPopup(n) {
+        showPopup(slideIndex += n);
+    }
+
+    function currentPopup(n) {
+        showPopup(slideIndex = n);
+    }
+
+    function showPopup(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides1");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
+</script>
+<script>
+    function openModal1() {
+        document.getElementById('myModalbow').style.display = "block";
+    }
+
+    function closeModal1() {
+        document.getElementById('myModalbow').style.display = "none";
+    }
+
+    var slideIndex1 = 1;
+    showPopup1(slideIndex1);
+
+    function plusPopup1(n) {
+        showPopup1(slideIndex1 += n);
+    }
+
+    function currentPopup1(n) {
+        showPopup1(slideIndex1 = n);
+    }
+
+    function showPopup1(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides2");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex1 = 1}
+        if (n < 1) {slideIndex1 = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex1-1].style.display = "block";
+    }
+</script>
+<script>
+    // Get the modal // Common
+    var modal = document.getElementById('myModalwallets');
+    var modalImg = document.getElementById("imgwallet");
+
+    function  fullerimage(value) {
+        var image = value;
+        var src = "/images/choicenchoice/" + image + ".jpg";
+        modal.style.display = "block";
+        modalImg.src = src;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("closewallet")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+</script>
+<script>
+    // Get the modal // Common
+    var modal = document.getElementById('myModalscarf');
+    var modalImg = document.getElementById("imgscarf");
+
+    function  fullerimage1(value) {
+        var image = value;
+        var src = "/images/choicenchoice/" + image + ".jpg";
+        modal.style.display = "block";
+        modalImg.src = src;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("closescarf")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+</script>
+<script>
+    function openModal2() {
+        document.getElementById('myModalcravat').style.display = "block";
+    }
+
+    function closeModal2() {
+        document.getElementById('myModalcravat').style.display = "none";
+    }
+
+    var slideIndex2 = 1;
+    showPopup2(slideIndex2);
+
+    function plusPopup2(n) {
+        showPopup2(slideIndex2 += n);
+    }
+
+    function currentPopup2(n) {
+        showPopup2(slideIndex2 = n);
+    }
+
+    function showPopup2(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides3");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex2 = 1}
+        if (n < 1) {slideIndex2 = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex2-1].style.display = "block";
+    }
+</script>
+<script>
+    function openModal3() {
+        document.getElementById('myModalbelts').style.display = "block";
+    }
+
+    function closeModal3() {
+        document.getElementById('myModalbelts').style.display = "none";
+    }
+
+    var slideIndex3 = 1;
+    showPopup3(slideIndex3);
+
+    function plusPopup3(n) {
+        showPopup3(slideIndex3 += n);
+    }
+
+    function currentPopup3(n) {
+        showPopup3(slideIndex3 = n);
+    }
+
+    function showPopup3(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides4");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex3 = 1}
+        if (n < 1) {slideIndex3 = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex3-1].style.display = "block";
+    }
+</script>
+<script>
+    // Get the modal // Common
+    var modal = document.getElementById('myModalcufflinks');
+    var modalImg = document.getElementById("imgcufflinks");
+
+    function  fullerimage2(value) {
+        var image = value;
+        var src = "/images/choicenchoice/" + image + ".jpg";
+        modal.style.display = "block";
+        modalImg.src = src;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("closecufflinks")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+</script>
+<script>
+    function openModal4() {
+        document.getElementById('myModalbrooch').style.display = "block";
+    }
+
+    function closeModal4() {
+        document.getElementById('myModalbrooch').style.display = "none";
+    }
+
+    var slideIndex4 = 1;
+    showPopup4(slideIndex4);
+
+    function plusPopup4(n) {
+        showPopup4(slideIndex4 += n);
+    }
+
+    function currentPopup4(n) {
+        showPopup4(slideIndex4 = n);
+    }
+
+    function showPopup4(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides5");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex4 = 1}
+        if (n < 1) {slideIndex4 = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex4-1].style.display = "block";
+    }
+</script>
+<script>
+    function openModal5() {
+        document.getElementById('myModaltiepins').style.display = "block";
+    }
+
+    function closeModal5() {
+        document.getElementById('myModaltiepins').style.display = "none";
+    }
+
+    var slideIndex5 = 1;
+    showPopup5(slideIndex5);
+
+    function plusPopup5(n) {
+        showPopup5(slideIndex5 += n);
+    }
+
+    function currentPopup5(n) {
+        showPopup5(slideIndex5 = n);
+    }
+
+    function showPopup5(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides6");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex5 = 1}
+        if (n < 1) {slideIndex5 = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex5-1].style.display = "block";
+    }
+</script>
+<script>
+    function openModal6() {
+        document.getElementById('myModalphotos').style.display = "block";
+    }
+
+    function closeModal6() {
+        document.getElementById('myModalphotos').style.display = "none";
+    }
+
+    var slideIndex6 = 1;
+    showPopup6(slideIndex6);
+
+    function plusPopup6(n) {
+        showPopup6(slideIndex6 += n);
+    }
+
+    function currentPopup6(n) {
+        showPopup6(slideIndex6 = n);
+    }
+
+    function showPopup6(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides7");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex6 = 1}
+        if (n < 1) {slideIndex6 = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex6-1].style.display = "block";
+    }
+</script>
+
+</body>
+</html>
+
