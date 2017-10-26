@@ -404,6 +404,9 @@
     .fb-video{
         height: 10rem;
     }
+    .frameheight{
+        height:500px;
+    }
 }
 @media only screen and (min-width: 1110px) {
     .fb-video{
