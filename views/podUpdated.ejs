@@ -39,9 +39,9 @@
                         <img src="images/thumbs/08.jpg" alt=""/>
                         <h3 class="textcontent">Bhavika's Gallery: <br/>(Let us always meet each other with smile, for the smile is the beginning of love.)</h3>
                     </a>
-                    <a href="#" onclick="fullerimage('02','Happiness is not something you postpone for the future; it is something you design for the present.')">
-                        <img src="images/thumbs/02.jpg" alt=""/>
-                        <h3 class="textcontent">Happiness is not something you postpone for the future; it is something you design for the present.
+                    <a href="#" onclick="openModal3();currentPopup3(1)">
+                        <img src="images/thumbs/17.png" alt=""/>
+                        <h3 class="textcontent">Shubham Seth's Gallery: <br/>(Happiness is not something you postpone for the future; it is something you design for the present.)
                         </h3>
                     </a>
                 </div>
@@ -208,6 +208,46 @@
             <div id="caption1" style="color: #FFFFFF;"><h3>BY: N.S. Video Films, Sarai hakeem & Sarai Lawaria, Aligarh.</h3></div>
             <div class="prev-btn2" onclick="plusPopup2(-1)">&#10094;</div>
             <div class="next-btn2" onclick="plusPopup2(1)">&#10095;</div>
+        </div>
+    </div>
+</div>
+
+<div id="myModal5" class="modal">
+    <span class="close cursor" onclick="closeModal3()">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides5">
+            <img class="podimages" src="/images/thumbs/17.png" style="width:100%">
+            <div id="caption1" style="color: #FFFFFF;"><h3>BY: Shubham Seth, Member of University Literary Club, AMU, Aligarh.</h3></div>
+            <div class="prev-btn2" onclick="plusPopup3(-1)">&#10094;</div>
+            <div class="next-btn2" onclick="plusPopup3(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="podimages" src="/images/thumbs/16.png" style="width:100%">
+            <div id="caption1" style="color: #FFFFFF;"><h3>BY: Shubham Seth, Member of University Literary Club, AMU, Aligarh.</h3></div>
+            <div class="prev-btn2" onclick="plusPopup3(-1)">&#10094;</div>
+            <div class="next-btn2" onclick="plusPopup3(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="podimages" src="/images/thumbs/15.jpeg" style="width:100%">
+            <div id="caption1" style="color: #FFFFFF;"><h3>BY: Shubham Seth, Member of University Literary Club, AMU, Aligarh.</h3></div>
+            <div class="prev-btn2" onclick="plusPopup3(-1)">&#10094;</div>
+            <div class="next-btn2" onclick="plusPopup3(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="podimages" src="/images/thumbs/19.jpeg" style="width:100%">
+            <div id="caption1" style="color: #FFFFFF;"><h3>BY: Shubham Seth, Member of University Literary Club, AMU, Aligarh.</h3></div>
+            <div class="prev-btn2" onclick="plusPopup3(-1)">&#10094;</div>
+            <div class="next-btn2" onclick="plusPopup3(1)">&#10095;</div>
+        </div>
+
+        <div class="mySlides5">
+            <img class="podimages" src="/images/thumbs/18.jpeg" style="width:100%">
+            <div id="caption1" style="color: #FFFFFF;"><h3>BY: Shubham Seth, Member of University Literary Club, AMU, Aligarh.</h3></div>
+            <div class="prev-btn2" onclick="plusPopup3(-1)">&#10094;</div>
+            <div class="next-btn2" onclick="plusPopup3(1)">&#10095;</div>
         </div>
     </div>
 </div>
@@ -398,6 +438,39 @@
             slides[i].style.display = "none";
         }
         slides[slideIndex2-1].style.display = "block";
+    }
+</script>
+
+<script>
+    function openModal3() {
+        document.getElementById('myModal5').style.display = "block";
+    }
+
+    function closeModal3() {
+        document.getElementById('myModal5').style.display = "none";
+    }
+
+    var slideIndex3 = 1;
+    showPopup3(slideIndex3);
+
+    function plusPopup3(n) {
+        showPopup3(slideIndex3 += n);
+    }
+
+    function currentPopup3(n) {
+        showPopup3(slideIndex3 = n);
+    }
+
+    function showPopup3(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides5");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex3 = 1}
+        if (n < 1) {slideIndex3 = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex3-1].style.display = "block";
     }
 </script>
 
