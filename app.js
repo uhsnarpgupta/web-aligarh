@@ -30,6 +30,7 @@ var engtest = require('./routes/education/engtestpaper');
 var justforfun = require('./routes/entertainment/justforfun');
 var doyouknow = require('./routes/doyouknow');
 var podUpdated=require('./routes/podUpdated');
+var nsvideo=require('./routes/nsvideo');
 
 var todayinhistory=require('./routes/todayinhistory');
 var restaurantdeals = require('./routes/restaurantdeals');
@@ -117,7 +118,7 @@ app.use('/pod',pod);
 
 //pod Updated routes
 app.use('/podUpdated',podUpdated);
-
+app.use('/nsvideo',nsvideo);
 
 //honour routes
 app.use('/honour',honour);
