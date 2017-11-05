@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script language="JavaScript" type="text/javascript" src="/p5/p5.js"></script>
+    <script language="JavaScript" src="/p5/addons/p5.dom.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/p5/empty-example/sketch.js"></script>
+
     <link rel="stylesheet" href="/stylesheets/standards.css">
     <link rel="stylesheet" href="/stylesheets/templateU.css"/>
-    <link rel="stylesheet" href="/stylesheets/education.css">
     <link rel="stylesheet" href="/stylesheets/pod.css">
     <link rel="stylesheet" href="/stylesheets/modal.css">
     <link rel="stylesheet" href="/stylesheets/kalasaree.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <style>
         .std-content {
@@ -25,7 +28,6 @@
 <div>
     <% include template/navigationBar.ejs %>
 </div>
-
 <div class="std-top-row" style="text-align: center;">
     <div id="maincontent" class="std-section-bleed std-content"
          style="outline: 3px solid lightgrey; outline-offset: -12px; background-color: white;">
@@ -34,20 +36,17 @@
             <!-- Thumbnails -->
             <section class="thumbnails demo-gallery" id="demo-test-gallery" data-pswp-uid="1">
                 <div>
-                    <a href="#" onclick="fullerimage('03','BY- ABC, Aligarh')">
-                        <img src="images/thumbs/08.jpg" alt=""/>
-                        <div><h3 class="textcontent">BY- ABC, Aligarh</h3></div>
-                        <div style="text-align: center; margin-left: 40%;">
-                            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=51&layout=button&action=like&size=small&show_faces=true&share=false&appId"
-                                    width="51" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                                    allowTransparency="true"></iframe>
-                        </div>
-                    </a>
-                    <a href="#" onclick="fullerimage('02','BY- XYZ, Aligarh')">
-                        <img src="images/thumbs/02.jpg" alt=""/>
-                        <h3 class="textcontent">BY- XYZ, Aligarh
-                        </h3>
-                    </a>
+                        <a href="#" onclick="fullerimage('03','BY- ABC, Aligarh')">
+                            <img src="images/thumbs/08.jpg" alt=""/>
+                            <div><h3 class="textcontent">BY- ABC, Aligarh</h3></div>
+                            <button id="like">Like</button> &nbsp; <%=like1value%>
+                            <button id="unlike" hidden>unLike</button>
+                        </a>
+                        <a href="#" onclick="fullerimage('02','BY- XYZ, Aligarh')">
+                            <img src="images/thumbs/02.jpg" alt=""/>
+                            <h3 class="textcontent">BY- XYZ, Aligarh
+                            </h3>
+                        </a>
                 </div>
                 <div>
                     <a href="#" onclick="fullerimage('03','Share your smile with the world. Its a symbol of friendship and peace.')">

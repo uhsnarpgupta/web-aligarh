@@ -17,7 +17,7 @@ router.get('/', function(req, res, next) {
        console.log('month ' +m);
        var d = n.getDate();
        var date = d + "/" + m + "/" + y;*/
-
+console.log('My IP address is: '+req.ip);
   res.render('index', { title: 'Aligarh City',datetime:today });
 });
 

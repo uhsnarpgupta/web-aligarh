@@ -1,4 +1,32 @@
+.heading-section{
+    background-color: dimgray;
+    font-family: "Helvetica Neue";
+    color: white;
+    font-weight: bold;
+    line-height: 3rem;
+    text-align: center;
+    margin: 2px 3%;
+}
 
+.aside-heading-section{
+    background-color: dimgray;
+    font-family: "Helvetica Neue";
+    color: white;
+    font-weight: bold;
+    line-height: 3rem;
+    text-align: center;
+    margin-top:4%;
+}
+
+.heading-section > h2, .aside-heading-section > h2{
+    margin: 0;
+}
+.std-margin-small > .std-section-fullWidth{
+    padding: 3%;
+}
+.std-margin-small > .aside-section{
+    padding: 3%;
+}
 .imgdiv1 {
     float: left;
 }
@@ -55,12 +83,12 @@
     margin: auto;
     display: block;
     width: 50%;
-    max-width: 400px;
+    max-width: 600px;
 }
 
 .popupimage{
-    width: 300px;
-    height: 600px;
+    width: 50%;
+    height: 80%;
 }
 
 /* Caption of Modal Image */
