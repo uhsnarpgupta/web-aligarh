@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('rangoli', { title: 'Aligarh City' });
+    res.render('starocean', { title: 'Aligarh City' });
 });
 
 module.exports = router;

@@ -53,7 +53,7 @@ var lock = require('./routes/locks');
 var achiever = require('./routes/achiever');
 var famewall = require('./routes/famewall');
 
-var rangoli = require('./routes/rangoli');
+var starocean = require('./routes/starocean');
 
 var app = express();
 
@@ -152,8 +152,7 @@ app.use('/achiever',achiever);
 app.use('/famewall',famewall);
 
 //Events
-app.use('/rangoli',rangoli);
-app.use('/like1',rangoli);
+app.use('/starocean',starocean);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
