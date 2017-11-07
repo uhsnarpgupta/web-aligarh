@@ -31,37 +31,6 @@
     float: left;
 }
 
-.image {
-     opacity: 1;
-     display: block;
-     transition: .5s ease;
-     backface-visibility: hidden;
-     border-color: transparent;
-     border-style: solid;
-     background-position: center;
-     background-repeat: no-repeat;
-     width: 290px;
-     height: 200px;
- }
-
-.imagediv {
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    border-color: transparent;
-    border-style: solid;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 700px;
-    height: 480px;
-}
-
-.imgewebsite{
-    width:230px;
-    height:200px;
-}
-
 /* MODAL CSS */
 /* The Modal (background) */
 .modal {
@@ -140,39 +109,42 @@
     cursor: pointer;
 }
 
-
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-    .starbackground{
-        background-repeat: no-repeat;
-        background-size: cover;
-        border: solid;
-        width: 1320px;
-        height: 500px;
-    }
-}
-
-@media only screen and (max-width: 1024px){
-    .starbackground{
-        background-repeat: no-repeat;
-        background-size: cover;
-        border: solid;
-        width: auto;
-        height: 500px;
-    }
-}
-
 @media only screen and (min-width: 400px) {
     .starbackground{
         background-repeat: no-repeat;
         background-size: cover;
         border: solid;
-        width: auto;
         height: 500px;
+    }
+
+    .imagediv {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        border-color: transparent;
+        border-style: solid;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 480px;
+    }
+
+    .imgewebsite{
+        width:230px;
+        height:200px;
+    }
+
+    .image {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        border-color: transparent;
+        border-style: solid;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 360px;
+        height: 200px;
     }
 }
 @media only screen and (min-width: 300px) {
@@ -180,8 +152,37 @@
         background-repeat: no-repeat;
         background-size: cover;
         border: solid;
-        width: auto;
         height: 500px;
+    }
+
+    .imagediv {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        border-color: transparent;
+        border-style: solid;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 480px;
+    }
+
+    .imgewebsite{
+        width:230px;
+        height:200px;
+    }
+
+    .image {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        border-color: transparent;
+        border-style: solid;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 360px;
+        height: 200px;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -189,11 +190,84 @@
         background-repeat: no-repeat;
         background-size: cover;
         border: solid;
-        width: 1320px;
         height: 500px;
     }
 
     .max-ht{
         max-height: 285px;
+    }
+
+    .imagediv {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        border-color: transparent;
+        border-style: solid;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 480px;
+    }
+
+    .imgewebsite{
+        width:185px;
+        height:200px;
+    }
+
+    .image {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        border-color: transparent;
+        border-style: solid;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 290px;
+        height: 200px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .starbackground{
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: solid;
+        width:1320px;
+        height: 500px;
+    }
+
+    .max-ht{
+        max-height: 285px;
+    }
+
+    .imagediv {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        border-color: transparent;
+        border-style: solid;
+        background-position: center;
+        background-repeat: no-repeat;
+        width:700px;
+        height: 480px;
+    }
+
+    .imgewebsite{
+        width:185px;
+        height:200px;
+    }
+
+    .image {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        border-color: transparent;
+        border-style: solid;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 290px;
+        height: 200px;
     }
 }
