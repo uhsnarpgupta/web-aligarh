@@ -1,3 +1,33 @@
+.heading-section{
+    background-color: dimgray;
+    font-family: "Helvetica Neue";
+    color: white;
+    font-weight: bold;
+    line-height: 3rem;
+    text-align: center;
+    margin: 2px 3%;
+}
+
+.aside-heading-section{
+    background-color: dimgray;
+    font-family: "Helvetica Neue";
+    color: white;
+    font-weight: bold;
+    line-height: 3rem;
+    text-align: center;
+    margin-top:4%;
+}
+
+.heading-section > h2, .aside-heading-section > h2{
+    margin: 0;
+}
+.std-margin-small > .std-section-fullWidth{
+    padding: 3%;
+}
+.std-margin-small > .aside-section{
+    padding: 3%;
+}
+
 .mySlides {display:none;}
 h2 {
     width: 100%;
@@ -6,6 +36,7 @@ h2 {
     line-height: 0.1em;
     margin: 10px 0 20px;
 }
+
 
 h2 span {
     background:#fff;

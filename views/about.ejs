@@ -9,14 +9,13 @@
 
     <script type="text/javascript">
 
-
         function handleOpenClose(evt, openCloseAction) {
             // Declare all variables
-            var i, divcontent, tablinks,buttoncolor;
+            var i, divcontent, tablinks, buttoncolor;
 
             // Get all elements with class="tabcontent" and hide them
             divcontent = document.getElementsByClassName("test");
-            buttoncolor=document.getElementsByClassName('tablink');
+            buttoncolor = document.getElementsByClassName('tablink');
 
             //document.getElementById(button).style.backgroundColor = "#0f8ad3";
             for (i = 0; i < divcontent.length; i++) {
@@ -28,22 +27,24 @@
 //            var manageElement = document.getElementById(openCloseAction);
 //            manageElement.style.display = (manageElement.style.display == "none") ? "block" : "none";
         }
-        function changecolor(evt,tab) {
+
+        function changecolor(evt, tab) {
             var tabname = document.getElementById(tab);
-            if(tabname.id==='tab1'){
+            if (tabname.id === 'tab1') {
                 document.getElementById('tab1').style.backgroundColor = "#0f8ad3";
                 document.getElementById('tab2').style.backgroundColor = "#0A416B"
                 document.getElementById('tab3').style.backgroundColor = "#0A416B";
-            }else if(tabname.id==='tab2'){
+            } else if (tabname.id === 'tab2') {
                 document.getElementById('tab1').style.backgroundColor = "#0A416B";
                 document.getElementById('tab2').style.backgroundColor = "#0f8ad3"
                 document.getElementById('tab3').style.backgroundColor = "#0A416B";
-            }else if(tabname.id==='tab3'){
+            } else if (tabname.id === 'tab3') {
                 document.getElementById('tab1').style.backgroundColor = "#0A416B";
                 document.getElementById('tab2').style.backgroundColor = "#0A416B"
                 document.getElementById('tab3').style.backgroundColor = "#0f8ad3";
             }
         }
+
         function setdiv() {
             document.getElementById('diva').style.display = "block";
             document.getElementById('tab1').style.backgroundColor = "#0f8ad3";
@@ -61,19 +62,19 @@
 <div class="std-top-row clear">
     <!--Fist Row Starts-->
     <div class="std-section-bleed">
-        <div class="aboutus-head-image" style="background-image: url('../images/aboutus/aboutus-banner.png')";>
+        <div class="aboutus-head-image" style="background-image: url('../images/aboutus/aboutus-banner.png')" ;>
         </div>
     </div>
-     <!--First Row Ends-->
-     <!--Second Row Begins-->
-     <div class="std-col-12 std-col-t-12">
+    <!--First Row Ends-->
+    <!--Second Row Begins-->
+    <div class="std-col-12 std-col-t-12">
         <div class="std-col-4  std-col-t-4 tab" id="tab1" onclick="changecolor(event,'tab1');">
             <button class="tablink" onclick="handleOpenClose(event,'diva');" id="button1">
                 Our Story
             </button>
         </div>
         <div class="std-col-4 std-col-t-4 tab" id="tab2" onclick="changecolor(event,'tab2')">
-            <button class="tablink" onclick="handleOpenClose(event,'divb');" id="button2" >
+            <button class="tablink" onclick="handleOpenClose(event,'divb');" id="button2">
                 Our Mission
             </button>
         </div>
@@ -89,13 +90,19 @@
         <div class="std-col-6 std-col-t-6">
             <div class="std-curved-box" style="background-color: #3E5C9A">
                 <p class="paragraph">
-                    We are a group of Motivated Professionals who are somewhere connected to this beautiful city of Aligarh.
-                    This city has given all of us a lot, fulfilled lot of our dreams. We have seen how a small town Aligarh has grown up to a Big City now.
-                    Earlier this city was known for mostly two things - Aligarh Muslim University and Aligarh Locks. But Now, Aligarh is recognized
-                    for more - its Hardware Industry has grown big, we are going to be a SMART City Soon, Beautiful Attractions like Mangalayatan,
+                    We are a group of Motivated Professionals who are somewhere connected to this beautiful city of
+                    Aligarh.
+                    This city has given all of us a lot, fulfilled lot of our dreams. We have seen how a small town
+                    Aligarh has grown up to a Big City now.
+                    Earlier this city was known for mostly two things - Aligarh Muslim University and Aligarh Locks. But
+                    Now, Aligarh is recognized
+                    for more - its Hardware Industry has grown big, we are going to be a SMART City Soon, Beautiful
+                    Attractions like Mangalayatan,
                     Shopping Complexes, Good Schoool's, Universities and many more. <br><br>
-                    Thinking about this Beautiful city, its time for all of us to payback, and we thought to work towards the initiative of "DIGITAL INDIA"
-                    and came up with an Idea of bringing our Aligarh family a Bit closure "digitally", and here we are with our small dream "ALIGARH - CITY".
+                    Thinking about this Beautiful city, its time for all of us to payback, and we thought to work
+                    towards the initiative of "DIGITAL INDIA"
+                    and came up with an Idea of bringing our Aligarh family a Bit closure "digitally", and here we are
+                    with our small dream "ALIGARH - CITY".
                 </p>
                 <p class="signature">The ALIGARH-CITY TEAM</p>
 
@@ -113,8 +120,9 @@
         <div class="std-col-6 std-col-t-6">
             <div class="std-curved-box" style="background-color: #3E5C9A">
                 <p class="paragraph">
-                   Our Mission is our Pledge !! <br><br>
-                    We treat our customers as our own family. We want to help them grow in their businesses by providing the best of industry in
+                    Our Mission is our Pledge !! <br><br>
+                    We treat our customers as our own family. We want to help them grow in their businesses by providing
+                    the best of industry in
                     online and offline market. Customer is always our priority.
                 </p>
                 <p class="signature">The ALIGARH-CITY TEAM</p>

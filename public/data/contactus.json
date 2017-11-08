@@ -15,6 +15,22 @@
       "inquiry_mobile": "6027486510",
       "inquiry_country": "usa",
       "inquiry_message": "Testing the JSON file"
+    },
+    "Mon Oct 30 2017 16:17:11 GMT-0400 (Eastern Daylight Time)": {
+      "inquiry_fname": "hero",
+      "inquiry_lname": "hera",
+      "inquiry_email": "herohera@gmail.com",
+      "inquiry_mobile": "6027486510",
+      "inquiry_country": "india",
+      "inquiry_message": "test"
+    },
+    "Mon Oct 30 2017 16:21:23 GMT-0400 (Eastern Daylight Time)": {
+      "inquiry_fname": "Amit",
+      "inquiry_lname": "Tondon",
+      "inquiry_email": "amit.tondon@gmail.com",
+      "inquiry_mobile": "1231231231",
+      "inquiry_country": "india",
+      "inquiry_message": "Testing Amit"
     }
   }
 }
