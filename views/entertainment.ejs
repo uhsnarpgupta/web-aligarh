@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head xmlns="http://www.w3.org/1999/html">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Entertainment</title>
+    <link rel="stylesheet" href="/stylesheets/standards.css">
+    <link rel="stylesheet" href="/stylesheets/entertainment.css">
+</head>
+    <body>
+        <div class="std-header">
+            <% include template/navigationBar.ejs %>
+        </div>
+        <!--End Header-->
+        <div class="std-top-row">
+
+            <!--1st Row-->
+            <div class="std-section-bleed">
+                <div class="hero-image mySlides fade" style="background-image: url('../images/entertainment1.jpg');">
+                        <div class="hero-text">
+                            <h1 class="std-widetemp">ENTERTAINMENT</h1>
+                        </div>
+                    </div>
+                <div class="hero-image mySlides fade" style="background-image: url('../images/entertainment2.jpg');">
+                        <div class="hero-text">
+                            <h1 class="std-widetemp">ENTERTAINMENT</h1>
+                        </div>
+                    </div>
+                <div class="hero-image mySlides fade" style="background-image: url('../images/entertainment3.jpg');">
+                        <div class="hero-text">
+                            <h1 class="std-widetemp">ENTERTAINMENT</h1>
+                         </div>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <!--1st row ends-->
+            <div class="std-section-fullWidth">
+                <div class="std-col-12 page-slot">
+                    <div class="std-col-t-3 mediabox">
+                        <img src="images/starocean/staroceanbanner.jpg" alt="img01"/>
+                        <h2>Star Ocean Production</h2>
+                        <a class="button button-blue" id="bttn1" onclick="window.open('/starocean')">View</a>
+                    </div>
+                    <div class="std-col-t-3 mediabox">
+                        <img src="images/entertainment4.jpg" alt="img02"/>
+                        <h2>Coming Soon</h2>
+                        <button class="button button-purple" onclick="window.open('/comingsoon')">View</button>
+                    </div>
+                    <div class="std-col-t-3 mediabox">
+                        <img src="images/entertainment5.jpg" alt="img03"/>
+                        <h2>Coming Soon</h2>
+                        <button class="button button-gray" onclick="window.open('/comingsoon')">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--The Footer-->
+        <div class="std-section-bleed">
+            <% include template/footer.ejs %>
+        </div>
+        <!--Footer End-->
+    </body>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex> slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+</script>
+</html>
